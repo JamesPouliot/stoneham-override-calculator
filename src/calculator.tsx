@@ -183,27 +183,6 @@ export const Calculator = () => {
               {calculator.calculatedValues.estimatedTaxImpactDaily} per day
             </dd>
           </div>
-
-          <div className="calculator__data-item">
-            <dt className="calculator__term">Quarterly Impact:</dt>
-            <dd className="calculator__detail calculator__detail--value">
-              {calculator.calculatedValues.estimatedTaxImpactQuarterly}
-            </dd>
-          </div>
-
-          <div className="calculator__data-item">
-            <dt className="calculator__term">Monthly Impact:</dt>
-            <dd className="calculator__detail calculator__detail--value">
-              {calculator.calculatedValues.estimatedTaxImpactMonthly}
-            </dd>
-          </div>
-
-          <div className="calculator__data-item">
-            <dt className="calculator__term">Daily Impact:</dt>
-            <dd className="calculator__detail calculator__detail--value">
-              {calculator.calculatedValues.estimatedTaxImpactDaily}
-            </dd>
-          </div>
         </dl>
       </section>
 

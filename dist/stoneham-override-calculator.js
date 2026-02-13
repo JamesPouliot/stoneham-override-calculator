@@ -9362,36 +9362,22 @@ var stonehamOverrideCalculator = (() => {
       ] }),
       /* @__PURE__ */ u16("section", { className: "calculator__results calculator__results--tax-impact", children: [
         /* @__PURE__ */ u16("h2", { className: "calculator__heading", children: "Your Estimated Tax Impact" }),
-        /* @__PURE__ */ u16("dl", { className: "calculator__data-list", children: [
-          /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
-            /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Annual Impact:" }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.estimatedTaxImpactYearly }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
-              calculator.calculatedValues.estimatedTaxImpactQuarterly,
-              " per quarter"
-            ] }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
-              calculator.calculatedValues.estimatedTaxImpactMonthly,
-              " per month"
-            ] }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
-              calculator.calculatedValues.estimatedTaxImpactDaily,
-              " per day"
-            ] })
+        /* @__PURE__ */ u16("dl", { className: "calculator__data-list", children: /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
+          /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Annual Impact:" }),
+          /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.estimatedTaxImpactYearly }),
+          /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
+            calculator.calculatedValues.estimatedTaxImpactQuarterly,
+            " per quarter"
           ] }),
-          /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
-            /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Quarterly Impact:" }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.estimatedTaxImpactQuarterly })
+          /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
+            calculator.calculatedValues.estimatedTaxImpactMonthly,
+            " per month"
           ] }),
-          /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
-            /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Monthly Impact:" }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.estimatedTaxImpactMonthly })
-          ] }),
-          /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
-            /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Daily Impact:" }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.estimatedTaxImpactDaily })
+          /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
+            calculator.calculatedValues.estimatedTaxImpactDaily,
+            " per day"
           ] })
-        ] })
+        ] }) })
       ] }),
       /* @__PURE__ */ u16("section", { className: "calculator__results calculator__results--tax-bill", children: [
         /* @__PURE__ */ u16("h2", { className: "calculator__heading", children: "Your Total Estimated Tax Bill" }),
