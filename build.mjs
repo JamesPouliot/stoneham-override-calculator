@@ -32,7 +32,7 @@ await build({
   outfile: "dist/stoneham-override-calculator.js",
 });
 
-// Copy example files to dist
-cpSync("example", "dist", { recursive: true });
+// Copy the webpage files to dist
+cpSync("webpage", "dist", { recursive: true });
 
 console.log("✓ Build completed successfully");

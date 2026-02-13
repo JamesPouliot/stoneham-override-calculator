@@ -64,7 +64,7 @@ var stonehamOverrideCalculator = (() => {
   var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
   // node_modules/preact/dist/preact.module.js
-  function d(n9, l8) {
+  function w(n9, l8) {
     for (var u17 in l8) n9[u17] = l8[u17];
     return n9;
   }
@@ -72,14 +72,14 @@ var stonehamOverrideCalculator = (() => {
     n9 && n9.parentNode && n9.parentNode.removeChild(n9);
   }
   function _(l8, u17, t9) {
-    var i10, r11, o11, e8 = {};
-    for (o11 in u17) "key" == o11 ? i10 = u17[o11] : "ref" == o11 ? r11 = u17[o11] : e8[o11] = u17[o11];
-    if (arguments.length > 2 && (e8.children = arguments.length > 3 ? n.call(arguments, 2) : t9), "function" == typeof l8 && null != l8.defaultProps) for (o11 in l8.defaultProps) void 0 === e8[o11] && (e8[o11] = l8.defaultProps[o11]);
-    return m(l8, e8, i10, r11, null);
+    var i9, o11, r11, e8 = {};
+    for (r11 in u17) "key" == r11 ? i9 = u17[r11] : "ref" == r11 ? o11 = u17[r11] : e8[r11] = u17[r11];
+    if (arguments.length > 2 && (e8.children = arguments.length > 3 ? n.call(arguments, 2) : t9), "function" == typeof l8 && null != l8.defaultProps) for (r11 in l8.defaultProps) void 0 === e8[r11] && (e8[r11] = l8.defaultProps[r11]);
+    return m(l8, e8, i9, o11, null);
   }
-  function m(n9, t9, i10, r11, o11) {
-    var e8 = { type: n9, props: t9, key: i10, ref: r11, __k: null, __: null, __b: 0, __e: null, __c: null, constructor: void 0, __v: null == o11 ? ++u : o11, __i: -1, __u: 0 };
-    return null == o11 && null != l.vnode && l.vnode(e8), e8;
+  function m(n9, t9, i9, o11, r11) {
+    var e8 = { type: n9, props: t9, key: i9, ref: o11, __k: null, __: null, __b: 0, __e: null, __c: null, constructor: void 0, __v: null == r11 ? ++u : r11, __i: -1, __u: 0 };
+    return null == r11 && null != l.vnode && l.vnode(e8), e8;
   }
   function b() {
     return { current: null };
@@ -106,27 +106,27 @@ var stonehamOverrideCalculator = (() => {
     }
   }
   function M(n9) {
-    (!n9.__d && (n9.__d = true) && i.push(n9) && !$.__r++ || r != l.debounceRendering) && ((r = l.debounceRendering) || o)($);
+    (!n9.__d && (n9.__d = true) && i.push(n9) && !$.__r++ || o != l.debounceRendering) && ((o = l.debounceRendering) || r)($);
   }
   function $() {
-    for (var n9, u17, t9, r11, o11, f14, c13, s12 = 1; i.length; ) i.length > s12 && i.sort(e), n9 = i.shift(), s12 = i.length, n9.__d && (t9 = void 0, r11 = void 0, o11 = (r11 = (u17 = n9).__v).__e, f14 = [], c13 = [], u17.__P && ((t9 = d({}, r11)).__v = r11.__v + 1, l.vnode && l.vnode(t9), O(u17.__P, t9, r11, u17.__n, u17.__P.namespaceURI, 32 & r11.__u ? [o11] : null, f14, null == o11 ? S(r11) : o11, !!(32 & r11.__u), c13), t9.__v = r11.__v, t9.__.__k[t9.__i] = t9, N(f14, t9, c13), r11.__e = r11.__ = null, t9.__e != o11 && C(t9)));
+    for (var n9, u17, t9, o11, r11, f14, c13, s12 = 1; i.length; ) i.length > s12 && i.sort(e), n9 = i.shift(), s12 = i.length, n9.__d && (t9 = void 0, o11 = void 0, r11 = (o11 = (u17 = n9).__v).__e, f14 = [], c13 = [], u17.__P && ((t9 = w({}, o11)).__v = o11.__v + 1, l.vnode && l.vnode(t9), O(u17.__P, t9, o11, u17.__n, u17.__P.namespaceURI, 32 & o11.__u ? [r11] : null, f14, null == r11 ? S(o11) : r11, !!(32 & o11.__u), c13), t9.__v = o11.__v, t9.__.__k[t9.__i] = t9, N(f14, t9, c13), o11.__e = o11.__ = null, t9.__e != r11 && C(t9)));
     $.__r = 0;
   }
-  function I(n9, l8, u17, t9, i10, r11, o11, e8, f14, c13, s12) {
-    var a15, h8, y8, w8, d6, g6, _7, m8 = t9 && t9.__k || v, b7 = l8.length;
-    for (f14 = P(u17, l8, m8, f14, b7), a15 = 0; a15 < b7; a15++) null != (y8 = u17.__k[a15]) && (h8 = -1 == y8.__i ? p : m8[y8.__i] || p, y8.__i = a15, g6 = O(n9, y8, h8, i10, r11, o11, e8, f14, c13, s12), w8 = y8.__e, y8.ref && h8.ref != y8.ref && (h8.ref && B(h8.ref, null, y8), s12.push(y8.ref, y8.__c || w8, y8)), null == d6 && null != w8 && (d6 = w8), (_7 = !!(4 & y8.__u)) || h8.__k === y8.__k ? f14 = A(y8, f14, n9, _7) : "function" == typeof y8.type && void 0 !== g6 ? f14 = g6 : w8 && (f14 = w8.nextSibling), y8.__u &= -7);
-    return u17.__e = d6, f14;
+  function I(n9, l8, u17, t9, i9, o11, r11, e8, f14, c13, s12) {
+    var a15, h8, y8, d6, w8, g6, _7, m8 = t9 && t9.__k || v, b7 = l8.length;
+    for (f14 = P(u17, l8, m8, f14, b7), a15 = 0; a15 < b7; a15++) null != (y8 = u17.__k[a15]) && (h8 = -1 == y8.__i ? p : m8[y8.__i] || p, y8.__i = a15, g6 = O(n9, y8, h8, i9, o11, r11, e8, f14, c13, s12), d6 = y8.__e, y8.ref && h8.ref != y8.ref && (h8.ref && B(h8.ref, null, y8), s12.push(y8.ref, y8.__c || d6, y8)), null == w8 && null != d6 && (w8 = d6), (_7 = !!(4 & y8.__u)) || h8.__k === y8.__k ? f14 = A(y8, f14, n9, _7) : "function" == typeof y8.type && void 0 !== g6 ? f14 = g6 : d6 && (f14 = d6.nextSibling), y8.__u &= -7);
+    return u17.__e = w8, f14;
   }
-  function P(n9, l8, u17, t9, i10) {
-    var r11, o11, e8, f14, c13, s12 = u17.length, a15 = s12, h8 = 0;
-    for (n9.__k = new Array(i10), r11 = 0; r11 < i10; r11++) null != (o11 = l8[r11]) && "boolean" != typeof o11 && "function" != typeof o11 ? (f14 = r11 + h8, (o11 = n9.__k[r11] = "string" == typeof o11 || "number" == typeof o11 || "bigint" == typeof o11 || o11.constructor == String ? m(null, o11, null, null, null) : w(o11) ? m(k, { children: o11 }, null, null, null) : null == o11.constructor && o11.__b > 0 ? m(o11.type, o11.props, o11.key, o11.ref ? o11.ref : null, o11.__v) : o11).__ = n9, o11.__b = n9.__b + 1, e8 = null, -1 != (c13 = o11.__i = L(o11, u17, f14, a15)) && (a15--, (e8 = u17[c13]) && (e8.__u |= 2)), null == e8 || null == e8.__v ? (-1 == c13 && (i10 > s12 ? h8-- : i10 < s12 && h8++), "function" != typeof o11.type && (o11.__u |= 4)) : c13 != f14 && (c13 == f14 - 1 ? h8-- : c13 == f14 + 1 ? h8++ : (c13 > f14 ? h8-- : h8++, o11.__u |= 4))) : n9.__k[r11] = null;
-    if (a15) for (r11 = 0; r11 < s12; r11++) null != (e8 = u17[r11]) && 0 == (2 & e8.__u) && (e8.__e == t9 && (t9 = S(e8)), D(e8, e8));
+  function P(n9, l8, u17, t9, i9) {
+    var o11, r11, e8, f14, c13, s12 = u17.length, a15 = s12, h8 = 0;
+    for (n9.__k = new Array(i9), o11 = 0; o11 < i9; o11++) null != (r11 = l8[o11]) && "boolean" != typeof r11 && "function" != typeof r11 ? ("string" == typeof r11 || "number" == typeof r11 || "bigint" == typeof r11 || r11.constructor == String ? r11 = n9.__k[o11] = m(null, r11, null, null, null) : d(r11) ? r11 = n9.__k[o11] = m(k, { children: r11 }, null, null, null) : void 0 === r11.constructor && r11.__b > 0 ? r11 = n9.__k[o11] = m(r11.type, r11.props, r11.key, r11.ref ? r11.ref : null, r11.__v) : n9.__k[o11] = r11, f14 = o11 + h8, r11.__ = n9, r11.__b = n9.__b + 1, e8 = null, -1 != (c13 = r11.__i = L(r11, u17, f14, a15)) && (a15--, (e8 = u17[c13]) && (e8.__u |= 2)), null == e8 || null == e8.__v ? (-1 == c13 && (i9 > s12 ? h8-- : i9 < s12 && h8++), "function" != typeof r11.type && (r11.__u |= 4)) : c13 != f14 && (c13 == f14 - 1 ? h8-- : c13 == f14 + 1 ? h8++ : (c13 > f14 ? h8-- : h8++, r11.__u |= 4))) : n9.__k[o11] = null;
+    if (a15) for (o11 = 0; o11 < s12; o11++) null != (e8 = u17[o11]) && 0 == (2 & e8.__u) && (e8.__e == t9 && (t9 = S(e8)), D(e8, e8));
     return t9;
   }
   function A(n9, l8, u17, t9) {
-    var i10, r11;
+    var i9, o11;
     if ("function" == typeof n9.type) {
-      for (i10 = n9.__k, r11 = 0; i10 && r11 < i10.length; r11++) i10[r11] && (i10[r11].__ = n9, l8 = A(i10[r11], l8, u17, t9));
+      for (i9 = n9.__k, o11 = 0; i9 && o11 < i9.length; o11++) i9[o11] && (i9[o11].__ = n9, l8 = A(i9[o11], l8, u17, t9));
       return l8;
     }
     n9.__e != l8 && (t9 && (l8 && n9.type && !l8.parentNode && (l8 = S(n9)), u17.insertBefore(n9.__e, l8 || null)), l8 = n9.__e);
@@ -136,31 +136,31 @@ var stonehamOverrideCalculator = (() => {
     return l8;
   }
   function H(n9, l8) {
-    return l8 = l8 || [], null == n9 || "boolean" == typeof n9 || (w(n9) ? n9.some(function(n10) {
+    return l8 = l8 || [], null == n9 || "boolean" == typeof n9 || (d(n9) ? n9.some(function(n10) {
       H(n10, l8);
     }) : l8.push(n9)), l8;
   }
   function L(n9, l8, u17, t9) {
-    var i10, r11, o11, e8 = n9.key, f14 = n9.type, c13 = l8[u17], s12 = null != c13 && 0 == (2 & c13.__u);
-    if (null === c13 && null == n9.key || s12 && e8 == c13.key && f14 == c13.type) return u17;
+    var i9, o11, r11, e8 = n9.key, f14 = n9.type, c13 = l8[u17], s12 = null != c13 && 0 == (2 & c13.__u);
+    if (null === c13 && null == e8 || s12 && e8 == c13.key && f14 == c13.type) return u17;
     if (t9 > (s12 ? 1 : 0)) {
-      for (i10 = u17 - 1, r11 = u17 + 1; i10 >= 0 || r11 < l8.length; ) if (null != (c13 = l8[o11 = i10 >= 0 ? i10-- : r11++]) && 0 == (2 & c13.__u) && e8 == c13.key && f14 == c13.type) return o11;
+      for (i9 = u17 - 1, o11 = u17 + 1; i9 >= 0 || o11 < l8.length; ) if (null != (c13 = l8[r11 = i9 >= 0 ? i9-- : o11++]) && 0 == (2 & c13.__u) && e8 == c13.key && f14 == c13.type) return r11;
     }
     return -1;
   }
   function T(n9, l8, u17) {
     "-" == l8[0] ? n9.setProperty(l8, null == u17 ? "" : u17) : n9[l8] = null == u17 ? "" : "number" != typeof u17 || y.test(l8) ? u17 : u17 + "px";
   }
-  function j(n9, l8, u17, t9, i10) {
-    var r11, o11;
+  function j(n9, l8, u17, t9, i9) {
+    var o11, r11;
     n: if ("style" == l8) if ("string" == typeof u17) n9.style.cssText = u17;
     else {
       if ("string" == typeof t9 && (n9.style.cssText = t9 = ""), t9) for (l8 in t9) u17 && l8 in u17 || T(n9.style, l8, "");
       if (u17) for (l8 in u17) t9 && u17[l8] == t9[l8] || T(n9.style, l8, u17[l8]);
     }
-    else if ("o" == l8[0] && "n" == l8[1]) r11 = l8 != (l8 = l8.replace(f, "$1")), o11 = l8.toLowerCase(), l8 = o11 in n9 || "onFocusOut" == l8 || "onFocusIn" == l8 ? o11.slice(2) : l8.slice(2), n9.l || (n9.l = {}), n9.l[l8 + r11] = u17, u17 ? t9 ? u17.u = t9.u : (u17.u = c, n9.addEventListener(l8, r11 ? a : s, r11)) : n9.removeEventListener(l8, r11 ? a : s, r11);
+    else if ("o" == l8[0] && "n" == l8[1]) o11 = l8 != (l8 = l8.replace(f, "$1")), r11 = l8.toLowerCase(), l8 = r11 in n9 || "onFocusOut" == l8 || "onFocusIn" == l8 ? r11.slice(2) : l8.slice(2), n9.l || (n9.l = {}), n9.l[l8 + o11] = u17, u17 ? t9 ? u17.u = t9.u : (u17.u = c, n9.addEventListener(l8, o11 ? a : s, o11)) : n9.removeEventListener(l8, o11 ? a : s, o11);
     else {
-      if ("http://www.w3.org/2000/svg" == i10) l8 = l8.replace(/xlink(H|:h)/, "h").replace(/sName$/, "s");
+      if ("http://www.w3.org/2000/svg" == i9) l8 = l8.replace(/xlink(H|:h)/, "h").replace(/sName$/, "s");
       else if ("width" != l8 && "height" != l8 && "href" != l8 && "list" != l8 && "form" != l8 && "tabIndex" != l8 && "download" != l8 && "rowSpan" != l8 && "colSpan" != l8 && "role" != l8 && "popover" != l8 && l8 in n9) try {
         n9[l8] = null == u17 ? "" : u17;
         break n;
@@ -179,14 +179,14 @@ var stonehamOverrideCalculator = (() => {
       }
     };
   }
-  function O(n9, u17, t9, i10, r11, o11, e8, f14, c13, s12) {
+  function O(n9, u17, t9, i9, o11, r11, e8, f14, c13, s12) {
     var a15, h8, p10, v6, y8, _7, m8, b7, S8, C10, M6, $5, P7, A7, H6, L6, T8, j10 = u17.type;
-    if (null != u17.constructor) return null;
-    128 & t9.__u && (c13 = !!(32 & t9.__u), o11 = [f14 = u17.__e = t9.__e]), (a15 = l.__b) && a15(u17);
+    if (void 0 !== u17.constructor) return null;
+    128 & t9.__u && (c13 = !!(32 & t9.__u), r11 = [f14 = u17.__e = t9.__e]), (a15 = l.__b) && a15(u17);
     n: if ("function" == typeof j10) try {
-      if (b7 = u17.props, S8 = "prototype" in j10 && j10.prototype.render, C10 = (a15 = j10.contextType) && i10[a15.__c], M6 = a15 ? C10 ? C10.props.value : a15.__ : i10, t9.__c ? m8 = (h8 = u17.__c = t9.__c).__ = h8.__E : (S8 ? u17.__c = h8 = new j10(b7, M6) : (u17.__c = h8 = new x(b7, M6), h8.constructor = j10, h8.render = E), C10 && C10.sub(h8), h8.props = b7, h8.state || (h8.state = {}), h8.context = M6, h8.__n = i10, p10 = h8.__d = true, h8.__h = [], h8._sb = []), S8 && null == h8.__s && (h8.__s = h8.state), S8 && null != j10.getDerivedStateFromProps && (h8.__s == h8.state && (h8.__s = d({}, h8.__s)), d(h8.__s, j10.getDerivedStateFromProps(b7, h8.__s))), v6 = h8.props, y8 = h8.state, h8.__v = u17, p10) S8 && null == j10.getDerivedStateFromProps && null != h8.componentWillMount && h8.componentWillMount(), S8 && null != h8.componentDidMount && h8.__h.push(h8.componentDidMount);
+      if (b7 = u17.props, S8 = "prototype" in j10 && j10.prototype.render, C10 = (a15 = j10.contextType) && i9[a15.__c], M6 = a15 ? C10 ? C10.props.value : a15.__ : i9, t9.__c ? m8 = (h8 = u17.__c = t9.__c).__ = h8.__E : (S8 ? u17.__c = h8 = new j10(b7, M6) : (u17.__c = h8 = new x(b7, M6), h8.constructor = j10, h8.render = E), C10 && C10.sub(h8), h8.state || (h8.state = {}), h8.__n = i9, p10 = h8.__d = true, h8.__h = [], h8._sb = []), S8 && null == h8.__s && (h8.__s = h8.state), S8 && null != j10.getDerivedStateFromProps && (h8.__s == h8.state && (h8.__s = w({}, h8.__s)), w(h8.__s, j10.getDerivedStateFromProps(b7, h8.__s))), v6 = h8.props, y8 = h8.state, h8.__v = u17, p10) S8 && null == j10.getDerivedStateFromProps && null != h8.componentWillMount && h8.componentWillMount(), S8 && null != h8.componentDidMount && h8.__h.push(h8.componentDidMount);
       else {
-        if (S8 && null == j10.getDerivedStateFromProps && b7 !== v6 && null != h8.componentWillReceiveProps && h8.componentWillReceiveProps(b7, M6), !h8.__e && null != h8.shouldComponentUpdate && false === h8.shouldComponentUpdate(b7, h8.__s, M6) || u17.__v == t9.__v) {
+        if (S8 && null == j10.getDerivedStateFromProps && b7 !== v6 && null != h8.componentWillReceiveProps && h8.componentWillReceiveProps(b7, M6), u17.__v == t9.__v || !h8.__e && null != h8.shouldComponentUpdate && false === h8.shouldComponentUpdate(b7, h8.__s, M6)) {
           for (u17.__v != t9.__v && (h8.props = b7, h8.state = h8.__s, h8.__d = false), u17.__e = t9.__e, u17.__k = t9.__k, u17.__k.some(function(n10) {
             n10 && (n10.__ = u17);
           }), $5 = 0; $5 < h8._sb.length; $5++) h8.__h.push(h8._sb[$5]);
@@ -203,26 +203,26 @@ var stonehamOverrideCalculator = (() => {
       } else do {
         h8.__d = false, P7 && P7(u17), a15 = h8.render(h8.props, h8.state, h8.context), h8.state = h8.__s;
       } while (h8.__d && ++A7 < 25);
-      h8.state = h8.__s, null != h8.getChildContext && (i10 = d(d({}, i10), h8.getChildContext())), S8 && !p10 && null != h8.getSnapshotBeforeUpdate && (_7 = h8.getSnapshotBeforeUpdate(v6, y8)), L6 = a15, null != a15 && a15.type === k && null == a15.key && (L6 = V(a15.props.children)), f14 = I(n9, w(L6) ? L6 : [L6], u17, t9, i10, r11, o11, e8, f14, c13, s12), h8.base = u17.__e, u17.__u &= -161, h8.__h.length && e8.push(h8), m8 && (h8.__E = h8.__ = null);
+      h8.state = h8.__s, null != h8.getChildContext && (i9 = w(w({}, i9), h8.getChildContext())), S8 && !p10 && null != h8.getSnapshotBeforeUpdate && (_7 = h8.getSnapshotBeforeUpdate(v6, y8)), L6 = a15, null != a15 && a15.type === k && null == a15.key && (L6 = V(a15.props.children)), f14 = I(n9, d(L6) ? L6 : [L6], u17, t9, i9, o11, r11, e8, f14, c13, s12), h8.base = u17.__e, u17.__u &= -161, h8.__h.length && e8.push(h8), m8 && (h8.__E = h8.__ = null);
     } catch (n10) {
-      if (u17.__v = null, c13 || null != o11) if (n10.then) {
+      if (u17.__v = null, c13 || null != r11) if (n10.then) {
         for (u17.__u |= c13 ? 160 : 128; f14 && 8 == f14.nodeType && f14.nextSibling; ) f14 = f14.nextSibling;
-        o11[o11.indexOf(f14)] = null, u17.__e = f14;
+        r11[r11.indexOf(f14)] = null, u17.__e = f14;
       } else {
-        for (T8 = o11.length; T8--; ) g(o11[T8]);
+        for (T8 = r11.length; T8--; ) g(r11[T8]);
         z(u17);
       }
       else u17.__e = t9.__e, u17.__k = t9.__k, n10.then || z(u17);
       l.__e(n10, u17, t9);
     }
-    else null == o11 && u17.__v == t9.__v ? (u17.__k = t9.__k, u17.__e = t9.__e) : f14 = u17.__e = q(t9.__e, u17, t9, i10, r11, o11, e8, c13, s12);
+    else null == r11 && u17.__v == t9.__v ? (u17.__k = t9.__k, u17.__e = t9.__e) : f14 = u17.__e = q(t9.__e, u17, t9, i9, o11, r11, e8, c13, s12);
     return (a15 = l.diffed) && a15(u17), 128 & u17.__u ? void 0 : f14;
   }
   function z(n9) {
     n9 && n9.__c && (n9.__c.__e = true), n9 && n9.__k && n9.__k.forEach(z);
   }
   function N(n9, u17, t9) {
-    for (var i10 = 0; i10 < t9.length; i10++) B(t9[i10], t9[++i10], t9[++i10]);
+    for (var i9 = 0; i9 < t9.length; i9++) B(t9[i9], t9[++i9], t9[++i9]);
     l.__c && l.__c(u17, n9), n9.some(function(u18) {
       try {
         n9 = u18.__h, u18.__h = [], n9.some(function(n10) {
@@ -234,73 +234,73 @@ var stonehamOverrideCalculator = (() => {
     });
   }
   function V(n9) {
-    return "object" != typeof n9 || null == n9 || n9.__b && n9.__b > 0 ? n9 : w(n9) ? n9.map(V) : d({}, n9);
+    return "object" != typeof n9 || null == n9 || n9.__b && n9.__b > 0 ? n9 : d(n9) ? n9.map(V) : w({}, n9);
   }
-  function q(u17, t9, i10, r11, o11, e8, f14, c13, s12) {
-    var a15, h8, v6, y8, d6, _7, m8, b7 = i10.props, k7 = t9.props, x6 = t9.type;
-    if ("svg" == x6 ? o11 = "http://www.w3.org/2000/svg" : "math" == x6 ? o11 = "http://www.w3.org/1998/Math/MathML" : o11 || (o11 = "http://www.w3.org/1999/xhtml"), null != e8) {
-      for (a15 = 0; a15 < e8.length; a15++) if ((d6 = e8[a15]) && "setAttribute" in d6 == !!x6 && (x6 ? d6.localName == x6 : 3 == d6.nodeType)) {
-        u17 = d6, e8[a15] = null;
+  function q(u17, t9, i9, o11, r11, e8, f14, c13, s12) {
+    var a15, h8, v6, y8, w8, _7, m8, b7 = i9.props || p, k7 = t9.props, x6 = t9.type;
+    if ("svg" == x6 ? r11 = "http://www.w3.org/2000/svg" : "math" == x6 ? r11 = "http://www.w3.org/1998/Math/MathML" : r11 || (r11 = "http://www.w3.org/1999/xhtml"), null != e8) {
+      for (a15 = 0; a15 < e8.length; a15++) if ((w8 = e8[a15]) && "setAttribute" in w8 == !!x6 && (x6 ? w8.localName == x6 : 3 == w8.nodeType)) {
+        u17 = w8, e8[a15] = null;
         break;
       }
     }
     if (null == u17) {
       if (null == x6) return document.createTextNode(k7);
-      u17 = document.createElementNS(o11, x6, k7.is && k7), c13 && (l.__m && l.__m(t9, e8), c13 = false), e8 = null;
+      u17 = document.createElementNS(r11, x6, k7.is && k7), c13 && (l.__m && l.__m(t9, e8), c13 = false), e8 = null;
     }
     if (null == x6) b7 === k7 || c13 && u17.data == k7 || (u17.data = k7);
     else {
-      if (e8 = e8 && n.call(u17.childNodes), b7 = i10.props || p, !c13 && null != e8) for (b7 = {}, a15 = 0; a15 < u17.attributes.length; a15++) b7[(d6 = u17.attributes[a15]).name] = d6.value;
-      for (a15 in b7) if (d6 = b7[a15], "children" == a15) ;
-      else if ("dangerouslySetInnerHTML" == a15) v6 = d6;
+      if (e8 = e8 && n.call(u17.childNodes), !c13 && null != e8) for (b7 = {}, a15 = 0; a15 < u17.attributes.length; a15++) b7[(w8 = u17.attributes[a15]).name] = w8.value;
+      for (a15 in b7) if (w8 = b7[a15], "children" == a15) ;
+      else if ("dangerouslySetInnerHTML" == a15) v6 = w8;
       else if (!(a15 in k7)) {
         if ("value" == a15 && "defaultValue" in k7 || "checked" == a15 && "defaultChecked" in k7) continue;
-        j(u17, a15, null, d6, o11);
+        j(u17, a15, null, w8, r11);
       }
-      for (a15 in k7) d6 = k7[a15], "children" == a15 ? y8 = d6 : "dangerouslySetInnerHTML" == a15 ? h8 = d6 : "value" == a15 ? _7 = d6 : "checked" == a15 ? m8 = d6 : c13 && "function" != typeof d6 || b7[a15] === d6 || j(u17, a15, d6, b7[a15], o11);
+      for (a15 in k7) w8 = k7[a15], "children" == a15 ? y8 = w8 : "dangerouslySetInnerHTML" == a15 ? h8 = w8 : "value" == a15 ? _7 = w8 : "checked" == a15 ? m8 = w8 : c13 && "function" != typeof w8 || b7[a15] === w8 || j(u17, a15, w8, b7[a15], r11);
       if (h8) c13 || v6 && (h8.__html == v6.__html || h8.__html == u17.innerHTML) || (u17.innerHTML = h8.__html), t9.__k = [];
-      else if (v6 && (u17.innerHTML = ""), I("template" == t9.type ? u17.content : u17, w(y8) ? y8 : [y8], t9, i10, r11, "foreignObject" == x6 ? "http://www.w3.org/1999/xhtml" : o11, e8, f14, e8 ? e8[0] : i10.__k && S(i10, 0), c13, s12), null != e8) for (a15 = e8.length; a15--; ) g(e8[a15]);
-      c13 || (a15 = "value", "progress" == x6 && null == _7 ? u17.removeAttribute("value") : null != _7 && (_7 !== u17[a15] || "progress" == x6 && !_7 || "option" == x6 && _7 != b7[a15]) && j(u17, a15, _7, b7[a15], o11), a15 = "checked", null != m8 && m8 != u17[a15] && j(u17, a15, m8, b7[a15], o11));
+      else if (v6 && (u17.innerHTML = ""), I("template" == t9.type ? u17.content : u17, d(y8) ? y8 : [y8], t9, i9, o11, "foreignObject" == x6 ? "http://www.w3.org/1999/xhtml" : r11, e8, f14, e8 ? e8[0] : i9.__k && S(i9, 0), c13, s12), null != e8) for (a15 = e8.length; a15--; ) g(e8[a15]);
+      c13 || (a15 = "value", "progress" == x6 && null == _7 ? u17.removeAttribute("value") : null != _7 && (_7 !== u17[a15] || "progress" == x6 && !_7 || "option" == x6 && _7 != b7[a15]) && j(u17, a15, _7, b7[a15], r11), a15 = "checked", null != m8 && m8 != u17[a15] && j(u17, a15, m8, b7[a15], r11));
     }
     return u17;
   }
   function B(n9, u17, t9) {
     try {
       if ("function" == typeof n9) {
-        var i10 = "function" == typeof n9.__u;
-        i10 && n9.__u(), i10 && null == u17 || (n9.__u = n9(u17));
+        var i9 = "function" == typeof n9.__u;
+        i9 && n9.__u(), i9 && null == u17 || (n9.__u = n9(u17));
       } else n9.current = u17;
     } catch (n10) {
       l.__e(n10, t9);
     }
   }
   function D(n9, u17, t9) {
-    var i10, r11;
-    if (l.unmount && l.unmount(n9), (i10 = n9.ref) && (i10.current && i10.current != n9.__e || B(i10, null, u17)), null != (i10 = n9.__c)) {
-      if (i10.componentWillUnmount) try {
-        i10.componentWillUnmount();
+    var i9, o11;
+    if (l.unmount && l.unmount(n9), (i9 = n9.ref) && (i9.current && i9.current != n9.__e || B(i9, null, u17)), null != (i9 = n9.__c)) {
+      if (i9.componentWillUnmount) try {
+        i9.componentWillUnmount();
       } catch (n10) {
         l.__e(n10, u17);
       }
-      i10.base = i10.__P = null;
+      i9.base = i9.__P = null;
     }
-    if (i10 = n9.__k) for (r11 = 0; r11 < i10.length; r11++) i10[r11] && D(i10[r11], u17, t9 || "function" != typeof n9.type);
+    if (i9 = n9.__k) for (o11 = 0; o11 < i9.length; o11++) i9[o11] && D(i9[o11], u17, t9 || "function" != typeof n9.type);
     t9 || g(n9.__e), n9.__c = n9.__ = n9.__e = void 0;
   }
   function E(n9, l8, u17) {
     return this.constructor(n9, u17);
   }
-  function G(u17, t9, i10) {
-    var r11, o11, e8, f14;
-    t9 == document && (t9 = document.documentElement), l.__ && l.__(u17, t9), o11 = (r11 = "function" == typeof i10) ? null : i10 && i10.__k || t9.__k, e8 = [], f14 = [], O(t9, u17 = (!r11 && i10 || t9).__k = _(k, null, [u17]), o11 || p, p, t9.namespaceURI, !r11 && i10 ? [i10] : o11 ? null : t9.firstChild ? n.call(t9.childNodes) : null, e8, !r11 && i10 ? i10 : o11 ? o11.__e : t9.firstChild, r11, f14), N(e8, u17, f14);
+  function G(u17, t9, i9) {
+    var o11, r11, e8, f14;
+    t9 == document && (t9 = document.documentElement), l.__ && l.__(u17, t9), r11 = (o11 = "function" == typeof i9) ? null : i9 && i9.__k || t9.__k, e8 = [], f14 = [], O(t9, u17 = (!o11 && i9 || t9).__k = _(k, null, [u17]), r11 || p, p, t9.namespaceURI, !o11 && i9 ? [i9] : r11 ? null : t9.firstChild ? n.call(t9.childNodes) : null, e8, !o11 && i9 ? i9 : r11 ? r11.__e : t9.firstChild, o11, f14), N(e8, u17, f14);
   }
   function J(n9, l8) {
     G(n9, l8, J);
   }
   function K(l8, u17, t9) {
-    var i10, r11, o11, e8, f14 = d({}, l8.props);
-    for (o11 in l8.type && l8.type.defaultProps && (e8 = l8.type.defaultProps), u17) "key" == o11 ? i10 = u17[o11] : "ref" == o11 ? r11 = u17[o11] : f14[o11] = void 0 === u17[o11] && null != e8 ? e8[o11] : u17[o11];
-    return arguments.length > 2 && (f14.children = arguments.length > 3 ? n.call(arguments, 2) : t9), m(l8.type, f14, i10 || l8.key, r11 || l8.ref, null);
+    var i9, o11, r11, e8, f14 = w({}, l8.props);
+    for (r11 in l8.type && l8.type.defaultProps && (e8 = l8.type.defaultProps), u17) "key" == r11 ? i9 = u17[r11] : "ref" == r11 ? o11 = u17[r11] : f14[r11] = void 0 === u17[r11] && null != e8 ? e8[r11] : u17[r11];
+    return arguments.length > 2 && (f14.children = arguments.length > 3 ? n.call(arguments, 2) : t9), m(l8.type, f14, i9 || l8.key, o11 || l8.ref, null);
   }
   function Q(n9) {
     function l8(n10) {
@@ -325,28 +325,28 @@ var stonehamOverrideCalculator = (() => {
       return n10.children(l9);
     }).contextType = l8, l8;
   }
-  var n, l, u, t, i, r, o, e, f, c, s, a, h, p, v, y, w;
+  var n, l, u, t, i, o, r, e, f, c, s, a, h, p, v, y, d;
   var init_preact_module = __esm({
     "node_modules/preact/dist/preact.module.js"() {
       p = {};
       v = [];
       y = /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i;
-      w = Array.isArray;
+      d = Array.isArray;
       n = v.slice, l = { __e: function(n9, l8, u17, t9) {
-        for (var i10, r11, o11; l8 = l8.__; ) if ((i10 = l8.__c) && !i10.__) try {
-          if ((r11 = i10.constructor) && null != r11.getDerivedStateFromError && (i10.setState(r11.getDerivedStateFromError(n9)), o11 = i10.__d), null != i10.componentDidCatch && (i10.componentDidCatch(n9, t9 || {}), o11 = i10.__d), o11) return i10.__E = i10;
+        for (var i9, o11, r11; l8 = l8.__; ) if ((i9 = l8.__c) && !i9.__) try {
+          if ((o11 = i9.constructor) && null != o11.getDerivedStateFromError && (i9.setState(o11.getDerivedStateFromError(n9)), r11 = i9.__d), null != i9.componentDidCatch && (i9.componentDidCatch(n9, t9 || {}), r11 = i9.__d), r11) return i9.__E = i9;
         } catch (l9) {
           n9 = l9;
         }
         throw n9;
       } }, u = 0, t = function(n9) {
-        return null != n9 && null == n9.constructor;
+        return null != n9 && void 0 === n9.constructor;
       }, x.prototype.setState = function(n9, l8) {
         var u17;
-        u17 = null != this.__s && this.__s != this.state ? this.__s : this.__s = d({}, this.state), "function" == typeof n9 && (n9 = n9(d({}, u17), this.props)), n9 && d(u17, n9), null != n9 && this.__v && (l8 && this._sb.push(l8), M(this));
+        u17 = null != this.__s && this.__s != this.state ? this.__s : this.__s = w({}, this.state), "function" == typeof n9 && (n9 = n9(w({}, u17), this.props)), n9 && w(u17, n9), null != n9 && this.__v && (l8 && this._sb.push(l8), M(this));
       }, x.prototype.forceUpdate = function(n9) {
         this.__v && (this.__e = true, n9 && this.__h.push(n9), M(this));
-      }, x.prototype.render = k, i = [], o = "function" == typeof Promise ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout, e = function(n9, l8) {
+      }, x.prototype.render = k, i = [], r = "function" == typeof Promise ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout, e = function(n9, l8) {
         return n9.__v.__b - l8.__v.__b;
       }, $.__r = 0, f = /(PointerCapture)$|Capture$/i, c = 0, s = F(false), a = F(true), h = 0;
     }
@@ -361,9 +361,9 @@ var stonehamOverrideCalculator = (() => {
   function d2(n9) {
     return o2 = 1, h2(D2, n9);
   }
-  function h2(n9, u17, i10) {
+  function h2(n9, u17, i9) {
     var o11 = p2(t2++, 2);
-    if (o11.t = n9, !o11.__c && (o11.__ = [i10 ? i10(u17) : D2(void 0, u17), function(n10) {
+    if (o11.t = n9, !o11.__c && (o11.__ = [i9 ? i9(u17) : D2(void 0, u17), function(n10) {
       var t9 = o11.__N ? o11.__N[0] : o11.__[0], r11 = o11.t(t9, n10);
       t9 !== r11 && (o11.__N = [r11, o11.__[1]], o11.__c.setState({}));
     }], o11.__c = r2, !r2.__f)) {
@@ -375,13 +375,13 @@ var stonehamOverrideCalculator = (() => {
         if (u18.every(function(n11) {
           return !n11.__N;
         })) return !c13 || c13.call(this, n10, t9, r11);
-        var i11 = o11.__c.props !== n10;
+        var i10 = o11.__c.props !== n10;
         return u18.forEach(function(n11) {
           if (n11.__N) {
             var t10 = n11.__[0];
-            n11.__ = n11.__N, n11.__N = void 0, t10 !== n11.__[0] && (i11 = true);
+            n11.__ = n11.__N, n11.__N = void 0, t10 !== n11.__[0] && (i10 = true);
           }
-        }), c13 && c13.call(this, n10, t9, r11) || i11;
+        }), c13 && c13.call(this, n10, t9, r11) || i10;
       };
       r2.__f = true;
       var c13 = r2.shouldComponentUpdate, e8 = r2.componentWillUpdate;
@@ -396,12 +396,12 @@ var stonehamOverrideCalculator = (() => {
     return o11.__N || o11.__;
   }
   function y2(n9, u17) {
-    var i10 = p2(t2++, 3);
-    !c2.__s && C2(i10.__H, u17) && (i10.__ = n9, i10.u = u17, r2.__H.__h.push(i10));
+    var i9 = p2(t2++, 3);
+    !c2.__s && C2(i9.__H, u17) && (i9.__ = n9, i9.u = u17, r2.__H.__h.push(i9));
   }
   function _2(n9, u17) {
-    var i10 = p2(t2++, 4);
-    !c2.__s && C2(i10.__H, u17) && (i10.__ = n9, i10.u = u17, r2.__h.push(i10));
+    var i9 = p2(t2++, 4);
+    !c2.__s && C2(i9.__H, u17) && (i9.__ = n9, i9.u = u17, r2.__h.push(i9));
   }
   function A2(n9) {
     return o2 = 5, T2(function() {
@@ -431,26 +431,26 @@ var stonehamOverrideCalculator = (() => {
     }, t9);
   }
   function x2(n9) {
-    var u17 = r2.context[n9.__c], i10 = p2(t2++, 9);
-    return i10.c = n9, u17 ? (null == i10.__ && (i10.__ = true, u17.sub(r2)), u17.props.value) : n9.__;
+    var u17 = r2.context[n9.__c], i9 = p2(t2++, 9);
+    return i9.c = n9, u17 ? (null == i9.__ && (i9.__ = true, u17.sub(r2)), u17.props.value) : n9.__;
   }
   function P2(n9, t9) {
     c2.useDebugValue && c2.useDebugValue(t9 ? t9(n9) : n9);
   }
   function b2(n9) {
-    var u17 = p2(t2++, 10), i10 = d2();
+    var u17 = p2(t2++, 10), i9 = d2();
     return u17.__ = n9, r2.componentDidCatch || (r2.componentDidCatch = function(n10, t9) {
-      u17.__ && u17.__(n10, t9), i10[1](n10);
-    }), [i10[0], function() {
-      i10[1](void 0);
+      u17.__ && u17.__(n10, t9), i9[1](n10);
+    }), [i9[0], function() {
+      i9[1](void 0);
     }];
   }
   function g2() {
     var n9 = p2(t2++, 11);
     if (!n9.__) {
       for (var u17 = r2.__v; null !== u17 && !u17.__m && null !== u17.__; ) u17 = u17.__;
-      var i10 = u17.__m || (u17.__m = [0, 0]);
-      n9.__ = "P" + i10[0] + "-" + i10[1]++;
+      var i9 = u17.__m || (u17.__m = [0, 0]);
+      n9.__ = "P" + i9[0] + "-" + i9[1]++;
     }
     return n9.__;
   }
@@ -502,10 +502,10 @@ var stonehamOverrideCalculator = (() => {
         n9 && t9.__k && t9.__k.__m && (n9.__m = t9.__k.__m), s2 && s2(n9, t9);
       }, c2.__r = function(n9) {
         a2 && a2(n9), t2 = 0;
-        var i10 = (r2 = n9.__c).__H;
-        i10 && (u2 === r2 ? (i10.__h = [], r2.__h = [], i10.__.forEach(function(n10) {
+        var i9 = (r2 = n9.__c).__H;
+        i9 && (u2 === r2 ? (i9.__h = [], r2.__h = [], i9.__.forEach(function(n10) {
           n10.__N && (n10.__ = n10.__N), n10.u = n10.__N = void 0;
-        })) : (i10.__h.forEach(z2), i10.__h.forEach(B2), i10.__h = [], t2 = 0)), u2 = r2;
+        })) : (i9.__h.forEach(z2), i9.__h.forEach(B2), i9.__h = [], t2 = 0)), u2 = r2;
       }, c2.diffed = function(n9) {
         v2 && v2(n9);
         var t9 = n9.__c;
@@ -556,19 +556,19 @@ var stonehamOverrideCalculator = (() => {
     createFactory: () => dn,
     createPortal: () => $2,
     createRef: () => b,
-    default: () => Rn,
+    default: () => xn,
     findDOMNode: () => Sn,
     flushSync: () => En,
     forwardRef: () => D3,
     hydrate: () => tn,
-    isElement: () => xn,
+    isElement: () => Rn,
     isFragment: () => pn,
     isMemo: () => yn,
     isValidElement: () => mn,
     lazy: () => z3,
     memo: () => M2,
     render: () => nn,
-    startTransition: () => R,
+    startTransition: () => x3,
     unmountComponentAtNode: () => bn,
     unstable_batchedUpdates: () => gn,
     useCallback: () => q2,
@@ -601,14 +601,14 @@ var stonehamOverrideCalculator = (() => {
   function C3(n9, t9) {
     var e8 = t9(), r11 = d2({ t: { __: e8, u: t9 } }), u17 = r11[0].t, o11 = r11[1];
     return _2(function() {
-      u17.__ = e8, u17.u = t9, x3(u17) && o11({ t: u17 });
+      u17.__ = e8, u17.u = t9, R(u17) && o11({ t: u17 });
     }, [n9, e8, t9]), y2(function() {
-      return x3(u17) && o11({ t: u17 }), n9(function() {
-        x3(u17) && o11({ t: u17 });
+      return R(u17) && o11({ t: u17 }), n9(function() {
+        R(u17) && o11({ t: u17 });
       });
     }, [n9]), e8;
   }
-  function x3(n9) {
+  function R(n9) {
     var t9, e8, r11 = n9.u, u17 = n9.__;
     try {
       var o11 = r11();
@@ -617,14 +617,14 @@ var stonehamOverrideCalculator = (() => {
       return true;
     }
   }
-  function R(n9) {
+  function x3(n9) {
     n9();
   }
   function w3(n9) {
     return n9;
   }
   function k3() {
-    return [false, R];
+    return [false, x3];
   }
   function N2(n9, t9) {
     this.props = n9, this.context = t9;
@@ -662,21 +662,22 @@ var stonehamOverrideCalculator = (() => {
     this.__u = 0, this.o = null, this.__b = null;
   }
   function j3(n9) {
+    if (!n9.__) return null;
     var t9 = n9.__.__c;
     return t9 && t9.__a && t9.__a(n9);
   }
   function z3(n9) {
-    var e8, r11, u17;
-    function o11(o12) {
+    var e8, r11, u17, o11 = null;
+    function i9(i10) {
       if (e8 || (e8 = n9()).then(function(n10) {
-        r11 = n10.default || n10;
+        n10 && (o11 = n10.default || n10), u17 = true;
       }, function(n10) {
-        u17 = n10;
-      }), u17) throw u17;
-      if (!r11) throw e8;
-      return _(r11, o12);
+        r11 = n10, u17 = true;
+      }), r11) throw r11;
+      if (!u17) throw e8;
+      return o11 ? _(o11, i10) : null;
     }
-    return o11.displayName = "Lazy", o11.__f = true, o11;
+    return i9.displayName = "Lazy", i9.__f = true, i9;
   }
   function B3() {
     this.i = null, this.l = null;
@@ -694,7 +695,7 @@ var stonehamOverrideCalculator = (() => {
       for (var u17 = e8.__v; null !== u17 && !u17.__m && null !== u17.__; ) u17 = u17.__;
       e8.h = r11, e8.v = { nodeType: 1, parentNode: r11, childNodes: [], __k: { __m: u17.__m }, contains: function() {
         return true;
-      }, insertBefore: function(n10, t9) {
+      }, namespaceURI: r11.namespaceURI, insertBefore: function(n10, t9) {
         this.childNodes.push(n10), e8.h.insertBefore(n10, t9);
       }, removeChild: function(n10) {
         this.childNodes.splice(this.childNodes.indexOf(n10) >>> 1, 1), e8.h.removeChild(n10);
@@ -741,7 +742,7 @@ var stonehamOverrideCalculator = (() => {
   function Sn(n9) {
     return n9 && (n9.base || 1 === n9.nodeType && n9) || null;
   }
-  var I2, T3, A3, L2, O2, F3, U, H2, q3, G2, J2, K2, Q2, X, en, ln, cn, fn, an, sn, hn, vn, gn, En, Cn, xn, Rn;
+  var I2, T3, A3, L2, O2, U, F3, H2, q3, G2, J2, K2, Q2, X, en, ln, cn, fn, an, sn, hn, vn, gn, En, Cn, Rn, xn;
   var init_compat_module = __esm({
     "node_modules/preact/compat/dist/compat.module.js"() {
       init_preact_module();
@@ -767,35 +768,37 @@ var stonehamOverrideCalculator = (() => {
         if (1 !== t9.length) throw "Children.only";
         return t9[0];
       }, toArray: H };
-      F3 = l.__e;
+      U = l.__e;
       l.__e = function(n9, t9, e8, r11) {
         if (n9.then) {
           for (var u17, o11 = t9; o11 = o11.__; ) if ((u17 = o11.__c) && u17.__c) return null == t9.__e && (t9.__e = e8.__e, t9.__k = e8.__k), u17.__c(n9, t9);
         }
-        F3(n9, t9, e8, r11);
+        U(n9, t9, e8, r11);
       };
-      U = l.unmount;
+      F3 = l.unmount;
       l.unmount = function(n9) {
         var t9 = n9.__c;
-        t9 && t9.__R && t9.__R(), t9 && 32 & n9.__u && (n9.type = null), U && U(n9);
+        t9 && (t9.__z = true), t9 && t9.__R && t9.__R(), t9 && 32 & n9.__u && (n9.type = null), F3 && F3(n9);
       }, (P3.prototype = new x()).__c = function(n9, t9) {
         var e8 = t9.__c, r11 = this;
         null == r11.o && (r11.o = []), r11.o.push(e8);
-        var u17 = j3(r11.__v), o11 = false, i10 = function() {
-          o11 || (o11 = true, e8.__R = null, u17 ? u17(l8) : l8());
+        var u17 = j3(r11.__v), o11 = false, i9 = function() {
+          o11 || r11.__z || (o11 = true, e8.__R = null, u17 ? u17(c13) : c13());
         };
-        e8.__R = i10;
-        var l8 = function() {
+        e8.__R = i9;
+        var l8 = e8.__P;
+        e8.__P = null;
+        var c13 = function() {
           if (!--r11.__u) {
             if (r11.state.__a) {
               var n10 = r11.state.__a;
               r11.__v.__k[0] = W(n10, n10.__c.__P, n10.__c.__O);
             }
             var t10;
-            for (r11.setState({ __a: r11.__b = null }); t10 = r11.o.pop(); ) t10.forceUpdate();
+            for (r11.setState({ __a: r11.__b = null }); t10 = r11.o.pop(); ) t10.__P = l8, t10.forceUpdate();
           }
         };
-        r11.__u++ || 32 & t9.__u || r11.setState({ __a: r11.__b = r11.__v.__k[0] }), n9.then(i10, i10);
+        r11.__u++ || 32 & t9.__u || r11.setState({ __a: r11.__b = r11.__v.__k[0] }), n9.then(i9, i9);
       }, P3.prototype.componentWillUnmount = function() {
         this.o = [];
       }, P3.prototype.render = function(n9, e8) {
@@ -806,8 +809,8 @@ var stonehamOverrideCalculator = (() => {
           }
           this.__b = null;
         }
-        var i10 = e8.__a && _(k, null, n9.fallback);
-        return i10 && (i10.__u &= -33), [_(k, null, e8.__a ? null : n9.children), i10];
+        var i9 = e8.__a && _(k, null, n9.fallback);
+        return i9 && (i9.__u &= -33), [_(k, null, e8.__a ? null : n9.children), i9];
       };
       H2 = function(n9, t9, e8) {
         if (++e8[1] === e8[0] && n9.l.delete(t9), n9.props.revealOrder && ("t" !== n9.props.revealOrder[0] || !n9.l.size)) for (e8 = n9.i; e8; ) {
@@ -862,11 +865,11 @@ var stonehamOverrideCalculator = (() => {
       l.vnode = function(n9) {
         "string" == typeof n9.type && (function(n10) {
           var t9 = n10.props, e8 = n10.type, u17 = {}, o11 = -1 === e8.indexOf("-");
-          for (var i10 in t9) {
-            var l8 = t9[i10];
-            if (!("value" === i10 && "defaultValue" in t9 && null == l8 || Q2 && "children" === i10 && "noscript" === e8 || "class" === i10 || "className" === i10)) {
-              var c13 = i10.toLowerCase();
-              "defaultValue" === i10 && "value" in t9 && null == t9.value ? i10 = "value" : "download" === i10 && true === l8 ? l8 = "" : "translate" === c13 && "no" === l8 ? l8 = false : "o" === c13[0] && "n" === c13[1] ? "ondoubleclick" === c13 ? i10 = "ondblclick" : "onchange" !== c13 || "input" !== e8 && "textarea" !== e8 || X(t9.type) ? "onfocus" === c13 ? i10 = "onfocusin" : "onblur" === c13 ? i10 = "onfocusout" : J2.test(i10) && (i10 = c13) : c13 = i10 = "oninput" : o11 && G2.test(i10) ? i10 = i10.replace(K2, "-$&").toLowerCase() : null === l8 && (l8 = void 0), "oninput" === c13 && u17[i10 = c13] && (i10 = "oninputCapture"), u17[i10] = l8;
+          for (var i9 in t9) {
+            var l8 = t9[i9];
+            if (!("value" === i9 && "defaultValue" in t9 && null == l8 || Q2 && "children" === i9 && "noscript" === e8 || "class" === i9 || "className" === i9)) {
+              var c13 = i9.toLowerCase();
+              "defaultValue" === i9 && "value" in t9 && null == t9.value ? i9 = "value" : "download" === i9 && true === l8 ? l8 = "" : "translate" === c13 && "no" === l8 ? l8 = false : "o" === c13[0] && "n" === c13[1] ? "ondoubleclick" === c13 ? i9 = "ondblclick" : "onchange" !== c13 || "input" !== e8 && "textarea" !== e8 || X(t9.type) ? "onfocus" === c13 ? i9 = "onfocusin" : "onblur" === c13 ? i9 = "onfocusout" : J2.test(i9) && (i9 = c13) : c13 = i9 = "oninput" : o11 && G2.test(i9) ? i9 = i9.replace(K2, "-$&").toLowerCase() : null === l8 && (l8 = void 0), "oninput" === c13 && u17[i9 = c13] && (i9 = "oninputCapture"), u17[i9] = l8;
             }
           }
           "select" == e8 && u17.multiple && Array.isArray(u17.value) && (u17.value = H(t9.children).forEach(function(n11) {
@@ -897,8 +900,8 @@ var stonehamOverrideCalculator = (() => {
         return n9(t9);
       };
       Cn = k;
-      xn = mn;
-      Rn = { useState: d2, useId: g2, useReducer: h2, useEffect: y2, useLayoutEffect: _2, useInsertionEffect: I2, useTransition: k3, useDeferredValue: w3, useSyncExternalStore: C3, startTransition: R, useRef: A2, useImperativeHandle: F2, useMemo: T2, useCallback: q2, useContext: x2, useDebugValue: P2, version: "18.3.1", Children: O2, render: nn, hydrate: tn, unmountComponentAtNode: bn, createPortal: $2, createElement: _, createContext: Q, createFactory: dn, cloneElement: _n, createRef: b, Fragment: k, isValidElement: mn, isElement: xn, isFragment: pn, isMemo: yn, findDOMNode: Sn, Component: x, PureComponent: N2, memo: M2, forwardRef: D3, flushSync: En, unstable_batchedUpdates: gn, StrictMode: Cn, Suspense: P3, SuspenseList: B3, lazy: z3, __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: hn };
+      Rn = mn;
+      xn = { useState: d2, useId: g2, useReducer: h2, useEffect: y2, useLayoutEffect: _2, useInsertionEffect: I2, useTransition: k3, useDeferredValue: w3, useSyncExternalStore: C3, startTransition: x3, useRef: A2, useImperativeHandle: F2, useMemo: T2, useCallback: q2, useContext: x2, useDebugValue: P2, version: "18.3.1", Children: O2, render: nn, hydrate: tn, unmountComponentAtNode: bn, createPortal: $2, createElement: _, createContext: Q, createFactory: dn, cloneElement: _n, createRef: b, Fragment: k, isValidElement: mn, isElement: Rn, isFragment: pn, isMemo: yn, findDOMNode: Sn, Component: x, PureComponent: N2, memo: M2, forwardRef: D3, flushSync: En, unstable_batchedUpdates: gn, StrictMode: Cn, Suspense: P3, SuspenseList: B3, lazy: z3, __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: hn };
     }
   });
 
@@ -990,25 +993,8 @@ var stonehamOverrideCalculator = (() => {
 
   // node_modules/@react-aria/utils/dist/useLayoutEffect.mjs
   init_compat_module();
-  var $f0a04ccd8dbdd83b$export$e5c5a5f917a5871c = typeof document !== "undefined" ? (0, Rn).useLayoutEffect : () => {
+  var $f0a04ccd8dbdd83b$export$e5c5a5f917a5871c = typeof document !== "undefined" ? (0, xn).useLayoutEffect : () => {
   };
-
-  // node_modules/@react-aria/utils/dist/useEffectEvent.mjs
-  init_compat_module();
-  var $8ae05eaa5c114e9c$var$_React_useInsertionEffect;
-  var $8ae05eaa5c114e9c$var$useEarlyEffect = ($8ae05eaa5c114e9c$var$_React_useInsertionEffect = (0, Rn)["useInsertionEffect"]) !== null && $8ae05eaa5c114e9c$var$_React_useInsertionEffect !== void 0 ? $8ae05eaa5c114e9c$var$_React_useInsertionEffect : (0, $f0a04ccd8dbdd83b$export$e5c5a5f917a5871c);
-  function $8ae05eaa5c114e9c$export$7f54fc3180508a52(fn2) {
-    const ref = (0, A2)(null);
-    $8ae05eaa5c114e9c$var$useEarlyEffect(() => {
-      ref.current = fn2;
-    }, [
-      fn2
-    ]);
-    return (0, q2)((...args) => {
-      const f14 = ref.current;
-      return f14 === null || f14 === void 0 ? void 0 : f14(...args);
-    }, []);
-  }
 
   // node_modules/@react-aria/utils/dist/domHelpers.mjs
   var $431fbd86ca7dc216$export$b204af158042fbac = (el) => {
@@ -1062,6 +1048,60 @@ var stonehamOverrideCalculator = (() => {
     return event.target;
   }
 
+  // node_modules/@react-aria/utils/dist/focusWithoutScrolling.mjs
+  function $7215afc6de606d6b$export$de79e2c695e052f3(element) {
+    if ($7215afc6de606d6b$var$supportsPreventScroll()) element.focus({
+      preventScroll: true
+    });
+    else {
+      let scrollableElements = $7215afc6de606d6b$var$getScrollableElements(element);
+      element.focus();
+      $7215afc6de606d6b$var$restoreScrollPosition(scrollableElements);
+    }
+  }
+  var $7215afc6de606d6b$var$supportsPreventScrollCached = null;
+  function $7215afc6de606d6b$var$supportsPreventScroll() {
+    if ($7215afc6de606d6b$var$supportsPreventScrollCached == null) {
+      $7215afc6de606d6b$var$supportsPreventScrollCached = false;
+      try {
+        let focusElem = document.createElement("div");
+        focusElem.focus({
+          get preventScroll() {
+            $7215afc6de606d6b$var$supportsPreventScrollCached = true;
+            return true;
+          }
+        });
+      } catch (e8) {
+      }
+    }
+    return $7215afc6de606d6b$var$supportsPreventScrollCached;
+  }
+  function $7215afc6de606d6b$var$getScrollableElements(element) {
+    let parent = element.parentNode;
+    let scrollableElements = [];
+    let rootScrollingElement = document.scrollingElement || document.documentElement;
+    while (parent instanceof HTMLElement && parent !== rootScrollingElement) {
+      if (parent.offsetHeight < parent.scrollHeight || parent.offsetWidth < parent.scrollWidth) scrollableElements.push({
+        element: parent,
+        scrollTop: parent.scrollTop,
+        scrollLeft: parent.scrollLeft
+      });
+      parent = parent.parentNode;
+    }
+    if (rootScrollingElement instanceof HTMLElement) scrollableElements.push({
+      element: rootScrollingElement,
+      scrollTop: rootScrollingElement.scrollTop,
+      scrollLeft: rootScrollingElement.scrollLeft
+    });
+    return scrollableElements;
+  }
+  function $7215afc6de606d6b$var$restoreScrollPosition(scrollableElements) {
+    for (let { element, scrollTop, scrollLeft } of scrollableElements) {
+      element.scrollTop = scrollTop;
+      element.scrollLeft = scrollLeft;
+    }
+  }
+
   // node_modules/@react-aria/utils/dist/platform.mjs
   function $c87311424ea30a05$var$testUserAgent(re) {
     var _window_navigator_userAgentData;
@@ -1109,6 +1149,37 @@ var stonehamOverrideCalculator = (() => {
   var $c87311424ea30a05$export$b7d78993b74f766d = $c87311424ea30a05$var$cached(function() {
     return $c87311424ea30a05$var$testUserAgent(/Firefox/i);
   });
+
+  // node_modules/@react-aria/utils/dist/openLink.mjs
+  init_compat_module();
+  function $ea8dcbcb9ea1b556$export$95185d699e05d4d7(target, modifiers, setOpening = true) {
+    var _window_event_type, _window_event;
+    let { metaKey, ctrlKey, altKey, shiftKey } = modifiers;
+    if ((0, $c87311424ea30a05$export$b7d78993b74f766d)() && ((_window_event = window.event) === null || _window_event === void 0 ? void 0 : (_window_event_type = _window_event.type) === null || _window_event_type === void 0 ? void 0 : _window_event_type.startsWith("key")) && target.target === "_blank") {
+      if ((0, $c87311424ea30a05$export$9ac100e40613ea10)()) metaKey = true;
+      else ctrlKey = true;
+    }
+    let event = (0, $c87311424ea30a05$export$78551043582a6a98)() && (0, $c87311424ea30a05$export$9ac100e40613ea10)() && !(0, $c87311424ea30a05$export$7bef049ce92e4224)() && true ? new KeyboardEvent("keydown", {
+      keyIdentifier: "Enter",
+      metaKey,
+      ctrlKey,
+      altKey,
+      shiftKey
+    }) : new MouseEvent("click", {
+      metaKey,
+      ctrlKey,
+      altKey,
+      shiftKey,
+      detail: 1,
+      bubbles: true,
+      cancelable: true
+    });
+    $ea8dcbcb9ea1b556$export$95185d699e05d4d7.isOpening = setOpening;
+    (0, $7215afc6de606d6b$export$de79e2c695e052f3)(target);
+    target.dispatchEvent(event);
+    $ea8dcbcb9ea1b556$export$95185d699e05d4d7.isOpening = false;
+  }
+  $ea8dcbcb9ea1b556$export$95185d699e05d4d7.isOpening = false;
 
   // node_modules/@react-aria/utils/dist/useGlobalListeners.mjs
   init_compat_module();
@@ -1192,9 +1263,6 @@ var stonehamOverrideCalculator = (() => {
         }
       };
     }, []);
-    let dispatchBlur = (0, $8ae05eaa5c114e9c$export$7f54fc3180508a52)((e8) => {
-      onBlur === null || onBlur === void 0 ? void 0 : onBlur(e8);
-    });
     return (0, q2)((e8) => {
       if (e8.target instanceof HTMLButtonElement || e8.target instanceof HTMLInputElement || e8.target instanceof HTMLTextAreaElement || e8.target instanceof HTMLSelectElement) {
         stateRef.current.isFocused = true;
@@ -1203,7 +1271,7 @@ var stonehamOverrideCalculator = (() => {
           stateRef.current.isFocused = false;
           if (target.disabled) {
             let event = $8a9cb279dc87e130$export$525bc4921d56d4a(e9);
-            dispatchBlur(event);
+            onBlur === null || onBlur === void 0 ? void 0 : onBlur(event);
           }
           if (stateRef.current.observer) {
             stateRef.current.observer.disconnect();
@@ -1235,7 +1303,7 @@ var stonehamOverrideCalculator = (() => {
         });
       }
     }, [
-      dispatchBlur
+      onBlur
     ]);
   }
   var $8a9cb279dc87e130$export$fda7da73ab5d4c48 = false;
@@ -1243,7 +1311,8 @@ var stonehamOverrideCalculator = (() => {
   // node_modules/@react-aria/interactions/dist/useFocusVisible.mjs
   init_compat_module();
   var $507fabe10e71c6fb$var$currentModality = null;
-  var $507fabe10e71c6fb$var$changeHandlers = /* @__PURE__ */ new Set();
+  var $507fabe10e71c6fb$var$currentPointerType = "keyboard";
+  var $507fabe10e71c6fb$export$901e90a13c50a14e = /* @__PURE__ */ new Set();
   var $507fabe10e71c6fb$export$d90243b58daecda7 = /* @__PURE__ */ new Map();
   var $507fabe10e71c6fb$var$hasEventBeforeFocus = false;
   var $507fabe10e71c6fb$var$hasBlurredWindowRecently = false;
@@ -1252,35 +1321,39 @@ var stonehamOverrideCalculator = (() => {
     Escape: true
   };
   function $507fabe10e71c6fb$var$triggerChangeHandlers(modality, e8) {
-    for (let handler of $507fabe10e71c6fb$var$changeHandlers) handler(modality, e8);
+    for (let handler of $507fabe10e71c6fb$export$901e90a13c50a14e) handler(modality, e8);
   }
   function $507fabe10e71c6fb$var$isValidKey(e8) {
     return !(e8.metaKey || !(0, $c87311424ea30a05$export$9ac100e40613ea10)() && e8.altKey || e8.ctrlKey || e8.key === "Control" || e8.key === "Shift" || e8.key === "Meta");
   }
   function $507fabe10e71c6fb$var$handleKeyboardEvent(e8) {
     $507fabe10e71c6fb$var$hasEventBeforeFocus = true;
-    if ($507fabe10e71c6fb$var$isValidKey(e8)) {
+    if (!(0, $ea8dcbcb9ea1b556$export$95185d699e05d4d7).isOpening && $507fabe10e71c6fb$var$isValidKey(e8)) {
       $507fabe10e71c6fb$var$currentModality = "keyboard";
+      $507fabe10e71c6fb$var$currentPointerType = "keyboard";
       $507fabe10e71c6fb$var$triggerChangeHandlers("keyboard", e8);
     }
   }
   function $507fabe10e71c6fb$var$handlePointerEvent(e8) {
     $507fabe10e71c6fb$var$currentModality = "pointer";
+    $507fabe10e71c6fb$var$currentPointerType = "pointerType" in e8 ? e8.pointerType : "mouse";
     if (e8.type === "mousedown" || e8.type === "pointerdown") {
       $507fabe10e71c6fb$var$hasEventBeforeFocus = true;
       $507fabe10e71c6fb$var$triggerChangeHandlers("pointer", e8);
     }
   }
   function $507fabe10e71c6fb$var$handleClickEvent(e8) {
-    if ((0, $6a7db85432448f7f$export$60278871457622de)(e8)) {
+    if (!(0, $ea8dcbcb9ea1b556$export$95185d699e05d4d7).isOpening && (0, $6a7db85432448f7f$export$60278871457622de)(e8)) {
       $507fabe10e71c6fb$var$hasEventBeforeFocus = true;
       $507fabe10e71c6fb$var$currentModality = "virtual";
+      $507fabe10e71c6fb$var$currentPointerType = "virtual";
     }
   }
   function $507fabe10e71c6fb$var$handleFocusEvent(e8) {
     if (e8.target === window || e8.target === document || (0, $8a9cb279dc87e130$export$fda7da73ab5d4c48) || !e8.isTrusted) return;
     if (!$507fabe10e71c6fb$var$hasEventBeforeFocus && !$507fabe10e71c6fb$var$hasBlurredWindowRecently) {
       $507fabe10e71c6fb$var$currentModality = "virtual";
+      $507fabe10e71c6fb$var$currentPointerType = "virtual";
       $507fabe10e71c6fb$var$triggerChangeHandlers("virtual", e8);
     }
     $507fabe10e71c6fb$var$hasEventBeforeFocus = false;
@@ -1384,13 +1457,14 @@ var stonehamOverrideCalculator = (() => {
   function $507fabe10e71c6fb$export$ec71b4b83ac08ec3(fn2, deps, opts) {
     $507fabe10e71c6fb$var$setupGlobalFocusEvents();
     (0, y2)(() => {
+      if ((opts === null || opts === void 0 ? void 0 : opts.enabled) === false) return;
       let handler = (modality, e8) => {
         if (!$507fabe10e71c6fb$var$isKeyboardFocusEvent(!!(opts === null || opts === void 0 ? void 0 : opts.isTextInput), modality, e8)) return;
         fn2($507fabe10e71c6fb$export$b9b3dfddab17db27());
       };
-      $507fabe10e71c6fb$var$changeHandlers.add(handler);
+      $507fabe10e71c6fb$export$901e90a13c50a14e.add(handler);
       return () => {
-        $507fabe10e71c6fb$var$changeHandlers.delete(handler);
+        $507fabe10e71c6fb$export$901e90a13c50a14e.delete(handler);
       };
     }, deps);
   }
@@ -1440,8 +1514,8 @@ var stonehamOverrideCalculator = (() => {
     });
     let { addGlobalListener, removeAllGlobalListeners } = (0, $03deb23ff14920c4$export$4eaf04e54aa8eed6)();
     let onBlur = (0, q2)((e8) => {
-      if (!e8.currentTarget.contains(e8.target)) return;
-      if (state.current.isFocusWithin && !e8.currentTarget.contains(e8.relatedTarget)) {
+      if (!(0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, e8.target)) return;
+      if (state.current.isFocusWithin && !(0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, e8.relatedTarget)) {
         state.current.isFocusWithin = false;
         removeAllGlobalListeners();
         if (onBlurWithin) onBlurWithin(e8);
@@ -1455,7 +1529,7 @@ var stonehamOverrideCalculator = (() => {
     ]);
     let onSyntheticFocus = (0, $8a9cb279dc87e130$export$715c682d09d639cc)(onBlur);
     let onFocus = (0, q2)((e8) => {
-      if (!e8.currentTarget.contains(e8.target)) return;
+      if (!(0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, e8.target)) return;
       const ownerDocument = (0, $431fbd86ca7dc216$export$b204af158042fbac)(e8.target);
       const activeElement2 = (0, $d4ee10de306f2510$export$cd4e5573fbe2b576)(ownerDocument);
       if (!state.current.isFocusWithin && activeElement2 === (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8.nativeEvent)) {
@@ -1540,7 +1614,7 @@ var stonehamOverrideCalculator = (() => {
     let { hoverProps, triggerHoverEnd } = (0, T2)(() => {
       let triggerHoverStart = (event, pointerType) => {
         state.pointerType = pointerType;
-        if (isDisabled || pointerType === "touch" || state.isHovered || !event.currentTarget.contains(event.target)) return;
+        if (isDisabled || pointerType === "touch" || state.isHovered || !(0, $d4ee10de306f2510$export$4282f70798064fe0)(event.currentTarget, event.target)) return;
         state.isHovered = true;
         let target = event.currentTarget;
         state.target = target;
@@ -1579,7 +1653,7 @@ var stonehamOverrideCalculator = (() => {
           triggerHoverStart(e8, e8.pointerType);
         };
         hoverProps2.onPointerLeave = (e8) => {
-          if (!isDisabled && e8.currentTarget.contains(e8.target)) triggerHoverEnd2(e8, e8.pointerType);
+          if (!isDisabled && (0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, e8.target)) triggerHoverEnd2(e8, e8.pointerType);
         };
       } else if (false) {
         hoverProps2.onTouchStart = () => {
@@ -1590,7 +1664,7 @@ var stonehamOverrideCalculator = (() => {
           state.ignoreEmulatedMouseEvents = false;
         };
         hoverProps2.onMouseLeave = (e8) => {
-          if (!isDisabled && e8.currentTarget.contains(e8.target)) triggerHoverEnd2(e8, "mouse");
+          if (!isDisabled && (0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, e8.target)) triggerHoverEnd2(e8, "mouse");
         };
       }
       return {
@@ -1632,6 +1706,7 @@ var stonehamOverrideCalculator = (() => {
     let updateState = (0, q2)(() => setFocusVisible(state.current.isFocused && state.current.isFocusVisible), []);
     let onFocusChange = (0, q2)((isFocused2) => {
       state.current.isFocused = isFocused2;
+      state.current.isFocusVisible = (0, $507fabe10e71c6fb$export$b9b3dfddab17db27)();
       setFocused(isFocused2);
       updateState();
     }, [
@@ -1640,7 +1715,11 @@ var stonehamOverrideCalculator = (() => {
     (0, $507fabe10e71c6fb$export$ec71b4b83ac08ec3)((isFocusVisible) => {
       state.current.isFocusVisible = isFocusVisible;
       updateState();
-    }, [], {
+    }, [
+      isTextInput,
+      isFocused
+    ], {
+      enabled: isFocused,
       isTextInput
     });
     let { focusProps } = (0, $a1ea59d68270f0dd$export$f8168d8dd8fd66e6)({
@@ -1727,8 +1806,8 @@ var stonehamOverrideCalculator = (() => {
 
   // node_modules/@headlessui/react/dist/utils/disposables.js
   function o4() {
-    let s12 = [], r11 = { addEventListener(e8, t9, n9, i10) {
-      return e8.addEventListener(t9, n9, i10), r11.add(() => e8.removeEventListener(t9, n9, i10));
+    let s12 = [], r11 = { addEventListener(e8, t9, n9, i9) {
+      return e8.addEventListener(t9, n9, i9), r11.add(() => e8.removeEventListener(t9, n9, i9));
     }, requestAnimationFrame(...e8) {
       let t9 = requestAnimationFrame(...e8);
       return r11.add(() => cancelAnimationFrame(t9));
@@ -1745,9 +1824,9 @@ var stonehamOverrideCalculator = (() => {
         t9.current = false;
       });
     }, style(e8, t9, n9) {
-      let i10 = e8.style.getPropertyValue(t9);
+      let i9 = e8.style.getPropertyValue(t9);
       return Object.assign(e8.style, { [t9]: n9 }), this.add(() => {
-        Object.assign(e8.style, { [t9]: i10 });
+        Object.assign(e8.style, { [t9]: i9 });
       });
     }, group(e8) {
       let t9 = o4();
@@ -1792,7 +1871,7 @@ var stonehamOverrideCalculator = (() => {
   // node_modules/@headlessui/react/dist/hooks/use-event.js
   var o5 = function(t9) {
     let e8 = s4(t9);
-    return Rn.useCallback((...r11) => e8.current(...r11), [e8]);
+    return xn.useCallback((...r11) => e8.current(...r11), [e8]);
   };
 
   // node_modules/@headlessui/react/dist/hooks/use-active-press.js
@@ -1810,13 +1889,13 @@ var stonehamOverrideCalculator = (() => {
       if (r11.dispose(), t9.current === null) {
         t9.current = s12.currentTarget, l8(true);
         {
-          let i10 = l3(s12.currentTarget);
-          r11.addEventListener(i10, "pointerup", o11, false), r11.addEventListener(i10, "pointermove", (c13) => {
+          let i9 = l3(s12.currentTarget);
+          r11.addEventListener(i9, "pointerup", o11, false), r11.addEventListener(i9, "pointermove", (c13) => {
             if (t9.current) {
               let p10 = E3(c13);
               l8(P4(p10, t9.current.getBoundingClientRect()));
             }
-          }, false), r11.addEventListener(i10, "pointercancel", o11, false);
+          }, false), r11.addEventListener(i9, "pointercancel", o11, false);
         }
       }
     });
@@ -1861,27 +1940,27 @@ var stonehamOverrideCalculator = (() => {
     let n9 = $3();
     return q2((r11) => U2(__spreadValues({ mergeRefs: n9 }, r11)), [n9]);
   }
-  function U2({ ourProps: n9, theirProps: r11, slot: e8, defaultTag: a15, features: s12, visible: t9 = true, name: l8, mergeRefs: i10 }) {
-    i10 = i10 != null ? i10 : I3;
+  function U2({ ourProps: n9, theirProps: r11, slot: e8, defaultTag: a15, features: s12, visible: t9 = true, name: l8, mergeRefs: i9 }) {
+    i9 = i9 != null ? i9 : I3;
     let o11 = P5(r11, n9);
-    if (t9) return F4(o11, e8, a15, l8, i10);
+    if (t9) return F4(o11, e8, a15, l8, i9);
     let y8 = s12 != null ? s12 : 0;
     if (y8 & 2) {
       let _a = o11, { static: f14 = false } = _a, u17 = __objRest(_a, ["static"]);
-      if (f14) return F4(u17, e8, a15, l8, i10);
+      if (f14) return F4(u17, e8, a15, l8, i9);
     }
     if (y8 & 1) {
       let _b = o11, { unmount: f14 = true } = _b, u17 = __objRest(_b, ["unmount"]);
       return u3(f14 ? 0 : 1, { [0]() {
         return null;
       }, [1]() {
-        return F4(__spreadProps(__spreadValues({}, u17), { hidden: true, style: { display: "none" } }), e8, a15, l8, i10);
+        return F4(__spreadProps(__spreadValues({}, u17), { hidden: true, style: { display: "none" } }), e8, a15, l8, i9);
       } });
     }
-    return F4(o11, e8, a15, l8, i10);
+    return F4(o11, e8, a15, l8, i9);
   }
   function F4(n9, r11 = {}, e8, a15, s12) {
-    let _a = h3(n9, ["unmount", "static"]), { as: t9 = e8, children: l8, refName: i10 = "ref" } = _a, o11 = __objRest(_a, ["as", "children", "refName"]), y8 = n9.ref !== void 0 ? { [i10]: n9.ref } : {}, f14 = typeof l8 == "function" ? l8(r11) : l8;
+    let _a = h3(n9, ["unmount", "static"]), { as: t9 = e8, children: l8, refName: i9 = "ref" } = _a, o11 = __objRest(_a, ["as", "children", "refName"]), y8 = n9.ref !== void 0 ? { [i9]: n9.ref } : {}, f14 = typeof l8 == "function" ? l8(r11) : l8;
     "className" in o11 && o11.className && typeof o11.className == "function" && (o11.className = o11.className(r11)), o11["aria-labelledby"] && o11["aria-labelledby"] === o11.id && (o11["aria-labelledby"] = void 0);
     let u17 = {};
     if (r11) {
@@ -1925,8 +2004,8 @@ var stonehamOverrideCalculator = (() => {
       return (l8 = t9 == null ? void 0 : t9.preventDefault) == null ? void 0 : l8.call(t9);
     }]);
     for (let s12 in e8) Object.assign(r11, { [s12](t9, ...l8) {
-      let i10 = e8[s12];
-      for (let o11 of i10) {
+      let i9 = e8[s12];
+      for (let o11 of i9) {
         if ((t9 instanceof Event || (t9 == null ? void 0 : t9.nativeEvent) instanceof Event) && t9.defaultPrevented) return;
         o11(t9, ...l8);
       }
@@ -1941,7 +2020,7 @@ var stonehamOverrideCalculator = (() => {
     for (let s12 of n9) for (let t9 in s12) t9.startsWith("on") && typeof s12[t9] == "function" ? ((a15 = e8[t9]) != null || (e8[t9] = []), e8[t9].push(s12[t9])) : r11[t9] = s12[t9];
     for (let s12 in e8) Object.assign(r11, { [s12](...t9) {
       let l8 = e8[s12];
-      for (let i10 of l8) i10 == null || i10(...t9);
+      for (let i9 of l8) i9 == null || i9(...t9);
     } });
     return r11;
   }
@@ -1960,7 +2039,7 @@ var stonehamOverrideCalculator = (() => {
     return e8;
   }
   function H3(n9) {
-    return Rn.version.split(".")[0] >= "19" ? n9.props.ref : n9.ref;
+    return xn.version.split(".")[0] >= "19" ? n9.props.ref : n9.ref;
   }
   function b3(n9) {
     return n9 === k || n9 === Symbol.for("react.fragment");
@@ -1973,8 +2052,8 @@ var stonehamOverrideCalculator = (() => {
   init_compat_module();
   init_compat_module();
   function b4(l8, r11, c13) {
-    let [i10, s12] = d2(c13), e8 = l8 !== void 0, t9 = A2(e8), u17 = A2(false), d6 = A2(false);
-    return e8 && !t9.current && !u17.current ? (u17.current = true, t9.current = e8, console.error("A component is changing from uncontrolled to controlled. This may be caused by the value changing from undefined to a defined value, which should not happen.")) : !e8 && t9.current && !d6.current && (d6.current = true, t9.current = e8, console.error("A component is changing from controlled to uncontrolled. This may be caused by the value changing from a defined value to undefined, which should not happen.")), [e8 ? l8 : i10, o5((n9) => (e8 || En(() => s12(n9)), r11 == null ? void 0 : r11(n9)))];
+    let [i9, s12] = d2(c13), e8 = l8 !== void 0, t9 = A2(e8), u17 = A2(false), d6 = A2(false);
+    return e8 && !t9.current && !u17.current ? (u17.current = true, t9.current = e8, console.error("A component is changing from uncontrolled to controlled. This may be caused by the value changing from undefined to a defined value, which should not happen.")) : !e8 && t9.current && !d6.current && (d6.current = true, t9.current = e8, console.error("A component is changing from controlled to uncontrolled. This may be caused by the value changing from a defined value to undefined, which should not happen.")), [e8 ? l8 : i9, o5((n9) => (e8 || En(() => s12(n9)), r11 == null ? void 0 : r11(n9)))];
   }
 
   // node_modules/@headlessui/react/dist/hooks/use-default-value.js
@@ -1993,21 +2072,21 @@ var stonehamOverrideCalculator = (() => {
 
   // node_modules/@headlessui/react/dist/utils/form.js
   init_compat_module();
-  function p4(t9 = {}, i10 = null, n9 = []) {
-    for (let [e8, o11] of Object.entries(t9)) s5(n9, r5(i10, e8), o11);
+  function p4(t9 = {}, i9 = null, n9 = []) {
+    for (let [e8, o11] of Object.entries(t9)) s5(n9, r5(i9, e8), o11);
     return n9;
   }
-  function r5(t9, i10) {
-    return t9 ? t9 + "[" + i10 + "]" : i10;
+  function r5(t9, i9) {
+    return t9 ? t9 + "[" + i9 + "]" : i9;
   }
-  function s5(t9, i10, n9) {
-    if (Array.isArray(n9)) for (let [e8, o11] of n9.entries()) s5(t9, r5(i10, e8.toString()), o11);
-    else n9 instanceof Date ? t9.push([i10, n9.toISOString()]) : typeof n9 == "boolean" ? t9.push([i10, n9 ? "1" : "0"]) : typeof n9 == "string" ? t9.push([i10, n9]) : typeof n9 == "number" ? t9.push([i10, "".concat(n9)]) : n9 == null ? t9.push([i10, ""]) : c3(n9) && !mn(n9) && p4(n9, i10, t9);
+  function s5(t9, i9, n9) {
+    if (Array.isArray(n9)) for (let [e8, o11] of n9.entries()) s5(t9, r5(i9, e8.toString()), o11);
+    else n9 instanceof Date ? t9.push([i9, n9.toISOString()]) : typeof n9 == "boolean" ? t9.push([i9, n9 ? "1" : "0"]) : typeof n9 == "string" ? t9.push([i9, n9]) : typeof n9 == "number" ? t9.push([i9, "".concat(n9)]) : n9 == null ? t9.push([i9, ""]) : c3(n9) && !mn(n9) && p4(n9, i9, t9);
   }
   function c3(t9) {
     if (Object.prototype.toString.call(t9) !== "[object Object]") return false;
-    let i10 = Object.getPrototypeOf(t9);
-    return i10 === null || Object.getPrototypeOf(i10) === null;
+    let i9 = Object.getPrototypeOf(t9);
+    return i9 === null || Object.getPrototypeOf(i9) === null;
   }
 
   // node_modules/@headlessui/react/dist/internal/hidden.js
@@ -2024,15 +2103,15 @@ var stonehamOverrideCalculator = (() => {
   var f4 = Q(null);
   function c4({ children: t9 }) {
     let e8 = x2(f4);
-    if (!e8) return Rn.createElement(Rn.Fragment, null, t9);
+    if (!e8) return xn.createElement(xn.Fragment, null, t9);
     let { target: r11 } = e8;
-    return r11 ? $2(Rn.createElement(Rn.Fragment, null, t9), r11) : null;
+    return r11 ? $2(xn.createElement(xn.Fragment, null, t9), r11) : null;
   }
   function j4({ data: t9, form: e8, disabled: r11, onReset: n9, overrides: F6 }) {
-    let [i10, a15] = d2(null), p10 = p3();
+    let [i9, a15] = d2(null), p10 = p3();
     return y2(() => {
-      if (n9 && i10) return p10.addEventListener(i10, "reset", n9);
-    }, [i10, e8, n9]), Rn.createElement(c4, null, Rn.createElement(C5, { setForm: a15, formId: e8 }), p4(t9).map(([s12, v6]) => Rn.createElement(f3, __spreadValues({ features: s6.Hidden }, m3(__spreadValues({ key: s12, as: "input", type: "hidden", hidden: true, readOnly: true, form: e8, disabled: r11, name: s12, value: v6 }, F6))))));
+      if (n9 && i9) return p10.addEventListener(i9, "reset", n9);
+    }, [i9, e8, n9]), xn.createElement(c4, null, xn.createElement(C5, { setForm: a15, formId: e8 }), p4(t9).map(([s12, v6]) => xn.createElement(f3, __spreadValues({ features: s6.Hidden }, m3(__spreadValues({ key: s12, as: "input", type: "hidden", hidden: true, readOnly: true, form: e8, disabled: r11, name: s12, value: v6 }, F6))))));
   }
   function C5({ setForm: t9, formId: e8 }) {
     return y2(() => {
@@ -2040,7 +2119,7 @@ var stonehamOverrideCalculator = (() => {
         let r11 = document.getElementById(e8);
         r11 && t9(r11);
       }
-    }, [t9, e8]), e8 ? null : Rn.createElement(f3, { features: s6.Hidden, as: "input", type: "hidden", hidden: true, readOnly: true, ref: (r11) => {
+    }, [t9, e8]), e8 ? null : xn.createElement(f3, { features: s6.Hidden, as: "input", type: "hidden", hidden: true, readOnly: true, ref: (r11) => {
       if (!r11) return;
       let n9 = r11.closest("form");
       n9 && t9(n9);
@@ -2093,8 +2172,8 @@ var stonehamOverrideCalculator = (() => {
   function s7(l8) {
     let e8 = l8.parentElement, t9 = null;
     for (; e8 && !a5(e8); ) E4(e8) && (t9 = e8), e8 = e8.parentElement;
-    let i10 = (e8 == null ? void 0 : e8.getAttribute("disabled")) === "";
-    return i10 && r7(t9) ? false : i10;
+    let i9 = (e8 == null ? void 0 : e8.getAttribute("disabled")) === "";
+    return i9 && r7(t9) ? false : i9;
   }
   function r7(l8) {
     if (!l8) return false;
@@ -2143,9 +2222,9 @@ var stonehamOverrideCalculator = (() => {
   }
   var I4 = "p";
   function C6(r11, e8) {
-    let c13 = g2(), t9 = a3(), _a = r11, { id: i10 = "headlessui-description-".concat(c13) } = _a, l8 = __objRest(_a, ["id"]), n9 = f5(), o11 = y3(e8);
-    n2(() => n9.register(i10), [i10, n9.register]);
-    let s12 = n3(__spreadProps(__spreadValues({}, n9.slot), { disabled: t9 || false })), p10 = __spreadProps(__spreadValues({ ref: o11 }, n9.props), { id: i10 });
+    let c13 = g2(), t9 = a3(), _a = r11, { id: i9 = "headlessui-description-".concat(c13) } = _a, l8 = __objRest(_a, ["id"]), n9 = f5(), o11 = y3(e8);
+    n2(() => n9.register(i9), [i9, n9.register]);
+    let s12 = n3(__spreadProps(__spreadValues({}, n9.slot), { disabled: t9 || false })), p10 = __spreadProps(__spreadValues({ ref: o11 }, n9.props), { id: i9 });
     return K3()({ ourProps: p10, theirProps: l8, slot: s12, defaultTag: I4, name: n9.name || "Description" });
   }
   var _3 = Y2(C6);
@@ -2174,17 +2253,17 @@ var stonehamOverrideCalculator = (() => {
   function V4({ inherit: n9 = false } = {}) {
     let l8 = N3(), [a15, e8] = d2([]), o11 = n9 ? [l8, ...a15].filter(Boolean) : a15;
     return [o11.length > 0 ? o11.join(" ") : void 0, T2(() => function(t9) {
-      let p10 = o5((i10) => (e8((u17) => [...u17, i10]), () => e8((u17) => {
-        let d6 = u17.slice(), f14 = d6.indexOf(i10);
+      let p10 = o5((i9) => (e8((u17) => [...u17, i9]), () => e8((u17) => {
+        let d6 = u17.slice(), f14 = d6.indexOf(i9);
         return f14 !== -1 && d6.splice(f14, 1), d6;
       }))), b7 = T2(() => ({ register: p10, slot: t9.slot, name: t9.name, props: t9.props, value: t9.value }), [p10, t9.slot, t9.name, t9.props, t9.value]);
-      return Rn.createElement(L4.Provider, { value: b7 }, t9.children);
+      return xn.createElement(L4.Provider, { value: b7 }, t9.children);
     }, [e8])];
   }
   var G3 = "label";
   function U3(n9, l8) {
     var y8;
-    let a15 = g2(), e8 = C7(), o11 = u4(), T8 = a3(), _a = n9, { id: t9 = "headlessui-label-".concat(a15), htmlFor: p10 = o11 != null ? o11 : (y8 = e8.props) == null ? void 0 : y8.htmlFor, passive: b7 = false } = _a, i10 = __objRest(_a, ["id", "htmlFor", "passive"]), u17 = y3(l8);
+    let a15 = g2(), e8 = C7(), o11 = u4(), T8 = a3(), _a = n9, { id: t9 = "headlessui-label-".concat(a15), htmlFor: p10 = o11 != null ? o11 : (y8 = e8.props) == null ? void 0 : y8.htmlFor, passive: b7 = false } = _a, i9 = __objRest(_a, ["id", "htmlFor", "passive"]), u17 = y3(l8);
     n2(() => e8.register(t9), [t9, e8.register]);
     let d6 = o5((s12) => {
       let g6 = s12.currentTarget;
@@ -2199,7 +2278,7 @@ var stonehamOverrideCalculator = (() => {
         }
       }
     }), f14 = n3(__spreadProps(__spreadValues({}, e8.slot), { disabled: T8 || false })), c13 = __spreadProps(__spreadValues({ ref: u17 }, e8.props), { id: t9, htmlFor: p10, onClick: d6 });
-    return b7 && ("onClick" in c13 && (delete c13.htmlFor, delete c13.onClick), "onClick" in i10 && delete i10.onClick), K3()({ ourProps: c13, theirProps: i10, slot: f14, defaultTag: p10 ? G3 : "div", name: e8.name || "Label" });
+    return b7 && ("onClick" in c13 && (delete c13.htmlFor, delete c13.onClick), "onClick" in i9 && delete i9.onClick), K3()({ ourProps: c13, theirProps: i9, slot: f14, defaultTag: p10 ? G3 : "div", name: e8.name || "Label" });
   }
   var j5 = Y2(U3);
   var Z2 = Object.assign(j5, {});
@@ -2213,8 +2292,9 @@ var stonehamOverrideCalculator = (() => {
     var _a;
     let deps = (_a = opts.initialDeps) != null ? _a : [];
     let result;
+    let isInitial = true;
     function memoizedFunction() {
-      var _a2, _b, _c, _d;
+      var _a2, _b, _c;
       let depTime;
       if (opts.key && ((_a2 = opts.debug) == null ? void 0 : _a2.call(opts))) depTime = Date.now();
       const newDeps = getDeps();
@@ -2246,7 +2326,10 @@ var stonehamOverrideCalculator = (() => {
           opts == null ? void 0 : opts.key
         );
       }
-      (_d = opts == null ? void 0 : opts.onChange) == null ? void 0 : _d.call(opts, result);
+      if ((opts == null ? void 0 : opts.onChange) && !(isInitial && opts.skipInitialOnChange)) {
+        opts.onChange(result);
+      }
+      isInitial = false;
       return result;
     }
     memoizedFunction.updateDeps = (newDeps) => {
@@ -2280,8 +2363,8 @@ var stonehamOverrideCalculator = (() => {
     const start = Math.max(range.startIndex - range.overscan, 0);
     const end = Math.min(range.endIndex + range.overscan, range.count - 1);
     const arr = [];
-    for (let i10 = start; i10 <= end; i10++) {
-      arr.push(i10);
+    for (let i9 = start; i9 <= end; i9++) {
+      arr.push(i9);
     }
     return arr;
   };
@@ -2351,7 +2434,6 @@ var stonehamOverrideCalculator = (() => {
     };
     const handler = createHandler(true);
     const endHandler = createHandler(false);
-    endHandler();
     element.addEventListener("scroll", handler, addEventListenerOptions);
     const registerScrollendEvent = instance.options.useScrollendEvent && supportsScrollend;
     if (registerScrollendEvent) {
@@ -2393,9 +2475,14 @@ var stonehamOverrideCalculator = (() => {
       this.scrollElement = null;
       this.targetWindow = null;
       this.isScrolling = false;
+      this.currentScrollToIndex = null;
       this.measurementsCache = [];
       this.itemSizeCache = /* @__PURE__ */ new Map();
+      this.laneAssignments = /* @__PURE__ */ new Map();
       this.pendingMeasuredCacheIndexes = [];
+      this.prevLanes = void 0;
+      this.lanesChangedFlag = false;
+      this.lanesSettling = false;
       this.scrollRect = null;
       this.scrollOffset = null;
       this.scrollDirection = null;
@@ -2524,10 +2611,6 @@ var stonehamOverrideCalculator = (() => {
           this.elementsCache.forEach((cached) => {
             this.observer.observe(cached);
           });
-          this._scrollToOffset(this.getScrollOffset(), {
-            adjustments: void 0,
-            behavior: void 0
-          });
           this.unsubs.push(
             this.options.observeElementRect(this, (rect) => {
               this.scrollRect = rect;
@@ -2543,6 +2626,10 @@ var stonehamOverrideCalculator = (() => {
               this.maybeNotify();
             })
           );
+          this._scrollToOffset(this.getScrollOffset(), {
+            adjustments: void 0,
+            behavior: void 0
+          });
         }
       };
       this.getSize = () => {
@@ -2596,16 +2683,23 @@ var stonehamOverrideCalculator = (() => {
           this.options.paddingStart,
           this.options.scrollMargin,
           this.options.getItemKey,
-          this.options.enabled
+          this.options.enabled,
+          this.options.lanes
         ],
-        (count2, paddingStart, scrollMargin, getItemKey, enabled) => {
+        (count2, paddingStart, scrollMargin, getItemKey, enabled, lanes) => {
+          const lanesChanged = this.prevLanes !== void 0 && this.prevLanes !== lanes;
+          if (lanesChanged) {
+            this.lanesChangedFlag = true;
+          }
+          this.prevLanes = lanes;
           this.pendingMeasuredCacheIndexes = [];
           return {
             count: count2,
             paddingStart,
             scrollMargin,
             getItemKey,
-            enabled
+            enabled,
+            lanes
           };
         },
         {
@@ -2614,37 +2708,79 @@ var stonehamOverrideCalculator = (() => {
       );
       this.getMeasurements = memo(
         () => [this.getMeasurementOptions(), this.itemSizeCache],
-        ({ count: count2, paddingStart, scrollMargin, getItemKey, enabled }, itemSizeCache) => {
+        ({ count: count2, paddingStart, scrollMargin, getItemKey, enabled, lanes }, itemSizeCache) => {
           if (!enabled) {
             this.measurementsCache = [];
             this.itemSizeCache.clear();
+            this.laneAssignments.clear();
             return [];
           }
-          if (this.measurementsCache.length === 0) {
+          if (this.laneAssignments.size > count2) {
+            for (const index3 of this.laneAssignments.keys()) {
+              if (index3 >= count2) {
+                this.laneAssignments.delete(index3);
+              }
+            }
+          }
+          if (this.lanesChangedFlag) {
+            this.lanesChangedFlag = false;
+            this.lanesSettling = true;
+            this.measurementsCache = [];
+            this.itemSizeCache.clear();
+            this.laneAssignments.clear();
+            this.pendingMeasuredCacheIndexes = [];
+          }
+          if (this.measurementsCache.length === 0 && !this.lanesSettling) {
             this.measurementsCache = this.options.initialMeasurementsCache;
             this.measurementsCache.forEach((item) => {
               this.itemSizeCache.set(item.key, item.size);
             });
           }
-          const min2 = this.pendingMeasuredCacheIndexes.length > 0 ? Math.min(...this.pendingMeasuredCacheIndexes) : 0;
+          const min2 = this.lanesSettling ? 0 : this.pendingMeasuredCacheIndexes.length > 0 ? Math.min(...this.pendingMeasuredCacheIndexes) : 0;
           this.pendingMeasuredCacheIndexes = [];
+          if (this.lanesSettling && this.measurementsCache.length === count2) {
+            this.lanesSettling = false;
+          }
           const measurements = this.measurementsCache.slice(0, min2);
-          for (let i10 = min2; i10 < count2; i10++) {
-            const key = getItemKey(i10);
-            const furthestMeasurement = this.options.lanes === 1 ? measurements[i10 - 1] : this.getFurthestMeasurement(measurements, i10);
-            const start = furthestMeasurement ? furthestMeasurement.end + this.options.gap : paddingStart + scrollMargin;
+          const laneLastIndex = new Array(lanes).fill(
+            void 0
+          );
+          for (let m8 = 0; m8 < min2; m8++) {
+            const item = measurements[m8];
+            if (item) {
+              laneLastIndex[item.lane] = m8;
+            }
+          }
+          for (let i9 = min2; i9 < count2; i9++) {
+            const key = getItemKey(i9);
+            const cachedLane = this.laneAssignments.get(i9);
+            let lane;
+            let start;
+            if (cachedLane !== void 0 && this.options.lanes > 1) {
+              lane = cachedLane;
+              const prevIndex = laneLastIndex[lane];
+              const prevInLane = prevIndex !== void 0 ? measurements[prevIndex] : void 0;
+              start = prevInLane ? prevInLane.end + this.options.gap : paddingStart + scrollMargin;
+            } else {
+              const furthestMeasurement = this.options.lanes === 1 ? measurements[i9 - 1] : this.getFurthestMeasurement(measurements, i9);
+              start = furthestMeasurement ? furthestMeasurement.end + this.options.gap : paddingStart + scrollMargin;
+              lane = furthestMeasurement ? furthestMeasurement.lane : i9 % this.options.lanes;
+              if (this.options.lanes > 1) {
+                this.laneAssignments.set(i9, lane);
+              }
+            }
             const measuredSize = itemSizeCache.get(key);
-            const size4 = typeof measuredSize === "number" ? measuredSize : this.options.estimateSize(i10);
+            const size4 = typeof measuredSize === "number" ? measuredSize : this.options.estimateSize(i9);
             const end = start + size4;
-            const lane = furthestMeasurement ? furthestMeasurement.lane : i10 % this.options.lanes;
-            measurements[i10] = {
-              index: i10,
+            measurements[i9] = {
+              index: i9,
               start,
               size: size4,
               end,
               key,
               lane
             };
+            laneLastIndex[lane] = i9;
           }
           this.measurementsCache = measurements;
           return measurements;
@@ -2775,8 +2911,8 @@ var stonehamOverrideCalculator = (() => {
         (indexes, measurements) => {
           const virtualItems = [];
           for (let k7 = 0, len = indexes.length; k7 < len; k7++) {
-            const i10 = indexes[k7];
-            const measurement = measurements[i10];
+            const i9 = indexes[k7];
+            const measurement = measurements[i9];
             virtualItems.push(measurement);
           }
           return virtualItems;
@@ -2800,7 +2936,17 @@ var stonehamOverrideCalculator = (() => {
           )]
         );
       };
+      this.getMaxScrollOffset = () => {
+        if (!this.scrollElement) return 0;
+        if ("scrollHeight" in this.scrollElement) {
+          return this.options.horizontal ? this.scrollElement.scrollWidth - this.scrollElement.clientWidth : this.scrollElement.scrollHeight - this.scrollElement.clientHeight;
+        } else {
+          const doc = this.scrollElement.document.documentElement;
+          return this.options.horizontal ? doc.scrollWidth - this.scrollElement.innerWidth : doc.scrollHeight - this.scrollElement.innerHeight;
+        }
+      };
       this.getOffsetForAlignment = (toOffset, align, itemSize = 0) => {
+        if (!this.scrollElement) return 0;
         const size4 = this.getSize();
         const scrollOffset = this.getScrollOffset();
         if (align === "auto") {
@@ -2811,7 +2957,7 @@ var stonehamOverrideCalculator = (() => {
         } else if (align === "end") {
           toOffset -= size4;
         }
-        const maxOffset = this.getTotalSize() + this.options.scrollMargin - size4;
+        const maxOffset = this.getMaxScrollOffset();
         return Math.max(Math.min(maxOffset, toOffset), 0);
       };
       this.getOffsetForIndex = (index3, align = "auto") => {
@@ -2830,6 +2976,9 @@ var stonehamOverrideCalculator = (() => {
           } else {
             return [scrollOffset, align];
           }
+        }
+        if (align === "end" && index3 === this.options.count - 1) {
+          return [this.getMaxScrollOffset(), align];
         }
         const toOffset = align === "end" ? item.end + this.options.scrollPaddingEnd : item.start - this.options.scrollPaddingStart;
         return [
@@ -2856,6 +3005,7 @@ var stonehamOverrideCalculator = (() => {
           );
         }
         index3 = Math.max(0, Math.min(index3, this.options.count - 1));
+        this.currentScrollToIndex = index3;
         let attempts = 0;
         const maxAttempts = 10;
         const tryScroll = (currentAlign) => {
@@ -2868,19 +3018,28 @@ var stonehamOverrideCalculator = (() => {
           const [offset4, align] = offsetInfo;
           this._scrollToOffset(offset4, { adjustments: void 0, behavior });
           this.targetWindow.requestAnimationFrame(() => {
-            const currentOffset = this.getScrollOffset();
-            const afterInfo = this.getOffsetForIndex(index3, align);
-            if (!afterInfo) {
-              console.warn("Failed to get offset for index:", index3);
-              return;
-            }
-            if (!approxEqual(afterInfo[0], currentOffset)) {
-              scheduleRetry(align);
+            const verify = () => {
+              if (this.currentScrollToIndex !== index3) return;
+              const currentOffset = this.getScrollOffset();
+              const afterInfo = this.getOffsetForIndex(index3, align);
+              if (!afterInfo) {
+                console.warn("Failed to get offset for index:", index3);
+                return;
+              }
+              if (!approxEqual(afterInfo[0], currentOffset)) {
+                scheduleRetry(align);
+              }
+            };
+            if (this.isDynamicMode()) {
+              this.targetWindow.requestAnimationFrame(verify);
+            } else {
+              verify();
             }
           });
         };
         const scheduleRetry = (align) => {
           if (!this.targetWindow) return;
+          if (this.currentScrollToIndex !== index3) return;
           attempts++;
           if (attempts < maxAttempts) {
             if (this.options.debug) {
@@ -2940,6 +3099,7 @@ var stonehamOverrideCalculator = (() => {
       };
       this.measure = () => {
         this.itemSizeCache = /* @__PURE__ */ new Map();
+        this.laneAssignments = /* @__PURE__ */ new Map();
         this.notify(false);
       };
       this.setOptions(opts);
@@ -3009,17 +3169,22 @@ var stonehamOverrideCalculator = (() => {
 
   // node_modules/@tanstack/react-virtual/dist/esm/index.js
   var useIsomorphicLayoutEffect = typeof document !== "undefined" ? _2 : y2;
-  function useVirtualizerBase(options) {
+  function useVirtualizerBase(_a) {
+    var _b = _a, {
+      useFlushSync = true
+    } = _b, options = __objRest(_b, [
+      "useFlushSync"
+    ]);
     const rerender = h2(() => ({}), {})[1];
     const resolvedOptions = __spreadProps(__spreadValues({}, options), {
       onChange: (instance2, sync) => {
-        var _a;
-        if (sync) {
+        var _a2;
+        if (useFlushSync && sync) {
           En(rerender);
         } else {
           rerender();
         }
-        (_a = options.onChange) == null ? void 0 : _a.call(options, instance2, sync);
+        (_a2 = options.onChange) == null ? void 0 : _a2.call(options, instance2, sync);
       }
     });
     const [instance] = d2(
@@ -3063,15 +3228,15 @@ var stonehamOverrideCalculator = (() => {
 
   // node_modules/@headlessui/react/dist/hooks/use-element-size.js
   init_compat_module();
-  function h4(i10) {
-    if (i10 === null) return { width: 0, height: 0 };
-    let { width: t9, height: e8 } = i10.getBoundingClientRect();
+  function h4(i9) {
+    if (i9 === null) return { width: 0, height: 0 };
+    let { width: t9, height: e8 } = i9.getBoundingClientRect();
     return { width: t9, height: e8 };
   }
-  function w6(i10, t9, e8 = false) {
+  function w6(i9, t9, e8 = false) {
     let [r11, f14] = d2(() => h4(t9));
     return n2(() => {
-      if (!t9 || !i10) return;
+      if (!t9 || !i9) return;
       let n9 = o4();
       return n9.requestAnimationFrame(function s12() {
         n9.requestAnimationFrame(s12), f14((u17) => {
@@ -3081,7 +3246,7 @@ var stonehamOverrideCalculator = (() => {
       }), () => {
         n9.dispose();
       };
-    }, [t9, i10]), e8 ? { width: "".concat(r11.width, "px"), height: "".concat(r11.height, "px") } : r11;
+    }, [t9, i9]), e8 ? { width: "".concat(r11.width, "px"), height: "".concat(r11.height, "px") } : r11;
   }
 
   // node_modules/@headlessui/react/dist/hooks/use-handle-toggle.js
@@ -3094,10 +3259,10 @@ var stonehamOverrideCalculator = (() => {
   function s8(t9) {
     let r11 = A2(null), u17 = o5((e8) => {
       r11.current = e8.pointerType, !s7(e8.currentTarget) && e8.pointerType === "mouse" && e8.button === g4.Left && (e8.preventDefault(), t9(e8));
-    }), i10 = o5((e8) => {
+    }), i9 = o5((e8) => {
       r11.current !== "mouse" && (s7(e8.currentTarget) || t9(e8));
     });
-    return { onPointerDown: u17, onClick: i10 };
+    return { onPointerDown: u17, onClick: i9 };
   }
 
   // node_modules/@headlessui/react/dist/hooks/use-is-top-layer.js
@@ -3196,17 +3361,17 @@ var stonehamOverrideCalculator = (() => {
   var p6 = (e8, c13, t9) => (r8(e8, typeof c13 != "symbol" ? c13 + "" : c13, t9), t9);
   var k4 = ((t9) => (t9[t9.Push = 0] = "Push", t9[t9.Pop = 1] = "Pop", t9))(k4 || {});
   var y4 = { [0](e8, c13) {
-    let t9 = c13.id, s12 = e8.stack, i10 = e8.stack.indexOf(t9);
-    if (i10 !== -1) {
+    let t9 = c13.id, s12 = e8.stack, i9 = e8.stack.indexOf(t9);
+    if (i9 !== -1) {
       let n9 = e8.stack.slice();
-      return n9.splice(i10, 1), n9.push(t9), s12 = n9, __spreadProps(__spreadValues({}, e8), { stack: s12 });
+      return n9.splice(i9, 1), n9.push(t9), s12 = n9, __spreadProps(__spreadValues({}, e8), { stack: s12 });
     }
     return __spreadProps(__spreadValues({}, e8), { stack: [...e8.stack, t9] });
   }, [1](e8, c13) {
     let t9 = c13.id, s12 = e8.stack.indexOf(t9);
     if (s12 === -1) return e8;
-    let i10 = e8.stack.slice();
-    return i10.splice(s12, 1), __spreadProps(__spreadValues({}, e8), { stack: i10 });
+    let i9 = e8.stack.slice();
+    return i9.splice(s12, 1), __spreadProps(__spreadValues({}, e8), { stack: i9 });
   } };
   var o9 = class _o2 extends T5 {
     constructor() {
@@ -3226,7 +3391,7 @@ var stonehamOverrideCalculator = (() => {
   // node_modules/@headlessui/react/dist/react-glue.js
   var import_with_selector = __toESM(require_with_selector(), 1);
   function S3(e8, n9, r11 = j6) {
-    return (0, import_with_selector.useSyncExternalStoreWithSelector)(o5((i10) => e8.subscribe(s9, i10)), o5(() => e8.state), o5(() => e8.state), o5(n9), r11);
+    return (0, import_with_selector.useSyncExternalStoreWithSelector)(o5((i9) => e8.subscribe(s9, i9)), o5(() => e8.state), o5(() => e8.state), o5(n9), r11);
   }
   function s9(e8) {
     return e8;
@@ -3234,10 +3399,10 @@ var stonehamOverrideCalculator = (() => {
 
   // node_modules/@headlessui/react/dist/hooks/use-is-top-layer.js
   function I5(o11, s12) {
-    let t9 = g2(), r11 = x4.get(s12), [i10, c13] = S3(r11, q2((e8) => [r11.selectors.isTop(e8, t9), r11.selectors.inStack(e8, t9)], [r11, t9]));
+    let t9 = g2(), r11 = x4.get(s12), [i9, c13] = S3(r11, q2((e8) => [r11.selectors.isTop(e8, t9), r11.selectors.inStack(e8, t9)], [r11, t9]));
     return n2(() => {
       if (o11) return r11.actions.push(t9), () => r11.actions.pop(t9);
-    }, [r11, o11, t9]), o11 ? c13 ? i10 : true : false;
+    }, [r11, o11, t9]), o11 ? c13 ? i9 : true : false;
   }
 
   // node_modules/@headlessui/react/dist/hooks/use-inert-others.js
@@ -3249,17 +3414,17 @@ var stonehamOverrideCalculator = (() => {
     return u9.set(t9, r11 + 1), r11 !== 0 ? () => m5(t9) : (f7.set(t9, { "aria-hidden": t9.getAttribute("aria-hidden"), inert: t9.inert }), t9.setAttribute("aria-hidden", "true"), t9.inert = true, () => m5(t9));
   }
   function m5(t9) {
-    var i10;
-    let r11 = (i10 = u9.get(t9)) != null ? i10 : 1;
+    var i9;
+    let r11 = (i9 = u9.get(t9)) != null ? i9 : 1;
     if (r11 === 1 ? u9.delete(t9) : u9.set(t9, r11 - 1), r11 !== 1) return;
     let e8 = f7.get(t9);
     e8 && (e8["aria-hidden"] === null ? t9.removeAttribute("aria-hidden") : t9.setAttribute("aria-hidden", e8["aria-hidden"]), t9.inert = e8.inert, f7.delete(t9));
   }
   function y5(t9, { allowed: r11, disallowed: e8 } = {}) {
-    let i10 = I5(t9, "inert-others");
+    let i9 = I5(t9, "inert-others");
     n2(() => {
       var d6, c13;
-      if (!i10) return;
+      if (!i9) return;
       let a15 = o4();
       for (let n9 of (d6 = e8 == null ? void 0 : e8()) != null ? d6 : []) n9 && a15.add(h6(n9));
       let s12 = (c13 = r11 == null ? void 0 : r11()) != null ? c13 : [];
@@ -3274,13 +3439,13 @@ var stonehamOverrideCalculator = (() => {
         }
       }
       return a15.dispose;
-    }, [i10, r11, e8]);
+    }, [i9, r11, e8]);
   }
 
   // node_modules/@headlessui/react/dist/hooks/use-on-disappear.js
   init_compat_module();
   function p7(s12, n9, o11) {
-    let i10 = s4((t9) => {
+    let i9 = s4((t9) => {
       let e8 = t9.getBoundingClientRect();
       e8.x === 0 && e8.y === 0 && e8.width === 0 && e8.height === 0 && o11();
     });
@@ -3290,15 +3455,15 @@ var stonehamOverrideCalculator = (() => {
       if (!t9) return;
       let e8 = o4();
       if (typeof ResizeObserver != "undefined") {
-        let r11 = new ResizeObserver(() => i10.current(t9));
+        let r11 = new ResizeObserver(() => i9.current(t9));
         r11.observe(t9), e8.add(() => r11.disconnect());
       }
       if (typeof IntersectionObserver != "undefined") {
-        let r11 = new IntersectionObserver(() => i10.current(t9));
+        let r11 = new IntersectionObserver(() => i9.current(t9));
         r11.observe(t9), e8.add(() => r11.disconnect());
       }
       return () => e8.dispose();
-    }, [n9, i10, s12]);
+    }, [n9, i9, s12]);
   }
 
   // node_modules/@headlessui/react/dist/hooks/use-outside-click.js
@@ -3367,11 +3532,11 @@ var stonehamOverrideCalculator = (() => {
   // node_modules/@headlessui/react/dist/hooks/use-window-event.js
   init_compat_module();
   function s10(t9, e8, o11, n9) {
-    let i10 = s4(o11);
+    let i9 = s4(o11);
     y2(() => {
       if (!t9) return;
       function r11(d6) {
-        i10.current(d6);
+        i9.current(d6);
       }
       return window.addEventListener(e8, r11, n9), () => window.removeEventListener(e8, r11, n9);
     }, [t9, e8, n9]);
@@ -3389,14 +3554,14 @@ var stonehamOverrideCalculator = (() => {
       })(f14);
       for (let u17 of M6) if (u17 !== null && (u17.contains(r11) || e8.composed && e8.composedPath().includes(u17))) return;
       return !H4(r11, I6.Loose) && r11.tabIndex !== -1 && e8.preventDefault(), m8.current(e8, r11);
-    }, [m8, f14]), i10 = A2(null);
+    }, [m8, f14]), i9 = A2(null);
     i7(o11, "pointerdown", (t9) => {
       var e8, c13;
-      n6() || (i10.current = ((c13 = (e8 = t9.composedPath) == null ? void 0 : e8.call(t9)) == null ? void 0 : c13[0]) || t9.target);
+      n6() || (i9.current = ((c13 = (e8 = t9.composedPath) == null ? void 0 : e8.call(t9)) == null ? void 0 : c13[0]) || t9.target);
     }, true), i7(o11, "pointerup", (t9) => {
-      if (n6() || !i10.current) return;
-      let e8 = i10.current;
-      return i10.current = null, s12(t9, () => e8);
+      if (n6() || !i9.current) return;
+      let e8 = i9.current;
+      return i9.current = null, s12(t9, () => e8);
     }, true);
     let l8 = A2({ x: 0, y: 0 });
     i7(o11, "touchstart", (t9) => {
@@ -3420,13 +3585,13 @@ var stonehamOverrideCalculator = (() => {
   var M4 = 200;
   var f8 = 5;
   function L5(r11, { trigger: n9, action: T8, close: e8, select: p10 }) {
-    let l8 = A2(null), i10 = A2(null), u17 = A2(null);
+    let l8 = A2(null), i9 = A2(null), u17 = A2(null);
     i7(r11 && n9 !== null, "pointerdown", (t9) => {
-      o6(t9 == null ? void 0 : t9.target) && n9 != null && n9.contains(t9.target) && (i10.current = t9.x, u17.current = t9.y, l8.current = t9.timeStamp);
+      o6(t9 == null ? void 0 : t9.target) && n9 != null && n9.contains(t9.target) && (i9.current = t9.x, u17.current = t9.y, l8.current = t9.timeStamp);
     }), i7(r11 && n9 !== null, "pointerup", (t9) => {
       var s12, m8;
       let c13 = l8.current;
-      if (c13 === null || (l8.current = null, !i4(t9.target)) || Math.abs(t9.x - ((s12 = i10.current) != null ? s12 : t9.x)) < f8 && Math.abs(t9.y - ((m8 = u17.current) != null ? m8 : t9.y)) < f8) return;
+      if (c13 === null || (l8.current = null, !i4(t9.target)) || Math.abs(t9.x - ((s12 = i9.current) != null ? s12 : t9.x)) < f8 && Math.abs(t9.y - ((m8 = u17.current) != null ? m8 : t9.y)) < f8) return;
       let a15 = T8(t9);
       switch (a15.kind) {
         case 0:
@@ -3449,11 +3614,11 @@ var stonehamOverrideCalculator = (() => {
   // node_modules/@headlessui/react/dist/hooks/use-event-listener.js
   init_compat_module();
   function E6(n9, e8, a15, t9) {
-    let i10 = s4(a15);
+    let i9 = s4(a15);
     y2(() => {
       n9 = n9 != null ? n9 : window;
       function r11(o11) {
-        i10.current(o11);
+        i9.current(o11);
       }
       return n9.addEventListener(e8, r11, t9), () => n9.removeEventListener(e8, r11, t9);
     }, [n9, e8, t9]);
@@ -3502,8 +3667,8 @@ var stonehamOverrideCalculator = (() => {
     }, subscribe(e8) {
       return n9.add(e8), () => n9.delete(e8);
     }, dispatch(e8, ...s12) {
-      let i10 = r11[e8].call(t9, ...s12);
-      i10 && (t9 = i10, n9.forEach((c13) => c13()));
+      let i9 = r11[e8].call(t9, ...s12);
+      i9 && (t9 = i9, n9.forEach((c13) => c13()));
     } };
   }
 
@@ -3609,10 +3774,10 @@ var stonehamOverrideCalculator = (() => {
 
   // node_modules/@headlessui/react/dist/hooks/document-overflow/use-document-overflow.js
   function a12(r11, e8, n9 = () => ({ containers: [] })) {
-    let f14 = o10(c6), o11 = e8 ? f14.get(e8) : void 0, i10 = o11 ? o11.count > 0 : false;
+    let f14 = o10(c6), o11 = e8 ? f14.get(e8) : void 0, i9 = o11 ? o11.count > 0 : false;
     return n2(() => {
       if (!(!e8 || !r11)) return c6.dispatch("PUSH", e8, n9), () => c6.dispatch("POP", e8, n9);
-    }, [r11, e8]), i10;
+    }, [r11, e8]), i9;
   }
 
   // node_modules/@headlessui/react/dist/hooks/use-scroll-lock.js
@@ -3655,14 +3820,14 @@ var stonehamOverrideCalculator = (() => {
   typeof process != "undefined" && typeof globalThis != "undefined" && typeof Element != "undefined" && ((T7 = process == null ? void 0 : process.env) == null ? void 0 : T7["NODE_ENV"]) === "test" && typeof ((S6 = Element == null ? void 0 : Element.prototype) == null ? void 0 : S6.getAnimations) == "undefined" && (Element.prototype.getAnimations = function() {
     return console.warn(["Headless UI has polyfilled `Element.prototype.getAnimations` for your tests.", "Please install a proper polyfill e.g. `jsdom-testing-mocks`, to silence these warnings.", "", "Example usage:", "```js", "import { mockAnimationsApi } from 'jsdom-testing-mocks'", "mockAnimationsApi()", "```"].join("\n")), [];
   });
-  var A6 = ((i10) => (i10[i10.None = 0] = "None", i10[i10.Closed = 1] = "Closed", i10[i10.Enter = 2] = "Enter", i10[i10.Leave = 4] = "Leave", i10))(A6 || {});
+  var A6 = ((i9) => (i9[i9.None = 0] = "None", i9[i9.Closed = 1] = "Closed", i9[i9.Enter = 2] = "Enter", i9[i9.Leave = 4] = "Leave", i9))(A6 || {});
   function x5(e8) {
     let r11 = {};
     for (let t9 in e8) e8[t9] === true && (r11["data-".concat(t9)] = "");
     return r11;
   }
   function N4(e8, r11, t9, n9) {
-    let [i10, a15] = d2(t9), { hasFlag: s12, addFlag: o11, removeFlag: l8 } = c7(e8 && i10 ? 3 : 0), u17 = A2(false), f14 = A2(false), E7 = p3();
+    let [i9, a15] = d2(t9), { hasFlag: s12, addFlag: o11, removeFlag: l8 } = c7(e8 && i9 ? 3 : 0), u17 = A2(false), f14 = A2(false), E7 = p3();
     return n2(() => {
       var d6;
       if (e8) {
@@ -3679,11 +3844,11 @@ var stonehamOverrideCalculator = (() => {
           f14.current && D5(r11) || (u17.current = false, l8(7), t9 || a15(false), (p10 = n9 == null ? void 0 : n9.end) == null || p10.call(n9, t9));
         } });
       }
-    }, [e8, t9, r11, E7]), e8 ? [i10, { closed: s12(1), enter: s12(2), leave: s12(4), transition: s12(2) || s12(4) }] : [t9, { closed: void 0, enter: void 0, leave: void 0, transition: void 0 }];
+    }, [e8, t9, r11, E7]), e8 ? [i9, { closed: s12(1), enter: s12(2), leave: s12(4), transition: s12(2) || s12(4) }] : [t9, { closed: void 0, enter: void 0, leave: void 0, transition: void 0 }];
   }
-  function C9(e8, { prepare: r11, run: t9, done: n9, inFlight: i10 }) {
+  function C9(e8, { prepare: r11, run: t9, done: n9, inFlight: i9 }) {
     let a15 = o4();
-    return j7(e8, { prepare: r11, inFlight: i10 }), a15.nextFrame(() => {
+    return j7(e8, { prepare: r11, inFlight: i9 }), a15.nextFrame(() => {
       t9(), a15.requestAnimationFrame(() => {
         a15.add(M5(e8, n9));
       });
@@ -3697,8 +3862,8 @@ var stonehamOverrideCalculator = (() => {
     t9.add(() => {
       n9 = true;
     });
-    let i10 = (s12 = (a15 = e8.getAnimations) == null ? void 0 : a15.call(e8).filter((o11) => o11 instanceof CSSTransition)) != null ? s12 : [];
-    return i10.length === 0 ? (r11(), t9.dispose) : (Promise.allSettled(i10.map((o11) => o11.finished)).then(() => {
+    let i9 = (s12 = (a15 = e8.getAnimations) == null ? void 0 : a15.call(e8).filter((o11) => o11 instanceof CSSTransition)) != null ? s12 : [];
+    return i9.length === 0 ? (r11(), t9.dispose) : (Promise.allSettled(i9.map((o11) => o11.finished)).then(() => {
       n9 || r11();
     }), t9.dispose);
   }
@@ -3712,7 +3877,7 @@ var stonehamOverrideCalculator = (() => {
   }
   function D5(e8) {
     var t9, n9;
-    return ((n9 = (t9 = e8.getAnimations) == null ? void 0 : t9.call(e8)) != null ? n9 : []).some((i10) => i10 instanceof CSSTransition && i10.playState !== "finished");
+    return ((n9 = (t9 = e8.getAnimations) == null ? void 0 : t9.call(e8)) != null ? n9 : []).some((i9) => i9 instanceof CSSTransition && i9.playState !== "finished");
   }
 
   // node_modules/@headlessui/react/dist/hooks/use-tree-walker.js
@@ -3725,7 +3890,7 @@ var stonehamOverrideCalculator = (() => {
       if (!e8 || !c13) return;
       let n9 = l3(e8);
       if (!n9) return;
-      let f14 = o11.current, p10 = l8.current, i10 = Object.assign((m8) => f14(m8), { acceptNode: f14 }), u17 = n9.createTreeWalker(e8, NodeFilter.SHOW_ELEMENT, i10, false);
+      let f14 = o11.current, p10 = l8.current, i9 = Object.assign((m8) => f14(m8), { acceptNode: f14 }), u17 = n9.createTreeWalker(e8, NodeFilter.SHOW_ELEMENT, i9, false);
       for (; u17.nextNode(); ) p10(u17.currentNode);
     }, [e8, c13, o11, l8]);
   }
@@ -4104,85 +4269,6 @@ var stonehamOverrideCalculator = (() => {
     }
     return coords;
   }
-  var computePosition = async (reference, floating, config) => {
-    const {
-      placement = "bottom",
-      strategy = "absolute",
-      middleware = [],
-      platform: platform2
-    } = config;
-    const validMiddleware = middleware.filter(Boolean);
-    const rtl = await (platform2.isRTL == null ? void 0 : platform2.isRTL(floating));
-    let rects = await platform2.getElementRects({
-      reference,
-      floating,
-      strategy
-    });
-    let {
-      x: x6,
-      y: y8
-    } = computeCoordsFromPlacement(rects, placement, rtl);
-    let statefulPlacement = placement;
-    let middlewareData = {};
-    let resetCount = 0;
-    for (let i10 = 0; i10 < validMiddleware.length; i10++) {
-      const {
-        name,
-        fn: fn2
-      } = validMiddleware[i10];
-      const {
-        x: nextX,
-        y: nextY,
-        data,
-        reset
-      } = await fn2({
-        x: x6,
-        y: y8,
-        initialPlacement: placement,
-        placement: statefulPlacement,
-        strategy,
-        middlewareData,
-        rects,
-        platform: platform2,
-        elements: {
-          reference,
-          floating
-        }
-      });
-      x6 = nextX != null ? nextX : x6;
-      y8 = nextY != null ? nextY : y8;
-      middlewareData = __spreadProps(__spreadValues({}, middlewareData), {
-        [name]: __spreadValues(__spreadValues({}, middlewareData[name]), data)
-      });
-      if (reset && resetCount <= 50) {
-        resetCount++;
-        if (typeof reset === "object") {
-          if (reset.placement) {
-            statefulPlacement = reset.placement;
-          }
-          if (reset.rects) {
-            rects = reset.rects === true ? await platform2.getElementRects({
-              reference,
-              floating,
-              strategy
-            }) : reset.rects;
-          }
-          ({
-            x: x6,
-            y: y8
-          } = computeCoordsFromPlacement(rects, statefulPlacement, rtl));
-        }
-        i10 = -1;
-      }
-    }
-    return {
-      x: x6,
-      y: y8,
-      placement: statefulPlacement,
-      strategy,
-      middlewareData
-    };
-  };
   async function detectOverflow(state, options) {
     var _await$platform$isEle;
     if (options === void 0) {
@@ -4239,6 +4325,88 @@ var stonehamOverrideCalculator = (() => {
       right: (elementClientRect.right - clippingClientRect.right + paddingObject.right) / offsetScale.x
     };
   }
+  var computePosition = async (reference, floating, config) => {
+    const {
+      placement = "bottom",
+      strategy = "absolute",
+      middleware = [],
+      platform: platform2
+    } = config;
+    const validMiddleware = middleware.filter(Boolean);
+    const rtl = await (platform2.isRTL == null ? void 0 : platform2.isRTL(floating));
+    let rects = await platform2.getElementRects({
+      reference,
+      floating,
+      strategy
+    });
+    let {
+      x: x6,
+      y: y8
+    } = computeCoordsFromPlacement(rects, placement, rtl);
+    let statefulPlacement = placement;
+    let middlewareData = {};
+    let resetCount = 0;
+    for (let i9 = 0; i9 < validMiddleware.length; i9++) {
+      var _platform$detectOverf;
+      const {
+        name,
+        fn: fn2
+      } = validMiddleware[i9];
+      const {
+        x: nextX,
+        y: nextY,
+        data,
+        reset
+      } = await fn2({
+        x: x6,
+        y: y8,
+        initialPlacement: placement,
+        placement: statefulPlacement,
+        strategy,
+        middlewareData,
+        rects,
+        platform: __spreadProps(__spreadValues({}, platform2), {
+          detectOverflow: (_platform$detectOverf = platform2.detectOverflow) != null ? _platform$detectOverf : detectOverflow
+        }),
+        elements: {
+          reference,
+          floating
+        }
+      });
+      x6 = nextX != null ? nextX : x6;
+      y8 = nextY != null ? nextY : y8;
+      middlewareData = __spreadProps(__spreadValues({}, middlewareData), {
+        [name]: __spreadValues(__spreadValues({}, middlewareData[name]), data)
+      });
+      if (reset && resetCount <= 50) {
+        resetCount++;
+        if (typeof reset === "object") {
+          if (reset.placement) {
+            statefulPlacement = reset.placement;
+          }
+          if (reset.rects) {
+            rects = reset.rects === true ? await platform2.getElementRects({
+              reference,
+              floating,
+              strategy
+            }) : reset.rects;
+          }
+          ({
+            x: x6,
+            y: y8
+          } = computeCoordsFromPlacement(rects, statefulPlacement, rtl));
+        }
+        i9 = -1;
+      }
+    }
+    return {
+      x: x6,
+      y: y8,
+      placement: statefulPlacement,
+      strategy,
+      middlewareData
+    };
+  };
   var flip = function(options) {
     if (options === void 0) {
       options = {};
@@ -4284,7 +4452,7 @@ var stonehamOverrideCalculator = (() => {
           fallbackPlacements.push(...getOppositeAxisPlacements(initialPlacement, flipAlignment, fallbackAxisSideDirection, rtl));
         }
         const placements2 = [initialPlacement, ...fallbackPlacements];
-        const overflow = await detectOverflow(state, detectOverflowOptions);
+        const overflow = await platform2.detectOverflow(state, detectOverflowOptions);
         const overflows = [];
         let overflowsData = ((_middlewareData$flip = middlewareData.flip) == null ? void 0 : _middlewareData$flip.overflows) || [];
         if (checkMainAxis) {
@@ -4432,7 +4600,8 @@ var stonehamOverrideCalculator = (() => {
         const {
           x: x6,
           y: y8,
-          placement
+          placement,
+          platform: platform2
         } = state;
         const _a = evaluate(options, state), {
           mainAxis: checkMainAxis = true,
@@ -4458,7 +4627,7 @@ var stonehamOverrideCalculator = (() => {
           x: x6,
           y: y8
         };
-        const overflow = await detectOverflow(state, detectOverflowOptions);
+        const overflow = await platform2.detectOverflow(state, detectOverflowOptions);
         const crossAxis = getSideAxis(getSide(placement));
         const mainAxis = getOppositeAxis(crossAxis);
         let mainAxisCoord = coords[mainAxis];
@@ -4515,7 +4684,7 @@ var stonehamOverrideCalculator = (() => {
         } = _a, detectOverflowOptions = __objRest(_a, [
           "apply"
         ]);
-        const overflow = await detectOverflow(state, detectOverflowOptions);
+        const overflow = await platform2.detectOverflow(state, detectOverflowOptions);
         const side = getSide(placement);
         const alignment = getAlignment(placement);
         const isYAxis = getSideAxis(placement) === "y";
@@ -5197,14 +5366,14 @@ var stonehamOverrideCalculator = (() => {
       return true;
     }
     let length;
-    let i10;
+    let i9;
     let keys;
     if (a15 && b7 && typeof a15 === "object") {
       if (Array.isArray(a15)) {
         length = a15.length;
         if (length !== b7.length) return false;
-        for (i10 = length; i10-- !== 0; ) {
-          if (!deepEqual(a15[i10], b7[i10])) {
+        for (i9 = length; i9-- !== 0; ) {
+          if (!deepEqual(a15[i9], b7[i9])) {
             return false;
           }
         }
@@ -5215,13 +5384,13 @@ var stonehamOverrideCalculator = (() => {
       if (length !== Object.keys(b7).length) {
         return false;
       }
-      for (i10 = length; i10-- !== 0; ) {
-        if (!{}.hasOwnProperty.call(b7, keys[i10])) {
+      for (i9 = length; i9-- !== 0; ) {
+        if (!{}.hasOwnProperty.call(b7, keys[i9])) {
           return false;
         }
       }
-      for (i10 = length; i10-- !== 0; ) {
-        const key = keys[i10];
+      for (i9 = length; i9-- !== 0; ) {
+        const key = keys[i9];
         if (key === "_owner" && a15.$$typeof) {
           continue;
         }
@@ -5916,11 +6085,11 @@ var stonehamOverrideCalculator = (() => {
   function Ae({ children: e8, enabled: t9 = true }) {
     let [n9, r11] = d2(null), [l8, o11] = d2(0), u17 = A2(null), [f14, s12] = d2(null);
     ce(f14);
-    let i10 = t9 && n9 !== null && f14 !== null, { to: F6 = "bottom", gap: E7 = 0, offset: A7 = 0, padding: c13 = 0, inner: h8 } = ge(n9, f14), [a15, p10 = "center"] = F6.split(" ");
+    let i9 = t9 && n9 !== null && f14 !== null, { to: F6 = "bottom", gap: E7 = 0, offset: A7 = 0, padding: c13 = 0, inner: h8 } = ge(n9, f14), [a15, p10 = "center"] = F6.split(" ");
     n2(() => {
-      i10 && o11(0);
-    }, [i10]);
-    let { refs: b7, floatingStyles: S8, context: g6 } = useFloating2({ open: i10, placement: a15 === "selection" ? p10 === "center" ? "bottom" : "bottom-".concat(p10) : p10 === "center" ? "".concat(a15) : "".concat(a15, "-").concat(p10), strategy: "absolute", transform: false, middleware: [offset3({ mainAxis: a15 === "selection" ? 0 : E7, crossAxis: A7 }), shift3({ padding: c13 }), a15 !== "selection" && flip3({ padding: c13 }), a15 === "selection" && h8 ? inner(__spreadProps(__spreadValues({}, h8), { padding: c13, overflowRef: u17, offset: l8, minItemsVisible: D6, referenceOverflowThreshold: c13, onFallbackChange(P7) {
+      i9 && o11(0);
+    }, [i9]);
+    let { refs: b7, floatingStyles: S8, context: g6 } = useFloating2({ open: i9, placement: a15 === "selection" ? p10 === "center" ? "bottom" : "bottom-".concat(p10) : p10 === "center" ? "".concat(a15) : "".concat(a15, "-").concat(p10), strategy: "absolute", transform: false, middleware: [offset3({ mainAxis: a15 === "selection" ? 0 : E7, crossAxis: A7 }), shift3({ padding: c13 }), a15 !== "selection" && flip3({ padding: c13 }), a15 === "selection" && h8 ? inner(__spreadProps(__spreadValues({}, h8), { padding: c13, overflowRef: u17, offset: l8, minItemsVisible: D6, referenceOverflowThreshold: c13, onFallbackChange(P7) {
       var L6, N5;
       if (!P7) return;
       let d6 = g6.elements.floating;
@@ -5967,28 +6136,28 @@ var stonehamOverrideCalculator = (() => {
     return __spreadProps(__spreadValues({}, e8), { gap: n9, offset: r11, padding: l8 });
   }
   function O4(e8, t9, n9 = void 0) {
-    let r11 = p3(), l8 = o5((s12, i10) => {
+    let r11 = p3(), l8 = o5((s12, i9) => {
       if (s12 == null) return [n9, null];
       if (typeof s12 == "number") return [s12, null];
       if (typeof s12 == "string") {
-        if (!i10) return [n9, null];
-        let F6 = J3(s12, i10);
+        if (!i9) return [n9, null];
+        let F6 = J3(s12, i9);
         return [F6, (E7) => {
           let A7 = q4(s12);
           {
-            let c13 = A7.map((h8) => window.getComputedStyle(i10).getPropertyValue(h8));
+            let c13 = A7.map((h8) => window.getComputedStyle(i9).getPropertyValue(h8));
             r11.requestAnimationFrame(function h8() {
               r11.nextFrame(h8);
               let a15 = false;
               for (let [b7, S8] of A7.entries()) {
-                let g6 = window.getComputedStyle(i10).getPropertyValue(S8);
+                let g6 = window.getComputedStyle(i9).getPropertyValue(S8);
                 if (c13[b7] !== g6) {
                   c13[b7] = g6, a15 = true;
                   break;
                 }
               }
               if (!a15) return;
-              let p10 = J3(s12, i10);
+              let p10 = J3(s12, i9);
               F6 !== p10 && (E7(p10), F6 = p10);
             });
           }
@@ -5998,8 +6167,8 @@ var stonehamOverrideCalculator = (() => {
       return [n9, null];
     }), o11 = T2(() => l8(e8, t9)[0], [e8, t9]), [u17 = o11, f14] = d2();
     return n2(() => {
-      let [s12, i10] = l8(e8, t9);
-      if (f14(s12), !!i10) return i10(f14);
+      let [s12, i9] = l8(e8, t9);
+      if (f14(s12), !!i9) return i9(f14);
     }, [e8, t9]), u17;
   }
   function q4(e8) {
@@ -6023,9 +6192,9 @@ var stonehamOverrideCalculator = (() => {
   init_compat_module();
   function f10({ children: t9, freeze: e8 }, o11) {
     let n9 = u12(e8, t9);
-    return mn(n9) ? _n(n9, { ref: o11 }) : Rn.createElement(Rn.Fragment, null, n9);
+    return mn(n9) ? _n(n9, { ref: o11 }) : xn.createElement(xn.Fragment, null, n9);
   }
-  var s11 = Rn.forwardRef(f10);
+  var s11 = xn.forwardRef(f10);
   function u12(t9, e8) {
     let [o11, n9] = d2(e8);
     return !t9 && o11 !== e8 && n9(e8), t9 ? o11 : e8;
@@ -6040,7 +6209,7 @@ var stonehamOverrideCalculator = (() => {
     return x2(n7);
   }
   function c8({ value: o11, children: t9 }) {
-    return Rn.createElement(n7.Provider, { value: o11 }, t9);
+    return xn.createElement(n7.Provider, { value: o11 }, t9);
   }
 
   // node_modules/@headlessui/react/dist/utils/document-ready.js
@@ -6066,7 +6235,7 @@ var stonehamOverrideCalculator = (() => {
   function u14(l8) {
     throw new Error("Unexpected object: " + l8);
   }
-  var c9 = ((i10) => (i10[i10.First = 0] = "First", i10[i10.Previous = 1] = "Previous", i10[i10.Next = 2] = "Next", i10[i10.Last = 3] = "Last", i10[i10.Specific = 4] = "Specific", i10[i10.Nothing = 5] = "Nothing", i10))(c9 || {});
+  var c9 = ((i9) => (i9[i9.First = 0] = "First", i9[i9.Previous = 1] = "Previous", i9[i9.Next = 2] = "Next", i9[i9.Last = 3] = "Last", i9[i9.Specific = 4] = "Specific", i9[i9.Nothing = 5] = "Nothing", i9))(c9 || {});
   function f11(l8, n9) {
     let t9 = n9.resolveItems();
     if (t9.length <= 0) return null;
@@ -6148,19 +6317,19 @@ var stonehamOverrideCalculator = (() => {
     return c10(() => {
       var a15;
       u17 && u17.childNodes.length <= 0 && ((a15 = u17.parentElement) == null || a15.removeChild(u17));
-    }), u17 ? $2(Rn.createElement("div", { "data-headlessui-portal": "", ref: (a15) => {
+    }), u17 ? $2(xn.createElement("div", { "data-headlessui-portal": "", ref: (a15) => {
       g6.dispose(), y8 && a15 && g6.add(y8.register(a15));
     } }, v6({ ourProps: { ref: n9 }, theirProps: p10, slot: {}, defaultTag: _5, name: "Portal" })), u17) : null;
   });
   function S7(e8, o11) {
     let l8 = y3(o11), _a = e8, { enabled: r11 = true, ownerDocument: p10 } = _a, t9 = __objRest(_a, ["enabled", "ownerDocument"]), n9 = K3();
-    return r11 ? Rn.createElement(j8, __spreadProps(__spreadValues({}, t9), { ownerDocument: p10, ref: l8 })) : n9({ ourProps: { ref: l8 }, theirProps: t9, slot: {}, defaultTag: _5, name: "Portal" });
+    return r11 ? xn.createElement(j8, __spreadProps(__spreadValues({}, t9), { ownerDocument: p10, ref: l8 })) : n9({ ourProps: { ref: l8 }, theirProps: t9, slot: {}, defaultTag: _5, name: "Portal" });
   }
   var I7 = k;
   var c11 = Q(null);
   function D7(e8, o11) {
     let _a = e8, { target: l8 } = _a, r11 = __objRest(_a, ["target"]), t9 = { ref: y3(o11) }, n9 = K3();
-    return Rn.createElement(c11.Provider, { value: l8 }, n9({ ourProps: t9, theirProps: r11, defaultTag: I7, name: "Popover.Group" }));
+    return xn.createElement(c11.Provider, { value: l8 }, n9({ ourProps: t9, theirProps: r11, defaultTag: I7, name: "Popover.Group" }));
   }
   var m7 = Q(null);
   var J4 = Y2(S7);
@@ -6173,11 +6342,11 @@ var stonehamOverrideCalculator = (() => {
     let t9 = e8.getBoundingClientRect();
     return "".concat(t9.x, ",").concat(t9.y);
   }
-  function p8(e8, t9, i10) {
+  function p8(e8, t9, i9) {
     let n9 = o4();
     if (t9.kind === "Tracked") {
       let o11 = function() {
-        d6 !== a14(e8) && (n9.dispose(), i10());
+        d6 !== a14(e8) && (n9.dispose(), i9());
       };
       var f14 = o11;
       let { position: d6 } = t9, s12 = new ResizeObserver(o11);
@@ -6188,41 +6357,41 @@ var stonehamOverrideCalculator = (() => {
 
   // node_modules/@headlessui/react/dist/components/combobox/combobox-machine.js
   var I8 = Object.defineProperty;
-  var h7 = (t9, i10, e8) => i10 in t9 ? I8(t9, i10, { enumerable: true, configurable: true, writable: true, value: e8 }) : t9[i10] = e8;
-  var f12 = (t9, i10, e8) => (h7(t9, typeof i10 != "symbol" ? i10 + "" : i10, e8), e8);
+  var h7 = (t9, i9, e8) => i9 in t9 ? I8(t9, i9, { enumerable: true, configurable: true, writable: true, value: e8 }) : t9[i9] = e8;
+  var f12 = (t9, i9, e8) => (h7(t9, typeof i9 != "symbol" ? i9 + "" : i9, e8), e8);
   var P6 = ((e8) => (e8[e8.Open = 0] = "Open", e8[e8.Closed = 1] = "Closed", e8))(P6 || {});
   var k6 = ((e8) => (e8[e8.Single = 0] = "Single", e8[e8.Multi = 1] = "Multi", e8))(k6 || {});
   var _6 = ((n9) => (n9[n9.Pointer = 0] = "Pointer", n9[n9.Focus = 1] = "Focus", n9[n9.Other = 2] = "Other", n9))(_6 || {});
   var D8 = ((l8) => (l8[l8.OpenCombobox = 0] = "OpenCombobox", l8[l8.CloseCombobox = 1] = "CloseCombobox", l8[l8.GoToOption = 2] = "GoToOption", l8[l8.SetTyping = 3] = "SetTyping", l8[l8.RegisterOption = 4] = "RegisterOption", l8[l8.UnregisterOption = 5] = "UnregisterOption", l8[l8.DefaultToFirstOption = 6] = "DefaultToFirstOption", l8[l8.SetActivationTrigger = 7] = "SetActivationTrigger", l8[l8.UpdateVirtualConfiguration = 8] = "UpdateVirtualConfiguration", l8[l8.SetInputElement = 9] = "SetInputElement", l8[l8.SetButtonElement = 10] = "SetButtonElement", l8[l8.SetOptionsElement = 11] = "SetOptionsElement", l8[l8.MarkInputAsMoved = 12] = "MarkInputAsMoved", l8))(D8 || {});
-  function v5(t9, i10 = (e8) => e8) {
-    let e8 = t9.activeOptionIndex !== null ? t9.options[t9.activeOptionIndex] : null, n9 = i10(t9.options.slice()), o11 = n9.length > 0 && n9[0].dataRef.current.order !== null ? n9.sort((u17, a15) => u17.dataRef.current.order - a15.dataRef.current.order) : G4(n9, (u17) => u17.dataRef.current.domRef.current), r11 = e8 ? o11.indexOf(e8) : null;
+  function v5(t9, i9 = (e8) => e8) {
+    let e8 = t9.activeOptionIndex !== null ? t9.options[t9.activeOptionIndex] : null, n9 = i9(t9.options.slice()), o11 = n9.length > 0 && n9[0].dataRef.current.order !== null ? n9.sort((u17, a15) => u17.dataRef.current.order - a15.dataRef.current.order) : G4(n9, (u17) => u17.dataRef.current.domRef.current), r11 = e8 ? o11.indexOf(e8) : null;
     return r11 === -1 && (r11 = null), { options: o11, activeOptionIndex: r11 };
   }
   var j9 = { [1](t9) {
     var e8;
     if ((e8 = t9.dataRef.current) != null && e8.disabled || t9.comboboxState === 1) return t9;
-    let i10 = t9.inputElement ? c12.Tracked(a14(t9.inputElement)) : t9.inputPositionState;
-    return __spreadProps(__spreadValues({}, t9), { activeOptionIndex: null, comboboxState: 1, isTyping: false, activationTrigger: 2, inputPositionState: i10, __demoMode: false });
+    let i9 = t9.inputElement ? c12.Tracked(a14(t9.inputElement)) : t9.inputPositionState;
+    return __spreadProps(__spreadValues({}, t9), { activeOptionIndex: null, comboboxState: 1, isTyping: false, activationTrigger: 2, inputPositionState: i9, __demoMode: false });
   }, [0](t9) {
-    var i10, e8;
-    if ((i10 = t9.dataRef.current) != null && i10.disabled || t9.comboboxState === 0) return t9;
+    var i9, e8;
+    if ((i9 = t9.dataRef.current) != null && i9.disabled || t9.comboboxState === 0) return t9;
     if ((e8 = t9.dataRef.current) != null && e8.value) {
       let n9 = t9.dataRef.current.calculateIndex(t9.dataRef.current.value);
       if (n9 !== -1) return __spreadProps(__spreadValues({}, t9), { activeOptionIndex: n9, comboboxState: 0, __demoMode: false, inputPositionState: c12.Idle });
     }
     return __spreadProps(__spreadValues({}, t9), { comboboxState: 0, inputPositionState: c12.Idle, __demoMode: false });
-  }, [3](t9, i10) {
-    return t9.isTyping === i10.isTyping ? t9 : __spreadProps(__spreadValues({}, t9), { isTyping: i10.isTyping });
-  }, [2](t9, i10) {
+  }, [3](t9, i9) {
+    return t9.isTyping === i9.isTyping ? t9 : __spreadProps(__spreadValues({}, t9), { isTyping: i9.isTyping });
+  }, [2](t9, i9) {
     var r11, u17, a15, s12;
     if ((r11 = t9.dataRef.current) != null && r11.disabled || t9.optionsElement && !((u17 = t9.dataRef.current) != null && u17.optionsPropsRef.current.static) && t9.comboboxState === 1) return t9;
     if (t9.virtual) {
-      let { options: p10, disabled: c13 } = t9.virtual, m8 = i10.focus === c9.Specific ? i10.idx : f11(i10, { resolveItems: () => p10, resolveActiveIndex: () => {
+      let { options: p10, disabled: c13 } = t9.virtual, m8 = i9.focus === c9.Specific ? i9.idx : f11(i9, { resolveItems: () => p10, resolveActiveIndex: () => {
         var l8, x6;
         return (x6 = (l8 = t9.activeOptionIndex) != null ? l8 : p10.findIndex((S8) => !c13(S8))) != null ? x6 : null;
       }, resolveDisabled: c13, resolveId() {
         throw new Error("Function not implemented.");
-      } }), b7 = (a15 = i10.trigger) != null ? a15 : 2;
+      } }), b7 = (a15 = i9.trigger) != null ? a15 : 2;
       return t9.activeOptionIndex === m8 && t9.activationTrigger === b7 ? t9 : __spreadProps(__spreadValues({}, t9), { activeOptionIndex: m8, activationTrigger: b7, isTyping: false, __demoMode: false });
     }
     let e8 = v5(t9);
@@ -6230,34 +6399,34 @@ var stonehamOverrideCalculator = (() => {
       let p10 = e8.options.findIndex((c13) => !c13.dataRef.current.disabled);
       p10 !== -1 && (e8.activeOptionIndex = p10);
     }
-    let n9 = i10.focus === c9.Specific ? i10.idx : f11(i10, { resolveItems: () => e8.options, resolveActiveIndex: () => e8.activeOptionIndex, resolveId: (p10) => p10.id, resolveDisabled: (p10) => p10.dataRef.current.disabled }), o11 = (s12 = i10.trigger) != null ? s12 : 2;
+    let n9 = i9.focus === c9.Specific ? i9.idx : f11(i9, { resolveItems: () => e8.options, resolveActiveIndex: () => e8.activeOptionIndex, resolveId: (p10) => p10.id, resolveDisabled: (p10) => p10.dataRef.current.disabled }), o11 = (s12 = i9.trigger) != null ? s12 : 2;
     return t9.activeOptionIndex === n9 && t9.activationTrigger === o11 ? t9 : __spreadProps(__spreadValues(__spreadValues({}, t9), e8), { isTyping: false, activeOptionIndex: n9, activationTrigger: o11, __demoMode: false });
-  }, [4]: (t9, i10) => {
+  }, [4]: (t9, i9) => {
     var r11, u17, a15, s12;
-    if ((r11 = t9.dataRef.current) != null && r11.virtual) return __spreadProps(__spreadValues({}, t9), { options: [...t9.options, i10.payload] });
-    let e8 = i10.payload, n9 = v5(t9, (p10) => (p10.push(e8), p10));
-    t9.activeOptionIndex === null && (a15 = (u17 = t9.dataRef.current).isSelected) != null && a15.call(u17, i10.payload.dataRef.current.value) && (n9.activeOptionIndex = n9.options.indexOf(e8));
+    if ((r11 = t9.dataRef.current) != null && r11.virtual) return __spreadProps(__spreadValues({}, t9), { options: [...t9.options, i9.payload] });
+    let e8 = i9.payload, n9 = v5(t9, (p10) => (p10.push(e8), p10));
+    t9.activeOptionIndex === null && (a15 = (u17 = t9.dataRef.current).isSelected) != null && a15.call(u17, i9.payload.dataRef.current.value) && (n9.activeOptionIndex = n9.options.indexOf(e8));
     let o11 = __spreadProps(__spreadValues(__spreadValues({}, t9), n9), { activationTrigger: 2 });
     return (s12 = t9.dataRef.current) != null && s12.__demoMode && t9.dataRef.current.value === void 0 && (o11.activeOptionIndex = 0), o11;
-  }, [5]: (t9, i10) => {
+  }, [5]: (t9, i9) => {
     var n9;
-    if ((n9 = t9.dataRef.current) != null && n9.virtual) return __spreadProps(__spreadValues({}, t9), { options: t9.options.filter((o11) => o11.id !== i10.id) });
+    if ((n9 = t9.dataRef.current) != null && n9.virtual) return __spreadProps(__spreadValues({}, t9), { options: t9.options.filter((o11) => o11.id !== i9.id) });
     let e8 = v5(t9, (o11) => {
-      let r11 = o11.findIndex((u17) => u17.id === i10.id);
+      let r11 = o11.findIndex((u17) => u17.id === i9.id);
       return r11 !== -1 && o11.splice(r11, 1), o11;
     });
     return __spreadProps(__spreadValues(__spreadValues({}, t9), e8), { activationTrigger: 2 });
-  }, [6]: (t9, i10) => t9.defaultToFirstOption === i10.value ? t9 : __spreadProps(__spreadValues({}, t9), { defaultToFirstOption: i10.value }), [7]: (t9, i10) => t9.activationTrigger === i10.trigger ? t9 : __spreadProps(__spreadValues({}, t9), { activationTrigger: i10.trigger }), [8]: (t9, i10) => {
+  }, [6]: (t9, i9) => t9.defaultToFirstOption === i9.value ? t9 : __spreadProps(__spreadValues({}, t9), { defaultToFirstOption: i9.value }), [7]: (t9, i9) => t9.activationTrigger === i9.trigger ? t9 : __spreadProps(__spreadValues({}, t9), { activationTrigger: i9.trigger }), [8]: (t9, i9) => {
     var n9, o11;
-    if (t9.virtual === null) return __spreadProps(__spreadValues({}, t9), { virtual: { options: i10.options, disabled: (n9 = i10.disabled) != null ? n9 : () => false } });
-    if (t9.virtual.options === i10.options && t9.virtual.disabled === i10.disabled) return t9;
+    if (t9.virtual === null) return __spreadProps(__spreadValues({}, t9), { virtual: { options: i9.options, disabled: (n9 = i9.disabled) != null ? n9 : () => false } });
+    if (t9.virtual.options === i9.options && t9.virtual.disabled === i9.disabled) return t9;
     let e8 = t9.activeOptionIndex;
     if (t9.activeOptionIndex !== null) {
-      let r11 = i10.options.indexOf(t9.virtual.options[t9.activeOptionIndex]);
+      let r11 = i9.options.indexOf(t9.virtual.options[t9.activeOptionIndex]);
       r11 !== -1 ? e8 = r11 : e8 = null;
     }
-    return __spreadProps(__spreadValues({}, t9), { activeOptionIndex: e8, virtual: { options: i10.options, disabled: (o11 = i10.disabled) != null ? o11 : () => false } });
-  }, [9]: (t9, i10) => t9.inputElement === i10.element ? t9 : __spreadProps(__spreadValues({}, t9), { inputElement: i10.element }), [10]: (t9, i10) => t9.buttonElement === i10.element ? t9 : __spreadProps(__spreadValues({}, t9), { buttonElement: i10.element }), [11]: (t9, i10) => t9.optionsElement === i10.element ? t9 : __spreadProps(__spreadValues({}, t9), { optionsElement: i10.element }), [12](t9) {
+    return __spreadProps(__spreadValues({}, t9), { activeOptionIndex: e8, virtual: { options: i9.options, disabled: (o11 = i9.disabled) != null ? o11 : () => false } });
+  }, [9]: (t9, i9) => t9.inputElement === i9.element ? t9 : __spreadProps(__spreadValues({}, t9), { inputElement: i9.element }), [10]: (t9, i9) => t9.buttonElement === i9.element ? t9 : __spreadProps(__spreadValues({}, t9), { buttonElement: i9.element }), [11]: (t9, i9) => t9.optionsElement === i9.element ? t9 : __spreadProps(__spreadValues({}, t9), { optionsElement: i9.element }), [12](t9) {
     return t9.inputPositionState.kind !== "Tracked" ? t9 : __spreadProps(__spreadValues({}, t9), { inputPositionState: c12.Moved });
   } };
   var y7 = class _y extends T5 {
@@ -6391,28 +6560,28 @@ var stonehamOverrideCalculator = (() => {
       p10((a15) => a15 + 1);
     }, [o11]);
     let f14 = b7.getVirtualItems(), n9 = S3(O5, (a15) => a15.activationTrigger === _6.Pointer), m8 = S3(O5, O5.selectors.activeOptionIndex);
-    return f14.length === 0 ? null : Rn.createElement(Le.Provider, { value: b7 }, Rn.createElement("div", { style: { position: "relative", width: "100%", height: "".concat(b7.getTotalSize(), "px") }, ref: (a15) => {
+    return f14.length === 0 ? null : xn.createElement(Le.Provider, { value: b7 }, xn.createElement("div", { style: { position: "relative", width: "100%", height: "".concat(b7.getTotalSize(), "px") }, ref: (a15) => {
       a15 && (n9 || m8 !== null && o11.length > m8 && b7.scrollToIndex(m8));
     } }, f14.map((a15) => {
       var u17;
-      return Rn.createElement(k, { key: a15.key }, Rn.cloneElement((u17 = T8.children) == null ? void 0 : u17.call(T8, __spreadProps(__spreadValues({}, T8.slot), { option: o11[a15.index] })), { key: "".concat(h8, "-").concat(a15.key), "data-index": a15.index, "aria-setsize": o11.length, "aria-posinset": a15.index + 1, style: { position: "absolute", top: 0, left: 0, transform: "translateY(".concat(a15.start, "px)"), overflowAnchor: "none" } }));
+      return xn.createElement(k, { key: a15.key }, xn.cloneElement((u17 = T8.children) == null ? void 0 : u17.call(T8, __spreadProps(__spreadValues({}, T8.slot), { option: o11[a15.index] })), { key: "".concat(h8, "-").concat(a15.key), "data-index": a15.index, "aria-setsize": o11.length, "aria-posinset": a15.index + 1, style: { position: "absolute", top: 0, left: 0, transform: "translateY(".concat(a15.start, "px)"), overflowAnchor: "none" } }));
     })));
   }
   var ho = k;
   function Ao(T8, O5) {
-    let e8 = g2(), o11 = a3(), _a = T8, { value: E7, defaultValue: R2, onChange: y8, form: b7, name: h8, by: p10, invalid: f14 = false, disabled: n9 = o11 || false, onClose: m8, __demoMode: a15 = false, multiple: u17 = false, immediate: A7 = false, virtual: d6 = null, nullable: X3 } = _a, G5 = __objRest(_a, ["value", "defaultValue", "onChange", "form", "name", "by", "invalid", "disabled", "onClose", "__demoMode", "multiple", "immediate", "virtual", "nullable"]), C10 = l4(R2), [x6 = u17 ? [] : void 0, v6] = b4(E7, y8, C10), c13 = b6({ id: e8, virtual: d6, __demoMode: a15 }), z4 = A2({ static: false, hold: false }), D9 = u7(p10), K4 = o5((i10) => d6 ? p10 === null ? d6.options.indexOf(i10) : d6.options.findIndex((M6) => D9(M6, i10)) : c13.state.options.findIndex((M6) => D9(M6.dataRef.current.value, i10))), W3 = q2((i10) => u3(l8.mode, { [k6.Multi]: () => x6.some((M6) => D9(M6, i10)), [k6.Single]: () => D9(x6, i10) }), [x6]), S8 = S3(c13, (i10) => i10.virtual), j10 = o5(() => m8 == null ? void 0 : m8()), l8 = T2(() => ({ __demoMode: a15, immediate: A7, optionsPropsRef: z4, value: x6, defaultValue: C10, disabled: n9, invalid: f14, mode: u17 ? k6.Multi : k6.Single, virtual: d6 ? S8 : null, onChange: v6, isSelected: W3, calculateIndex: K4, compare: D9, onClose: j10 }), [a15, A7, z4, x6, C10, n9, f14, u17, d6, S8, v6, W3, K4, D9, j10]);
+    let e8 = g2(), o11 = a3(), _a = T8, { value: E7, defaultValue: R2, onChange: y8, form: b7, name: h8, by: p10, invalid: f14 = false, disabled: n9 = o11 || false, onClose: m8, __demoMode: a15 = false, multiple: u17 = false, immediate: A7 = false, virtual: d6 = null, nullable: X3 } = _a, G5 = __objRest(_a, ["value", "defaultValue", "onChange", "form", "name", "by", "invalid", "disabled", "onClose", "__demoMode", "multiple", "immediate", "virtual", "nullable"]), C10 = l4(R2), [x6 = u17 ? [] : void 0, v6] = b4(E7, y8, C10), c13 = b6({ id: e8, virtual: d6, __demoMode: a15 }), z4 = A2({ static: false, hold: false }), D9 = u7(p10), K4 = o5((i9) => d6 ? p10 === null ? d6.options.indexOf(i9) : d6.options.findIndex((M6) => D9(M6, i9)) : c13.state.options.findIndex((M6) => D9(M6.dataRef.current.value, i9))), W3 = q2((i9) => u3(l8.mode, { [k6.Multi]: () => x6.some((M6) => D9(M6, i9)), [k6.Single]: () => D9(x6, i9) }), [x6]), S8 = S3(c13, (i9) => i9.virtual), j10 = o5(() => m8 == null ? void 0 : m8()), l8 = T2(() => ({ __demoMode: a15, immediate: A7, optionsPropsRef: z4, value: x6, defaultValue: C10, disabled: n9, invalid: f14, mode: u17 ? k6.Multi : k6.Single, virtual: d6 ? S8 : null, onChange: v6, isSelected: W3, calculateIndex: K4, compare: D9, onClose: j10 }), [a15, A7, z4, x6, C10, n9, f14, u17, d6, S8, v6, W3, K4, D9, j10]);
     n2(() => {
-      var i10;
-      d6 && c13.send({ type: D8.UpdateVirtualConfiguration, options: d6.options, disabled: (i10 = d6.disabled) != null ? i10 : null });
+      var i9;
+      d6 && c13.send({ type: D8.UpdateVirtualConfiguration, options: d6.options, disabled: (i9 = d6.disabled) != null ? i9 : null });
     }, [d6, d6 == null ? void 0 : d6.options, d6 == null ? void 0 : d6.disabled]), n2(() => {
       c13.state.dataRef.current = l8;
     }, [l8]);
-    let [k7, Y3, s12, U4] = S3(c13, (i10) => [i10.comboboxState, i10.buttonElement, i10.inputElement, i10.optionsElement]), $5 = x4.get(null), ne = S3($5, q2((i10) => $5.selectors.isTop(i10, e8), [$5, e8]));
+    let [k7, Y3, s12, U4] = S3(c13, (i9) => [i9.comboboxState, i9.buttonElement, i9.inputElement, i9.optionsElement]), $5 = x4.get(null), ne = S3($5, q2((i9) => $5.selectors.isTop(i9, e8), [$5, e8]));
     k5(ne, [Y3, s12, U4], () => c13.actions.closeCombobox());
     let be = S3(c13, c13.selectors.activeOptionIndex), ee = S3(c13, c13.selectors.activeOption), q5 = n3({ open: k7 === P6.Open, disabled: n9, invalid: f14, activeIndex: be, activeOption: ee, value: x6 }), [t9, V5] = V4(), P7 = O5 === null ? {} : { ref: O5 }, N5 = q2(() => {
       if (C10 !== void 0) return v6 == null ? void 0 : v6(C10);
     }, [v6, C10]), g6 = K3();
-    return Rn.createElement(V5, { value: t9, props: { htmlFor: s12 == null ? void 0 : s12.id }, slot: { open: k7 === P6.Open, disabled: n9 } }, Rn.createElement(Ae, null, Rn.createElement(de.Provider, { value: l8 }, Rn.createElement(u15.Provider, { value: c13 }, Rn.createElement(c8, { value: u3(k7, { [P6.Open]: i8.Open, [P6.Closed]: i8.Closed }) }, h8 != null && Rn.createElement(j4, { disabled: n9, data: x6 != null ? { [h8]: x6 } : {}, form: b7, onReset: N5 }), g6({ ourProps: P7, theirProps: G5, slot: q5, defaultTag: ho, name: "Combobox" }))))));
+    return xn.createElement(V5, { value: t9, props: { htmlFor: s12 == null ? void 0 : s12.id }, slot: { open: k7 === P6.Open, disabled: n9 } }, xn.createElement(Ae, null, xn.createElement(de.Provider, { value: l8 }, xn.createElement(u15.Provider, { value: c13 }, xn.createElement(c8, { value: u3(k7, { [P6.Open]: i8.Open, [P6.Closed]: i8.Closed }) }, h8 != null && xn.createElement(j4, { disabled: n9, data: x6 != null ? { [h8]: x6 } : {}, form: b7, onReset: N5 }), g6({ ourProps: P7, theirProps: G5, slot: q5, defaultTag: ho, name: "Combobox" }))))));
   }
   var Io = "input";
   function Ro(T8, O5) {
@@ -6428,16 +6597,16 @@ var stonehamOverrideCalculator = (() => {
       let g6 = a15.current;
       g6 && ((N5 === P6.Open && V5 === P6.Closed || t9 !== P7) && (g6.value = t9), requestAnimationFrame(() => {
         if (e8.state.isTyping || !g6 || d4(g6)) return;
-        let { selectionStart: i10, selectionEnd: M6 } = g6;
-        Math.abs((M6 != null ? M6 : 0) - (i10 != null ? i10 : 0)) === 0 && i10 === 0 && g6.setSelectionRange(g6.value.length, g6.value.length);
+        let { selectionStart: i9, selectionEnd: M6 } = g6;
+        Math.abs((M6 != null ? M6 : 0) - (i9 != null ? i9 : 0)) === 0 && i9 === 0 && g6.setSelectionRange(g6.value.length, g6.value.length);
       }));
     }, [C10, A7, d6]), m6(([t9], [V5]) => {
       if (t9 === P6.Open && V5 === P6.Closed) {
         if (e8.state.isTyping) return;
         let P7 = a15.current;
         if (!P7) return;
-        let N5 = P7.value, { selectionStart: g6, selectionEnd: i10, selectionDirection: M6 } = P7;
-        P7.value = "", P7.value = N5, M6 !== null ? P7.setSelectionRange(g6, i10, M6) : P7.setSelectionRange(g6, i10);
+        let N5 = P7.value, { selectionStart: g6, selectionEnd: i9, selectionDirection: M6 } = P7;
+        P7.value = "", P7.value = N5, M6 !== null ? P7.setSelectionRange(g6, i9, M6) : P7.setSelectionRange(g6, i9);
       }
     }, [A7]);
     let x6 = A2(false), v6 = o5(() => {
@@ -6483,11 +6652,11 @@ var stonehamOverrideCalculator = (() => {
       b7 == null || b7(t9), o11.mode === k6.Single && t9.target.value === "" && G5(), e8.actions.openCombobox();
     }), K4 = o5((t9) => {
       var P7, N5, g6;
-      let V5 = (P7 = t9.relatedTarget) != null ? P7 : n8.find((i10) => i10 !== t9.currentTarget);
+      let V5 = (P7 = t9.relatedTarget) != null ? P7 : n8.find((i9) => i9 !== t9.currentTarget);
       if (!((N5 = e8.state.optionsElement) != null && N5.contains(V5)) && !((g6 = e8.state.buttonElement) != null && g6.contains(V5)) && e8.state.comboboxState === P6.Open) return t9.preventDefault(), o11.mode === k6.Single && o11.value === null && G5(), e8.actions.closeCombobox();
     }), W3 = o5((t9) => {
       var P7, N5, g6;
-      let V5 = (P7 = t9.relatedTarget) != null ? P7 : n8.find((i10) => i10 !== t9.currentTarget);
+      let V5 = (P7 = t9.relatedTarget) != null ? P7 : n8.find((i9) => i9 !== t9.currentTarget);
       (N5 = e8.state.buttonElement) != null && N5.contains(V5) || (g6 = e8.state.optionsElement) != null && g6.contains(V5) || o11.disabled || o11.immediate && e8.state.comboboxState !== P6.Open && X3.microTask(() => {
         En(() => e8.actions.openCombobox()), e8.actions.setActivationTrigger(_6.Focus);
       });
@@ -6559,9 +6728,9 @@ var stonehamOverrideCalculator = (() => {
       if (t9 === void 0) throw new Error("Missing `options` in virtual mode");
       return t9 !== n9.virtual.options ? __spreadProps(__spreadValues({}, n9), { virtual: __spreadProps(__spreadValues({}, n9.virtual), { options: t9 }) }) : n9;
     }, [n9, t9, (Ce = n9.virtual) == null ? void 0 : Ce.options]);
-    n9.virtual && Object.assign(p10, { children: Rn.createElement(de.Provider, { value: N5 }, Rn.createElement(Eo, { slot: $5 }, p10.children)) });
-    let g6 = K3(), i10 = T2(() => n9.mode === k6.Multi ? n9 : __spreadProps(__spreadValues({}, n9), { isSelected: P7 }), [n9, P7]);
-    return Rn.createElement(te, { enabled: y8 ? T8.static || S8 : false, ownerDocument: D9 }, Rn.createElement(de.Provider, { value: i10 }, g6({ ourProps: ee, theirProps: __spreadProps(__spreadValues({}, p10), { children: Rn.createElement(s11, { freeze: q5 }, typeof p10.children == "function" ? (ve = p10.children) == null ? void 0 : ve.call(p10, $5) : p10.children) }), slot: $5, defaultTag: Do, features: So, visible: s12, name: "Combobox.Options" })));
+    n9.virtual && Object.assign(p10, { children: xn.createElement(de.Provider, { value: N5 }, xn.createElement(Eo, { slot: $5 }, p10.children)) });
+    let g6 = K3(), i9 = T2(() => n9.mode === k6.Multi ? n9 : __spreadProps(__spreadValues({}, n9), { isSelected: P7 }), [n9, P7]);
+    return xn.createElement(te, { enabled: y8 ? T8.static || S8 : false, ownerDocument: D9 }, xn.createElement(de.Provider, { value: i9 }, g6({ ourProps: ee, theirProps: __spreadProps(__spreadValues({}, p10), { children: xn.createElement(s11, { freeze: q5 }, typeof p10.children == "function" ? (ve = p10.children) == null ? void 0 : ve.call(p10, $5) : p10.children) }), slot: $5, defaultTag: Do, features: So, visible: s12, name: "Combobox.Options" })));
   }
   var Lo = "div";
   function Vo(T8, O5) {
@@ -6610,9 +6779,9 @@ var stonehamOverrideCalculator = (() => {
       }
     }
     if (s12 != null && typeof Object.getOwnPropertySymbols === "function") {
-      for (var i10 = 0, p10 = Object.getOwnPropertySymbols(s12); i10 < p10.length; i10++) {
-        if (e8.indexOf(p10[i10]) < 0 && Object.prototype.propertyIsEnumerable.call(s12, p10[i10])) {
-          t9[p10[i10]] = s12[p10[i10]];
+      for (var i9 = 0, p10 = Object.getOwnPropertySymbols(s12); i9 < p10.length; i9++) {
+        if (e8.indexOf(p10[i9]) < 0 && Object.prototype.propertyIsEnumerable.call(s12, p10[i9])) {
+          t9[p10[i9]] = s12[p10[i9]];
         }
       }
     }
@@ -6714,8 +6883,8 @@ var stonehamOverrideCalculator = (() => {
   function limitToScale(numStr, scale, fixedDecimalScale) {
     var str = "";
     var filler = fixedDecimalScale ? "0" : "";
-    for (var i10 = 0; i10 <= scale - 1; i10++) {
-      str += numStr[i10] || filler;
+    for (var i9 = 0; i9 <= scale - 1; i9++) {
+      str += numStr[i9] || filler;
     }
     return str;
   }
@@ -6792,18 +6961,18 @@ var stonehamOverrideCalculator = (() => {
     }
   }
   var findChangeRange = memoizeOnce(function(prevValue, newValue) {
-    var i10 = 0, j10 = 0;
+    var i9 = 0, j10 = 0;
     var prevLength = prevValue.length;
     var newLength = newValue.length;
-    while (prevValue[i10] === newValue[i10] && i10 < prevLength) {
-      i10++;
+    while (prevValue[i9] === newValue[i9] && i9 < prevLength) {
+      i9++;
     }
-    while (prevValue[prevLength - 1 - j10] === newValue[newLength - 1 - j10] && newLength - j10 > i10 && prevLength - j10 > i10) {
+    while (prevValue[prevLength - 1 - j10] === newValue[newLength - 1 - j10] && newLength - j10 > i9 && prevLength - j10 > i9) {
       j10++;
     }
     return {
-      from: { start: i10, end: prevLength - j10 },
-      to: { start: i10, end: newLength - j10 }
+      from: { start: i9, end: prevLength - j10 },
+      to: { start: i9, end: newLength - j10 }
     };
   });
   var findChangedRangeFromCaretPositions = function(lastCaretPositions, currentCaretPosition) {
@@ -6857,18 +7026,18 @@ var stonehamOverrideCalculator = (() => {
     var formattedValueLn = newFormattedValue.length;
     var addedIndexMap = {};
     var indexMap = new Array(curValLn);
-    for (var i10 = 0; i10 < curValLn; i10++) {
-      indexMap[i10] = -1;
+    for (var i9 = 0; i9 < curValLn; i9++) {
+      indexMap[i9] = -1;
       for (var j10 = 0, jLn = formattedValueLn; j10 < jLn; j10++) {
         var isCharSame = isCharacterSame({
           currentValue: curValue,
           lastValue: lastFormattedValue,
           formattedValue: newFormattedValue,
-          currentValueIndex: i10,
+          currentValueIndex: i9,
           formattedValueIndex: j10
         });
         if (isCharSame && addedIndexMap[j10] !== true) {
-          indexMap[i10] = j10;
+          indexMap[i9] = j10;
           addedIndexMap[j10] = true;
           break;
         }
@@ -6916,8 +7085,8 @@ var stonehamOverrideCalculator = (() => {
     var boundaryAry = Array.from({ length: formattedValue.length + 1 }).map(function() {
       return true;
     });
-    for (var i10 = 0, ln2 = boundaryAry.length; i10 < ln2; i10++) {
-      boundaryAry[i10] = Boolean(charIsNumber(formattedValue[i10]) || charIsNumber(formattedValue[i10 - 1]));
+    for (var i9 = 0, ln2 = boundaryAry.length; i9 < ln2; i9++) {
+      boundaryAry[i9] = Boolean(charIsNumber(formattedValue[i9]) || charIsNumber(formattedValue[i9 - 1]));
     }
     return boundaryAry;
   }
@@ -7239,12 +7408,12 @@ var stonehamOverrideCalculator = (() => {
       onBlur: _onBlur
     });
     if (displayType === "text") {
-      return renderText ? Rn.createElement(Rn.Fragment, null, renderText(formattedValue, otherProps) || null) : Rn.createElement("span", Object.assign({}, otherProps, { ref: getInputRef }), formattedValue);
+      return renderText ? xn.createElement(xn.Fragment, null, renderText(formattedValue, otherProps) || null) : xn.createElement("span", Object.assign({}, otherProps, { ref: getInputRef }), formattedValue);
     } else if (customInput) {
       var CustomInput = customInput;
-      return Rn.createElement(CustomInput, Object.assign({}, inputProps, { ref: getInputRef }));
+      return xn.createElement(CustomInput, Object.assign({}, inputProps, { ref: getInputRef }));
     }
-    return Rn.createElement("input", Object.assign({}, inputProps, { ref: getInputRef }));
+    return xn.createElement("input", Object.assign({}, inputProps, { ref: getInputRef }));
   }
   function format(numStr, props) {
     var decimalScale = props.decimalScale;
@@ -7607,7 +7776,7 @@ var stonehamOverrideCalculator = (() => {
   }
   function NumericFormat(props) {
     var numericFormatProps = useNumericFormat(props);
-    return Rn.createElement(NumberFormatBase, Object.assign({}, numericFormatProps));
+    return xn.createElement(NumberFormatBase, Object.assign({}, numericFormatProps));
   }
 
   // src/use-calculator.ts
@@ -7736,8 +7905,8 @@ var stonehamOverrideCalculator = (() => {
           list.push(toString(value));
         } else if (isArray(value)) {
           arr = true;
-          for (let i10 = 0, len = value.length; i10 < len; i10 += 1) {
-            deepGet(value[i10], path2, index3 + 1);
+          for (let i9 = 0, len = value.length; i9 < len; i9 += 1) {
+            deepGet(value[i9], path2, index3 + 1);
           }
         } else if (path2.length) {
           deepGet(value, path2, index3 + 1);
@@ -7875,8 +8044,8 @@ var stonehamOverrideCalculator = (() => {
     // Removes the doc at the specified index of the index
     removeAt(idx) {
       this.records.splice(idx, 1);
-      for (let i10 = idx, len = this.size(); i10 < len; i10 += 1) {
-        this.records[i10].i -= 1;
+      for (let i9 = idx, len = this.size(); i9 < len; i9 += 1) {
+        this.records[i9].i -= 1;
       }
     }
     getValueForItemAtKeyId(item, keyId) {
@@ -7980,27 +8149,27 @@ var stonehamOverrideCalculator = (() => {
     let indices = [];
     let start = -1;
     let end = -1;
-    let i10 = 0;
-    for (let len = matchmask.length; i10 < len; i10 += 1) {
-      let match = matchmask[i10];
+    let i9 = 0;
+    for (let len = matchmask.length; i9 < len; i9 += 1) {
+      let match = matchmask[i9];
       if (match && start === -1) {
-        start = i10;
+        start = i9;
       } else if (!match && start !== -1) {
-        end = i10 - 1;
+        end = i9 - 1;
         if (end - start + 1 >= minMatchCharLength) {
           indices.push([start, end]);
         }
         start = -1;
       }
     }
-    if (matchmask[i10 - 1] && i10 - start >= minMatchCharLength) {
-      indices.push([start, i10 - 1]);
+    if (matchmask[i9 - 1] && i9 - start >= minMatchCharLength) {
+      indices.push([start, i9 - 1]);
     }
     return indices;
   }
   var MAX_BITS = 32;
   function search(text, pattern, patternAlphabet, {
-    location = Config.location,
+    location: location2 = Config.location,
     distance = Config.distance,
     threshold = Config.threshold,
     findAllMatches = Config.findAllMatches,
@@ -8013,7 +8182,7 @@ var stonehamOverrideCalculator = (() => {
     }
     const patternLen = pattern.length;
     const textLen = text.length;
-    const expectedLocation = Math.max(0, Math.min(location, textLen));
+    const expectedLocation = Math.max(0, Math.min(location2, textLen));
     let currentThreshold = threshold;
     let bestLocation = expectedLocation;
     const computeMatches = minMatchCharLength > 1 || includeMatches;
@@ -8029,10 +8198,10 @@ var stonehamOverrideCalculator = (() => {
       currentThreshold = Math.min(score, currentThreshold);
       bestLocation = index3 + patternLen;
       if (computeMatches) {
-        let i10 = 0;
-        while (i10 < patternLen) {
-          matchMask[index3 + i10] = 1;
-          i10 += 1;
+        let i9 = 0;
+        while (i9 < patternLen) {
+          matchMask[index3 + i9] = 1;
+          i9 += 1;
         }
       }
     }
@@ -8041,12 +8210,12 @@ var stonehamOverrideCalculator = (() => {
     let finalScore = 1;
     let binMax = patternLen + textLen;
     const mask = 1 << patternLen - 1;
-    for (let i10 = 0; i10 < patternLen; i10 += 1) {
+    for (let i9 = 0; i9 < patternLen; i9 += 1) {
       let binMin = 0;
       let binMid = binMax;
       while (binMin < binMid) {
         const score2 = computeScore$1(pattern, {
-          errors: i10,
+          errors: i9,
           currentLocation: expectedLocation + binMid,
           expectedLocation,
           distance,
@@ -8063,7 +8232,7 @@ var stonehamOverrideCalculator = (() => {
       let start = Math.max(1, expectedLocation - binMid + 1);
       let finish = findAllMatches ? textLen : Math.min(expectedLocation + binMid, textLen) + patternLen;
       let bitArr = Array(finish + 2);
-      bitArr[finish + 1] = (1 << i10) - 1;
+      bitArr[finish + 1] = (1 << i9) - 1;
       for (let j10 = finish; j10 >= start; j10 -= 1) {
         let currentLocation = j10 - 1;
         let charMatch = patternAlphabet[text.charAt(currentLocation)];
@@ -8071,12 +8240,12 @@ var stonehamOverrideCalculator = (() => {
           matchMask[currentLocation] = +!!charMatch;
         }
         bitArr[j10] = (bitArr[j10 + 1] << 1 | 1) & charMatch;
-        if (i10) {
+        if (i9) {
           bitArr[j10] |= (lastBitArr[j10 + 1] | lastBitArr[j10]) << 1 | 1 | lastBitArr[j10 + 1];
         }
         if (bitArr[j10] & mask) {
           finalScore = computeScore$1(pattern, {
-            errors: i10,
+            errors: i9,
             currentLocation,
             expectedLocation,
             distance,
@@ -8093,7 +8262,7 @@ var stonehamOverrideCalculator = (() => {
         }
       }
       const score = computeScore$1(pattern, {
-        errors: i10 + 1,
+        errors: i9 + 1,
         currentLocation: expectedLocation,
         expectedLocation,
         distance,
@@ -8121,16 +8290,16 @@ var stonehamOverrideCalculator = (() => {
   }
   function createPatternAlphabet(pattern) {
     let mask = {};
-    for (let i10 = 0, len = pattern.length; i10 < len; i10 += 1) {
-      const char = pattern.charAt(i10);
-      mask[char] = (mask[char] || 0) | 1 << len - i10 - 1;
+    for (let i9 = 0, len = pattern.length; i9 < len; i9 += 1) {
+      const char = pattern.charAt(i9);
+      mask[char] = (mask[char] || 0) | 1 << len - i9 - 1;
     }
     return mask;
   }
   var stripDiacritics = String.prototype.normalize ? ((str) => str.normalize("NFD").replace(/[\u0300-\u036F\u0483-\u0489\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u0711\u0730-\u074A\u07A6-\u07B0\u07EB-\u07F3\u07FD\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u08D3-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u09FE\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A70\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0AFA-\u0AFF\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B56\u0B57\u0B62\u0B63\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0C00-\u0C04\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0D00-\u0D03\u0D3B\u0D3C\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D82\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0EB1\u0EB4-\u0EB9\u0EBB\u0EBC\u0EC8-\u0ECD\u0F18\u0F19\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F\u109A-\u109D\u135D-\u135F\u1712-\u1714\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u180B-\u180D\u1885\u1886\u18A9\u1920-\u192B\u1930-\u193B\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F\u1AB0-\u1ABE\u1B00-\u1B04\u1B34-\u1B44\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BE6-\u1BF3\u1C24-\u1C37\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF2-\u1CF4\u1CF7-\u1CF9\u1DC0-\u1DF9\u1DFB-\u1DFF\u20D0-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA66F-\uA672\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA880\uA881\uA8B4-\uA8C5\uA8E0-\uA8F1\uA8FF\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9E5\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F]/g, "")) : ((str) => str);
   var BitapSearch = class {
     constructor(pattern, {
-      location = Config.location,
+      location: location2 = Config.location,
       threshold = Config.threshold,
       distance = Config.distance,
       includeMatches = Config.includeMatches,
@@ -8141,7 +8310,7 @@ var stonehamOverrideCalculator = (() => {
       ignoreLocation = Config.ignoreLocation
     } = {}) {
       this.options = {
-        location,
+        location: location2,
         threshold,
         distance,
         includeMatches,
@@ -8167,12 +8336,12 @@ var stonehamOverrideCalculator = (() => {
       };
       const len = this.pattern.length;
       if (len > MAX_BITS) {
-        let i10 = 0;
+        let i9 = 0;
         const remainder = len % MAX_BITS;
         const end = len - remainder;
-        while (i10 < end) {
-          addChunk(this.pattern.substr(i10, MAX_BITS), i10);
-          i10 += MAX_BITS;
+        while (i9 < end) {
+          addChunk(this.pattern.substr(i9, MAX_BITS), i9);
+          i9 += MAX_BITS;
         }
         if (remainder) {
           const startIndex = len - MAX_BITS;
@@ -8197,7 +8366,7 @@ var stonehamOverrideCalculator = (() => {
         return result2;
       }
       const {
-        location,
+        location: location2,
         distance,
         threshold,
         findAllMatches,
@@ -8209,7 +8378,7 @@ var stonehamOverrideCalculator = (() => {
       let hasMatches = false;
       this.chunks.forEach(({ pattern, alphabet, startIndex }) => {
         const { isMatch, score, indices } = search(text, pattern, alphabet, {
-          location: location + startIndex,
+          location: location2 + startIndex,
           distance,
           threshold,
           findAllMatches,
@@ -8387,7 +8556,7 @@ var stonehamOverrideCalculator = (() => {
   };
   var FuzzyMatch = class extends BaseMatch {
     constructor(pattern, {
-      location = Config.location,
+      location: location2 = Config.location,
       threshold = Config.threshold,
       distance = Config.distance,
       includeMatches = Config.includeMatches,
@@ -8399,7 +8568,7 @@ var stonehamOverrideCalculator = (() => {
     } = {}) {
       super(pattern);
       this._bitapSearch = new BitapSearch(pattern, {
-        location,
+        location: location2,
         threshold,
         distance,
         includeMatches,
@@ -8437,13 +8606,13 @@ var stonehamOverrideCalculator = (() => {
       return /^'(.*)$/;
     }
     search(text) {
-      let location = 0;
+      let location2 = 0;
       let index3;
       const indices = [];
       const patternLen = this.pattern.length;
-      while ((index3 = text.indexOf(this.pattern, location)) > -1) {
-        location = index3 + patternLen;
-        indices.push([index3, location - 1]);
+      while ((index3 = text.indexOf(this.pattern, location2)) > -1) {
+        location2 = index3 + patternLen;
+        indices.push([index3, location2 - 1]);
       }
       const isMatch = !!indices.length;
       return {
@@ -8470,8 +8639,8 @@ var stonehamOverrideCalculator = (() => {
     return pattern.split(OR_TOKEN).map((item) => {
       let query = item.trim().split(SPACE_RE).filter((item2) => item2 && !!item2.trim());
       let results = [];
-      for (let i10 = 0, len = query.length; i10 < len; i10 += 1) {
-        const queryItem = query[i10];
+      for (let i9 = 0, len = query.length; i9 < len; i9 += 1) {
+        const queryItem = query[i9];
         let found = false;
         let idx = -1;
         while (!found && ++idx < searchersLen) {
@@ -8507,7 +8676,7 @@ var stonehamOverrideCalculator = (() => {
       minMatchCharLength = Config.minMatchCharLength,
       ignoreLocation = Config.ignoreLocation,
       findAllMatches = Config.findAllMatches,
-      location = Config.location,
+      location: location2 = Config.location,
       threshold = Config.threshold,
       distance = Config.distance
     } = {}) {
@@ -8519,7 +8688,7 @@ var stonehamOverrideCalculator = (() => {
         minMatchCharLength,
         findAllMatches,
         ignoreLocation,
-        location,
+        location: location2,
         threshold,
         distance
       };
@@ -8545,8 +8714,8 @@ var stonehamOverrideCalculator = (() => {
       let numMatches = 0;
       let allIndices = [];
       let totalScore = 0;
-      for (let i10 = 0, qLen = query.length; i10 < qLen; i10 += 1) {
-        const searchers2 = query[i10];
+      for (let i9 = 0, qLen = query.length; i9 < qLen; i9 += 1) {
+        const searchers2 = query[i9];
         allIndices.length = 0;
         numMatches = 0;
         for (let j10 = 0, pLen = searchers2.length; j10 < pLen; j10 += 1) {
@@ -8592,8 +8761,8 @@ var stonehamOverrideCalculator = (() => {
     registeredSearchers.push(...args);
   }
   function createSearcher(pattern, options) {
-    for (let i10 = 0, len = registeredSearchers.length; i10 < len; i10 += 1) {
-      let searcherClass = registeredSearchers[i10];
+    for (let i9 = 0, len = registeredSearchers.length; i9 < len; i9 += 1) {
+      let searcherClass = registeredSearchers[i9];
       if (searcherClass.condition(pattern, options)) {
         return new searcherClass(pattern, options);
       }
@@ -8746,11 +8915,11 @@ var stonehamOverrideCalculator = (() => {
     }
     remove(predicate = () => false) {
       const results = [];
-      for (let i10 = 0, len = this._docs.length; i10 < len; i10 += 1) {
-        const doc = this._docs[i10];
-        if (predicate(doc, i10)) {
-          this.removeAt(i10);
-          i10 -= 1;
+      for (let i9 = 0, len = this._docs.length; i9 < len; i9 += 1) {
+        const doc = this._docs[i9];
+        if (predicate(doc, i9)) {
+          this.removeAt(i9);
+          i9 -= 1;
           len -= 1;
           results.push(doc);
         }
@@ -8826,8 +8995,8 @@ var stonehamOverrideCalculator = (() => {
           return [];
         }
         const res = [];
-        for (let i10 = 0, len = node.children.length; i10 < len; i10 += 1) {
-          const child = node.children[i10];
+        for (let i9 = 0, len = node.children.length; i9 < len; i9 += 1) {
+          const child = node.children[i9];
           const result = evaluate2(child, item, idx);
           if (result.length) {
             res.push(...result);
@@ -9070,12 +9239,11 @@ var stonehamOverrideCalculator = (() => {
   init_preact_module();
   init_preact_module();
   var f13 = 0;
-  var i9 = Array.isArray;
-  function u16(e8, t9, n9, o11, i10, u17) {
+  function u16(e8, t9, n9, o11, i9, u17) {
     t9 || (t9 = {});
     var a15, c13, p10 = t9;
     if ("ref" in p10) for (c13 in p10 = {}, t9) "ref" == c13 ? a15 = t9[c13] : p10[c13] = t9[c13];
-    var l8 = { type: e8, props: p10, key: n9, ref: a15, __k: null, __: null, __b: 0, __e: null, __c: null, constructor: void 0, __v: --f13, __i: -1, __u: 0, __source: i10, __self: u17 };
+    var l8 = { type: e8, props: p10, key: n9, ref: a15, __k: null, __: null, __b: 0, __e: null, __c: null, constructor: void 0, __v: --f13, __i: -1, __u: 0, __source: i9, __self: u17 };
     if ("function" == typeof e8 && (a15 = e8.defaultProps)) for (c13 in a15) void 0 === p10[c13] && (p10[c13] = a15[c13]);
     return l.vnode && l.vnode(l8), l8;
   }
@@ -9085,10 +9253,10 @@ var stonehamOverrideCalculator = (() => {
     const calculator = useCalculator();
     return /* @__PURE__ */ u16("article", { id: "stoneham-override-calculator", className: "calculator", children: [
       /* @__PURE__ */ u16("section", { className: "calculator__inputs", children: [
-        /* @__PURE__ */ u16("h2", { className: "calculator__heading", children: "Calculator Inputs" }),
+        /* @__PURE__ */ u16("h2", { className: "calculator__heading", children: "Enter your Info" }),
         /* @__PURE__ */ u16("form", { className: "calculator__form", children: /* @__PURE__ */ u16("fieldset", { className: "calculator__fieldset", children: [
           /* @__PURE__ */ u16("div", { className: "calculator__field", children: [
-            /* @__PURE__ */ u16("label", { htmlFor: "propertyAddress", className: "calculator__label", children: "Your Property Address" }),
+            /* @__PURE__ */ u16("label", { htmlFor: "propertyAddress", className: "calculator__label", children: "Property Address" }),
             /* @__PURE__ */ u16(
               Ht,
               {
@@ -9100,12 +9268,12 @@ var stonehamOverrideCalculator = (() => {
                     {
                       id: "propertyAddress",
                       className: "calculator__input calculator__input--combobox",
-                      placeholder: "Enter your property address",
+                      placeholder: "123 Main St",
                       displayValue: calculator.getDisplayValue,
                       onChange: calculator.onAddressInputChange
                     }
                   ),
-                  /* @__PURE__ */ u16(Uo, { className: "calculator__combobox-options", children: calculator.isLoading ? /* @__PURE__ */ u16("div", { className: "calculator__combobox-message", children: "Loading..." }) : calculator.suggestions.length === 0 && calculator.query.length > 2 ? /* @__PURE__ */ u16("div", { className: "calculator__combobox-message", children: "No properties found" }) : calculator.suggestions.map((suggestion, index3) => /* @__PURE__ */ u16(
+                  /* @__PURE__ */ u16(Uo, { className: "calculator__combobox-options", children: calculator.isLoading ? /* @__PURE__ */ u16("div", { className: "calculator__combobox-message", children: "Loading..." }) : calculator.suggestions.length === 0 && calculator.query.length > 2 ? /* @__PURE__ */ u16("div", { className: "calculator__combobox-message", children: /* @__PURE__ */ u16("strong", { children: "No properties found" }) }) : calculator.suggestions.map((suggestion, index3) => /* @__PURE__ */ u16(
                     Ho,
                     {
                       value: suggestion,
@@ -9177,18 +9345,18 @@ var stonehamOverrideCalculator = (() => {
         /* @__PURE__ */ u16("dl", { className: "calculator__data-list", children: [
           /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
             /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Current Tax Rate" }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: "(per $1,000)" }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.currentTaxRate })
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.currentTaxRate }),
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: "(per $1,000)" })
           ] }),
           /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
             /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Proposed Tax Rate" }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: "(per $1,000)" }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.newTaxRate })
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.newTaxRate }),
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: "(per $1,000)" })
           ] }),
           /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
             /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Rate Increase" }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: "(per $1,000)" }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.newTaxRateImpact })
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.newTaxRateImpact }),
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: "(per $1,000)" })
           ] })
         ] })
       ] }),
@@ -9235,7 +9403,7 @@ var stonehamOverrideCalculator = (() => {
         ] })
       ] }),
       /* @__PURE__ */ u16("footer", { className: "calculator__footer", children: /* @__PURE__ */ u16("p", { className: "calculator__disclaimer", children: [
-        "Methodology derived from",
+        "Methodology derived from the",
         " ",
         /* @__PURE__ */ u16(
           "a",
@@ -9244,23 +9412,23 @@ var stonehamOverrideCalculator = (() => {
             className: "calculator__link",
             target: "_blank",
             rel: "noopener noreferrer",
-            children: "the Massachusetts Department of Revenue's Division of Local Services Tax Impact Calculator"
+            children: "Mass. DOR's Division of Local Services Tax Impact Calculator"
           }
         ),
         " ",
-        "for the town of Stoneham (FY2025). Property assessments pulled from public record via",
+        "for the Town of Brookline (FY2026). Property assessments pulled from public record via the",
         " ",
         /* @__PURE__ */ u16(
           "a",
           {
-            href: "https://stoneham.patriotproperties.com/default.asp",
+            href: "https://brooklinema.patriotproperties.com/default.asp",
             className: "calculator__link",
             target: "_blank",
             rel: "noopener noreferrer",
-            children: "the Stoneham Patriot Properties website"
+            children: "Brookline, MA Property Database"
           }
         ),
-        ". For demonstration purposes only. Actual tax impact may vary based on final override amount, assessed property values, and other adjustments to the tax levy. This calculator is not approved nor endorsed by the town of Stoneham, the Massachusetts Department of Revenue, Patriot Properties, nor any other official entity. Source code available via",
+        ". For demonstration purposes only. Actual tax impact may vary based on final override amount, assessed property values, and other adjustments to the tax levy. This calculator is not approved nor endorsed by the Massachusetts Department of Revenue, Patriot Properties, nor any other official entity. Source code available via",
         " ",
         /* @__PURE__ */ u16(
           "a",

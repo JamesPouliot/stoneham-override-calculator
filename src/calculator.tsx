@@ -26,12 +26,12 @@ export const Calculator = () => {
   return (
     <article id="stoneham-override-calculator" className="calculator">
       <section className="calculator__inputs">
-        <h2 className="calculator__heading">Calculator Inputs</h2>
+        <h2 className="calculator__heading">Enter your Info</h2>
         <form className="calculator__form">
           <fieldset className="calculator__fieldset">
             <div className="calculator__field">
               <label htmlFor="propertyAddress" className="calculator__label">
-                Your Property Address
+                Property Address
               </label>
               <Combobox
                 value={calculator.selectedProperty}
@@ -41,7 +41,7 @@ export const Calculator = () => {
                   <ComboboxInput
                     id="propertyAddress"
                     className="calculator__input calculator__input--combobox"
-                    placeholder="Enter your property address"
+                    placeholder="123 Main St"
                     displayValue={calculator.getDisplayValue}
                     onChange={calculator.onAddressInputChange}
                   />
@@ -53,7 +53,7 @@ export const Calculator = () => {
                     ) : calculator.suggestions.length === 0 &&
                       calculator.query.length > 2 ? (
                       <div className="calculator__combobox-message">
-                        No properties found
+                        <strong>No properties found</strong>
                       </div>
                     ) : (
                       calculator.suggestions.map((suggestion, index) => (
@@ -134,31 +134,31 @@ export const Calculator = () => {
         <dl className="calculator__data-list">
           <div className="calculator__data-item">
             <dt className="calculator__term">Current Tax Rate</dt>
-            <dd className="calculator__detail calculator__detail--unit">
-              (per $1,000)
-            </dd>
             <dd className="calculator__detail calculator__detail--value">
               {calculator.calculatedValues.currentTaxRate}
+            </dd>
+            <dd className="calculator__detail calculator__detail--unit">
+              (per $1,000)
             </dd>
           </div>
 
           <div className="calculator__data-item">
             <dt className="calculator__term">Proposed Tax Rate</dt>
-            <dd className="calculator__detail calculator__detail--unit">
-              (per $1,000)
-            </dd>
             <dd className="calculator__detail calculator__detail--value">
               {calculator.calculatedValues.newTaxRate}
+            </dd>
+            <dd className="calculator__detail calculator__detail--unit">
+              (per $1,000)
             </dd>
           </div>
 
           <div className="calculator__data-item">
             <dt className="calculator__term">Rate Increase</dt>
-            <dd className="calculator__detail calculator__detail--unit">
-              (per $1,000)
-            </dd>
             <dd className="calculator__detail calculator__detail--value">
               {calculator.calculatedValues.newTaxRateImpact}
+            </dd>
+            <dd className="calculator__detail calculator__detail--unit">
+              (per $1,000)
             </dd>
           </div>
         </dl>
@@ -232,31 +232,30 @@ export const Calculator = () => {
 
       <footer className="calculator__footer">
         <p className="calculator__disclaimer">
-          Methodology derived from{" "}
+          Methodology derived from the{" "}
           <a
             href="https://dlsgateway.dor.state.ma.us/reports/rdPage.aspx?rdReport=Analysis.TaxImpactCalc"
             className="calculator__link"
             target="_blank"
             rel="noopener noreferrer"
           >
-            the Massachusetts Department of Revenue's Division of Local Services
-            Tax Impact Calculator
+            Mass. DOR's Division of Local Services Tax Impact Calculator
           </a>{" "}
-          for the town of Stoneham (FY2025). Property assessments pulled from
-          public record via{" "}
+          for the Town of Brookline (FY2026). Property assessments pulled from
+          public record via the{" "}
           <a
-            href="https://stoneham.patriotproperties.com/default.asp"
+            href="https://brooklinema.patriotproperties.com/default.asp"
             className="calculator__link"
             target="_blank"
             rel="noopener noreferrer"
           >
-            the Stoneham Patriot Properties website
+            Brookline, MA Property Database
           </a>
           . For demonstration purposes only. Actual tax impact may vary based on
           final override amount, assessed property values, and other adjustments
           to the tax levy. This calculator is not approved nor endorsed by the
-          town of Stoneham, the Massachusetts Department of Revenue, Patriot
-          Properties, nor any other official entity. Source code available via{" "}
+          Massachusetts Department of Revenue, Patriot Properties, nor any other
+          official entity. Source code available via{" "}
           <a
             href="https://github.com/RoboCafaz/stoneham-override-calculator"
             className="calculator__link"
