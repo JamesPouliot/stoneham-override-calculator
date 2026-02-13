@@ -9346,38 +9346,17 @@ var stonehamOverrideCalculator = (() => {
           /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
             /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Current Tax Rate" }),
             /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.currentTaxRate }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: "(per $1,000)" })
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: "per $1,000" })
           ] }),
           /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
             /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Proposed Tax Rate" }),
             /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.newTaxRate }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: "(per $1,000)" })
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: "per $1,000" })
           ] }),
           /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
             /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Rate Increase" }),
             /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.newTaxRateImpact }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: "(per $1,000)" })
-          ] })
-        ] })
-      ] }),
-      /* @__PURE__ */ u16("section", { className: "calculator__results calculator__results--tax-bill", children: [
-        /* @__PURE__ */ u16("h2", { className: "calculator__heading", children: "Your Estimated Tax Bill" }),
-        /* @__PURE__ */ u16("dl", { className: "calculator__data-list", children: [
-          /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
-            /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Current Annual Bill" }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.currentTaxBillYearly })
-          ] }),
-          /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
-            /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Proposed Annual Bill" }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.newTaxBillYearly })
-          ] }),
-          /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
-            /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Current Quarterly Bill" }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.currentTaxBillQuarterly })
-          ] }),
-          /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
-            /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Proposed Quarterly Bill" }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.newTaxBillQuarterly })
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: "per $1,000" })
           ] })
         ] })
       ] }),
@@ -9386,7 +9365,19 @@ var stonehamOverrideCalculator = (() => {
         /* @__PURE__ */ u16("dl", { className: "calculator__data-list", children: [
           /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
             /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Annual Impact:" }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.estimatedTaxImpactYearly })
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.estimatedTaxImpactYearly }),
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
+              calculator.calculatedValues.estimatedTaxImpactQuarterly,
+              " per quarter"
+            ] }),
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
+              calculator.calculatedValues.estimatedTaxImpactMonthly,
+              " per month"
+            ] }),
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
+              calculator.calculatedValues.estimatedTaxImpactDaily,
+              " per day"
+            ] })
           ] }),
           /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
             /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Quarterly Impact:" }),
@@ -9399,6 +9390,27 @@ var stonehamOverrideCalculator = (() => {
           /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
             /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Daily Impact:" }),
             /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.estimatedTaxImpactDaily })
+          ] })
+        ] })
+      ] }),
+      /* @__PURE__ */ u16("section", { className: "calculator__results calculator__results--tax-bill", children: [
+        /* @__PURE__ */ u16("h2", { className: "calculator__heading", children: "Your Total Estimated Tax Bill" }),
+        /* @__PURE__ */ u16("dl", { className: "calculator__data-list", children: [
+          /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
+            /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Current Annual Bill" }),
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.currentTaxBillYearly }),
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
+              calculator.calculatedValues.currentTaxBillQuarterly,
+              " per quarter"
+            ] })
+          ] }),
+          /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
+            /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Proposed Annual Bill" }),
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.newTaxBillYearly }),
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
+              calculator.calculatedValues.newTaxBillQuarterly,
+              " per quarter"
+            ] })
           ] })
         ] })
       ] }),

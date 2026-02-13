@@ -138,7 +138,7 @@ export const Calculator = () => {
               {calculator.calculatedValues.currentTaxRate}
             </dd>
             <dd className="calculator__detail calculator__detail--unit">
-              (per $1,000)
+              per $1,000
             </dd>
           </div>
 
@@ -148,7 +148,7 @@ export const Calculator = () => {
               {calculator.calculatedValues.newTaxRate}
             </dd>
             <dd className="calculator__detail calculator__detail--unit">
-              (per $1,000)
+              per $1,000
             </dd>
           </div>
 
@@ -158,40 +158,7 @@ export const Calculator = () => {
               {calculator.calculatedValues.newTaxRateImpact}
             </dd>
             <dd className="calculator__detail calculator__detail--unit">
-              (per $1,000)
-            </dd>
-          </div>
-        </dl>
-      </section>
-
-      <section className="calculator__results calculator__results--tax-bill">
-        <h2 className="calculator__heading">Your Estimated Tax Bill</h2>
-        <dl className="calculator__data-list">
-          <div className="calculator__data-item">
-            <dt className="calculator__term">Current Annual Bill</dt>
-            <dd className="calculator__detail calculator__detail--value">
-              {calculator.calculatedValues.currentTaxBillYearly}
-            </dd>
-          </div>
-
-          <div className="calculator__data-item">
-            <dt className="calculator__term">Proposed Annual Bill</dt>
-            <dd className="calculator__detail calculator__detail--value">
-              {calculator.calculatedValues.newTaxBillYearly}
-            </dd>
-          </div>
-
-          <div className="calculator__data-item">
-            <dt className="calculator__term">Current Quarterly Bill</dt>
-            <dd className="calculator__detail calculator__detail--value">
-              {calculator.calculatedValues.currentTaxBillQuarterly}
-            </dd>
-          </div>
-
-          <div className="calculator__data-item">
-            <dt className="calculator__term">Proposed Quarterly Bill</dt>
-            <dd className="calculator__detail calculator__detail--value">
-              {calculator.calculatedValues.newTaxBillQuarterly}
+              per $1,000
             </dd>
           </div>
         </dl>
@@ -204,6 +171,16 @@ export const Calculator = () => {
             <dt className="calculator__term">Annual Impact:</dt>
             <dd className="calculator__detail calculator__detail--value">
               {calculator.calculatedValues.estimatedTaxImpactYearly}
+            </dd>
+            <dd className="calculator__detail calculator__detail--unit">
+              {calculator.calculatedValues.estimatedTaxImpactQuarterly} per
+              quarter
+            </dd>
+            <dd className="calculator__detail calculator__detail--unit">
+              {calculator.calculatedValues.estimatedTaxImpactMonthly} per month
+            </dd>
+            <dd className="calculator__detail calculator__detail--unit">
+              {calculator.calculatedValues.estimatedTaxImpactDaily} per day
             </dd>
           </div>
 
@@ -225,6 +202,31 @@ export const Calculator = () => {
             <dt className="calculator__term">Daily Impact:</dt>
             <dd className="calculator__detail calculator__detail--value">
               {calculator.calculatedValues.estimatedTaxImpactDaily}
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <section className="calculator__results calculator__results--tax-bill">
+        <h2 className="calculator__heading">Your Total Estimated Tax Bill</h2>
+        <dl className="calculator__data-list">
+          <div className="calculator__data-item">
+            <dt className="calculator__term">Current Annual Bill</dt>
+            <dd className="calculator__detail calculator__detail--value">
+              {calculator.calculatedValues.currentTaxBillYearly}
+            </dd>
+            <dd className="calculator__detail calculator__detail--unit">
+              {calculator.calculatedValues.currentTaxBillQuarterly} per quarter
+            </dd>
+          </div>
+
+          <div className="calculator__data-item">
+            <dt className="calculator__term">Proposed Annual Bill</dt>
+            <dd className="calculator__detail calculator__detail--value">
+              {calculator.calculatedValues.newTaxBillYearly}
+            </dd>
+            <dd className="calculator__detail calculator__detail--unit">
+              {calculator.calculatedValues.newTaxBillQuarterly} per quarter
             </dd>
           </div>
         </dl>
