@@ -25,6 +25,7 @@ export const Calculator = () => {
 
   return (
     <article id="stoneham-override-calculator" className="calculator">
+      <h1>Brookline Override Calculator</h1>
       <section className="calculator__inputs">
         <h2 className="calculator__heading">Enter your Info</h2>
         <form className="calculator__form">
@@ -130,7 +131,7 @@ export const Calculator = () => {
       </section>
 
       <section className="calculator__results calculator__results--tax-rate">
-        <h2 className="calculator__heading">Estimated Tax Rate Impact</h2>
+        <h2 className="calculator__heading">Estimated Tax Rate Increase</h2>
         <dl className="calculator__data-list">
           <div className="calculator__data-item">
             <dt className="calculator__term">Current Tax Rate</dt>
@@ -143,19 +144,12 @@ export const Calculator = () => {
           </div>
 
           <div className="calculator__data-item">
-            <dt className="calculator__term">Proposed Tax Rate</dt>
+            <dt className="calculator__term">
+              Proposed Tax Rate &#40;+
+              {calculator.calculatedValues.newTaxRateImpact}&#41;
+            </dt>
             <dd className="calculator__detail calculator__detail--value">
               {calculator.calculatedValues.newTaxRate}
-            </dd>
-            <dd className="calculator__detail calculator__detail--unit">
-              per $1,000
-            </dd>
-          </div>
-
-          <div className="calculator__data-item">
-            <dt className="calculator__term">Rate Increase</dt>
-            <dd className="calculator__detail calculator__detail--value">
-              {calculator.calculatedValues.newTaxRateImpact}
             </dd>
             <dd className="calculator__detail calculator__detail--unit">
               per $1,000
@@ -165,10 +159,10 @@ export const Calculator = () => {
       </section>
 
       <section className="calculator__results calculator__results--tax-impact">
-        <h2 className="calculator__heading">Your Estimated Tax Impact</h2>
+        <h2 className="calculator__heading">Your Estimated Tax Increase</h2>
         <dl className="calculator__data-list">
           <div className="calculator__data-item">
-            <dt className="calculator__term">Annual Impact:</dt>
+            <dt className="calculator__term">Annual Increase:</dt>
             <dd className="calculator__detail calculator__detail--value">
               {calculator.calculatedValues.estimatedTaxImpactYearly}
             </dd>

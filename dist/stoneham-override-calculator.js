@@ -9252,6 +9252,7 @@ var stonehamOverrideCalculator = (() => {
   var Calculator = () => {
     const calculator = useCalculator();
     return /* @__PURE__ */ u16("article", { id: "stoneham-override-calculator", className: "calculator", children: [
+      /* @__PURE__ */ u16("h1", { children: "Brookline Override Calculator" }),
       /* @__PURE__ */ u16("section", { className: "calculator__inputs", children: [
         /* @__PURE__ */ u16("h2", { className: "calculator__heading", children: "Enter your Info" }),
         /* @__PURE__ */ u16("form", { className: "calculator__form", children: /* @__PURE__ */ u16("fieldset", { className: "calculator__fieldset", children: [
@@ -9341,7 +9342,7 @@ var stonehamOverrideCalculator = (() => {
         ] }) })
       ] }),
       /* @__PURE__ */ u16("section", { className: "calculator__results calculator__results--tax-rate", children: [
-        /* @__PURE__ */ u16("h2", { className: "calculator__heading", children: "Estimated Tax Rate Impact" }),
+        /* @__PURE__ */ u16("h2", { className: "calculator__heading", children: "Estimated Tax Rate Increase" }),
         /* @__PURE__ */ u16("dl", { className: "calculator__data-list", children: [
           /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
             /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Current Tax Rate" }),
@@ -9349,21 +9350,20 @@ var stonehamOverrideCalculator = (() => {
             /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: "per $1,000" })
           ] }),
           /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
-            /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Proposed Tax Rate" }),
+            /* @__PURE__ */ u16("dt", { className: "calculator__term", children: [
+              "Proposed Tax Rate (+",
+              calculator.calculatedValues.newTaxRateImpact,
+              ")"
+            ] }),
             /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.newTaxRate }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: "per $1,000" })
-          ] }),
-          /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
-            /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Rate Increase" }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.newTaxRateImpact }),
             /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: "per $1,000" })
           ] })
         ] })
       ] }),
       /* @__PURE__ */ u16("section", { className: "calculator__results calculator__results--tax-impact", children: [
-        /* @__PURE__ */ u16("h2", { className: "calculator__heading", children: "Your Estimated Tax Impact" }),
+        /* @__PURE__ */ u16("h2", { className: "calculator__heading", children: "Your Estimated Tax Increase" }),
         /* @__PURE__ */ u16("dl", { className: "calculator__data-list", children: /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
-          /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Annual Impact:" }),
+          /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Annual Increase:" }),
           /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.estimatedTaxImpactYearly }),
           /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
             calculator.calculatedValues.estimatedTaxImpactQuarterly,
