@@ -30,6 +30,31 @@ export const Calculator = () => {
         <form className="calculator__form">
           <fieldset className="calculator__fieldset">
             <div className="calculator__field">
+              <label htmlFor="overrideValue" className="calculator__label">
+                Hypothetical Override Amount
+              </label>
+              <div className="calculator__input-wrapper">
+                <span className="calculator__currency-symbol">$</span>
+                <NumericFormat
+                  id="overrideValue"
+                  className="calculator__input calculator__input--numeric"
+                  name="New override amount"
+                  type="text"
+                  value={calculator.overrideValue}
+                  onValueChange={(e) =>
+                    calculator.onOverrideValueChange(e.floatValue)
+                  }
+                  placeholder={formatDollars(DEFAULT_OVERRIDE_AMOUNT)}
+                  thousandSeparator={true}
+                  allowNegative={false}
+                  decimalScale={0}
+                  max={14_600_000}
+                  maxLength={10}
+                />
+              </div>
+            </div>
+
+            <div className="calculator__field">
               <label htmlFor="propertyAddress" className="calculator__label">
                 Property Address
               </label>
@@ -97,31 +122,6 @@ export const Calculator = () => {
                   decimalScale={0}
                   max={100_000_000}
                   maxLength={11}
-                />
-              </div>
-            </div>
-
-            <div className="calculator__field">
-              <label htmlFor="overrideValue" className="calculator__label">
-                Hypothetical Override Amount
-              </label>
-              <div className="calculator__input-wrapper">
-                <span className="calculator__currency-symbol">$</span>
-                <NumericFormat
-                  id="overrideValue"
-                  className="calculator__input calculator__input--numeric"
-                  name="New override amount"
-                  type="text"
-                  value={calculator.overrideValue}
-                  onValueChange={(e) =>
-                    calculator.onOverrideValueChange(e.floatValue)
-                  }
-                  placeholder={formatDollars(DEFAULT_OVERRIDE_AMOUNT)}
-                  thousandSeparator={true}
-                  allowNegative={false}
-                  decimalScale={0}
-                  max={14_600_000}
-                  maxLength={10}
                 />
               </div>
             </div>

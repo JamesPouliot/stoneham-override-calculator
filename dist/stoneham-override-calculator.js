@@ -9256,6 +9256,29 @@ var stonehamOverrideCalculator = (() => {
         /* @__PURE__ */ u16("h2", { className: "calculator__heading", children: "Enter your Info" }),
         /* @__PURE__ */ u16("form", { className: "calculator__form", children: /* @__PURE__ */ u16("fieldset", { className: "calculator__fieldset", children: [
           /* @__PURE__ */ u16("div", { className: "calculator__field", children: [
+            /* @__PURE__ */ u16("label", { htmlFor: "overrideValue", className: "calculator__label", children: "Hypothetical Override Amount" }),
+            /* @__PURE__ */ u16("div", { className: "calculator__input-wrapper", children: [
+              /* @__PURE__ */ u16("span", { className: "calculator__currency-symbol", children: "$" }),
+              /* @__PURE__ */ u16(
+                NumericFormat,
+                {
+                  id: "overrideValue",
+                  className: "calculator__input calculator__input--numeric",
+                  name: "New override amount",
+                  type: "text",
+                  value: calculator.overrideValue,
+                  onValueChange: (e8) => calculator.onOverrideValueChange(e8.floatValue),
+                  placeholder: formatDollars(DEFAULT_OVERRIDE_AMOUNT),
+                  thousandSeparator: true,
+                  allowNegative: false,
+                  decimalScale: 0,
+                  max: 146e5,
+                  maxLength: 10
+                }
+              )
+            ] })
+          ] }),
+          /* @__PURE__ */ u16("div", { className: "calculator__field", children: [
             /* @__PURE__ */ u16("label", { htmlFor: "propertyAddress", className: "calculator__label", children: "Property Address" }),
             /* @__PURE__ */ u16(
               Ht,
@@ -9311,29 +9334,6 @@ var stonehamOverrideCalculator = (() => {
                   decimalScale: 0,
                   max: 1e8,
                   maxLength: 11
-                }
-              )
-            ] })
-          ] }),
-          /* @__PURE__ */ u16("div", { className: "calculator__field", children: [
-            /* @__PURE__ */ u16("label", { htmlFor: "overrideValue", className: "calculator__label", children: "Hypothetical Override Amount" }),
-            /* @__PURE__ */ u16("div", { className: "calculator__input-wrapper", children: [
-              /* @__PURE__ */ u16("span", { className: "calculator__currency-symbol", children: "$" }),
-              /* @__PURE__ */ u16(
-                NumericFormat,
-                {
-                  id: "overrideValue",
-                  className: "calculator__input calculator__input--numeric",
-                  name: "New override amount",
-                  type: "text",
-                  value: calculator.overrideValue,
-                  onValueChange: (e8) => calculator.onOverrideValueChange(e8.floatValue),
-                  placeholder: formatDollars(DEFAULT_OVERRIDE_AMOUNT),
-                  thousandSeparator: true,
-                  allowNegative: false,
-                  decimalScale: 0,
-                  max: 146e5,
-                  maxLength: 10
                 }
               )
             ] })
