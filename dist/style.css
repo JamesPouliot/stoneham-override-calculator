@@ -1,4 +1,4 @@
-#stoneham-override-calculator {
+#override-calculator {
   &.calculator {
     --calc-text: #333;
     --calc-light: #444;
@@ -145,6 +145,10 @@
   .calculator__detail--unit {
     font-size: 1rem;
     color: var(--calc-light);
+  }
+
+  .calculator__detail--subscript {
+    font-size: 0.75em;
   }
 
   .calculator__detail--value {

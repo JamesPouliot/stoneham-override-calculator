@@ -15,7 +15,7 @@ import {
 } from "./use-calculator";
 
 /**
- * Calculator component for the Stoneham Override Calculator.
+ * Calculator component for the Brookline Override Calculator.
  *
  * Renders a form for inputting property information and displays
  *   calculated tax impact results.
@@ -24,7 +24,7 @@ export const Calculator = () => {
   const calculator = useCalculator();
 
   return (
-    <article id="stoneham-override-calculator" className="calculator">
+    <article id="override-calculator" className="calculator">
       <h1>Brookline Override Calculator</h1>
       <section className="calculator__inputs">
         <h2 className="calculator__heading">Enter your Info</h2>
@@ -145,8 +145,8 @@ export const Calculator = () => {
 
           <div className="calculator__data-item">
             <dt className="calculator__term">
-              Proposed Tax Rate &#40;+
-              {calculator.calculatedValues.newTaxRateImpact}&#41;
+              Proposed Tax Rate &#40;{" "}
+              {calculator.calculatedValues.newTaxRateImpact} increase&#41;
             </dt>
             <dd className="calculator__detail calculator__detail--value">
               {calculator.calculatedValues.newTaxRate}
@@ -159,12 +159,14 @@ export const Calculator = () => {
       </section>
 
       <section className="calculator__results calculator__results--tax-impact">
-        <h2 className="calculator__heading">Your Estimated Tax Increase</h2>
         <dl className="calculator__data-list">
           <div className="calculator__data-item">
-            <dt className="calculator__term">Annual Increase:</dt>
+            <dt className="calculator__term">Increase in Dollars</dt>
             <dd className="calculator__detail calculator__detail--value">
-              {calculator.calculatedValues.estimatedTaxImpactYearly}
+              {calculator.calculatedValues.estimatedTaxImpactYearly}{" "}
+              <span class="calculator__detail calculator__detail--subscript">
+                per year
+              </span>
             </dd>
             <dd className="calculator__detail calculator__detail--unit">
               {calculator.calculatedValues.estimatedTaxImpactQuarterly} per
@@ -184,9 +186,12 @@ export const Calculator = () => {
         <h2 className="calculator__heading">Your Total Estimated Tax Bill</h2>
         <dl className="calculator__data-list">
           <div className="calculator__data-item">
-            <dt className="calculator__term">Current Annual Bill</dt>
+            <dt className="calculator__term">Current Bill</dt>
             <dd className="calculator__detail calculator__detail--value">
-              {calculator.calculatedValues.currentTaxBillYearly}
+              {calculator.calculatedValues.currentTaxBillYearly}{" "}
+              <span class="calculator__detail calculator__detail--subscript">
+                per year
+              </span>
             </dd>
             <dd className="calculator__detail calculator__detail--unit">
               {calculator.calculatedValues.currentTaxBillQuarterly} per quarter
@@ -194,9 +199,12 @@ export const Calculator = () => {
           </div>
 
           <div className="calculator__data-item">
-            <dt className="calculator__term">Proposed Annual Bill</dt>
+            <dt className="calculator__term">Proposed Bill</dt>
             <dd className="calculator__detail calculator__detail--value">
-              {calculator.calculatedValues.newTaxBillYearly}
+              {calculator.calculatedValues.newTaxBillYearly}{" "}
+              <span class="calculator__detail calculator__detail--subscript">
+                per year
+              </span>
             </dd>
             <dd className="calculator__detail calculator__detail--unit">
               {calculator.calculatedValues.newTaxBillQuarterly} per quarter
