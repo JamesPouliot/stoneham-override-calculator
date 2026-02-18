@@ -136,10 +136,10 @@ export const Calculator = () => {
           <div className="calculator__data-item">
             <dt className="calculator__term">Current Tax Rate</dt>
             <dd className="calculator__detail calculator__detail--value">
-              {calculator.calculatedValues.currentTaxRate}
-            </dd>
-            <dd className="calculator__detail calculator__detail--unit">
-              per $1,000
+              {calculator.calculatedValues.currentTaxRate}{" "}
+              <span class="calculator__detail calculator__detail--subscript">
+                per $1,000
+              </span>
             </dd>
           </div>
 
@@ -149,10 +149,10 @@ export const Calculator = () => {
               {calculator.calculatedValues.newTaxRateImpact} increase&#41;
             </dt>
             <dd className="calculator__detail calculator__detail--value">
-              {calculator.calculatedValues.newTaxRate}
-            </dd>
-            <dd className="calculator__detail calculator__detail--unit">
-              per $1,000
+              {calculator.calculatedValues.newTaxRate}{" "}
+              <span class="calculator__detail calculator__detail--subscript">
+                per $1,000
+              </span>
             </dd>
           </div>
         </dl>
@@ -161,7 +161,7 @@ export const Calculator = () => {
       <section className="calculator__results calculator__results--tax-impact">
         <dl className="calculator__data-list">
           <div className="calculator__data-item">
-            <dt className="calculator__term">Increase in Dollars</dt>
+            <dt className="calculator__term">Your Increase in Dollars</dt>
             <dd className="calculator__detail calculator__detail--value">
               {calculator.calculatedValues.estimatedTaxImpactYearly}{" "}
               <span class="calculator__detail calculator__detail--subscript">

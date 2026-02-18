@@ -18213,8 +18213,11 @@ var stonehamOverrideCalculator = (() => {
         /* @__PURE__ */ u16("dl", { className: "calculator__data-list", children: [
           /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
             /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Current Tax Rate" }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.currentTaxRate }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: "per $1,000" })
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: [
+              calculator.calculatedValues.currentTaxRate,
+              " ",
+              /* @__PURE__ */ u16("span", { class: "calculator__detail calculator__detail--subscript", children: "per $1,000" })
+            ] })
           ] }),
           /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
             /* @__PURE__ */ u16("dt", { className: "calculator__term", children: [
@@ -18223,8 +18226,11 @@ var stonehamOverrideCalculator = (() => {
               calculator.calculatedValues.newTaxRateImpact,
               " increase)"
             ] }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: calculator.calculatedValues.newTaxRate }),
-            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: "per $1,000" })
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: [
+              calculator.calculatedValues.newTaxRate,
+              " ",
+              /* @__PURE__ */ u16("span", { class: "calculator__detail calculator__detail--subscript", children: "per $1,000" })
+            ] })
           ] })
         ] })
       ] }),

@@ -148,7 +148,7 @@
   }
 
   .calculator__detail--subscript {
-    font-size: 0.6em;
+    font-size: 1rem;
   }
 
   .calculator__detail--value {
