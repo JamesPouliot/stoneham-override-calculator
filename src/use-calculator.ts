@@ -325,10 +325,11 @@ export const useCalculator = (): UseCalculatorReturn => {
 
     // Step 1: Calculate the tax rate impact using the linear equation
     // y = mx + b where y = tax rate impact (per $1,000), x = override amount
-    const rateImpact =
+    const rateImpact = Math.abs(
       Math.ceil(
         100 * (RATE_IMPACT_SLOPE * currentOverride + RATE_IMPACT_INTERCEPT),
-      ) / 100;
+      ) / 100,
+    );
 
     // Step 2: Calculate the proposed new tax rate (per $1,000 of assessed value)
     // Formula: Current Rate + Rate Impact -- truncated to 2 decimal places

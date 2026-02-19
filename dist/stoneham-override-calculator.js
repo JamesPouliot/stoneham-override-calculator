@@ -18034,9 +18034,11 @@ var stonehamOverrideCalculator = (() => {
     );
     y2(() => {
       const currentOverride = overrideValue != null ? overrideValue : 0;
-      const rateImpact = Math.ceil(
-        100 * (RATE_IMPACT_SLOPE * currentOverride + RATE_IMPACT_INTERCEPT)
-      ) / 100;
+      const rateImpact = Math.abs(
+        Math.ceil(
+          100 * (RATE_IMPACT_SLOPE * currentOverride + RATE_IMPACT_INTERCEPT)
+        ) / 100
+      );
       const proposedNewTaxRate = CURRENT_TAX_RATE + rateImpact;
       const currentTaxBill = (assessedValue != null ? assessedValue : 0) / 1e3 * CURRENT_TAX_RATE;
       const newTaxBill = (assessedValue != null ? assessedValue : 0) / 1e3 * proposedNewTaxRate;
@@ -18235,7 +18237,7 @@ var stonehamOverrideCalculator = (() => {
         ] })
       ] }),
       /* @__PURE__ */ u16("section", { className: "calculator__results calculator__results--tax-impact", children: /* @__PURE__ */ u16("dl", { className: "calculator__data-list", children: /* @__PURE__ */ u16("div", { className: "calculator__data-item", children: [
-        /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Increase in Dollars" }),
+        /* @__PURE__ */ u16("dt", { className: "calculator__term", children: "Your Increase in Dollars" }),
         /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--value", children: [
           calculator.calculatedValues.estimatedTaxImpactYearly,
           " ",
@@ -18248,10 +18250,6 @@ var stonehamOverrideCalculator = (() => {
         /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
           calculator.calculatedValues.estimatedTaxImpactMonthly,
           " per month"
-        ] }),
-        /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
-          calculator.calculatedValues.estimatedTaxImpactDaily,
-          " per day"
         ] })
       ] }) }) }),
       /* @__PURE__ */ u16("section", { className: "calculator__results calculator__results--tax-bill", children: [
