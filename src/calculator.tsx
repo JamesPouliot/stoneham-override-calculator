@@ -175,9 +175,6 @@ export const Calculator = () => {
             <dd className="calculator__detail calculator__detail--unit">
               {calculator.calculatedValues.estimatedTaxImpactMonthly} per month
             </dd>
-            <dd className="calculator__detail calculator__detail--unit">
-              {calculator.calculatedValues.estimatedTaxImpactDaily} per day
-            </dd>
           </div>
         </dl>
       </section>
