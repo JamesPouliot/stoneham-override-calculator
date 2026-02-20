@@ -67,7 +67,7 @@ export const DEFAULT_ASSESSED_VALUE = 765_770;
  * The current tax rate for Stoneham, MA (FY2025).
  * Rate per $1,000 of assessed value.
  */
-export const CURRENT_TAX_RATE = 10.23;
+export const CURRENT_TAX_RATE = 10.24;
 
 /**
  * The tax rate impact calculation constants for Stoneham, MA (FY2025).

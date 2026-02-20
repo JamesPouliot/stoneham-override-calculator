@@ -1,3 +1,34 @@
+# BROOKLINE STAFF: Summary of how to edit this calculator
+
+If you're editing it for the first time on this device, open the folder in Visual Studio Code.
+In the Bash terminal, enter the following commands:
+npm install
+npm install -g yarn
+
+Next, From the Windows Start Menu, open Powershell as an administrator. Enter the following commands:
+corepack enable
+corepack prepare yarn@4.10.3 --activate
+yarn -v (should read "4.10.3" or higher).
+
+Back in Visual Studio Code's Bash Terminal, enter:
+yarn install
+
+---
+
+Now you're ready to edit the files.
+
+Edit the HTML and CSS by editing the files in the "Webpage" folder.
+Edit the core HTML of the calculator by editing "calculator.tsx"
+Edit the calculator's core logic by editing "use-calculator.ts"
+
+---
+
+After you're done editing these files, here's how to update the online calculator:
+Enter the following command into the Visual Studio Code Bash Terminal:
+yarn build
+
+This overwrites the files in the 'dist' folder. Copy all of those new files from the 'dist' folder into the appropriate place in the Apps server, deleting the older versions on the Apps server.
+
 # Stoneham Override Calculator
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-blue)](https://robocafaz.github.io/stoneham-override-calculator/)

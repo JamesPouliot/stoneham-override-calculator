@@ -114,12 +114,19 @@
     margin: 0;
   }
 
-  .calculator__results--tax-rate .calculator__data-list {
-    grid-template-columns: 1fr 1fr;
+  .calculator__results--tax-impact .calculator__data-list {
+    grid-template-columns: 1fr;
+
+    .calculator__data-item {
+      @media (min-width: 641px) {
+        justify-self: center;
+        width: 40%;
+      }
+    }
   }
 
-  .calculator__results--tax-bill,
-  .calculator__results--tax-impact {
+  .calculator__results--tax-rate,
+  .calculator__results--tax-bill {
     .calculator__data-list {
       grid-template-columns: 1fr 1fr;
     }

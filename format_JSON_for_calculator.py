@@ -1,15 +1,9 @@
 import json
 
-with open("BrooklineParcelData.json", encoding="utf-8-sig") as json_file:
-    data = json_file.read()
+with open("brookline_properties.json", encoding="utf-8-sig") as json_file:
+    properties = json.load(json_file)
 
-    properties = json.loads(data)
-
-# TODO: SORT PROPERTIES FIRST BY STREET NAME, THEN BY NUMBER
-properties = sorted(
-    properties,
-    key=lambda property: (property["PAR_ADD_ST_1"], property["PAR_ADD_NO_1"]),
-)
+properties = sorted(properties, key=lambda property: (property["StreetName"]))
 
 converted_properties = []
 
@@ -17,20 +11,25 @@ for property in properties:
     converted_property = {}
 
     # assemble the Parcel ID from the block, lot and sub-lot. It's done this way because the original IDs supplied were not in the normal format.
-    parcel_id = f"{property['BLOCK']}-{property['LOT']}-{property['SUB']}"
+    parcel_id = property["ParcelID"]
 
+    street_number = property.get("StreetNumber", "(no number)")
     # assemble the address from the number, sub-number and street.
-    if property["PAR_ADD_NO_2"] == " " or property["PAR_ADD_NO_2"] not in properties:
-        property["PAR_ADD_NO_2"] = ""
-    else:
-        property["PAR_ADD_NO_2"] = "-" + property["PAR_ADD_NO_2"]
+    alternate_number = (
+        property.get("AlternateStreetNumber", "") + "-" + property.get("CondoUnit", "")
+    )
+    alternate_number = alternate_number.strip("-")
 
-    address = f"{property['PAR_ADD_NO_1']}{property['PAR_ADD_NO_2']} {property['PAR_ADD_ST_1']}"
+    if alternate_number != "":
+        street_number = f"{street_number}-{alternate_number}"
+
+    address = f"{street_number} {property['StreetName']}"
 
     converted_property["#"] = f"{address} ({parcel_id})"
     converted_property["$"] = property.get(
-        "TOT_VALUE", 0
+        "TotalValue", 0
     )  # Default to 0 if the TOT_VALUE field didn't exist.
+    print(converted_property)
     converted_properties.append(converted_property)
 
 # write the results to a new JSON file

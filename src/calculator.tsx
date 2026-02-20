@@ -146,7 +146,7 @@ export const Calculator = () => {
           <div className="calculator__data-item">
             <dt className="calculator__term">
               Proposed Tax Rate &#40;{" "}
-              {calculator.calculatedValues.newTaxRateImpact} increase&#41;
+              {calculator.calculatedValues.newTaxRateImpact} increase &#41;
             </dt>
             <dd className="calculator__detail calculator__detail--value">
               {calculator.calculatedValues.newTaxRate}{" "}
