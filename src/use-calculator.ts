@@ -55,7 +55,7 @@ import PROPERTIES from "./properties.json";
  * The default override amount to populate the "Override" field with.
  * Set to $5,000,000 as a representative example.
  */
-export const DEFAULT_OVERRIDE_AMOUNT = 5_000_000;
+export const DEFAULT_OVERRIDE_AMOUNT = 10_000_000;
 
 /**
  * The default assessed property value to populate the "Assessed" field with.
@@ -344,7 +344,7 @@ export const useCalculator = (): UseCalculatorReturn => {
     const taxBillImpactYearly = newTaxBill - currentTaxBill;
     const taxBillImpactQuarterly = taxBillImpactYearly / 4;
     const taxBillImpactMonthly = taxBillImpactYearly / 12;
-    const taxBillImpactDaily = taxBillImpactYearly / 365;
+    const taxBillImpactDaily = taxBillImpactYearly / 365; //unused for Brookline.
 
     // Step 5: Format all values as currency strings and update state
     setCalculatedValues({
