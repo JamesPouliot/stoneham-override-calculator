@@ -45,15 +45,14 @@ def fix_numbers(number):
 def assemble_address(street_number, alternate_number, condo_number, street_name):
     street_number = fix_numbers(street_number)
 
+    combined_number = ""
     # assemble the address from the number, sub-number and street.
-    combined_alternate = str(alternate_number) + "-" + str(condo_number)
+    if alternate_number != "":
+        combined_number += f", Unit {alternate_number}"
+    if condo_number != "":
+        combined_number += f", Condo {condo_number}"
 
-    combined_alternate = combined_alternate.strip("-")
-
-    if combined_alternate != "":
-        street_number = f"{street_number}-{combined_alternate}"
-
-    address = f"{street_number} {street_name}"
+    address = f"{street_number} {street_name}{combined_number}"
     return address
 
 
@@ -80,16 +79,19 @@ for property in properties:
         property.get("Condo Unit", ""),
         property["Street Name"],
     )
+    address = address.title()
+
+    print(address)
     converted_property = {
         "#": f"{address} ({property.get('Parcel ID', '')})",
         "$": property.get("FY2026VALUE", 0),
-        "owner1": property.get("Owner1Last Name", "(no data)"),
-        "owner2": property.get("Owner2Last Name", "(no data)"),
+        "owner1": property.get("Owner1Last Name", "(no data)").title(),
+        "owner2": property.get("Owner2Last Name", "(no data)").title(),
         "current_taxes": property.get("FY26 TAXES ", "(no data)"),
-        "18m_override_total": round(property.get("Taxes @ 18M Override"), 2),
-        "18m_override_increase": round(property.get("Tax Delta @ 18M Override"), 2),
-        "25m_override_total": round(property.get("Taxes @ 25M Override"), 2),
-        "25m_override_increase": round(property.get("Tax Delta @ 25M Override"), 2),
+        "18m_override_total": round(property.get("Taxes @ 18M Override", 0), 2),
+        "18m_override_increase": round(property.get("Tax Delta @ 18M Override", 0), 2),
+        "25m_override_total": round(property.get("Taxes @ 25M Override", 0), 2),
+        "25m_override_increase": round(property.get("Tax Delta @ 25M Override", 0), 2),
     }
     converted_properties.append(converted_property)
 

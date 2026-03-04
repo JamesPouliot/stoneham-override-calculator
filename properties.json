@@ -1,8 +1,8 @@
 [
   {
-    "#": "14 AMORY ST (011-25-00)",
+    "#": "14 Amory St (011-25-00)",
     "$": 2877700,
-    "owner1": "PLATT",
+    "owner1": "Platt",
     "owner2": "",
     "current_taxes": 25832.71,
     "18m_override_total": 27230.26,
@@ -11,10 +11,10 @@
     "25m_override_increase": 1940.04
   },
   {
-    "#": "15 AMORY ST (010-05-00)",
+    "#": "15 Amory St (010-05-00)",
     "$": 45975200,
-    "owner1": "TOWN OF BROOKLINE",
-    "owner2": "C/O AMORY PLAYGROUND",
+    "owner1": "Town Of Brookline",
+    "owner2": "C/O Amory Playground",
     "current_taxes": 0.0,
     "18m_override_total": 0.0,
     "18m_override_increase": 0.0,
@@ -22,10 +22,10 @@
     "25m_override_increase": 0.0
   },
   {
-    "#": "20 AMORY ST (011-24-00)",
+    "#": "20 Amory St (011-24-00)",
     "$": 5041400,
-    "owner1": "LESSIG",
-    "owner2": "NEUEFEIND",
+    "owner1": "Lessig",
+    "owner2": "Neuefeind",
     "current_taxes": 47989.0,
     "18m_override_total": 50585.2,
     "18m_override_increase": 2596.2,
@@ -33,9 +33,9 @@
     "25m_override_increase": 3603.97
   },
   {
-    "#": "30 AMORY ST (011-23-00)",
+    "#": "30 Amory St (011-23-00)",
     "$": 3339700,
-    "owner1": "BELL",
+    "owner1": "Bell",
     "owner2": "",
     "current_taxes": 30563.59,
     "18m_override_total": 32217.08,
@@ -44,9 +44,9 @@
     "25m_override_increase": 2295.33
   },
   {
-    "#": "36 AMORY ST (011-22-00)",
+    "#": "36 Amory St (011-22-00)",
     "$": 4100100,
-    "owner1": "PATTERSON",
+    "owner1": "Patterson",
     "owner2": "",
     "current_taxes": 38350.09,
     "18m_override_total": 40424.83,
@@ -55,9 +55,9 @@
     "25m_override_increase": 2880.09
   },
   {
-    "#": "44 AMORY ST (011-21-00)",
+    "#": "44 Amory St (011-21-00)",
     "$": 4717100,
-    "owner1": "GUROCK",
+    "owner1": "Gurock",
     "owner2": "",
     "current_taxes": 44668.17,
     "18m_override_total": 47084.72,
@@ -66,9 +66,9 @@
     "25m_override_increase": 3354.58
   },
   {
-    "#": "50 AMORY ST (011-20-00)",
+    "#": "50 Amory St (011-20-00)",
     "$": 3673500,
-    "owner1": "ZARREN",
+    "owner1": "Zarren",
     "owner2": "",
     "current_taxes": 33981.71,
     "18m_override_total": 35820.12,
@@ -77,9 +77,9 @@
     "25m_override_increase": 2552.03
   },
   {
-    "#": "60 AMORY ST (011-19-00)",
+    "#": "60 Amory St (011-19-00)",
     "$": 3738600,
-    "owner1": "MARTEL",
+    "owner1": "Martel",
     "owner2": "",
     "current_taxes": 34648.33,
     "18m_override_total": 36522.8,
@@ -88,10 +88,10 @@
     "25m_override_increase": 2602.09
   },
   {
-    "#": "64 AMORY ST (011-18-00)",
+    "#": "64 Amory St (011-18-00)",
     "$": 3772200,
-    "owner1": "BERGIN",
-    "owner2": "INGRAHAM",
+    "owner1": "Bergin",
+    "owner2": "Ingraham",
     "current_taxes": 34992.39,
     "18m_override_total": 36885.48,
     "18m_override_increase": 1893.09,
@@ -99,10 +99,10 @@
     "25m_override_increase": 2627.93
   },
   {
-    "#": "68 AMORY ST (011-17-00)",
+    "#": "68 Amory St (011-17-00)",
     "$": 4141300,
-    "owner1": "JURAYJ",
-    "owner2": "SILBAUGH",
+    "owner1": "Jurayj",
+    "owner2": "Silbaugh",
     "current_taxes": 38771.98,
     "18m_override_total": 40869.54,
     "18m_override_increase": 2097.56,
@@ -110,9 +110,9 @@
     "25m_override_increase": 2911.78
   },
   {
-    "#": "74 AMORY ST (011-16-00)",
+    "#": "74 Amory St (011-16-00)",
     "$": 3083500,
-    "owner1": "PATTON",
+    "owner1": "Patton",
     "owner2": "",
     "current_taxes": 27940.11,
     "18m_override_total": 29451.67,
@@ -121,10 +121,10 @@
     "25m_override_increase": 2098.3
   },
   {
-    "#": "132-2 & P25 AMORY ST (022-07-01)",
+    "#": "132 Amory St, Condo 2 & P25 (022-07-01)",
     "$": 1313900,
-    "owner1": "STANG",
-    "owner2": "CRAIGUE",
+    "owner1": "Stang",
+    "owner2": "Craigue",
     "current_taxes": 13454.34,
     "18m_override_total": 14182.22,
     "18m_override_increase": 727.88,
@@ -132,10 +132,10 @@
     "25m_override_increase": 1010.42
   },
   {
-    "#": "132-3 & P20 P21 AMORY ST (022-07-02)",
+    "#": "132 Amory St, Condo 3 & P20 P21 (022-07-02)",
     "$": 1425100,
-    "owner1": "CHASE",
-    "owner2": "BEN-ARI",
+    "owner1": "Chase",
+    "owner2": "Ben-Ari",
     "current_taxes": 10958.09,
     "18m_override_total": 11550.92,
     "18m_override_increase": 592.83,
@@ -143,9 +143,9 @@
     "25m_override_increase": 822.95
   },
   {
-    "#": "132-4 & P27 P28 AMORY ST (022-07-03)",
+    "#": "132 Amory St, Condo 4 & P27 P28 (022-07-03)",
     "$": 1525500,
-    "owner1": "WILCOX, ET AL",
+    "owner1": "Wilcox, Et Al",
     "owner2": "",
     "current_taxes": 15621.12,
     "18m_override_total": 16466.22,
@@ -154,9 +154,9 @@
     "25m_override_increase": 1173.15
   },
   {
-    "#": "144 AMORY ST (021-01-00)",
+    "#": "144 Amory St (021-01-00)",
     "$": 21131700,
-    "owner1": "BROOKLINE HOUSING AUTHORITY",
+    "owner1": "Brookline Housing Authority",
     "owner2": "",
     "current_taxes": 0.0,
     "18m_override_total": 0.0,
@@ -165,9 +165,9 @@
     "25m_override_increase": 0.0
   },
   {
-    "#": "155 AMORY ST (016-01-03)",
+    "#": "155 Amory St (016-01-03)",
     "$": 3207700,
-    "owner1": "HUANG",
+    "owner1": "Huang",
     "owner2": "",
     "current_taxes": 32846.85,
     "18m_override_total": 34623.86,
@@ -176,10 +176,10 @@
     "25m_override_increase": 2466.8
   },
   {
-    "#": "163 AMORY ST (017-05-00)",
+    "#": "163 Amory St (017-05-00)",
     "$": 9481600,
-    "owner1": "TRUSTEES OF BOSTON UNIVERSITY",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FL",
+    "owner1": "Trustees Of Boston University",
+    "owner2": "C/O General Accounting 4Th Fl",
     "current_taxes": 29518.84,
     "18m_override_total": 31115.81,
     "18m_override_increase": 1596.97,
@@ -187,9 +187,9 @@
     "25m_override_increase": 2216.86
   },
   {
-    "#": "1002 BEACON ST (001-01-00)",
+    "#": "1002 Beacon St (001-01-00)",
     "$": 4807700,
-    "owner1": "XIAO INVESTMENT COMPANY V LLC",
+    "owner1": "Xiao Investment Company V Llc",
     "owner2": "",
     "current_taxes": 73517.46,
     "18m_override_total": 77494.75,
@@ -198,9 +198,9 @@
     "25m_override_increase": 5521.16
   },
   {
-    "#": "1004 BEACON ST (001-02-08)",
+    "#": "1004 Beacon St (001-02-08)",
     "$": 11438400,
-    "owner1": "LINEAGE RE BROOKLINE LLC",
+    "owner1": "Lineage Re Brookline Llc",
     "owner2": "",
     "current_taxes": 196282.94,
     "18m_override_total": 206901.85,
@@ -209,10 +209,10 @@
     "25m_override_increase": 14740.85
   },
   {
-    "#": "1018 BEACON ST (001-09-00)",
+    "#": "1018 Beacon St (001-09-00)",
     "$": 3053300,
-    "owner1": "GLANZ, ET AL TRS",
-    "owner2": "C/O GLANZ PROPERTIES INC",
+    "owner1": "Glanz, Et Al Trs",
+    "owner2": "C/O Glanz Properties Inc",
     "current_taxes": 52394.63,
     "18m_override_total": 55229.18,
     "18m_override_increase": 2834.55,
@@ -220,10 +220,10 @@
     "25m_override_increase": 3934.84
   },
   {
-    "#": "1020-A BEACON ST (001-10-00)",
+    "#": "1020 Beacon St, Unit A (001-10-00)",
     "$": 1577800,
-    "owner1": "GALVIN, TR",
-    "owner2": "C/O 1020-1024 BEACON ST REALTY",
+    "owner1": "Galvin, Tr",
+    "owner2": "C/O 1020-1024 Beacon St Realty",
     "current_taxes": 27075.05,
     "18m_override_total": 28539.81,
     "18m_override_increase": 1464.76,
@@ -231,10 +231,10 @@
     "25m_override_increase": 2033.34
   },
   {
-    "#": "1022 BEACON ST (001-11-00)",
+    "#": "1022 Beacon St (001-11-00)",
     "$": 2213700,
-    "owner1": "GALVIN, TR",
-    "owner2": "C/O 1020-1024 BEACON ST REALTY",
+    "owner1": "Galvin, Tr",
+    "owner2": "C/O 1020-1024 Beacon St Realty",
     "current_taxes": 37987.09,
     "18m_override_total": 40042.19,
     "18m_override_increase": 2055.1,
@@ -242,10 +242,10 @@
     "25m_override_increase": 2852.83
   },
   {
-    "#": "1024 BEACON ST (001-12-00)",
+    "#": "1024 Beacon St (001-12-00)",
     "$": 8949000,
-    "owner1": "SHIEF TRS",
-    "owner2": "GOODMAN",
+    "owner1": "Shief Trs",
+    "owner2": "Goodman",
     "current_taxes": 153564.84,
     "18m_override_total": 161872.7,
     "18m_override_increase": 8307.86,
@@ -253,10 +253,10 @@
     "25m_override_increase": 11532.72
   },
   {
-    "#": "1038-100 & P1 BEACON ST (001-13-05)",
+    "#": "1038 Beacon St, Condo 100 & P1 (001-13-05)",
     "$": 846400,
-    "owner1": "TRUMAN",
-    "owner2": "JOE",
+    "owner1": "Truman",
+    "owner2": "Joe",
     "current_taxes": 8667.14,
     "18m_override_total": 9136.03,
     "18m_override_increase": 468.89,
@@ -264,10 +264,10 @@
     "25m_override_increase": 650.9
   },
   {
-    "#": "1038-101 & P3 BEACON ST (001-13-06)",
+    "#": "1038 Beacon St, Condo 101 & P3 (001-13-06)",
     "$": 865100,
-    "owner1": "PANG",
-    "owner2": "C/O PANG",
+    "owner1": "Pang",
+    "owner2": "C/O Pang",
     "current_taxes": 8858.62,
     "18m_override_total": 9337.87,
     "18m_override_increase": 479.25,
@@ -275,10 +275,10 @@
     "25m_override_increase": 665.28
   },
   {
-    "#": "1038-102 BEACON ST (001-13-07)",
+    "#": "1038 Beacon St, Condo 102 (001-13-07)",
     "$": 337900,
-    "owner1": "LIU",
-    "owner2": "YOUNG",
+    "owner1": "Liu",
+    "owner2": "Young",
     "current_taxes": 3460.1,
     "18m_override_total": 3647.29,
     "18m_override_increase": 187.19,
@@ -286,9 +286,9 @@
     "25m_override_increase": 259.85
   },
   {
-    "#": "1038-103 & P14 BEACON ST (001-13-08)",
+    "#": "1038 Beacon St, Condo 103 & P14 (001-13-08)",
     "$": 1179200,
-    "owner1": "LEAO DESLANDES TR",
+    "owner1": "Leao Deslandes Tr",
     "owner2": "",
     "current_taxes": 20235.07,
     "18m_override_total": 21329.79,
@@ -297,9 +297,9 @@
     "25m_override_increase": 1519.65
   },
   {
-    "#": "1038-104 & P8 BEACON ST (001-13-09)",
+    "#": "1038 Beacon St, Condo 104 & P8 (001-13-09)",
     "$": 818600,
-    "owner1": "TSO TRS",
+    "owner1": "Tso Trs",
     "owner2": "",
     "current_taxes": 8382.46,
     "18m_override_total": 8835.95,
@@ -308,10 +308,10 @@
     "25m_override_increase": 629.52
   },
   {
-    "#": "1038-200 & P4 BEACON ST (001-13-10)",
+    "#": "1038 Beacon St, Condo 200 & P4 (001-13-10)",
     "$": 917300,
-    "owner1": "CHOW TRS",
-    "owner2": "SULLIVAN",
+    "owner1": "Chow Trs",
+    "owner2": "Sullivan",
     "current_taxes": 5758.22,
     "18m_override_total": 6069.74,
     "18m_override_increase": 311.52,
@@ -319,9 +319,9 @@
     "25m_override_increase": 432.44
   },
   {
-    "#": "1038-201 & P17 BEACON ST (001-13-11)",
+    "#": "1038 Beacon St, Condo 201 & P17 (001-13-11)",
     "$": 858200,
-    "owner1": "KRASNER TR",
+    "owner1": "Krasner Tr",
     "owner2": "",
     "current_taxes": 8787.97,
     "18m_override_total": 9263.4,
@@ -330,9 +330,9 @@
     "25m_override_increase": 659.98
   },
   {
-    "#": "1038-202 BEACON ST (001-13-12)",
+    "#": "1038 Beacon St, Condo 202 (001-13-12)",
     "$": 373100,
-    "owner1": "BOHR",
+    "owner1": "Bohr",
     "owner2": "",
     "current_taxes": 382.05,
     "18m_override_total": 402.72,
@@ -341,10 +341,10 @@
     "25m_override_increase": 28.69
   },
   {
-    "#": "1038-203 & P7 BEACON ST (001-13-13)",
+    "#": "1038 Beacon St, Condo 203 & P7 (001-13-13)",
     "$": 1161900,
-    "owner1": "SIMA",
-    "owner2": "FU",
+    "owner1": "Sima",
+    "owner2": "Fu",
     "current_taxes": 11897.86,
     "18m_override_total": 12541.53,
     "18m_override_increase": 643.67,
@@ -352,10 +352,10 @@
     "25m_override_increase": 893.53
   },
   {
-    "#": "1038-204& P5 BEACON ST (001-13-14)",
+    "#": "1038 Beacon St, Condo 204& P5 (001-13-14)",
     "$": 878000,
-    "owner1": "VASANTHA",
-    "owner2": "ANJANEYULU",
+    "owner1": "Vasantha",
+    "owner2": "Anjaneyulu",
     "current_taxes": 8990.72,
     "18m_override_total": 9477.12,
     "18m_override_increase": 486.4,
@@ -363,10 +363,10 @@
     "25m_override_increase": 675.2
   },
   {
-    "#": "1038-300 & P11 BEACON ST (001-13-15)",
+    "#": "1038 Beacon St, Condo 300 & P11 (001-13-15)",
     "$": 903100,
-    "owner1": "BEHNEGAR",
-    "owner2": "PARKER",
+    "owner1": "Behnegar",
+    "owner2": "Parker",
     "current_taxes": 5612.81,
     "18m_override_total": 5916.46,
     "18m_override_increase": 303.65,
@@ -374,9 +374,9 @@
     "25m_override_increase": 421.52
   },
   {
-    "#": "1038-301 & P6 BEACON ST (001-13-16)",
+    "#": "1038 Beacon St, Condo 301 & P6 (001-13-16)",
     "$": 778600,
-    "owner1": "ELLIOTT TRS",
+    "owner1": "Elliott Trs",
     "owner2": "",
     "current_taxes": 4337.93,
     "18m_override_total": 4572.61,
@@ -385,9 +385,9 @@
     "25m_override_increase": 325.78
   },
   {
-    "#": "1038-302 BEACON ST (001-13-17)",
+    "#": "1038 Beacon St, Condo 302 (001-13-17)",
     "$": 418300,
-    "owner1": "WANG",
+    "owner1": "Wang",
     "owner2": "",
     "current_taxes": 4283.39,
     "18m_override_total": 4515.12,
@@ -396,9 +396,9 @@
     "25m_override_increase": 321.68
   },
   {
-    "#": "1038-303 & P19 BEACON ST (001-13-18)",
+    "#": "1038 Beacon St, Condo 303 & P19 (001-13-18)",
     "$": 1029500,
-    "owner1": "TRI-CORNER REALTY LLC",
+    "owner1": "Tri-Corner Realty Llc",
     "owner2": "",
     "current_taxes": 10542.08,
     "18m_override_total": 11112.41,
@@ -407,9 +407,9 @@
     "25m_override_increase": 791.71
   },
   {
-    "#": "1038-304 & P12 BEACON ST (001-13-19)",
+    "#": "1038 Beacon St, Condo 304 & P12 (001-13-19)",
     "$": 883200,
-    "owner1": "HUNG",
+    "owner1": "Hung",
     "owner2": "",
     "current_taxes": 5409.03,
     "18m_override_total": 5701.66,
@@ -418,9 +418,9 @@
     "25m_override_increase": 406.22
   },
   {
-    "#": "1038-400 & P16 BEACON ST (001-13-20)",
+    "#": "1038 Beacon St, Condo 400 & P16 (001-13-20)",
     "$": 924000,
-    "owner1": "EVANS",
+    "owner1": "Evans",
     "owner2": "",
     "current_taxes": 9461.76,
     "18m_override_total": 9973.64,
@@ -429,9 +429,9 @@
     "25m_override_increase": 710.58
   },
   {
-    "#": "1038-401 & P10 BEACON ST (001-13-21)",
+    "#": "1038 Beacon St, Condo 401 & P10 (001-13-21)",
     "$": 807500,
-    "owner1": "KIRDA",
+    "owner1": "Kirda",
     "owner2": "",
     "current_taxes": 8268.8,
     "18m_override_total": 8716.14,
@@ -440,9 +440,9 @@
     "25m_override_increase": 620.99
   },
   {
-    "#": "1038-402 & P18 BEACON ST (001-13-22)",
+    "#": "1038 Beacon St, Condo 402 & P18 (001-13-22)",
     "$": 412000,
-    "owner1": "1038 BEACON NAUSET GROUP LLC",
+    "owner1": "1038 Beacon Nauset Group Llc",
     "owner2": "",
     "current_taxes": 4218.88,
     "18m_override_total": 4447.12,
@@ -451,10 +451,10 @@
     "25m_override_increase": 316.84
   },
   {
-    "#": "1038-403 & P13 BEACON ST (001-13-23)",
+    "#": "1038 Beacon St, Condo 403 & P13 (001-13-23)",
     "$": 1090900,
-    "owner1": "TESFAIGZI",
-    "owner2": "TEWOLDE",
+    "owner1": "Tesfaigzi",
+    "owner2": "Tewolde",
     "current_taxes": 11170.82,
     "18m_override_total": 11775.16,
     "18m_override_increase": 604.34,
@@ -462,9 +462,9 @@
     "25m_override_increase": 838.93
   },
   {
-    "#": "1038-404 & P15 BEACON ST (001-13-24)",
+    "#": "1038 Beacon St, Condo 404 & P15 (001-13-24)",
     "$": 946700,
-    "owner1": "FASTOV",
+    "owner1": "Fastov",
     "owner2": "",
     "current_taxes": 9694.21,
     "18m_override_total": 10218.67,
@@ -473,9 +473,9 @@
     "25m_override_increase": 728.04
   },
   {
-    "#": "1038-A BEACON ST (001-13-02)",
+    "#": "1038 Beacon St, Condo A (001-13-02)",
     "$": 541600,
-    "owner1": "KEITH",
+    "owner1": "Keith",
     "owner2": "",
     "current_taxes": 1911.05,
     "18m_override_total": 2014.44,
@@ -484,9 +484,9 @@
     "25m_override_increase": 143.52
   },
   {
-    "#": "1038-B BEACON ST (001-13-03)",
+    "#": "1038 Beacon St, Condo B (001-13-03)",
     "$": 289500,
-    "owner1": "MOBE 12 LLC",
+    "owner1": "Mobe 12 Llc",
     "owner2": "",
     "current_taxes": 2964.48,
     "18m_override_total": 3124.86,
@@ -495,9 +495,9 @@
     "25m_override_increase": 222.63
   },
   {
-    "#": "1038-C BEACON ST (001-13-04)",
+    "#": "1038 Beacon St, Condo C (001-13-04)",
     "$": 491000,
-    "owner1": "EVANS",
+    "owner1": "Evans",
     "owner2": "",
     "current_taxes": 1392.91,
     "18m_override_total": 1468.27,
@@ -506,9 +506,9 @@
     "25m_override_increase": 104.61
   },
   {
-    "#": "1038-CR-1 & P9 BEACON ST (001-13-25)",
+    "#": "1038 Beacon St, Condo Cr-1 & P9 (001-13-25)",
     "$": 1213500,
-    "owner1": "JAPARA LLC",
+    "owner1": "Japara Llc",
     "owner2": "",
     "current_taxes": 20823.66,
     "18m_override_total": 21950.22,
@@ -517,9 +517,9 @@
     "25m_override_increase": 1563.86
   },
   {
-    "#": "1038-CR-2 & P2 BEACON ST (001-13-01)",
+    "#": "1038 Beacon St, Condo Cr-2 & P2 (001-13-01)",
     "$": 1151600,
-    "owner1": "SGC REALTY LLC",
+    "owner1": "Sgc Realty Llc",
     "owner2": "",
     "current_taxes": 19761.46,
     "18m_override_total": 20830.55,
@@ -528,9 +528,9 @@
     "25m_override_increase": 1484.09
   },
   {
-    "#": "1042-1A BEACON ST (001-14-02)",
+    "#": "1042 Beacon St, Condo 1A (001-14-02)",
     "$": 1028100,
-    "owner1": "SALLET",
+    "owner1": "Sallet",
     "owner2": "",
     "current_taxes": 17642.2,
     "18m_override_total": 18596.64,
@@ -539,9 +539,9 @@
     "25m_override_increase": 1324.93
   },
   {
-    "#": "1044-1 BEACON ST (001-14-01)",
+    "#": "1044 Beacon St, Condo 1 (001-14-01)",
     "$": 696800,
-    "owner1": "SALLET",
+    "owner1": "Sallet",
     "owner2": "",
     "current_taxes": 11957.09,
     "18m_override_total": 12603.97,
@@ -550,9 +550,9 @@
     "25m_override_increase": 897.98
   },
   {
-    "#": "1046-2 BEACON ST (001-14-03)",
+    "#": "1046 Beacon St, Condo 2 (001-14-03)",
     "$": 740200,
-    "owner1": "CHRISTAKIS TR",
+    "owner1": "Christakis Tr",
     "owner2": "",
     "current_taxes": 12701.83,
     "18m_override_total": 13389.0,
@@ -561,9 +561,9 @@
     "25m_override_increase": 953.91
   },
   {
-    "#": "1050-3 BEACON ST (001-14-04)",
+    "#": "1050 Beacon St, Condo 3 (001-14-04)",
     "$": 2067500,
-    "owner1": "KOLGIAN",
+    "owner1": "Kolgian",
     "owner2": "",
     "current_taxes": 35478.3,
     "18m_override_total": 37397.68,
@@ -572,9 +572,9 @@
     "25m_override_increase": 2664.42
   },
   {
-    "#": "1052-4 BEACON ST (001-14-05)",
+    "#": "1052 Beacon St, Condo 4 (001-14-05)",
     "$": 1155900,
-    "owner1": "SGC REALTY LLC",
+    "owner1": "Sgc Realty Llc",
     "owner2": "",
     "current_taxes": 19835.24,
     "18m_override_total": 20908.33,
@@ -583,9 +583,9 @@
     "25m_override_increase": 1489.63
   },
   {
-    "#": "1054-5 BEACON ST (001-14-06)",
+    "#": "1054 Beacon St, Condo 5 (001-14-06)",
     "$": 1066200,
-    "owner1": "SGC REALTY LLC",
+    "owner1": "Sgc Realty Llc",
     "owner2": "",
     "current_taxes": 18295.99,
     "18m_override_total": 19285.8,
@@ -594,9 +594,9 @@
     "25m_override_increase": 1374.03
   },
   {
-    "#": "1056-1 & P1 BEACON ST (009B-07-04)",
+    "#": "1056 Beacon St, Condo 1 & P1 (009B-07-04)",
     "$": 776700,
-    "owner1": "LIDDELL",
+    "owner1": "Liddell",
     "owner2": "",
     "current_taxes": 4318.47,
     "18m_override_total": 4552.1,
@@ -605,9 +605,9 @@
     "25m_override_increase": 324.32
   },
   {
-    "#": "1056-10 BEACON ST (009B-07-13)",
+    "#": "1056 Beacon St, Condo 10 (009B-07-13)",
     "$": 631700,
-    "owner1": "PRASAD",
+    "owner1": "Prasad",
     "owner2": "",
     "current_taxes": 6468.61,
     "18m_override_total": 6818.56,
@@ -616,9 +616,9 @@
     "25m_override_increase": 485.79
   },
   {
-    "#": "1056-11 BEACON ST (009B-07-14)",
+    "#": "1056 Beacon St, Condo 11 (009B-07-14)",
     "$": 461700,
-    "owner1": "CHEN TR",
+    "owner1": "Chen Tr",
     "owner2": "",
     "current_taxes": 4727.81,
     "18m_override_total": 4983.58,
@@ -627,9 +627,9 @@
     "25m_override_increase": 355.06
   },
   {
-    "#": "1056-12 BEACON ST (009B-07-15)",
+    "#": "1056 Beacon St, Condo 12 (009B-07-15)",
     "$": 515400,
-    "owner1": "LUTFI",
+    "owner1": "Lutfi",
     "owner2": "",
     "current_taxes": 5277.7,
     "18m_override_total": 5563.22,
@@ -638,9 +638,9 @@
     "25m_override_increase": 396.36
   },
   {
-    "#": "1056-12A & PRK BEACON ST (009B-07-16)",
+    "#": "1056 Beacon St, Condo 12A & Prk (009B-07-16)",
     "$": 794400,
-    "owner1": "HUANG",
+    "owner1": "Huang",
     "owner2": "",
     "current_taxes": 4499.72,
     "18m_override_total": 4743.15,
@@ -649,9 +649,9 @@
     "25m_override_increase": 337.93
   },
   {
-    "#": "1056-14 & P22 BEACON ST (009B-07-17)",
+    "#": "1056 Beacon St, Condo 14 & P22 (009B-07-17)",
     "$": 702200,
-    "owner1": "BASKIN",
+    "owner1": "Baskin",
     "owner2": "",
     "current_taxes": 7190.53,
     "18m_override_total": 7579.54,
@@ -660,9 +660,9 @@
     "25m_override_increase": 540.01
   },
   {
-    "#": "1056-15 BEACON ST (009B-07-18)",
+    "#": "1056 Beacon St, Condo 15 (009B-07-18)",
     "$": 489700,
-    "owner1": "EFTEKHARZADEH",
+    "owner1": "Eftekharzadeh",
     "owner2": "",
     "current_taxes": 5014.53,
     "18m_override_total": 5285.82,
@@ -671,9 +671,9 @@
     "25m_override_increase": 376.59
   },
   {
-    "#": "1056-16 BEACON ST (009B-07-19)",
+    "#": "1056 Beacon St, Condo 16 (009B-07-19)",
     "$": 472200,
-    "owner1": "ARSENAULT",
+    "owner1": "Arsenault",
     "owner2": "",
     "current_taxes": 1200.39,
     "18m_override_total": 1265.33,
@@ -682,9 +682,9 @@
     "25m_override_increase": 90.15
   },
   {
-    "#": "1056-2 BEACON ST (009B-07-05)",
+    "#": "1056 Beacon St, Condo 2 (009B-07-05)",
     "$": 585400,
-    "owner1": "KOS",
+    "owner1": "Kos",
     "owner2": "",
     "current_taxes": 2359.56,
     "18m_override_total": 2487.21,
@@ -693,9 +693,9 @@
     "25m_override_increase": 177.2
   },
   {
-    "#": "1056-3 BEACON ST (009B-07-06)",
+    "#": "1056 Beacon St, Condo 3 (009B-07-06)",
     "$": 461700,
-    "owner1": "JACOBS",
+    "owner1": "Jacobs",
     "owner2": "",
     "current_taxes": 1092.87,
     "18m_override_total": 1151.99,
@@ -704,10 +704,10 @@
     "25m_override_increase": 82.07
   },
   {
-    "#": "1056-4 BEACON ST (009B-07-07)",
+    "#": "1056 Beacon St, Condo 4 (009B-07-07)",
     "$": 468700,
-    "owner1": "FATTMAN",
-    "owner2": "MURRAY",
+    "owner1": "Fattman",
+    "owner2": "Murray",
     "current_taxes": 4799.49,
     "18m_override_total": 5059.14,
     "18m_override_increase": 259.65,
@@ -715,10 +715,10 @@
     "25m_override_increase": 360.44
   },
   {
-    "#": "1056-5 & P3 BEACON ST (009B-07-08)",
+    "#": "1056 Beacon St, Condo 5 & P3 (009B-07-08)",
     "$": 790300,
-    "owner1": "FANG",
-    "owner2": "ZHANG",
+    "owner1": "Fang",
+    "owner2": "Zhang",
     "current_taxes": 4457.74,
     "18m_override_total": 4698.9,
     "18m_override_increase": 241.16,
@@ -726,9 +726,9 @@
     "25m_override_increase": 334.78
   },
   {
-    "#": "1056-6 & P-H BEACON ST (009B-07-09)",
+    "#": "1056 Beacon St, Condo 6 & P-H (009B-07-09)",
     "$": 747100,
-    "owner1": "BEACON STREET BROOKLINE 1056-6 LLC",
+    "owner1": "Beacon Street Brookline 1056-6 Llc",
     "owner2": "",
     "current_taxes": 7650.3,
     "18m_override_total": 8064.18,
@@ -737,9 +737,9 @@
     "25m_override_increase": 574.54
   },
   {
-    "#": "1056-7 BEACON ST (009B-07-10)",
+    "#": "1056 Beacon St, Condo 7 (009B-07-10)",
     "$": 488800,
-    "owner1": "MCCABE",
+    "owner1": "Mccabe",
     "owner2": "",
     "current_taxes": 1370.38,
     "18m_override_total": 1444.52,
@@ -748,9 +748,9 @@
     "25m_override_increase": 102.92
   },
   {
-    "#": "1056-8 BEACON ST (009B-07-11)",
+    "#": "1056 Beacon St, Condo 8 (009B-07-11)",
     "$": 548100,
-    "owner1": "DICKINSON",
+    "owner1": "Dickinson",
     "owner2": "",
     "current_taxes": 1977.61,
     "18m_override_total": 2084.6,
@@ -759,10 +759,10 @@
     "25m_override_increase": 148.52
   },
   {
-    "#": "1056-9 & P12 BEACON ST (009B-07-12)",
+    "#": "1056 Beacon St, Condo 9 & P12 (009B-07-12)",
     "$": 788400,
-    "owner1": "LEE TRS",
-    "owner2": "HSU",
+    "owner1": "Lee Trs",
+    "owner2": "Hsu",
     "current_taxes": 8073.22,
     "18m_override_total": 8509.98,
     "18m_override_increase": 436.76,
@@ -770,9 +770,9 @@
     "25m_override_increase": 606.3
   },
   {
-    "#": "1056-A BEACON ST (009B-07-01)",
+    "#": "1056 Beacon St, Condo A (009B-07-01)",
     "$": 534800,
-    "owner1": "FUJITA TR",
+    "owner1": "Fujita Tr",
     "owner2": "",
     "current_taxes": 1841.42,
     "18m_override_total": 1941.04,
@@ -781,10 +781,10 @@
     "25m_override_increase": 138.29
   },
   {
-    "#": "1056-B BEACON ST (009B-07-02)",
+    "#": "1056 Beacon St, Condo B (009B-07-02)",
     "$": 400400,
-    "owner1": "CACACE III",
-    "owner2": "CACACE",
+    "owner1": "Cacace Iii",
+    "owner2": "Cacace",
     "current_taxes": 4100.1,
     "18m_override_total": 4321.92,
     "18m_override_increase": 221.82,
@@ -792,9 +792,9 @@
     "25m_override_increase": 307.92
   },
   {
-    "#": "1056-C BEACON ST (009B-07-03)",
+    "#": "1056 Beacon St, Condo C (009B-07-03)",
     "$": 484100,
-    "owner1": "FABRIZIO",
+    "owner1": "Fabrizio",
     "owner2": "",
     "current_taxes": 4957.18,
     "18m_override_total": 5225.36,
@@ -803,10 +803,10 @@
     "25m_override_increase": 372.28
   },
   {
-    "#": "1056-PK-Y-Z-AA BEACON ST (009B-07-59)",
+    "#": "1056 Beacon St, Condo Pk-Y-Z-Aa (009B-07-59)",
     "$": 153600,
-    "owner1": "BEACON GATE CONDOS",
-    "owner2": "C/O CERTIFIED PROPERTY MGMT",
+    "owner1": "Beacon Gate Condos",
+    "owner2": "C/O Certified Property Mgmt",
     "current_taxes": 1572.86,
     "18m_override_total": 1657.95,
     "18m_override_increase": 85.09,
@@ -814,10 +814,10 @@
     "25m_override_increase": 118.12
   },
   {
-    "#": "1056-PRK-N BEACON ST (009B-07-60)",
+    "#": "1056 Beacon St, Condo Prk-N (009B-07-60)",
     "$": 50400,
-    "owner1": "SUN",
-    "owner2": "YUNG",
+    "owner1": "Sun",
+    "owner2": "Yung",
     "current_taxes": 516.1,
     "18m_override_total": 544.02,
     "18m_override_increase": 27.92,
@@ -825,10 +825,10 @@
     "25m_override_increase": 38.76
   },
   {
-    "#": "1060-1 & P9 BEACON ST (009B-07-23)",
+    "#": "1060 Beacon St, Condo 1 & P9 (009B-07-23)",
     "$": 795200,
-    "owner1": "WU",
-    "owner2": "PAYNE",
+    "owner1": "Wu",
+    "owner2": "Payne",
     "current_taxes": 4507.91,
     "18m_override_total": 4751.79,
     "18m_override_increase": 243.88,
@@ -836,9 +836,9 @@
     "25m_override_increase": 338.54
   },
   {
-    "#": "1060-10 & PRK BEACON ST (009B-07-32)",
+    "#": "1060 Beacon St, Condo 10 & Prk (009B-07-32)",
     "$": 865200,
-    "owner1": "PELL",
+    "owner1": "Pell",
     "owner2": "",
     "current_taxes": 5224.71,
     "18m_override_total": 5507.37,
@@ -847,9 +847,9 @@
     "25m_override_increase": 392.38
   },
   {
-    "#": "1060-11 & P18 BEACON ST (009B-07-33)",
+    "#": "1060 Beacon St, Condo 11 & P18 (009B-07-33)",
     "$": 604200,
-    "owner1": "GUTTENBERG",
+    "owner1": "Guttenberg",
     "owner2": "",
     "current_taxes": 2552.07,
     "18m_override_total": 2690.14,
@@ -858,9 +858,9 @@
     "25m_override_increase": 191.66
   },
   {
-    "#": "1060-12 & PRK BEACON ST (009B-07-34)",
+    "#": "1060 Beacon St, Condo 12 & Prk (009B-07-34)",
     "$": 561800,
-    "owner1": "MORTE, TR",
+    "owner1": "Morte, Tr",
     "owner2": "",
     "current_taxes": 5752.83,
     "18m_override_total": 6064.06,
@@ -869,10 +869,10 @@
     "25m_override_increase": 432.04
   },
   {
-    "#": "1060-12A & P17 BEACON ST (009B-07-35)",
+    "#": "1060 Beacon St, Condo 12A & P17 (009B-07-35)",
     "$": 758100,
-    "owner1": "HALL",
-    "owner2": "SOLOMON",
+    "owner1": "Hall",
+    "owner2": "Solomon",
     "current_taxes": 7762.94,
     "18m_override_total": 8182.92,
     "18m_override_increase": 419.98,
@@ -880,10 +880,10 @@
     "25m_override_increase": 583.0
   },
   {
-    "#": "1060-14 BEACON ST (009B-07-36)",
+    "#": "1060 Beacon St, Condo 14 (009B-07-36)",
     "$": 663700,
-    "owner1": "CANCHOLA",
-    "owner2": "PHILBIN",
+    "owner1": "Canchola",
+    "owner2": "Philbin",
     "current_taxes": 6796.29,
     "18m_override_total": 7163.97,
     "18m_override_increase": 367.68,
@@ -891,9 +891,9 @@
     "25m_override_increase": 510.4
   },
   {
-    "#": "1060-15 BEACON ST (009B-07-37)",
+    "#": "1060 Beacon St, Condo 15 (009B-07-37)",
     "$": 491000,
-    "owner1": "LUCIC",
+    "owner1": "Lucic",
     "owner2": "",
     "current_taxes": 5027.84,
     "18m_override_total": 5299.85,
@@ -902,9 +902,9 @@
     "25m_override_increase": 377.59
   },
   {
-    "#": "1060-16 BEACON ST (009B-07-38)",
+    "#": "1060 Beacon St, Condo 16 (009B-07-38)",
     "$": 479200,
-    "owner1": "DIAMOND",
+    "owner1": "Diamond",
     "owner2": "",
     "current_taxes": 4907.01,
     "18m_override_total": 5172.48,
@@ -913,9 +913,9 @@
     "25m_override_increase": 368.52
   },
   {
-    "#": "1060-2 & P19 BEACON ST (009B-07-24)",
+    "#": "1060 Beacon St, Condo 2 & P19 (009B-07-24)",
     "$": 639600,
-    "owner1": "AHLEMEYER",
+    "owner1": "Ahlemeyer",
     "owner2": "",
     "current_taxes": 6549.5,
     "18m_override_total": 6903.83,
@@ -924,9 +924,9 @@
     "25m_override_increase": 491.87
   },
   {
-    "#": "1060-3 BEACON ST (009B-07-25)",
+    "#": "1060 Beacon St, Condo 3 (009B-07-25)",
     "$": 497700,
-    "owner1": "KRIZ TR",
+    "owner1": "Kriz Tr",
     "owner2": "",
     "current_taxes": 5096.45,
     "18m_override_total": 5372.17,
@@ -935,10 +935,10 @@
     "25m_override_increase": 382.74
   },
   {
-    "#": "1060-4 BEACON ST (009B-07-26)",
+    "#": "1060 Beacon St, Condo 4 (009B-07-26)",
     "$": 461700,
-    "owner1": "GRIFFIN TRS",
-    "owner2": "LUBKER",
+    "owner1": "Griffin Trs",
+    "owner2": "Lubker",
     "current_taxes": 4727.81,
     "18m_override_total": 4983.58,
     "18m_override_increase": 255.77,
@@ -946,10 +946,10 @@
     "25m_override_increase": 355.06
   },
   {
-    "#": "1060-5 & PRK BEACON ST (009B-07-27)",
+    "#": "1060 Beacon St, Condo 5 & Prk (009B-07-27)",
     "$": 777800,
-    "owner1": "ZHANG",
-    "owner2": "YI",
+    "owner1": "Zhang",
+    "owner2": "Yi",
     "current_taxes": 7964.67,
     "18m_override_total": 8395.56,
     "18m_override_increase": 430.89,
@@ -957,10 +957,10 @@
     "25m_override_increase": 598.15
   },
   {
-    "#": "1060-6 & PRK BEACON ST (009B-07-28)",
+    "#": "1060 Beacon St, Condo 6 & Prk (009B-07-28)",
     "$": 813800,
-    "owner1": "WANG",
-    "owner2": "ZHANG",
+    "owner1": "Wang",
+    "owner2": "Zhang",
     "current_taxes": 4698.38,
     "18m_override_total": 4952.56,
     "18m_override_increase": 254.18,
@@ -968,10 +968,10 @@
     "25m_override_increase": 352.85
   },
   {
-    "#": "1060-7 BEACON ST (009B-07-29)",
+    "#": "1060 Beacon St, Condo 7 (009B-07-29)",
     "$": 479300,
-    "owner1": "WINOGRAD",
-    "owner2": "FELDSCHER",
+    "owner1": "Winograd",
+    "owner2": "Feldscher",
     "current_taxes": 4908.03,
     "18m_override_total": 5173.55,
     "18m_override_increase": 265.52,
@@ -979,10 +979,10 @@
     "25m_override_increase": 368.59
   },
   {
-    "#": "1060-8 BEACON ST (009B-07-30)",
+    "#": "1060 Beacon St, Condo 8 (009B-07-30)",
     "$": 482700,
-    "owner1": "ZHANG",
-    "owner2": "BLESS S MATTHEW",
+    "owner1": "Zhang",
+    "owner2": "Bless S Matthew",
     "current_taxes": 4942.85,
     "18m_override_total": 5210.26,
     "18m_override_increase": 267.41,
@@ -990,10 +990,10 @@
     "25m_override_increase": 371.21
   },
   {
-    "#": "1060-9 & PRK BEACON ST (009B-07-31)",
+    "#": "1060 Beacon St, Condo 9 & Prk (009B-07-31)",
     "$": 780300,
-    "owner1": "PARFITT",
-    "owner2": "WELCH",
+    "owner1": "Parfitt",
+    "owner2": "Welch",
     "current_taxes": 4355.34,
     "18m_override_total": 4590.96,
     "18m_override_increase": 235.62,
@@ -1001,10 +1001,10 @@
     "25m_override_increase": 327.09
   },
   {
-    "#": "1060-A BEACON ST (009B-07-20)",
+    "#": "1060 Beacon St, Condo A (009B-07-20)",
     "$": 473600,
-    "owner1": "BRILLHART",
-    "owner2": "HOGAN",
+    "owner1": "Brillhart",
+    "owner2": "Hogan",
     "current_taxes": 4849.66,
     "18m_override_total": 5112.03,
     "18m_override_increase": 262.37,
@@ -1012,9 +1012,9 @@
     "25m_override_increase": 364.21
   },
   {
-    "#": "1060-B BEACON ST (009B-07-21)",
+    "#": "1060 Beacon St, Condo B (009B-07-21)",
     "$": 403500,
-    "owner1": "TANKARD",
+    "owner1": "Tankard",
     "owner2": "",
     "current_taxes": 496.91,
     "18m_override_total": 523.79,
@@ -1023,9 +1023,9 @@
     "25m_override_increase": 37.32
   },
   {
-    "#": "1060-C BEACON ST (009B-07-22)",
+    "#": "1060 Beacon St, Condo C (009B-07-22)",
     "$": 316000,
-    "owner1": "ZHANG",
+    "owner1": "Zhang",
     "owner2": "",
     "current_taxes": 3235.84,
     "18m_override_total": 3410.9,
@@ -1034,9 +1034,9 @@
     "25m_override_increase": 243.01
   },
   {
-    "#": "1064-1 & PRK BEACON ST (009B-07-41)",
+    "#": "1064 Beacon St, Condo 1 & Prk (009B-07-41)",
     "$": 638700,
-    "owner1": "TANASIJEVIC TRS",
+    "owner1": "Tanasijevic Trs",
     "owner2": "",
     "current_taxes": 6540.29,
     "18m_override_total": 6894.12,
@@ -1045,9 +1045,9 @@
     "25m_override_increase": 491.18
   },
   {
-    "#": "1064-10 BEACON ST (009B-07-50)",
+    "#": "1064 Beacon St, Condo 10 (009B-07-50)",
     "$": 751700,
-    "owner1": "LAWTON",
+    "owner1": "Lawton",
     "owner2": "",
     "current_taxes": 4062.47,
     "18m_override_total": 4282.25,
@@ -1056,9 +1056,9 @@
     "25m_override_increase": 305.09
   },
   {
-    "#": "1064-11 BEACON ST (009B-07-51)",
+    "#": "1064 Beacon St, Condo 11 (009B-07-51)",
     "$": 515300,
-    "owner1": "STEIN",
+    "owner1": "Stein",
     "owner2": "",
     "current_taxes": 1641.74,
     "18m_override_total": 1730.56,
@@ -1067,9 +1067,9 @@
     "25m_override_increase": 123.29
   },
   {
-    "#": "1064-12 BEACON ST (009B-07-52)",
+    "#": "1064 Beacon St, Condo 12 (009B-07-52)",
     "$": 480200,
-    "owner1": "BRILLHART",
+    "owner1": "Brillhart",
     "owner2": "",
     "current_taxes": 1282.31,
     "18m_override_total": 1351.68,
@@ -1078,10 +1078,10 @@
     "25m_override_increase": 96.3
   },
   {
-    "#": "1064-12A BEACON ST (009B-07-53)",
+    "#": "1064 Beacon St, Condo 12A (009B-07-53)",
     "$": 734800,
-    "owner1": "SUN",
-    "owner2": "YUNG",
+    "owner1": "Sun",
+    "owner2": "Yung",
     "current_taxes": 3889.42,
     "18m_override_total": 4099.84,
     "18m_override_increase": 210.42,
@@ -1089,9 +1089,9 @@
     "25m_override_increase": 292.1
   },
   {
-    "#": "1064-14 & PRK BEACON ST (009B-07-54)",
+    "#": "1064 Beacon St, Condo 14 & Prk (009B-07-54)",
     "$": 760400,
-    "owner1": "PICARIELLO TRS",
+    "owner1": "Picariello Trs",
     "owner2": "",
     "current_taxes": 7786.5,
     "18m_override_total": 8207.75,
@@ -1100,9 +1100,9 @@
     "25m_override_increase": 584.77
   },
   {
-    "#": "1064-15 BEACON ST (009B-07-55)",
+    "#": "1064 Beacon St, Condo 15 (009B-07-55)",
     "$": 558900,
-    "owner1": "GLASER",
+    "owner1": "Glaser",
     "owner2": "",
     "current_taxes": 2088.2,
     "18m_override_total": 2201.17,
@@ -1111,9 +1111,9 @@
     "25m_override_increase": 156.82
   },
   {
-    "#": "1064-16 & PRK BEACON ST (009B-07-56)",
+    "#": "1064 Beacon St, Condo 16 & Prk (009B-07-56)",
     "$": 542100,
-    "owner1": "KAMAL TRS",
+    "owner1": "Kamal Trs",
     "owner2": "",
     "current_taxes": 5551.1,
     "18m_override_total": 5851.41,
@@ -1122,9 +1122,9 @@
     "25m_override_increase": 416.89
   },
   {
-    "#": "1064-2 BEACON ST (009B-07-42)",
+    "#": "1064 Beacon St, Condo 2 (009B-07-42)",
     "$": 654400,
-    "owner1": "XIAO TR",
+    "owner1": "Xiao Tr",
     "owner2": "",
     "current_taxes": 6701.06,
     "18m_override_total": 7063.59,
@@ -1133,9 +1133,9 @@
     "25m_override_increase": 503.25
   },
   {
-    "#": "1064-3 & PRK BEACON ST (009B-07-43)",
+    "#": "1064 Beacon St, Condo 3 & Prk (009B-07-43)",
     "$": 563800,
-    "owner1": "LEW",
+    "owner1": "Lew",
     "owner2": "",
     "current_taxes": 2138.38,
     "18m_override_total": 2254.07,
@@ -1144,9 +1144,9 @@
     "25m_override_increase": 160.59
   },
   {
-    "#": "1064-4 & P-C BEACON ST (009B-07-44)",
+    "#": "1064 Beacon St, Condo 4 & P-C (009B-07-44)",
     "$": 542100,
-    "owner1": "OFFICER TR",
+    "owner1": "Officer Tr",
     "owner2": "",
     "current_taxes": 5551.1,
     "18m_override_total": 5851.41,
@@ -1155,9 +1155,9 @@
     "25m_override_increase": 416.89
   },
   {
-    "#": "1064-5 & P10 BEACON ST (009B-07-45)",
+    "#": "1064 Beacon St, Condo 5 & P10 (009B-07-45)",
     "$": 799300,
-    "owner1": "VAN DISSEL TR",
+    "owner1": "Van Dissel Tr",
     "owner2": "",
     "current_taxes": 8184.83,
     "18m_override_total": 8627.63,
@@ -1166,9 +1166,9 @@
     "25m_override_increase": 614.68
   },
   {
-    "#": "1064-6 BEACON ST (009B-07-46)",
+    "#": "1064 Beacon St, Condo 6 (009B-07-46)",
     "$": 710400,
-    "owner1": "LIU",
+    "owner1": "Liu",
     "owner2": "",
     "current_taxes": 3639.56,
     "18m_override_total": 3836.46,
@@ -1177,9 +1177,9 @@
     "25m_override_increase": 273.33
   },
   {
-    "#": "1064-7 BEACON ST (009B-07-47)",
+    "#": "1064 Beacon St, Condo 7 (009B-07-47)",
     "$": 588000,
-    "owner1": "LLORENTE",
+    "owner1": "Llorente",
     "owner2": "",
     "current_taxes": 2386.19,
     "18m_override_total": 2515.28,
@@ -1188,10 +1188,10 @@
     "25m_override_increase": 179.2
   },
   {
-    "#": "1064-8 & PRK BEACON ST (009B-07-48)",
+    "#": "1064 Beacon St, Condo 8 & Prk (009B-07-48)",
     "$": 571200,
-    "owner1": "TSANG TRS",
-    "owner2": "POON",
+    "owner1": "Tsang Trs",
+    "owner2": "Poon",
     "current_taxes": 5849.09,
     "18m_override_total": 6165.53,
     "18m_override_increase": 316.44,
@@ -1199,9 +1199,9 @@
     "25m_override_increase": 439.27
   },
   {
-    "#": "1064-9 & PRK BEACON ST (009B-07-49)",
+    "#": "1064 Beacon St, Condo 9 & Prk (009B-07-49)",
     "$": 783000,
-    "owner1": "TROXELL TR",
+    "owner1": "Troxell Tr",
     "owner2": "",
     "current_taxes": 8017.92,
     "18m_override_total": 8451.69,
@@ -1210,9 +1210,9 @@
     "25m_override_increase": 602.15
   },
   {
-    "#": "1064-A BEACON ST (009B-07-39)",
+    "#": "1064 Beacon St, Condo A (009B-07-39)",
     "$": 349500,
-    "owner1": "FORTUNATO TRS",
+    "owner1": "Fortunato Trs",
     "owner2": "",
     "current_taxes": 3578.88,
     "18m_override_total": 3772.5,
@@ -1221,10 +1221,10 @@
     "25m_override_increase": 268.77
   },
   {
-    "#": "1064-B BEACON ST (009B-07-57)",
+    "#": "1064 Beacon St, Condo B (009B-07-57)",
     "$": 378400,
-    "owner1": "BEACON GATE CONDO ASSOCIATION",
-    "owner2": "C/O CERTIFIED PROPERTY MGMT",
+    "owner1": "Beacon Gate Condo Association",
+    "owner2": "C/O Certified Property Mgmt",
     "current_taxes": 3874.82,
     "18m_override_total": 4084.45,
     "18m_override_increase": 209.63,
@@ -1232,10 +1232,10 @@
     "25m_override_increase": 291.0
   },
   {
-    "#": "1064-C BEACON ST (009B-07-58)",
+    "#": "1064 Beacon St, Condo C (009B-07-58)",
     "$": 326300,
-    "owner1": "BEACON GATE CONDO ASSOCIATION",
-    "owner2": "C/O CERTIFIED PROPERTY MGMT",
+    "owner1": "Beacon Gate Condo Association",
+    "owner2": "C/O Certified Property Mgmt",
     "current_taxes": 3341.31,
     "18m_override_total": 3522.07,
     "18m_override_increase": 180.76,
@@ -1243,9 +1243,9 @@
     "25m_override_increase": 250.93
   },
   {
-    "#": "1064-D BEACON ST (009B-07-40)",
+    "#": "1064 Beacon St, Condo D (009B-07-40)",
     "$": 390800,
-    "owner1": "EINHORN",
+    "owner1": "Einhorn",
     "owner2": "",
     "current_taxes": 4001.79,
     "18m_override_total": 4218.29,
@@ -1254,10 +1254,10 @@
     "25m_override_increase": 300.53
   },
   {
-    "#": "1070 BEACON ST (009B-09-00)",
+    "#": "1070 Beacon St (009B-09-00)",
     "$": 12960600,
-    "owner1": "TEN SEVENTY TENANTS HOUSING CO",
-    "owner2": "C/O JENNIFER PORTER",
+    "owner1": "Ten Seventy Tenants Housing Co",
+    "owner2": "C/O Jennifer Porter",
     "current_taxes": 132716.54,
     "18m_override_total": 139896.5,
     "18m_override_increase": 7179.96,
@@ -1265,9 +1265,9 @@
     "25m_override_increase": 9967.01
   },
   {
-    "#": "1080-1A BEACON ST (009B-10-03)",
+    "#": "1080 Beacon St, Condo 1A (009B-10-03)",
     "$": 1578100,
-    "owner1": "HASELWANDTER TR",
+    "owner1": "Haselwandter Tr",
     "owner2": "",
     "current_taxes": 16159.74,
     "18m_override_total": 17033.98,
@@ -1276,9 +1276,9 @@
     "25m_override_increase": 1213.6
   },
   {
-    "#": "1080-1B BEACON ST (009B-10-04)",
+    "#": "1080 Beacon St, Condo 1B (009B-10-04)",
     "$": 659900,
-    "owner1": "OMARY",
+    "owner1": "Omary",
     "owner2": "",
     "current_taxes": 6757.38,
     "18m_override_total": 7122.95,
@@ -1287,9 +1287,9 @@
     "25m_override_increase": 507.48
   },
   {
-    "#": "1080-1C BEACON ST (009B-10-05)",
+    "#": "1080 Beacon St, Condo 1C (009B-10-05)",
     "$": 541600,
-    "owner1": "DEVANEY",
+    "owner1": "Devaney",
     "owner2": "",
     "current_taxes": 5545.98,
     "18m_override_total": 5846.02,
@@ -1298,9 +1298,9 @@
     "25m_override_increase": 416.5
   },
   {
-    "#": "1080-1D BEACON ST (009B-10-06)",
+    "#": "1080 Beacon St, Condo 1D (009B-10-06)",
     "$": 659600,
-    "owner1": "SHEN",
+    "owner1": "Shen",
     "owner2": "",
     "current_taxes": 6754.3,
     "18m_override_total": 7119.71,
@@ -1309,9 +1309,9 @@
     "25m_override_increase": 507.25
   },
   {
-    "#": "1080-2A BEACON ST (009B-10-07)",
+    "#": "1080 Beacon St, Condo 2A (009B-10-07)",
     "$": 1788300,
-    "owner1": "HU TRS",
+    "owner1": "Hu Trs",
     "owner2": "",
     "current_taxes": 14677.26,
     "18m_override_total": 15471.3,
@@ -1320,10 +1320,10 @@
     "25m_override_increase": 1102.26
   },
   {
-    "#": "1080-2B BEACON ST (009B-10-08)",
+    "#": "1080 Beacon St, Condo 2B (009B-10-08)",
     "$": 722900,
-    "owner1": "ZHANG",
-    "owner2": "LU",
+    "owner1": "Zhang",
+    "owner2": "Lu",
     "current_taxes": 3767.56,
     "18m_override_total": 3971.38,
     "18m_override_increase": 203.82,
@@ -1331,10 +1331,10 @@
     "25m_override_increase": 282.94
   },
   {
-    "#": "1080-2C BEACON ST (009B-10-09)",
+    "#": "1080 Beacon St, Condo 2C (009B-10-09)",
     "$": 563400,
-    "owner1": "HE",
-    "owner2": "XU",
+    "owner1": "He",
+    "owner2": "Xu",
     "current_taxes": 5769.22,
     "18m_override_total": 6081.33,
     "18m_override_increase": 312.11,
@@ -1342,10 +1342,10 @@
     "25m_override_increase": 433.27
   },
   {
-    "#": "1080-2D BEACON ST (009B-10-10)",
+    "#": "1080 Beacon St, Condo 2D (009B-10-10)",
     "$": 807200,
-    "owner1": "NELSON",
-    "owner2": "STERN",
+    "owner1": "Nelson",
+    "owner2": "Stern",
     "current_taxes": 4630.79,
     "18m_override_total": 4881.32,
     "18m_override_increase": 250.53,
@@ -1353,9 +1353,9 @@
     "25m_override_increase": 347.77
   },
   {
-    "#": "1080-3A BEACON ST (009B-10-11)",
+    "#": "1080 Beacon St, Condo 3A (009B-10-11)",
     "$": 824300,
-    "owner1": "CARDOZO",
+    "owner1": "Cardozo",
     "owner2": "",
     "current_taxes": 8440.83,
     "18m_override_total": 8897.48,
@@ -1364,9 +1364,9 @@
     "25m_override_increase": 633.91
   },
   {
-    "#": "1080-3B BEACON ST (009B-10-12)",
+    "#": "1080 Beacon St, Condo 3B (009B-10-12)",
     "$": 973200,
-    "owner1": "ANGHELESCU",
+    "owner1": "Anghelescu",
     "owner2": "",
     "current_taxes": 9965.57,
     "18m_override_total": 10504.71,
@@ -1375,9 +1375,9 @@
     "25m_override_increase": 748.41
   },
   {
-    "#": "1080-3C BEACON ST (009B-10-13)",
+    "#": "1080 Beacon St, Condo 3C (009B-10-13)",
     "$": 730000,
-    "owner1": "BAJIC",
+    "owner1": "Bajic",
     "owner2": "",
     "current_taxes": 7475.2,
     "18m_override_total": 7879.61,
@@ -1386,9 +1386,9 @@
     "25m_override_increase": 561.39
   },
   {
-    "#": "1080-3D BEACON ST (009B-10-14)",
+    "#": "1080 Beacon St, Condo 3D (009B-10-14)",
     "$": 575200,
-    "owner1": "NOIMAN",
+    "owner1": "Noiman",
     "owner2": "",
     "current_taxes": 5890.05,
     "18m_override_total": 6208.7,
@@ -1397,9 +1397,9 @@
     "25m_override_increase": 442.34
   },
   {
-    "#": "1080-3E BEACON ST (009B-10-15)",
+    "#": "1080 Beacon St, Condo 3E (009B-10-15)",
     "$": 809900,
-    "owner1": "LEVITT",
+    "owner1": "Levitt",
     "owner2": "",
     "current_taxes": 4658.44,
     "18m_override_total": 4910.46,
@@ -1408,9 +1408,9 @@
     "25m_override_increase": 349.85
   },
   {
-    "#": "1080-4A BEACON ST (009B-10-16)",
+    "#": "1080 Beacon St, Condo 4A (009B-10-16)",
     "$": 819000,
-    "owner1": "BENADE",
+    "owner1": "Benade",
     "owner2": "",
     "current_taxes": 4751.63,
     "18m_override_total": 5008.69,
@@ -1419,10 +1419,10 @@
     "25m_override_increase": 356.85
   },
   {
-    "#": "1080-4B BEACON ST (009B-10-17)",
+    "#": "1080 Beacon St, Condo 4B (009B-10-17)",
     "$": 1040700,
-    "owner1": "NATHAN",
-    "owner2": "TARANTAL",
+    "owner1": "Nathan",
+    "owner2": "Tarantal",
     "current_taxes": 7021.83,
     "18m_override_total": 7401.71,
     "18m_override_increase": 379.88,
@@ -1430,9 +1430,9 @@
     "25m_override_increase": 527.34
   },
   {
-    "#": "1080-4C BEACON ST (009B-10-18)",
+    "#": "1080 Beacon St, Condo 4C (009B-10-18)",
     "$": 729100,
-    "owner1": "WALKER",
+    "owner1": "Walker",
     "owner2": "",
     "current_taxes": 3831.05,
     "18m_override_total": 4038.31,
@@ -1441,9 +1441,9 @@
     "25m_override_increase": 287.71
   },
   {
-    "#": "1080-4D BEACON ST (009B-10-19)",
+    "#": "1080 Beacon St, Condo 4D (009B-10-19)",
     "$": 556600,
-    "owner1": "OTTEN",
+    "owner1": "Otten",
     "owner2": "",
     "current_taxes": 5699.58,
     "18m_override_total": 6007.93,
@@ -1452,9 +1452,9 @@
     "25m_override_increase": 428.04
   },
   {
-    "#": "1080-4E BEACON ST (009B-10-20)",
+    "#": "1080 Beacon St, Condo 4E (009B-10-20)",
     "$": 789800,
-    "owner1": "LEIKHIM",
+    "owner1": "Leikhim",
     "owner2": "",
     "current_taxes": 4452.62,
     "18m_override_total": 4693.51,
@@ -1463,9 +1463,9 @@
     "25m_override_increase": 334.39
   },
   {
-    "#": "1080-5A BEACON ST (009B-10-21)",
+    "#": "1080 Beacon St, Condo 5A (009B-10-21)",
     "$": 831800,
-    "owner1": "SCHORGE",
+    "owner1": "Schorge",
     "owner2": "",
     "current_taxes": 8517.63,
     "18m_override_total": 8978.43,
@@ -1474,9 +1474,9 @@
     "25m_override_increase": 639.67
   },
   {
-    "#": "1080-5B BEACON ST (009B-10-22)",
+    "#": "1080 Beacon St, Condo 5B (009B-10-22)",
     "$": 1039500,
-    "owner1": "TEMPERO",
+    "owner1": "Tempero",
     "owner2": "",
     "current_taxes": 7009.55,
     "18m_override_total": 7388.77,
@@ -1485,9 +1485,9 @@
     "25m_override_increase": 526.42
   },
   {
-    "#": "1080-5C BEACON ST (009B-10-23)",
+    "#": "1080 Beacon St, Condo 5C (009B-10-23)",
     "$": 761200,
-    "owner1": "CHANG TRS",
+    "owner1": "Chang Trs",
     "owner2": "",
     "current_taxes": 7794.69,
     "18m_override_total": 8216.38,
@@ -1496,9 +1496,9 @@
     "25m_override_increase": 585.38
   },
   {
-    "#": "1080-5D BEACON ST (009B-10-24)",
+    "#": "1080 Beacon St, Condo 5D (009B-10-24)",
     "$": 703700,
-    "owner1": "CHU",
+    "owner1": "Chu",
     "owner2": "",
     "current_taxes": 3570.95,
     "18m_override_total": 3764.14,
@@ -1507,9 +1507,9 @@
     "25m_override_increase": 268.18
   },
   {
-    "#": "1080-5E BEACON ST (009B-10-25)",
+    "#": "1080 Beacon St, Condo 5E (009B-10-25)",
     "$": 811500,
-    "owner1": "DEQUEANT",
+    "owner1": "Dequeant",
     "owner2": "",
     "current_taxes": 8309.76,
     "18m_override_total": 8759.32,
@@ -1518,9 +1518,9 @@
     "25m_override_increase": 624.06
   },
   {
-    "#": "1080-6A BEACON ST (009B-10-26)",
+    "#": "1080 Beacon St, Condo 6A (009B-10-26)",
     "$": 2008600,
-    "owner1": "LYONS TR",
+    "owner1": "Lyons Tr",
     "owner2": "",
     "current_taxes": 20568.06,
     "18m_override_total": 21680.79,
@@ -1529,9 +1529,9 @@
     "25m_override_increase": 1544.66
   },
   {
-    "#": "1080-6B BEACON ST (009B-10-27)",
+    "#": "1080 Beacon St, Condo 6B (009B-10-27)",
     "$": 841600,
-    "owner1": "SULLIVAN",
+    "owner1": "Sullivan",
     "owner2": "",
     "current_taxes": 8617.98,
     "18m_override_total": 9084.21,
@@ -1540,9 +1540,9 @@
     "25m_override_increase": 647.21
   },
   {
-    "#": "1080-6C BEACON ST (009B-10-28)",
+    "#": "1080 Beacon St, Condo 6C (009B-10-28)",
     "$": 635200,
-    "owner1": "SULLIVAN",
+    "owner1": "Sullivan",
     "owner2": "",
     "current_taxes": 6504.45,
     "18m_override_total": 6856.34,
@@ -1551,9 +1551,9 @@
     "25m_override_increase": 488.48
   },
   {
-    "#": "1080-6D BEACON ST (009B-10-29)",
+    "#": "1080 Beacon St, Condo 6D (009B-10-29)",
     "$": 802600,
-    "owner1": "WALSH STEVENSON",
+    "owner1": "Walsh Stevenson",
     "owner2": "",
     "current_taxes": 4583.69,
     "18m_override_total": 4831.67,
@@ -1562,10 +1562,10 @@
     "25m_override_increase": 344.24
   },
   {
-    "#": "1080-G1B1 BEACON ST (009B-10-30)",
+    "#": "1080 Beacon St, Condo G1B1 (009B-10-30)",
     "$": 670300,
-    "owner1": "FELLING",
-    "owner2": "C/O CAPITOL REALTY GROUP",
+    "owner1": "Felling",
+    "owner2": "C/O Capitol Realty Group",
     "current_taxes": 6863.87,
     "18m_override_total": 7235.21,
     "18m_override_increase": 371.34,
@@ -1573,9 +1573,9 @@
     "25m_override_increase": 515.48
   },
   {
-    "#": "1080-G2B2 BEACON ST (009B-10-01)",
+    "#": "1080 Beacon St, Condo G2B2 (009B-10-01)",
     "$": 845500,
-    "owner1": "MORAES",
+    "owner1": "Moraes",
     "owner2": "",
     "current_taxes": 5022.99,
     "18m_override_total": 5294.73,
@@ -1584,10 +1584,10 @@
     "25m_override_increase": 377.23
   },
   {
-    "#": "1080-G3B3 BEACON ST (009B-10-02)",
+    "#": "1080 Beacon St, Condo G3B3 (009B-10-02)",
     "$": 588400,
-    "owner1": "ARGILAGOS",
-    "owner2": "BRUETT",
+    "owner1": "Argilagos",
+    "owner2": "Bruett",
     "current_taxes": 6025.22,
     "18m_override_total": 6351.18,
     "18m_override_increase": 325.96,
@@ -1595,10 +1595,10 @@
     "25m_override_increase": 452.49
   },
   {
-    "#": "1090 BEACON ST (009B-11-00)",
+    "#": "1090 Beacon St (009B-11-00)",
     "$": 8425200,
-    "owner1": "AMORY GARDENS REALTY LLC",
-    "owner2": "C/O GARRETT AND JESSE CHRISTOPHER",
+    "owner1": "Amory Gardens Realty Llc",
+    "owner2": "C/O Garrett And Jesse Christopher",
     "current_taxes": 86274.05,
     "18m_override_total": 90941.48,
     "18m_override_increase": 4667.43,
@@ -1606,10 +1606,10 @@
     "25m_override_increase": 6479.18
   },
   {
-    "#": "1100 BEACON ST (009B-12-00)",
+    "#": "1100 Beacon St (009B-12-00)",
     "$": 8955000,
-    "owner1": "AMORY GARDENS REALTY LLC",
-    "owner2": "C/O GARRETT AND JESSE CHRISTOPHER",
+    "owner1": "Amory Gardens Realty Llc",
+    "owner2": "C/O Garrett And Jesse Christopher",
     "current_taxes": 91699.2,
     "18m_override_total": 96660.13,
     "18m_override_increase": 4960.93,
@@ -1617,10 +1617,10 @@
     "25m_override_increase": 6886.61
   },
   {
-    "#": "1110 BEACON ST (009B-13-00)",
+    "#": "1110 Beacon St (009B-13-00)",
     "$": 7935700,
-    "owner1": "1110-1120 BEACON STREET LLC",
-    "owner2": "C/O DANNIN MANAGEMENT CORP",
+    "owner1": "1110-1120 Beacon Street Llc",
+    "owner2": "C/O Dannin Management Corp",
     "current_taxes": 81261.57,
     "18m_override_total": 85657.82,
     "18m_override_increase": 4396.25,
@@ -1628,10 +1628,10 @@
     "25m_override_increase": 6102.74
   },
   {
-    "#": "1120 BEACON ST (009B-14-00)",
+    "#": "1120 Beacon St (009B-14-00)",
     "$": 9659200,
-    "owner1": "1110-1120 BEACON STREET LLC",
-    "owner2": "C/O DANNIN MANAGEMENT CORP",
+    "owner1": "1110-1120 Beacon Street Llc",
+    "owner2": "C/O Dannin Management Corp",
     "current_taxes": 98910.21,
     "18m_override_total": 104261.25,
     "18m_override_increase": 5351.04,
@@ -1639,10 +1639,10 @@
     "25m_override_increase": 7428.16
   },
   {
-    "#": "1122 BEACON ST (009-03-00)",
+    "#": "1122 Beacon St (009-03-00)",
     "$": 1966800,
-    "owner1": "TOWN OF BROOKLINE",
-    "owner2": "C/O HALLS POND",
+    "owner1": "Town Of Brookline",
+    "owner2": "C/O Halls Pond",
     "current_taxes": 0.0,
     "18m_override_total": 0.0,
     "18m_override_increase": 0.0,
@@ -1650,9 +1650,9 @@
     "25m_override_increase": 0.0
   },
   {
-    "#": "1126-1 BEACON ST (010-01-02)",
+    "#": "1126 Beacon St, Condo 1 (010-01-02)",
     "$": 1850700,
-    "owner1": "HERMAN",
+    "owner1": "Herman",
     "owner2": "",
     "current_taxes": 15316.23,
     "18m_override_total": 16144.84,
@@ -1661,9 +1661,9 @@
     "25m_override_increase": 1150.25
   },
   {
-    "#": "1126-2 & P1-2 BEACON ST (010-01-03)",
+    "#": "1126 Beacon St, Condo 2 & P1-2 (010-01-03)",
     "$": 1979600,
-    "owner1": "SWARTZ",
+    "owner1": "Swartz",
     "owner2": "",
     "current_taxes": 16636.17,
     "18m_override_total": 17536.19,
@@ -1672,9 +1672,9 @@
     "25m_override_increase": 1249.38
   },
   {
-    "#": "1126-P3 BEACON ST (010-01-04)",
+    "#": "1126 Beacon St, Condo P3 (010-01-04)",
     "$": 51600,
-    "owner1": "SCHORGE",
+    "owner1": "Schorge",
     "owner2": "",
     "current_taxes": 528.38,
     "18m_override_total": 556.97,
@@ -1683,9 +1683,9 @@
     "25m_override_increase": 39.68
   },
   {
-    "#": "1126-P4 BEACON ST (010-01-05)",
+    "#": "1126 Beacon St, Condo P4 (010-01-05)",
     "$": 51600,
-    "owner1": "TEMPERO",
+    "owner1": "Tempero",
     "owner2": "",
     "current_taxes": 528.38,
     "18m_override_total": 556.97,
@@ -1694,9 +1694,9 @@
     "25m_override_increase": 39.68
   },
   {
-    "#": "1126-P5 BEACON ST (010-01-06)",
+    "#": "1126 Beacon St, Condo P5 (010-01-06)",
     "$": 52300,
-    "owner1": "HASELWANDTER TR",
+    "owner1": "Haselwandter Tr",
     "owner2": "",
     "current_taxes": 535.55,
     "18m_override_total": 564.52,
@@ -1705,10 +1705,10 @@
     "25m_override_increase": 40.22
   },
   {
-    "#": "1128 BEACON ST (010-01-01)",
+    "#": "1128 Beacon St (010-01-01)",
     "$": 2786000,
-    "owner1": "HAGOPIAN TRS",
-    "owner2": "SARKISSIAN",
+    "owner1": "Hagopian Trs",
+    "owner2": "Sarkissian",
     "current_taxes": 24893.71,
     "18m_override_total": 26240.46,
     "18m_override_increase": 1346.75,
@@ -1716,10 +1716,10 @@
     "25m_override_increase": 1869.52
   },
   {
-    "#": "1140-101 G19-20-21 BEACON ST (010-02-05)",
+    "#": "1140 Beacon St, Condo 101 G19-20-21 (010-02-05)",
     "$": 3375800,
-    "owner1": "AXELROD",
-    "owner2": "MARKS",
+    "owner1": "Axelrod",
+    "owner2": "Marks",
     "current_taxes": 30933.26,
     "18m_override_total": 32606.75,
     "18m_override_increase": 1673.49,
@@ -1727,9 +1727,9 @@
     "25m_override_increase": 2323.09
   },
   {
-    "#": "1140-102 G13-14 BEACON ST (010-02-06)",
+    "#": "1140 Beacon St, Condo 102 G13-14 (010-02-06)",
     "$": 2769600,
-    "owner1": "LUCAS",
+    "owner1": "Lucas",
     "owner2": "",
     "current_taxes": 24725.77,
     "18m_override_total": 26063.43,
@@ -1738,9 +1738,9 @@
     "25m_override_increase": 1856.91
   },
   {
-    "#": "1140-103 &G3-G4 BEACON ST (010-02-07)",
+    "#": "1140 Beacon St, Condo 103 &G3-G4 (010-02-07)",
     "$": 2417000,
-    "owner1": "LEVY TR",
+    "owner1": "Levy Tr",
     "owner2": "",
     "current_taxes": 21115.15,
     "18m_override_total": 22257.48,
@@ -1749,10 +1749,10 @@
     "25m_override_increase": 1585.75
   },
   {
-    "#": "1140-104 & G1-2 BEACON ST (010-02-08)",
+    "#": "1140 Beacon St, Condo 104 & G1-2 (010-02-08)",
     "$": 2907300,
-    "owner1": "WONG TRS",
-    "owner2": "KUBO",
+    "owner1": "Wong Trs",
+    "owner2": "Kubo",
     "current_taxes": 29770.75,
     "18m_override_total": 31381.35,
     "18m_override_increase": 1610.6,
@@ -1760,9 +1760,9 @@
     "25m_override_increase": 2235.78
   },
   {
-    "#": "1140-105 G9-10-27 BEACON ST (010-02-09)",
+    "#": "1140 Beacon St, Condo 105 G9-10-27 (010-02-09)",
     "$": 3675900,
-    "owner1": "COHEN",
+    "owner1": "Cohen",
     "owner2": "",
     "current_taxes": 37641.22,
     "18m_override_total": 39677.61,
@@ -1771,9 +1771,9 @@
     "25m_override_increase": 2826.86
   },
   {
-    "#": "1140-201 G23&24 BEACON ST (010-02-10)",
+    "#": "1140 Beacon St, Condo 201 G23&24 (010-02-10)",
     "$": 3091500,
-    "owner1": "LANDAY LIFE ESTATE",
+    "owner1": "Landay Life Estate",
     "owner2": "",
     "current_taxes": 31656.96,
     "18m_override_total": 33369.6,
@@ -1782,9 +1782,9 @@
     "25m_override_increase": 2377.44
   },
   {
-    "#": "1140-202 G15-16 BEACON ST (010-02-11)",
+    "#": "1140 Beacon St, Condo 202 G15-16 (010-02-11)",
     "$": 2793100,
-    "owner1": "ULLIAN",
+    "owner1": "Ullian",
     "owner2": "",
     "current_taxes": 24966.41,
     "18m_override_total": 26317.09,
@@ -1793,9 +1793,9 @@
     "25m_override_increase": 1874.98
   },
   {
-    "#": "1140-203 G5-6 BEACON ST (010-02-12)",
+    "#": "1140 Beacon St, Condo 203 G5-6 (010-02-12)",
     "$": 3088000,
-    "owner1": "HARRINGTON TRS",
+    "owner1": "Harrington Trs",
     "owner2": "",
     "current_taxes": 27986.19,
     "18m_override_total": 29500.24,
@@ -1804,9 +1804,9 @@
     "25m_override_increase": 2101.76
   },
   {
-    "#": "1140-204 G30&31 BEACON ST (010-02-13)",
+    "#": "1140 Beacon St, Condo 204 G30&31 (010-02-13)",
     "$": 2842300,
-    "owner1": "SURYAMEGA, TR",
+    "owner1": "Suryamega, Tr",
     "owner2": "",
     "current_taxes": 29105.15,
     "18m_override_total": 30679.74,
@@ -1815,9 +1815,9 @@
     "25m_override_increase": 2185.8
   },
   {
-    "#": "1140-301 & 3 G BEACON ST (010-02-14)",
+    "#": "1140 Beacon St, Condo 301 & 3 G (010-02-14)",
     "$": 3173200,
-    "owner1": "TOVAR, TR",
+    "owner1": "Tovar, Tr",
     "owner2": "",
     "current_taxes": 32493.57,
     "18m_override_total": 34251.47,
@@ -1826,9 +1826,9 @@
     "25m_override_increase": 2440.27
   },
   {
-    "#": "1140-302 G25&26 BEACON ST (010-02-15)",
+    "#": "1140 Beacon St, Condo 302 G25&26 (010-02-15)",
     "$": 2791100,
-    "owner1": "COHEN TR",
+    "owner1": "Cohen Tr",
     "owner2": "",
     "current_taxes": 28580.86,
     "18m_override_total": 30127.08,
@@ -1837,10 +1837,10 @@
     "25m_override_increase": 2146.42
   },
   {
-    "#": "1140-303 G11&12 BEACON ST (010-02-16)",
+    "#": "1140 Beacon St, Condo 303 G11&12 (010-02-16)",
     "$": 3149500,
-    "owner1": "GLAZMAN",
-    "owner2": "ROYTBERG",
+    "owner1": "Glazman",
+    "owner2": "Roytberg",
     "current_taxes": 28615.95,
     "18m_override_total": 30164.07,
     "18m_override_increase": 1548.12,
@@ -1848,9 +1848,9 @@
     "25m_override_increase": 2149.06
   },
   {
-    "#": "1140-304  G7-8 BEACON ST (010-02-17)",
+    "#": "1140 Beacon St, Condo 304  G7-8 (010-02-17)",
     "$": 2998500,
-    "owner1": "TANASHIAN TRS",
+    "owner1": "Tanashian Trs",
     "owner2": "",
     "current_taxes": 30704.64,
     "18m_override_total": 32365.76,
@@ -1859,9 +1859,9 @@
     "25m_override_increase": 2305.92
   },
   {
-    "#": "1140-305 G28-29 BEACON ST (010-02-18)",
+    "#": "1140 Beacon St, Condo 305 G28-29 (010-02-18)",
     "$": 2852600,
-    "owner1": "OLSTEIN",
+    "owner1": "Olstein",
     "owner2": "",
     "current_taxes": 25575.69,
     "18m_override_total": 26959.33,
@@ -1870,9 +1870,9 @@
     "25m_override_increase": 1920.73
   },
   {
-    "#": "1160-101 & 4 PK BEACON ST (011-01-06)",
+    "#": "1160 Beacon St, Condo 101 & 4 Pk (011-01-06)",
     "$": 3139600,
-    "owner1": "MODIGLIANI",
+    "owner1": "Modigliani",
     "owner2": "",
     "current_taxes": 28514.57,
     "18m_override_total": 30057.21,
@@ -1881,10 +1881,10 @@
     "25m_override_increase": 2141.44
   },
   {
-    "#": "1160-102&G18&24 BEACON ST (011-01-07)",
+    "#": "1160 Beacon St, Condo 102&G18&24 (011-01-07)",
     "$": 2366500,
-    "owner1": "ROSENTHAL TR",
-    "owner2": "C/O NORTHERN TRUST ATTN SHARON COHEN",
+    "owner1": "Rosenthal Tr",
+    "owner2": "C/O Northern Trust Attn Sharon Cohen",
     "current_taxes": 24232.96,
     "18m_override_total": 25543.96,
     "18m_override_increase": 1311.0,
@@ -1892,9 +1892,9 @@
     "25m_override_increase": 1819.9
   },
   {
-    "#": "1160-103 P3&12 BEACON ST (011-01-08)",
+    "#": "1160 Beacon St, Condo 103 P3&12 (011-01-08)",
     "$": 1854300,
-    "owner1": "CHINMAN, TRS",
+    "owner1": "Chinman, Trs",
     "owner2": "",
     "current_taxes": 15353.1,
     "18m_override_total": 16183.7,
@@ -1903,9 +1903,9 @@
     "25m_override_increase": 1153.02
   },
   {
-    "#": "1160-104 P7&17 BEACON ST (011-01-09)",
+    "#": "1160 Beacon St, Condo 104 P7&17 (011-01-09)",
     "$": 2047200,
-    "owner1": "LIPSETT",
+    "owner1": "Lipsett",
     "owner2": "",
     "current_taxes": 17328.39,
     "18m_override_total": 18265.86,
@@ -1914,9 +1914,9 @@
     "25m_override_increase": 1301.36
   },
   {
-    "#": "1160-201 P5-25 BEACON ST (011-01-10)",
+    "#": "1160 Beacon St, Condo 201 P5-25 (011-01-10)",
     "$": 2833000,
-    "owner1": "GROSSMAN TRS",
+    "owner1": "Grossman Trs",
     "owner2": "",
     "current_taxes": 29009.92,
     "18m_override_total": 30579.36,
@@ -1925,10 +1925,10 @@
     "25m_override_increase": 2178.64
   },
   {
-    "#": "1160-202 & P15 BEACON ST (011-01-11)",
+    "#": "1160 Beacon St, Condo 202 & P15 (011-01-11)",
     "$": 2301700,
-    "owner1": "HAGOPIAN",
-    "owner2": "MESSINA",
+    "owner1": "Hagopian",
+    "owner2": "Messina",
     "current_taxes": 23569.41,
     "18m_override_total": 24844.52,
     "18m_override_increase": 1275.11,
@@ -1936,9 +1936,9 @@
     "25m_override_increase": 1770.06
   },
   {
-    "#": "1160-203 & P2 BEACON ST (011-01-12)",
+    "#": "1160 Beacon St, Condo 203 & P2 (011-01-12)",
     "$": 1794700,
-    "owner1": "SOKOLOFF TRS",
+    "owner1": "Sokoloff Trs",
     "owner2": "",
     "current_taxes": 18377.73,
     "18m_override_total": 19371.97,
@@ -1947,9 +1947,9 @@
     "25m_override_increase": 1380.17
   },
   {
-    "#": "1160-204 & P19 BEACON ST (011-01-13)",
+    "#": "1160 Beacon St, Condo 204 & P19 (011-01-13)",
     "$": 1947700,
-    "owner1": "ASSARAT",
+    "owner1": "Assarat",
     "owner2": "",
     "current_taxes": 19944.45,
     "18m_override_total": 21023.44,
@@ -1958,9 +1958,9 @@
     "25m_override_increase": 1497.83
   },
   {
-    "#": "1160-205 & P14 BEACON ST (011-01-14)",
+    "#": "1160 Beacon St, Condo 205 & P14 (011-01-14)",
     "$": 2592500,
-    "owner1": "HARMONY AMORY LLC",
+    "owner1": "Harmony Amory Llc",
     "owner2": "",
     "current_taxes": 26547.2,
     "18m_override_total": 27983.4,
@@ -1969,9 +1969,9 @@
     "25m_override_increase": 1993.69
   },
   {
-    "#": "1160-301 P21&22 BEACON ST (011-01-15)",
+    "#": "1160 Beacon St, Condo 301 P21&22 (011-01-15)",
     "$": 2847500,
-    "owner1": "FREISHTAT TRS",
+    "owner1": "Freishtat Trs",
     "owner2": "",
     "current_taxes": 29158.4,
     "18m_override_total": 30735.87,
@@ -1980,9 +1980,9 @@
     "25m_override_increase": 2189.8
   },
   {
-    "#": "1160-302 & P4 BEACON ST (011-01-16)",
+    "#": "1160 Beacon St, Condo 302 & P4 (011-01-16)",
     "$": 2289100,
-    "owner1": "GITTINGER",
+    "owner1": "Gittinger",
     "owner2": "",
     "current_taxes": 19805.45,
     "18m_override_total": 20876.92,
@@ -1991,9 +1991,9 @@
     "25m_override_increase": 1487.39
   },
   {
-    "#": "1160-303 G6&13 BEACON ST (011-01-17)",
+    "#": "1160 Beacon St, Condo 303 G6&13 (011-01-17)",
     "$": 3499300,
-    "owner1": "CAPLAN TR",
+    "owner1": "Caplan Tr",
     "owner2": "",
     "current_taxes": 32197.9,
     "18m_override_total": 33939.81,
@@ -2002,9 +2002,9 @@
     "25m_override_increase": 2418.06
   },
   {
-    "#": "1160-304 P20&23 BEACON ST (011-01-18)",
+    "#": "1160 Beacon St, Condo 304 P20&23 (011-01-18)",
     "$": 2700900,
-    "owner1": "NEMZOFF BERMAN TR",
+    "owner1": "Nemzoff Berman Tr",
     "owner2": "",
     "current_taxes": 24022.28,
     "18m_override_total": 25321.89,
@@ -2013,9 +2013,9 @@
     "25m_override_increase": 1804.07
   },
   {
-    "#": "1160-PHA P10&11 BEACON ST (011-01-19)",
+    "#": "1160 Beacon St, Condo Pha P10&11 (011-01-19)",
     "$": 2976600,
-    "owner1": "BENSON TR",
+    "owner1": "Benson Tr",
     "owner2": "",
     "current_taxes": 26845.45,
     "18m_override_total": 28297.79,
@@ -2024,9 +2024,9 @@
     "25m_override_increase": 2016.09
   },
   {
-    "#": "1160-PHB P8&9 BEACON ST (011-01-20)",
+    "#": "1160 Beacon St, Condo Phb P8&9 (011-01-20)",
     "$": 3217100,
-    "owner1": "UNGERLEIDER",
+    "owner1": "Ungerleider",
     "owner2": "",
     "current_taxes": 29308.17,
     "18m_override_total": 30893.74,
@@ -2035,9 +2035,9 @@
     "25m_override_increase": 2201.04
   },
   {
-    "#": "1170-OFFICE BEACON ST (011-01-05)",
+    "#": "1170 Beacon St, Condo Office (011-01-05)",
     "$": 3148000,
-    "owner1": "BROOKLINE PROPERTY  MANAGEMENT",
+    "owner1": "Brookline Property  Management",
     "owner2": "",
     "current_taxes": 54019.68,
     "18m_override_total": 56942.14,
@@ -2046,9 +2046,9 @@
     "25m_override_increase": 4056.88
   },
   {
-    "#": "67-1 & P1 CARLTON ST (001-15-04)",
+    "#": "67 Carlton St, Condo 1 & P1 (001-15-04)",
     "$": 1292300,
-    "owner1": "TOY",
+    "owner1": "Toy",
     "owner2": "",
     "current_taxes": 13233.15,
     "18m_override_total": 13949.06,
@@ -2057,10 +2057,10 @@
     "25m_override_increase": 993.81
   },
   {
-    "#": "67-2 & P2 CARLTON ST (001-15-01)",
+    "#": "67 Carlton St, Condo 2 & P2 (001-15-01)",
     "$": 1317700,
-    "owner1": "PEAK",
-    "owner2": "ARAI",
+    "owner1": "Peak",
+    "owner2": "Arai",
     "current_taxes": 9858.31,
     "18m_override_total": 10391.64,
     "18m_override_increase": 533.33,
@@ -2068,9 +2068,9 @@
     "25m_override_increase": 740.36
   },
   {
-    "#": "67-3 CARLTON ST (001-15-02)",
+    "#": "67 Carlton St, Condo 3 (001-15-02)",
     "$": 1150500,
-    "owner1": "STICKELLS",
+    "owner1": "Stickells",
     "owner2": "",
     "current_taxes": 8146.19,
     "18m_override_total": 8586.9,
@@ -2079,9 +2079,9 @@
     "25m_override_increase": 611.78
   },
   {
-    "#": "67-4 & P4-P5 CARLTON ST (001-15-03)",
+    "#": "67 Carlton St, Condo 4 & P4-P5 (001-15-03)",
     "$": 1149400,
-    "owner1": "STICKELLS",
+    "owner1": "Stickells",
     "owner2": "",
     "current_taxes": 11769.86,
     "18m_override_total": 12406.61,
@@ -2090,10 +2090,10 @@
     "25m_override_increase": 883.92
   },
   {
-    "#": "71 CARLTON ST (001-16-00)",
+    "#": "71 Carlton St (001-16-00)",
     "$": 2881100,
-    "owner1": "WARREN",
-    "owner2": "EVENSON",
+    "owner1": "Warren",
+    "owner2": "Evenson",
     "current_taxes": 25867.53,
     "18m_override_total": 27266.96,
     "18m_override_increase": 1399.43,
@@ -2101,9 +2101,9 @@
     "25m_override_increase": 1942.65
   },
   {
-    "#": "79 CARLTON ST (001-17-00)",
+    "#": "79 Carlton St (001-17-00)",
     "$": 4464000,
-    "owner1": "ERICSSON",
+    "owner1": "Ericsson",
     "owner2": "",
     "current_taxes": 42076.43,
     "18m_override_total": 44352.76,
@@ -2112,9 +2112,9 @@
     "25m_override_increase": 3159.94
   },
   {
-    "#": "82 CARLTON ST (009A-07-00)",
+    "#": "82 Carlton St (009A-07-00)",
     "$": 4131500,
-    "owner1": "MAZANDI-ISEKE, ET AL",
+    "owner1": "Mazandi-Iseke, Et Al",
     "owner2": "",
     "current_taxes": 38671.63,
     "18m_override_total": 40763.77,
@@ -2123,10 +2123,10 @@
     "25m_override_increase": 2904.24
   },
   {
-    "#": "89 CARLTON ST (001-18-00)",
+    "#": "89 Carlton St (001-18-00)",
     "$": 3985000,
-    "owner1": "KANES",
-    "owner2": "MOORE",
+    "owner1": "Kanes",
+    "owner2": "Moore",
     "current_taxes": 37171.47,
     "18m_override_total": 39182.45,
     "18m_override_increase": 2010.98,
@@ -2134,10 +2134,10 @@
     "25m_override_increase": 2791.58
   },
   {
-    "#": "90 CARLTON ST (009A-06-00)",
+    "#": "90 Carlton St (009A-06-00)",
     "$": 3575900,
-    "owner1": "HIGGINS",
-    "owner2": "KANE",
+    "owner1": "Higgins",
+    "owner2": "Kane",
     "current_taxes": 32982.28,
     "18m_override_total": 34766.62,
     "18m_override_increase": 1784.34,
@@ -2145,10 +2145,10 @@
     "25m_override_increase": 2476.97
   },
   {
-    "#": "95 CARLTON ST (001-19-00)",
+    "#": "95 Carlton St (001-19-00)",
     "$": 5709000,
-    "owner1": "TEMPEL",
-    "owner2": "WILSON",
+    "owner1": "Tempel",
+    "owner2": "Wilson",
     "current_taxes": 54825.23,
     "18m_override_total": 57791.27,
     "18m_override_increase": 2966.04,
@@ -2156,9 +2156,9 @@
     "25m_override_increase": 4117.37
   },
   {
-    "#": "98 CARLTON ST (009A-05-00)",
+    "#": "98 Carlton St (009A-05-00)",
     "$": 5259900,
-    "owner1": "CHAUDHURI",
+    "owner1": "Chaudhuri",
     "owner2": "",
     "current_taxes": 50226.44,
     "18m_override_total": 52943.69,
@@ -2167,9 +2167,9 @@
     "25m_override_increase": 3772.01
   },
   {
-    "#": "111 CARLTON ST (002-06-00)",
+    "#": "111 Carlton St (002-06-00)",
     "$": 3877000,
-    "owner1": "SULAK",
+    "owner1": "Sulak",
     "owner2": "",
     "current_taxes": 36065.55,
     "18m_override_total": 38016.7,
@@ -2178,9 +2178,9 @@
     "25m_override_increase": 2708.52
   },
   {
-    "#": "121 CARLTON ST (002-07-00)",
+    "#": "121 Carlton St (002-07-00)",
     "$": 3907600,
-    "owner1": "RDF CORPORATION",
+    "owner1": "Rdf Corporation",
     "owner2": "",
     "current_taxes": 40013.82,
     "18m_override_total": 42178.57,
@@ -2189,9 +2189,9 @@
     "25m_override_increase": 3005.04
   },
   {
-    "#": "122 CARLTON ST (003-05-00)",
+    "#": "122 Carlton St (003-05-00)",
     "$": 3126000,
-    "owner1": "BOGOCH",
+    "owner1": "Bogoch",
     "owner2": "",
     "current_taxes": 32010.24,
     "18m_override_total": 33741.99,
@@ -2200,9 +2200,9 @@
     "25m_override_increase": 2403.97
   },
   {
-    "#": "131 CARLTON ST (005-15-00)",
+    "#": "131 Carlton St (005-15-00)",
     "$": 5217300,
-    "owner1": "LIEBERMAN",
+    "owner1": "Lieberman",
     "owner2": "",
     "current_taxes": 49790.22,
     "18m_override_total": 52483.87,
@@ -2211,9 +2211,9 @@
     "25m_override_increase": 3739.25
   },
   {
-    "#": "132 CARLTON ST (004-04-00)",
+    "#": "132 Carlton St (004-04-00)",
     "$": 4633200,
-    "owner1": "LEDBETTER",
+    "owner1": "Ledbetter",
     "owner2": "",
     "current_taxes": 43809.03,
     "18m_override_total": 46179.1,
@@ -2222,10 +2222,10 @@
     "25m_override_increase": 3290.06
   },
   {
-    "#": "141 CARLTON ST (005-01-00)",
+    "#": "141 Carlton St (005-01-00)",
     "$": 4523700,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 0.0,
     "18m_override_total": 0.0,
     "18m_override_increase": 0.0,
@@ -2233,10 +2233,10 @@
     "25m_override_increase": 0.0
   },
   {
-    "#": "146 CARLTON ST (004-03-00)",
+    "#": "146 Carlton St (004-03-00)",
     "$": 2485800,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 25454.59,
     "18m_override_total": 26831.68,
     "18m_override_increase": 1377.09,
@@ -2244,9 +2244,9 @@
     "25m_override_increase": 1911.64
   },
   {
-    "#": "6 CHILTON ST (009-07-00)",
+    "#": "6 Chilton St (009-07-00)",
     "$": 4998800,
-    "owner1": "KOTLER TR",
+    "owner1": "Kotler Tr",
     "owner2": "",
     "current_taxes": 47552.78,
     "18m_override_total": 50125.39,
@@ -2255,9 +2255,9 @@
     "25m_override_increase": 3571.21
   },
   {
-    "#": "7 CHILTON ST (009A-01-00)",
+    "#": "7 Chilton St (009A-01-00)",
     "$": 3326700,
-    "owner1": "CHASEN",
+    "owner1": "Chasen",
     "owner2": "",
     "current_taxes": 30430.47,
     "18m_override_total": 32076.76,
@@ -2266,9 +2266,9 @@
     "25m_override_increase": 2285.33
   },
   {
-    "#": "15 CHILTON ST (009A-02-00)",
+    "#": "15 Chilton St (009A-02-00)",
     "$": 3410100,
-    "owner1": "SANDERS",
+    "owner1": "Sanders",
     "owner2": "",
     "current_taxes": 31284.49,
     "18m_override_total": 32976.98,
@@ -2277,9 +2277,9 @@
     "25m_override_increase": 2349.47
   },
   {
-    "#": "16 CHILTON ST (009-06-00)",
+    "#": "16 Chilton St (009-06-00)",
     "$": 5010000,
-    "owner1": "MOGHTADER",
+    "owner1": "Moghtader",
     "owner2": "",
     "current_taxes": 47667.47,
     "18m_override_total": 50246.28,
@@ -2288,9 +2288,9 @@
     "25m_override_increase": 3579.83
   },
   {
-    "#": "21 CHILTON ST (009A-03-00)",
+    "#": "21 Chilton St (009A-03-00)",
     "$": 4210900,
-    "owner1": "VOLPE TRS",
+    "owner1": "Volpe Trs",
     "owner2": "",
     "current_taxes": 39484.68,
     "18m_override_total": 41620.8,
@@ -2299,10 +2299,10 @@
     "25m_override_increase": 2965.3
   },
   {
-    "#": "26 CHILTON ST (009-04-05)",
+    "#": "26 Chilton St (009-04-05)",
     "$": 5208500,
-    "owner1": "BAE TRS",
-    "owner2": "KWAK TRS",
+    "owner1": "Bae Trs",
+    "owner2": "Kwak Trs",
     "current_taxes": 49700.11,
     "18m_override_total": 52388.89,
     "18m_override_increase": 2688.78,
@@ -2310,9 +2310,9 @@
     "25m_override_increase": 3732.48
   },
   {
-    "#": "27 CHILTON ST (009A-04-00)",
+    "#": "27 Chilton St (009A-04-00)",
     "$": 3849200,
-    "owner1": "ARNSTEIN",
+    "owner1": "Arnstein",
     "owner2": "",
     "current_taxes": 35780.87,
     "18m_override_total": 37716.62,
@@ -2321,9 +2321,9 @@
     "25m_override_increase": 2687.14
   },
   {
-    "#": "6 CHURCHILL ST (009B-06-00)",
+    "#": "6 Churchill St (009B-06-00)",
     "$": 3015200,
-    "owner1": "WEINER TR",
+    "owner1": "Weiner Tr",
     "owner2": "",
     "current_taxes": 27240.71,
     "18m_override_total": 28714.43,
@@ -2332,10 +2332,10 @@
     "25m_override_increase": 2045.78
   },
   {
-    "#": "12 CHURCHILL ST (009B-05-00)",
+    "#": "12 Churchill St (009B-05-00)",
     "$": 3070100,
-    "owner1": "DREYER TRS",
-    "owner2": "CUTLER",
+    "owner1": "Dreyer Trs",
+    "owner2": "Cutler",
     "current_taxes": 27802.89,
     "18m_override_total": 29307.03,
     "18m_override_increase": 1504.14,
@@ -2343,10 +2343,10 @@
     "25m_override_increase": 2088.0
   },
   {
-    "#": "18 CHURCHILL ST (009B-04-00)",
+    "#": "18 Churchill St (009B-04-00)",
     "$": 2571900,
-    "owner1": "KWAN",
-    "owner2": "MOULTON",
+    "owner1": "Kwan",
+    "owner2": "Moulton",
     "current_taxes": 22701.32,
     "18m_override_total": 23929.46,
     "18m_override_increase": 1228.14,
@@ -2354,10 +2354,10 @@
     "25m_override_increase": 1704.87
   },
   {
-    "#": "24 CHURCHILL ST (009B-03-00)",
+    "#": "24 Churchill St (009B-03-00)",
     "$": 2152800,
-    "owner1": "RESLER",
-    "owner2": "LUTCAVAGE",
+    "owner1": "Resler",
+    "owner2": "Lutcavage",
     "current_taxes": 18409.74,
     "18m_override_total": 19405.71,
     "18m_override_increase": 995.97,
@@ -2365,10 +2365,10 @@
     "25m_override_increase": 1382.57
   },
   {
-    "#": "30 CHURCHILL ST (009B-01-00)",
+    "#": "30 Churchill St (009B-01-00)",
     "$": 2607300,
-    "owner1": "CHRISTOPHER, TR",
-    "owner2": "C/O GARRETT OR JESSE CHRISTOPHER ",
+    "owner1": "Christopher, Tr",
+    "owner2": "C/O Garrett Or Jesse Christopher ",
     "current_taxes": 26698.75,
     "18m_override_total": 28143.15,
     "18m_override_increase": 1444.4,
@@ -2376,9 +2376,9 @@
     "25m_override_increase": 2005.08
   },
   {
-    "#": "730 COMMONWEALTH AVE (007-05-09)",
+    "#": "730 Commonwealth Ave (007-05-09)",
     "$": 56994600,
-    "owner1": "TRUSTEES OF BOSTON UNIVERSITY",
+    "owner1": "Trustees Of Boston University",
     "owner2": "",
     "current_taxes": 78242.53,
     "18m_override_total": 82475.45,
@@ -2387,10 +2387,10 @@
     "25m_override_increase": 5876.01
   },
   {
-    "#": "808 COMMONWEALTH AVE (017-01-00)",
+    "#": "808 Commonwealth Ave (017-01-00)",
     "$": 57203200,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 0.0,
     "18m_override_total": 0.0,
     "18m_override_increase": 0.0,
@@ -2398,10 +2398,10 @@
     "25m_override_increase": 0.0
   },
   {
-    "#": "820 COMMONWEALTH AVE (017-02-07)",
+    "#": "820 Commonwealth Ave (017-02-07)",
     "$": 59140800,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 0.0,
     "18m_override_total": 0.0,
     "18m_override_increase": 0.0,
@@ -2409,10 +2409,10 @@
     "25m_override_increase": 0.0
   },
   {
-    "#": "830 COMMONWEALTH AVE (017-03-00)",
+    "#": "830 Commonwealth Ave (017-03-00)",
     "$": 7938500,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 68112.33,
     "18m_override_total": 71797.21,
     "18m_override_increase": 3684.88,
@@ -2420,9 +2420,9 @@
     "25m_override_increase": 5115.24
   },
   {
-    "#": "850 COMMONWEALTH AVE (017-04-00)",
+    "#": "850 Commonwealth Ave (017-04-00)",
     "$": 3111600,
-    "owner1": "HERAIKI",
+    "owner1": "Heraiki",
     "owner2": "",
     "current_taxes": 53395.06,
     "18m_override_total": 56283.73,
@@ -2431,10 +2431,10 @@
     "25m_override_increase": 4009.97
   },
   {
-    "#": "860 COMMONWEALTH AVE (018-04-05)",
+    "#": "860 Commonwealth Ave (018-04-05)",
     "$": 20702200,
-    "owner1": "GROSSMAN",
-    "owner2": "C/O THE GROSSMAN COMPANIES",
+    "owner1": "Grossman",
+    "owner2": "C/O The Grossman Companies",
     "current_taxes": 355249.75,
     "18m_override_total": 374468.76,
     "18m_override_increase": 19219.01,
@@ -2442,9 +2442,9 @@
     "25m_override_increase": 26679.26
   },
   {
-    "#": "874 COMMONWEALTH AVE (018-03-00)",
+    "#": "874 Commonwealth Ave (018-03-00)",
     "$": 14574500,
-    "owner1": "290 MCCLELLAN HIGHWAY LLC",
+    "owner1": "290 Mcclellan Highway Llc",
     "owner2": "",
     "current_taxes": 250098.42,
     "18m_override_total": 263628.74,
@@ -2453,10 +2453,10 @@
     "25m_override_increase": 18782.39
   },
   {
-    "#": "882 COMMONWEALTH AVE (018-02-00)",
+    "#": "882 Commonwealth Ave (018-02-00)",
     "$": 30324200,
-    "owner1": "TRUSTEES OF BOSTON UNIVERSITY",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Trustees Of Boston University",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 125912.19,
     "18m_override_total": 132724.04,
     "18m_override_increase": 6811.85,
@@ -2464,10 +2464,10 @@
     "25m_override_increase": 9456.01
   },
   {
-    "#": "890 COMMONWEALTH AVE (018-01-00)",
+    "#": "890 Commonwealth Ave (018-01-00)",
     "$": 17613000,
-    "owner1": "TRUSTEES OF BOSTON UNIVERSITY",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Trustees Of Boston University",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 0.0,
     "18m_override_total": 0.0,
     "18m_override_increase": 0.0,
@@ -2475,10 +2475,10 @@
     "25m_override_increase": 0.0
   },
   {
-    "#": "900 COMMONWEALTH AVE (019-01-00)",
+    "#": "900 Commonwealth Ave (019-01-00)",
     "$": 27830300,
-    "owner1": "HOWE TR",
-    "owner2": "C/O SIS PROPERTY MANAGEMENT",
+    "owner1": "Howe Tr",
+    "owner2": "C/O Sis Property Management",
     "current_taxes": 76380.81,
     "18m_override_total": 80513.01,
     "18m_override_increase": 4132.2,
@@ -2486,10 +2486,10 @@
     "25m_override_increase": 5736.2
   },
   {
-    "#": "910 COMMONWEALTH AVE (019-10-00)",
+    "#": "910 Commonwealth Ave (019-10-00)",
     "$": 7511800,
-    "owner1": "TRUSTEES OF BOSTON UNIVERSITY",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FL",
+    "owner1": "Trustees Of Boston University",
+    "owner2": "C/O General Accounting 4Th Fl",
     "current_taxes": 0.0,
     "18m_override_total": 0.0,
     "18m_override_increase": 0.0,
@@ -2497,10 +2497,10 @@
     "25m_override_increase": 0.0
   },
   {
-    "#": "916 COMMONWEALTH AVE (019-08-09)",
+    "#": "916 Commonwealth Ave (019-08-09)",
     "$": 16259600,
-    "owner1": "HOWE TR",
-    "owner2": "C/O SIS PROPERTY MANAGEMENT",
+    "owner1": "Howe Tr",
+    "owner2": "C/O Sis Property Management",
     "current_taxes": 242817.07,
     "18m_override_total": 255953.47,
     "18m_override_increase": 13136.4,
@@ -2508,10 +2508,10 @@
     "25m_override_increase": 18235.56
   },
   {
-    "#": "928 COMMONWEALTH AVE (019-07-00)",
+    "#": "928 Commonwealth Ave (019-07-00)",
     "$": 14069300,
-    "owner1": "TRUSTEES OF BOSTON UNIVERSITY",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Trustees Of Boston University",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 0.0,
     "18m_override_total": 0.0,
     "18m_override_increase": 0.0,
@@ -2519,10 +2519,10 @@
     "25m_override_increase": 0.0
   },
   {
-    "#": "930 COMMONWEALTH AVE (019-05-12)",
+    "#": "930 Commonwealth Ave (019-05-12)",
     "$": 48318400,
-    "owner1": "HOWE TR",
-    "owner2": "C/O SIS PROPERTY MANAGEMENT",
+    "owner1": "Howe Tr",
+    "owner2": "C/O Sis Property Management",
     "current_taxes": 82734.54,
     "18m_override_total": 87210.48,
     "18m_override_increase": 4475.94,
@@ -2530,10 +2530,10 @@
     "25m_override_increase": 6213.36
   },
   {
-    "#": " COMMONWEALTH AVE (007-01-00)",
+    "#": " Commonwealth Ave (007-01-00)",
     "$": 54955900,
-    "owner1": "COMMONWEALTH OF MASSACHUSETTS",
-    "owner2": "C/O MASS TURNPIKE AUTHORITY",
+    "owner1": "Commonwealth Of Massachusetts",
+    "owner2": "C/O Mass Turnpike Authority",
     "current_taxes": 0.0,
     "18m_override_total": 0.0,
     "18m_override_increase": 0.0,
@@ -2541,10 +2541,10 @@
     "25m_override_increase": 0.0
   },
   {
-    "#": "10 COTTAGE FARM RD (012-05-01)",
+    "#": "10 Cottage Farm Rd (012-05-01)",
     "$": 7319300,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 74949.63,
     "18m_override_total": 79004.4,
     "18m_override_increase": 4054.77,
@@ -2552,10 +2552,10 @@
     "25m_override_increase": 5628.72
   },
   {
-    "#": "24 COTTAGE FARM RD (012-05-00)",
+    "#": "24 Cottage Farm Rd (012-05-00)",
     "$": 10131600,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 103747.58,
     "18m_override_total": 109360.32,
     "18m_override_increase": 5612.74,
@@ -2563,9 +2563,9 @@
     "25m_override_increase": 7791.44
   },
   {
-    "#": "43 COTTAGE FARM RD (015-01-00)",
+    "#": "43 Cottage Farm Rd (015-01-00)",
     "$": 4406700,
-    "owner1": "SHELDON TRS",
+    "owner1": "Sheldon Trs",
     "owner2": "",
     "current_taxes": 41489.67,
     "18m_override_total": 43734.26,
@@ -2574,9 +2574,9 @@
     "25m_override_increase": 3115.87
   },
   {
-    "#": "51 COTTAGE FARM RD (015-02-00)",
+    "#": "51 Cottage Farm Rd (015-02-00)",
     "$": 2533000,
-    "owner1": "OLAFSSON  LIFE ESTATE",
+    "owner1": "Olafsson  Life Estate",
     "owner2": "",
     "current_taxes": 22302.99,
     "18m_override_total": 23509.58,
@@ -2585,9 +2585,9 @@
     "25m_override_increase": 1674.95
   },
   {
-    "#": "54 COTTAGE FARM RD (016-03-00)",
+    "#": "54 Cottage Farm Rd (016-03-00)",
     "$": 3176100,
-    "owner1": "MUFSON TRS",
+    "owner1": "Mufson Trs",
     "owner2": "",
     "current_taxes": 28888.33,
     "18m_override_total": 30451.19,
@@ -2596,9 +2596,9 @@
     "25m_override_increase": 2169.51
   },
   {
-    "#": "55 COTTAGE FARM RD (015-02-01)",
+    "#": "55 Cottage Farm Rd (015-02-01)",
     "$": 2464900,
-    "owner1": "PMU REALTY LLC",
+    "owner1": "Pmu Realty Llc",
     "owner2": "",
     "current_taxes": 25240.58,
     "18m_override_total": 26606.1,
@@ -2607,9 +2607,9 @@
     "25m_override_increase": 1895.57
   },
   {
-    "#": "10 DUMMER ST (015-03-01)",
+    "#": "10 Dummer St (015-03-01)",
     "$": 3211100,
-    "owner1": "10 DUMMER STREET REALTY LLC",
+    "owner1": "10 Dummer Street Realty Llc",
     "owner2": "",
     "current_taxes": 32881.66,
     "18m_override_total": 34660.56,
@@ -2618,9 +2618,9 @@
     "25m_override_increase": 2469.41
   },
   {
-    "#": "14 DUMMER ST (015-03-00)",
+    "#": "14 Dummer St (015-03-00)",
     "$": 2369000,
-    "owner1": "MAB COMMUNITY SERVICES INC",
+    "owner1": "Mab Community Services Inc",
     "owner2": "",
     "current_taxes": 0.0,
     "18m_override_total": 0.0,
@@ -2629,9 +2629,9 @@
     "25m_override_increase": 0.0
   },
   {
-    "#": "40 DUMMER ST (016-02-00)",
+    "#": "40 Dummer St (016-02-00)",
     "$": 2015900,
-    "owner1": "PAZAM LLC",
+    "owner1": "Pazam Llc",
     "owner2": "",
     "current_taxes": 20642.82,
     "18m_override_total": 21759.6,
@@ -2640,10 +2640,10 @@
     "25m_override_increase": 1550.28
   },
   {
-    "#": "47 DUMMER ST (017-06-00)",
+    "#": "47 Dummer St (017-06-00)",
     "$": 4425300,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 22781.44,
     "18m_override_total": 24013.92,
     "18m_override_increase": 1232.48,
@@ -2651,10 +2651,10 @@
     "25m_override_increase": 1710.89
   },
   {
-    "#": "86 DUMMER ST (021-16-00)",
+    "#": "86 Dummer St (021-16-00)",
     "$": 10295000,
-    "owner1": "86 DUMMER LLC",
-    "owner2": "C/O BROOKLINE HOUSING AUTHORITY",
+    "owner1": "86 Dummer Llc",
+    "owner2": "C/O Brookline Housing Authority",
     "current_taxes": 0.0,
     "18m_override_total": 0.0,
     "18m_override_increase": 0.0,
@@ -2662,9 +2662,9 @@
     "25m_override_increase": 0.0
   },
   {
-    "#": "115 DUMMER ST (019-02-00)",
+    "#": "115 Dummer St (019-02-00)",
     "$": 5402200,
-    "owner1": "NATIONAL STUDIOS LLC",
+    "owner1": "National Studios Llc",
     "owner2": "",
     "current_taxes": 92701.75,
     "18m_override_total": 97716.91,
@@ -2673,10 +2673,10 @@
     "25m_override_increase": 6961.9
   },
   {
-    "#": "121 DUMMER ST (019-11-00)",
+    "#": "121 Dummer St (019-11-00)",
     "$": 8990400,
-    "owner1": "CULBERT, ET AL TRS",
-    "owner2": "C/O SIS PROPERTY MANAGEMENT",
+    "owner1": "Culbert, Et Al Trs",
+    "owner2": "C/O Sis Property Management",
     "current_taxes": 154275.26,
     "18m_override_total": 162621.55,
     "18m_override_increase": 8346.29,
@@ -2684,9 +2684,9 @@
     "25m_override_increase": 11586.07
   },
   {
-    "#": "14-A1-1 EGMONT ST (022-05-01)",
+    "#": "14 Egmont St, Condo A1-1 (022-05-01)",
     "$": 1271200,
-    "owner1": "PANT",
+    "owner1": "Pant",
     "owner2": "",
     "current_taxes": 9382.15,
     "18m_override_total": 9889.72,
@@ -2695,9 +2695,9 @@
     "25m_override_increase": 704.6
   },
   {
-    "#": "14-A1-2 EGMONT ST (022-05-02)",
+    "#": "14 Egmont St, Condo A1-2 (022-05-02)",
     "$": 1305600,
-    "owner1": "FEITH TR",
+    "owner1": "Feith Tr",
     "owner2": "",
     "current_taxes": 9734.41,
     "18m_override_total": 10261.04,
@@ -2706,9 +2706,9 @@
     "25m_override_increase": 731.05
   },
   {
-    "#": "14-A1-3 EGMONT ST (022-05-03)",
+    "#": "14 Egmont St, Condo A1-3 (022-05-03)",
     "$": 1832300,
-    "owner1": "MILLER",
+    "owner1": "Miller",
     "owner2": "",
     "current_taxes": 15127.82,
     "18m_override_total": 15946.24,
@@ -2717,9 +2717,9 @@
     "25m_override_increase": 1136.1
   },
   {
-    "#": "14-A2-1 EGMONT ST (022-05-04)",
+    "#": "14 Egmont St, Condo A2-1 (022-05-04)",
     "$": 1170700,
-    "owner1": "EDELSON",
+    "owner1": "Edelson",
     "owner2": "",
     "current_taxes": 8353.03,
     "18m_override_total": 8804.93,
@@ -2728,9 +2728,9 @@
     "25m_override_increase": 627.31
   },
   {
-    "#": "14-A2-2 EGMONT ST (022-05-05)",
+    "#": "14 Egmont St, Condo A2-2 (022-05-05)",
     "$": 1259200,
-    "owner1": "CHOWDHURY",
+    "owner1": "Chowdhury",
     "owner2": "",
     "current_taxes": 12894.21,
     "18m_override_total": 13591.79,
@@ -2739,9 +2739,9 @@
     "25m_override_increase": 968.36
   },
   {
-    "#": "14-A2-3 EGMONT ST (022-05-06)",
+    "#": "14 Egmont St, Condo A2-3 (022-05-06)",
     "$": 1261400,
-    "owner1": "GILMAN",
+    "owner1": "Gilman",
     "owner2": "",
     "current_taxes": 9281.8,
     "18m_override_total": 9783.95,
@@ -2750,9 +2750,9 @@
     "25m_override_increase": 697.06
   },
   {
-    "#": "20-B1-1 EGMONT ST (022-03-01)",
+    "#": "20 Egmont St, Condo B1-1 (022-03-01)",
     "$": 1212700,
-    "owner1": "GRINBERG TR",
+    "owner1": "Grinberg Tr",
     "owner2": "",
     "current_taxes": 8783.11,
     "18m_override_total": 9258.28,
@@ -2761,9 +2761,9 @@
     "25m_override_increase": 659.61
   },
   {
-    "#": "20-B1-2 EGMONT ST (022-03-02)",
+    "#": "20 Egmont St, Condo B1-2 (022-03-02)",
     "$": 1224900,
-    "owner1": "BABADUSTOV",
+    "owner1": "Babadustov",
     "owner2": "",
     "current_taxes": 8908.04,
     "18m_override_total": 9389.96,
@@ -2772,9 +2772,9 @@
     "25m_override_increase": 668.99
   },
   {
-    "#": "20-B1-3 EGMONT ST (022-03-03)",
+    "#": "20 Egmont St, Condo B1-3 (022-03-03)",
     "$": 1270700,
-    "owner1": "HAN",
+    "owner1": "Han",
     "owner2": "",
     "current_taxes": 13011.97,
     "18m_override_total": 13715.92,
@@ -2783,10 +2783,10 @@
     "25m_override_increase": 977.2
   },
   {
-    "#": "20-B2-1 EGMONT ST (022-03-04)",
+    "#": "20 Egmont St, Condo B2-1 (022-03-04)",
     "$": 1197000,
-    "owner1": "SPRINGER",
-    "owner2": "BRENNER",
+    "owner1": "Springer",
+    "owner2": "Brenner",
     "current_taxes": 8622.35,
     "18m_override_total": 9088.82,
     "18m_override_increase": 466.47,
@@ -2794,9 +2794,9 @@
     "25m_override_increase": 647.54
   },
   {
-    "#": "20-B2-2 EGMONT ST (022-03-05)",
+    "#": "20 Egmont St, Condo B2-2 (022-03-05)",
     "$": 1270700,
-    "owner1": "DEWINTER TRS",
+    "owner1": "Dewinter Trs",
     "owner2": "",
     "current_taxes": 9377.03,
     "18m_override_total": 9884.33,
@@ -2805,10 +2805,10 @@
     "25m_override_increase": 704.21
   },
   {
-    "#": "20-B2-3 EGMONT ST (022-03-06)",
+    "#": "20 Egmont St, Condo B2-3 (022-03-06)",
     "$": 1270700,
-    "owner1": "DESAI",
-    "owner2": "SIMMONS",
+    "owner1": "Desai",
+    "owner2": "Simmons",
     "current_taxes": 9377.03,
     "18m_override_total": 9884.33,
     "18m_override_increase": 507.3,
@@ -2816,10 +2816,10 @@
     "25m_override_increase": 704.21
   },
   {
-    "#": "26-C1-1 EGMONT ST (022-01-01)",
+    "#": "26 Egmont St, Condo C1-1 (022-01-01)",
     "$": 1242700,
-    "owner1": "MADVA",
-    "owner2": "MCDERMOTT",
+    "owner1": "Madva",
+    "owner2": "Mcdermott",
     "current_taxes": 9090.31,
     "18m_override_total": 9582.1,
     "18m_override_increase": 491.79,
@@ -2827,10 +2827,10 @@
     "25m_override_increase": 682.68
   },
   {
-    "#": "26-C1-2 & PK EGMONT ST (022-01-02)",
+    "#": "26 Egmont St, Condo C1-2 & Pk (022-01-02)",
     "$": 1270700,
-    "owner1": "MANTOVANELLI",
-    "owner2": "GRIWERT",
+    "owner1": "Mantovanelli",
+    "owner2": "Griwert",
     "current_taxes": 9377.03,
     "18m_override_total": 9884.33,
     "18m_override_increase": 507.3,
@@ -2838,10 +2838,10 @@
     "25m_override_increase": 704.21
   },
   {
-    "#": "26-C1-3 EGMONT ST (022-01-03)",
+    "#": "26 Egmont St, Condo C1-3 (022-01-03)",
     "$": 1270700,
-    "owner1": "YU",
-    "owner2": "LICHTERFELD",
+    "owner1": "Yu",
+    "owner2": "Lichterfeld",
     "current_taxes": 9377.03,
     "18m_override_total": 9884.33,
     "18m_override_increase": 507.3,
@@ -2849,9 +2849,9 @@
     "25m_override_increase": 704.21
   },
   {
-    "#": "26-C2-1 EGMONT ST (022-01-04)",
+    "#": "26 Egmont St, Condo C2-1 (022-01-04)",
     "$": 1288200,
-    "owner1": "WANG",
+    "owner1": "Wang",
     "owner2": "",
     "current_taxes": 13191.17,
     "18m_override_total": 13904.81,
@@ -2860,10 +2860,10 @@
     "25m_override_increase": 990.66
   },
   {
-    "#": "26-C2-2 EGMONT ST (022-01-05)",
+    "#": "26 Egmont St, Condo C2-2 (022-01-05)",
     "$": 1305700,
-    "owner1": "XU",
-    "owner2": "WENG",
+    "owner1": "Xu",
+    "owner2": "Weng",
     "current_taxes": 13370.37,
     "18m_override_total": 14093.71,
     "18m_override_increase": 723.34,
@@ -2871,10 +2871,10 @@
     "25m_override_increase": 1004.11
   },
   {
-    "#": "26-C2-3 EGMONT ST (022-01-07)",
+    "#": "26 Egmont St, Condo C2-3 (022-01-07)",
     "$": 1305800,
-    "owner1": "BOLINGER",
-    "owner2": "KRONENBERG",
+    "owner1": "Bolinger",
+    "owner2": "Kronenberg",
     "current_taxes": 9736.46,
     "18m_override_total": 10263.2,
     "18m_override_increase": 526.74,
@@ -2882,9 +2882,9 @@
     "25m_override_increase": 731.21
   },
   {
-    "#": "89 ESSEX ST (008-04-01)",
+    "#": "89 Essex St (008-04-01)",
     "$": 4007200,
-    "owner1": "ANDERS",
+    "owner1": "Anders",
     "owner2": "",
     "current_taxes": 37398.79,
     "18m_override_total": 39422.06,
@@ -2893,10 +2893,10 @@
     "25m_override_increase": 2808.65
   },
   {
-    "#": "130 ESSEX ST (015-04-00)",
+    "#": "130 Essex St (015-04-00)",
     "$": 3729600,
-    "owner1": "CUTLER",
-    "owner2": "LANDRUM",
+    "owner1": "Cutler",
+    "owner2": "Landrum",
     "current_taxes": 34556.17,
     "18m_override_total": 36425.66,
     "18m_override_increase": 1869.49,
@@ -2904,10 +2904,10 @@
     "25m_override_increase": 2595.17
   },
   {
-    "#": "143 ESSEX ST (006A-05-00)",
+    "#": "143 Essex St (006A-05-00)",
     "$": 2964000,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 0.0,
     "18m_override_total": 0.0,
     "18m_override_increase": 0.0,
@@ -2915,10 +2915,10 @@
     "25m_override_increase": 0.0
   },
   {
-    "#": "2-1 EUSTON ST (002-16-07)",
+    "#": "2 Euston St, Condo 1 (002-16-07)",
     "$": 636800,
-    "owner1": "ZHOU",
-    "owner2": "SHENG",
+    "owner1": "Zhou",
+    "owner2": "Sheng",
     "current_taxes": 6520.83,
     "18m_override_total": 6873.61,
     "18m_override_increase": 352.78,
@@ -2926,9 +2926,9 @@
     "25m_override_increase": 489.71
   },
   {
-    "#": "2-2 EUSTON ST (002-16-01)",
+    "#": "2 Euston St, Condo 2 (002-16-01)",
     "$": 710700,
-    "owner1": "DIAZ",
+    "owner1": "Diaz",
     "owner2": "",
     "current_taxes": 3642.63,
     "18m_override_total": 3839.7,
@@ -2937,9 +2937,9 @@
     "25m_override_increase": 273.56
   },
   {
-    "#": "2-3 EUSTON ST (002-16-02)",
+    "#": "2 Euston St, Condo 3 (002-16-02)",
     "$": 663100,
-    "owner1": "TSENG",
+    "owner1": "Tseng",
     "owner2": "",
     "current_taxes": 6790.14,
     "18m_override_total": 7157.49,
@@ -2948,9 +2948,9 @@
     "25m_override_increase": 509.94
   },
   {
-    "#": "2-4 EUSTON ST (002-16-03)",
+    "#": "2 Euston St, Condo 4 (002-16-03)",
     "$": 814300,
-    "owner1": "DENNERY",
+    "owner1": "Dennery",
     "owner2": "",
     "current_taxes": 4703.5,
     "18m_override_total": 4957.96,
@@ -2959,9 +2959,9 @@
     "25m_override_increase": 353.23
   },
   {
-    "#": "2-5 EUSTON ST (002-16-04)",
+    "#": "2 Euston St, Condo 5 (002-16-04)",
     "$": 778500,
-    "owner1": "GALVIN TR",
+    "owner1": "Galvin Tr",
     "owner2": "",
     "current_taxes": 7971.84,
     "18m_override_total": 8403.12,
@@ -2970,9 +2970,9 @@
     "25m_override_increase": 598.69
   },
   {
-    "#": "2-6 EUSTON ST (002-16-05)",
+    "#": "2 Euston St, Condo 6 (002-16-05)",
     "$": 824100,
-    "owner1": "KRASIK",
+    "owner1": "Krasik",
     "owner2": "",
     "current_taxes": 8438.78,
     "18m_override_total": 8895.32,
@@ -2981,9 +2981,9 @@
     "25m_override_increase": 633.75
   },
   {
-    "#": "2-7 EUSTON ST (002-16-06)",
+    "#": "2 Euston St, Condo 7 (002-16-06)",
     "$": 384800,
-    "owner1": "MONTERO",
+    "owner1": "Montero",
     "owner2": "",
     "current_taxes": 3940.35,
     "18m_override_total": 4153.52,
@@ -2992,10 +2992,10 @@
     "25m_override_increase": 295.92
   },
   {
-    "#": "3-1 EUSTON ST (005-06-01)",
+    "#": "3 Euston St, Condo 1 (005-06-01)",
     "$": 679400,
-    "owner1": "AZIZ",
-    "owner2": "NGUYEN",
+    "owner1": "Aziz",
+    "owner2": "Nguyen",
     "current_taxes": 6957.06,
     "18m_override_total": 7333.44,
     "18m_override_increase": 376.38,
@@ -3003,10 +3003,10 @@
     "25m_override_increase": 522.48
   },
   {
-    "#": "3-2 EUSTON ST (005-06-02)",
+    "#": "3 Euston St, Condo 2 (005-06-02)",
     "$": 753600,
-    "owner1": "GUGLIELMINO",
-    "owner2": "MINTCHEVA",
+    "owner1": "Guglielmino",
+    "owner2": "Mintcheva",
     "current_taxes": 7716.86,
     "18m_override_total": 8134.34,
     "18m_override_increase": 417.48,
@@ -3014,9 +3014,9 @@
     "25m_override_increase": 579.54
   },
   {
-    "#": "3-3 EUSTON ST (005-06-03)",
+    "#": "3 Euston St, Condo 3 (005-06-03)",
     "$": 735400,
-    "owner1": "LEE-HOOD",
+    "owner1": "Lee-Hood",
     "owner2": "",
     "current_taxes": 3895.56,
     "18m_override_total": 4106.31,
@@ -3025,9 +3025,9 @@
     "25m_override_increase": 292.56
   },
   {
-    "#": "3-4 EUSTON ST (005-06-04)",
+    "#": "3 Euston St, Condo 4 (005-06-04)",
     "$": 702900,
-    "owner1": "NOBARI",
+    "owner1": "Nobari",
     "owner2": "",
     "current_taxes": 7197.7,
     "18m_override_total": 7587.1,
@@ -3036,9 +3036,9 @@
     "25m_override_increase": 540.55
   },
   {
-    "#": "3-5 EUSTON ST (005-06-05)",
+    "#": "3 Euston St, Condo 5 (005-06-05)",
     "$": 1318100,
-    "owner1": "DONG",
+    "owner1": "Dong",
     "owner2": "",
     "current_taxes": 13497.34,
     "18m_override_total": 14227.55,
@@ -3047,9 +3047,9 @@
     "25m_override_increase": 1013.65
   },
   {
-    "#": "3-B EUSTON ST (005-06-06)",
+    "#": "3 Euston St, Condo B (005-06-06)",
     "$": 502200,
-    "owner1": "HE",
+    "owner1": "He",
     "owner2": "",
     "current_taxes": 5142.53,
     "18m_override_total": 5420.74,
@@ -3058,9 +3058,9 @@
     "25m_override_increase": 386.2
   },
   {
-    "#": "4-1 EUSTON ST (002-15-03)",
+    "#": "4 Euston St, Condo 1 (002-15-03)",
     "$": 1019900,
-    "owner1": "ZAHLTEN",
+    "owner1": "Zahlten",
     "owner2": "",
     "current_taxes": 6808.84,
     "18m_override_total": 7177.2,
@@ -3069,9 +3069,9 @@
     "25m_override_increase": 511.34
   },
   {
-    "#": "4-2 EUSTON ST (002-15-01)",
+    "#": "4 Euston St, Condo 2 (002-15-01)",
     "$": 1062700,
-    "owner1": "GOLDSMITH III",
+    "owner1": "Goldsmith Iii",
     "owner2": "",
     "current_taxes": 7247.11,
     "18m_override_total": 7639.18,
@@ -3080,9 +3080,9 @@
     "25m_override_increase": 544.26
   },
   {
-    "#": "4-3 EUSTON ST (002-15-02)",
+    "#": "4 Euston St, Condo 3 (002-15-02)",
     "$": 1042400,
-    "owner1": "COOK TRS",
+    "owner1": "Cook Trs",
     "owner2": "",
     "current_taxes": 7039.24,
     "18m_override_total": 7420.06,
@@ -3091,9 +3091,9 @@
     "25m_override_increase": 528.65
   },
   {
-    "#": "5 EUSTON ST (005-07-00)",
+    "#": "5 Euston St (005-07-00)",
     "$": 3646300,
-    "owner1": "LEW, TRS",
+    "owner1": "Lew, Trs",
     "owner2": "",
     "current_taxes": 37338.11,
     "18m_override_total": 39358.1,
@@ -3102,10 +3102,10 @@
     "25m_override_increase": 2804.09
   },
   {
-    "#": "7 EUSTON ST (005-08-00)",
+    "#": "7 Euston St (005-08-00)",
     "$": 4095800,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 41940.99,
     "18m_override_total": 44210.0,
     "18m_override_increase": 2269.01,
@@ -3113,9 +3113,9 @@
     "25m_override_increase": 3149.77
   },
   {
-    "#": "8-1 & P-C EUSTON ST (002-14-06)",
+    "#": "8 Euston St, Condo 1 & P-C (002-14-06)",
     "$": 734000,
-    "owner1": "BANALIEVA",
+    "owner1": "Banalieva",
     "owner2": "",
     "current_taxes": 7516.16,
     "18m_override_total": 7922.78,
@@ -3124,9 +3124,9 @@
     "25m_override_increase": 564.46
   },
   {
-    "#": "8-2 EUSTON ST (002-14-01)",
+    "#": "8 Euston St, Condo 2 (002-14-01)",
     "$": 598100,
-    "owner1": "WINGERTER",
+    "owner1": "Wingerter",
     "owner2": "",
     "current_taxes": 2489.61,
     "18m_override_total": 2624.3,
@@ -3135,9 +3135,9 @@
     "25m_override_increase": 186.97
   },
   {
-    "#": "8-3 & PK  D EUSTON ST (002-14-02)",
+    "#": "8 Euston St, Condo 3 & Pk  D (002-14-02)",
     "$": 845200,
-    "owner1": "LI",
+    "owner1": "Li",
     "owner2": "",
     "current_taxes": 8654.85,
     "18m_override_total": 9123.08,
@@ -3146,9 +3146,9 @@
     "25m_override_increase": 649.98
   },
   {
-    "#": "8-4 & P-B EUSTON ST (002-14-03)",
+    "#": "8 Euston St, Condo 4 & P-B (002-14-03)",
     "$": 711500,
-    "owner1": "YE",
+    "owner1": "Ye",
     "owner2": "",
     "current_taxes": 7285.76,
     "18m_override_total": 7679.92,
@@ -3157,9 +3157,9 @@
     "25m_override_increase": 547.16
   },
   {
-    "#": "8-5 & P- A EUSTON ST (002-14-04)",
+    "#": "8 Euston St, Condo 5 & P- A (002-14-04)",
     "$": 830900,
-    "owner1": "WAN",
+    "owner1": "Wan",
     "owner2": "",
     "current_taxes": 4873.48,
     "18m_override_total": 5137.14,
@@ -3168,9 +3168,9 @@
     "25m_override_increase": 366.0
   },
   {
-    "#": "8-6 EUSTON ST (002-14-05)",
+    "#": "8 Euston St, Condo 6 (002-14-05)",
     "$": 598000,
-    "owner1": "KHOUW",
+    "owner1": "Khouw",
     "owner2": "",
     "current_taxes": 6123.52,
     "18m_override_total": 6454.8,
@@ -3179,9 +3179,9 @@
     "25m_override_increase": 459.88
   },
   {
-    "#": "11 EUSTON ST (005-09-00)",
+    "#": "11 Euston St (005-09-00)",
     "$": 3439200,
-    "owner1": "11 EUSTON STREET LLC",
+    "owner1": "11 Euston Street Llc",
     "owner2": "",
     "current_taxes": 35217.41,
     "18m_override_total": 37122.67,
@@ -3190,9 +3190,9 @@
     "25m_override_increase": 2644.83
   },
   {
-    "#": "12-1 EUSTON ST (002-13-03)",
+    "#": "12 Euston St, Condo 1 (002-13-03)",
     "$": 1215900,
-    "owner1": "SONNABEND, TR",
+    "owner1": "Sonnabend, Tr",
     "owner2": "",
     "current_taxes": 12450.82,
     "18m_override_total": 13124.41,
@@ -3201,9 +3201,9 @@
     "25m_override_increase": 935.06
   },
   {
-    "#": "12-2 EUSTON ST (002-13-01)",
+    "#": "12 Euston St, Condo 2 (002-13-01)",
     "$": 1443500,
-    "owner1": "ASHTON-RICKARDT",
+    "owner1": "Ashton-Rickardt",
     "owner2": "",
     "current_taxes": 11146.51,
     "18m_override_total": 11749.54,
@@ -3212,9 +3212,9 @@
     "25m_override_increase": 837.1
   },
   {
-    "#": "12-3 EUSTON ST (002-13-02)",
+    "#": "12 Euston St, Condo 3 (002-13-02)",
     "$": 1261500,
-    "owner1": "THAYRE",
+    "owner1": "Thayre",
     "owner2": "",
     "current_taxes": 9282.83,
     "18m_override_total": 9785.03,
@@ -3223,10 +3223,10 @@
     "25m_override_increase": 697.14
   },
   {
-    "#": "15-1 EUSTON ST (005-10-02)",
+    "#": "15 Euston St, Condo 1 (005-10-02)",
     "$": 1890400,
-    "owner1": "KIM",
-    "owner2": "FALATO",
+    "owner1": "Kim",
+    "owner2": "Falato",
     "current_taxes": 15722.76,
     "18m_override_total": 16573.36,
     "18m_override_increase": 850.6,
@@ -3234,9 +3234,9 @@
     "25m_override_increase": 1180.78
   },
   {
-    "#": "15-1A EUSTON ST (005-10-01)",
+    "#": "15 Euston St, Condo 1A (005-10-01)",
     "$": 1011600,
-    "owner1": "NODA TR",
+    "owner1": "Noda Tr",
     "owner2": "",
     "current_taxes": 10358.78,
     "18m_override_total": 10919.19,
@@ -3245,10 +3245,10 @@
     "25m_override_increase": 777.94
   },
   {
-    "#": "15-2 EUSTON ST (005-10-03)",
+    "#": "15 Euston St, Condo 2 (005-10-03)",
     "$": 2024600,
-    "owner1": "FARZAN",
-    "owner2": "CHOE",
+    "owner1": "Farzan",
+    "owner2": "Choe",
     "current_taxes": 20731.9,
     "18m_override_total": 21853.5,
     "18m_override_increase": 1121.6,
@@ -3256,9 +3256,9 @@
     "25m_override_increase": 1556.97
   },
   {
-    "#": "15-3 EUSTON ST (005-10-04)",
+    "#": "15 Euston St, Condo 3 (005-10-04)",
     "$": 2073600,
-    "owner1": "PHAN",
+    "owner1": "Phan",
     "owner2": "",
     "current_taxes": 21233.66,
     "18m_override_total": 22382.4,
@@ -3267,10 +3267,10 @@
     "25m_override_increase": 1594.65
   },
   {
-    "#": "16 EUSTON ST (002-12-00)",
+    "#": "16 Euston St (002-12-00)",
     "$": 4243800,
-    "owner1": "NORA LLC",
-    "owner2": "C/O ALPHA MANAGEMENT",
+    "owner1": "Nora Llc",
+    "owner2": "C/O Alpha Management",
     "current_taxes": 43456.51,
     "18m_override_total": 45807.51,
     "18m_override_increase": 2351.0,
@@ -3278,9 +3278,9 @@
     "25m_override_increase": 3263.58
   },
   {
-    "#": "18 EUSTON ST (002-11-00)",
+    "#": "18 Euston St (002-11-00)",
     "$": 4243800,
-    "owner1": "NORA LLC",
+    "owner1": "Nora Llc",
     "owner2": "",
     "current_taxes": 43456.51,
     "18m_override_total": 45807.51,
@@ -3289,10 +3289,10 @@
     "25m_override_increase": 3263.58
   },
   {
-    "#": "19 EUSTON ST (005-11-00)",
+    "#": "19 Euston St (005-11-00)",
     "$": 3238800,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 33165.31,
     "18m_override_total": 34959.55,
     "18m_override_increase": 1794.24,
@@ -3300,9 +3300,9 @@
     "25m_override_increase": 2490.71
   },
   {
-    "#": "21 EUSTON ST (005-12-00)",
+    "#": "21 Euston St (005-12-00)",
     "$": 3277200,
-    "owner1": "NORA LLC",
+    "owner1": "Nora Llc",
     "owner2": "",
     "current_taxes": 33558.53,
     "18m_override_total": 35374.05,
@@ -3311,10 +3311,10 @@
     "25m_override_increase": 2520.25
   },
   {
-    "#": "22 EUSTON ST (002-10-00)",
+    "#": "22 Euston St (002-10-00)",
     "$": 4243800,
-    "owner1": "NORA LLC",
-    "owner2": "C/O ALPHA MANAGEMENT",
+    "owner1": "Nora Llc",
+    "owner2": "C/O Alpha Management",
     "current_taxes": 43456.51,
     "18m_override_total": 45807.51,
     "18m_override_increase": 2351.0,
@@ -3322,9 +3322,9 @@
     "25m_override_increase": 3263.58
   },
   {
-    "#": "24-1 & P4-P5 EUSTON ST (002-09-03)",
+    "#": "24 Euston St, Condo 1 & P4-P5 (002-09-03)",
     "$": 1880200,
-    "owner1": "LATIF",
+    "owner1": "Latif",
     "owner2": "",
     "current_taxes": 19253.25,
     "18m_override_total": 20294.85,
@@ -3333,9 +3333,9 @@
     "25m_override_increase": 1445.92
   },
   {
-    "#": "24-2 EUSTON ST (002-09-01)",
+    "#": "24 Euston St, Condo 2 (002-09-01)",
     "$": 1563500,
-    "owner1": "ALBUQUERQUE",
+    "owner1": "Albuquerque",
     "owner2": "",
     "current_taxes": 12375.31,
     "18m_override_total": 13044.81,
@@ -3344,10 +3344,10 @@
     "25m_override_increase": 929.39
   },
   {
-    "#": "24-3 EUSTON ST (002-09-02)",
+    "#": "24 Euston St, Condo 3 (002-09-02)",
     "$": 1550500,
-    "owner1": "WINE",
-    "owner2": "RAZ",
+    "owner1": "Wine",
+    "owner2": "Raz",
     "current_taxes": 12242.19,
     "18m_override_total": 12904.49,
     "18m_override_increase": 662.3,
@@ -3355,9 +3355,9 @@
     "25m_override_increase": 919.39
   },
   {
-    "#": "25-1 & P1-2 EUSTON ST (005-13-01)",
+    "#": "25 Euston St, Condo 1 & P1-2 (005-13-01)",
     "$": 2526800,
-    "owner1": "KIM",
+    "owner1": "Kim",
     "owner2": "",
     "current_taxes": 22239.5,
     "18m_override_total": 23442.66,
@@ -3366,9 +3366,9 @@
     "25m_override_increase": 1670.19
   },
   {
-    "#": "25-2 & P3 EUSTON ST (005-13-02)",
+    "#": "25 Euston St, Condo 2 & P3 (005-13-02)",
     "$": 1826100,
-    "owner1": "ZHAN",
+    "owner1": "Zhan",
     "owner2": "",
     "current_taxes": 15064.33,
     "18m_override_total": 15879.31,
@@ -3377,9 +3377,9 @@
     "25m_override_increase": 1131.33
   },
   {
-    "#": "25-3 & P4 EUSTON ST (005-13-03)",
+    "#": "25 Euston St, Condo 3 & P4 (005-13-03)",
     "$": 1842500,
-    "owner1": "SCHNEIDER",
+    "owner1": "Schneider",
     "owner2": "",
     "current_taxes": 15232.27,
     "18m_override_total": 16056.34,
@@ -3388,9 +3388,9 @@
     "25m_override_increase": 1143.94
   },
   {
-    "#": "33 EUSTON ST (005-14-00)",
+    "#": "33 Euston St (005-14-00)",
     "$": 4691700,
-    "owner1": "SCHEMMER",
+    "owner1": "Schemmer",
     "owner2": "",
     "current_taxes": 44408.07,
     "18m_override_total": 46810.55,
@@ -3399,9 +3399,9 @@
     "25m_override_increase": 3335.05
   },
   {
-    "#": "36 EUSTON ST (002-08-00)",
+    "#": "36 Euston St (002-08-00)",
     "$": 3229700,
-    "owner1": "CHIN TRS",
+    "owner1": "Chin Trs",
     "owner2": "",
     "current_taxes": 29437.19,
     "18m_override_total": 31029.74,
@@ -3410,9 +3410,9 @@
     "25m_override_increase": 2210.73
   },
   {
-    "#": "58 EUSTON ST (003-04-00)",
+    "#": "58 Euston St (003-04-00)",
     "$": 6342400,
-    "owner1": "TOSCANI",
+    "owner1": "Toscani",
     "owner2": "",
     "current_taxes": 61311.24,
     "18m_override_total": 64628.18,
@@ -3421,10 +3421,10 @@
     "25m_override_increase": 4604.47
   },
   {
-    "#": "95 FREEMAN ST (012-03-00)",
+    "#": "95 Freeman St (012-03-00)",
     "$": 7692900,
-    "owner1": "TOWN OF BROOKLINE",
-    "owner2": "C/O AMORY WOODS SANCTUARY",
+    "owner1": "Town Of Brookline",
+    "owner2": "C/O Amory Woods Sanctuary",
     "current_taxes": 0.0,
     "18m_override_total": 0.0,
     "18m_override_increase": 0.0,
@@ -3432,9 +3432,9 @@
     "25m_override_increase": 0.0
   },
   {
-    "#": "0 IVY ST (012-01-00)",
+    "#": "0 Ivy St (012-01-00)",
     "$": 2670100,
-    "owner1": "MASS ASSOC FOR THE BLIND",
+    "owner1": "Mass Assoc For The Blind",
     "owner2": "",
     "current_taxes": 0.0,
     "18m_override_total": 0.0,
@@ -3443,10 +3443,10 @@
     "25m_override_increase": 0.0
   },
   {
-    "#": "80 IVY ST (001-23-00)",
+    "#": "80 Ivy St (001-23-00)",
     "$": 13405200,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 137269.25,
     "18m_override_total": 144695.52,
     "18m_override_increase": 7426.27,
@@ -3454,10 +3454,10 @@
     "25m_override_increase": 10308.92
   },
   {
-    "#": "83-11 IVY ST (002-01-01)",
+    "#": "83 Ivy St, Condo 11 (002-01-01)",
     "$": 832200,
-    "owner1": "RAVUNNIARATH",
-    "owner2": "BENSSON-RAVUNNIARATH",
+    "owner1": "Ravunniarath",
+    "owner2": "Bensson-Ravunniarath",
     "current_taxes": 8521.73,
     "18m_override_total": 8982.76,
     "18m_override_increase": 461.03,
@@ -3465,9 +3465,9 @@
     "25m_override_increase": 639.98
   },
   {
-    "#": "83-12 IVY ST (002-01-02)",
+    "#": "83 Ivy St, Condo 12 (002-01-02)",
     "$": 789000,
-    "owner1": "LIN",
+    "owner1": "Lin",
     "owner2": "",
     "current_taxes": 4444.43,
     "18m_override_total": 4684.87,
@@ -3476,10 +3476,10 @@
     "25m_override_increase": 333.78
   },
   {
-    "#": "83-13 IVY ST (002-01-03)",
+    "#": "83 Ivy St, Condo 13 (002-01-03)",
     "$": 862000,
-    "owner1": "JALETTE",
-    "owner2": "PAN",
+    "owner1": "Jalette",
+    "owner2": "Pan",
     "current_taxes": 5191.95,
     "18m_override_total": 5472.83,
     "18m_override_increase": 280.88,
@@ -3487,9 +3487,9 @@
     "25m_override_increase": 389.92
   },
   {
-    "#": "83-14 IVY ST (002-01-04)",
+    "#": "83 Ivy St, Condo 14 (002-01-04)",
     "$": 701400,
-    "owner1": "MUCHA",
+    "owner1": "Mucha",
     "owner2": "",
     "current_taxes": 7182.34,
     "18m_override_total": 7570.9,
@@ -3498,9 +3498,9 @@
     "25m_override_increase": 539.39
   },
   {
-    "#": "83-21 IVY ST (002-01-05)",
+    "#": "83 Ivy St, Condo 21 (002-01-05)",
     "$": 853300,
-    "owner1": "LOKSHIN",
+    "owner1": "Lokshin",
     "owner2": "",
     "current_taxes": 5102.86,
     "18m_override_total": 5378.92,
@@ -3509,9 +3509,9 @@
     "25m_override_increase": 383.22
   },
   {
-    "#": "83-22 IVY ST (002-01-06)",
+    "#": "83 Ivy St, Condo 22 (002-01-06)",
     "$": 782900,
-    "owner1": "URENECK",
+    "owner1": "Ureneck",
     "owner2": "",
     "current_taxes": 4381.96,
     "18m_override_total": 4619.02,
@@ -3520,10 +3520,10 @@
     "25m_override_increase": 329.09
   },
   {
-    "#": "83-23 IVY ST (002-01-07)",
+    "#": "83 Ivy St, Condo 23 (002-01-07)",
     "$": 870200,
-    "owner1": "MALTES",
-    "owner2": "ANDRACA",
+    "owner1": "Maltes",
+    "owner2": "Andraca",
     "current_taxes": 5275.91,
     "18m_override_total": 5561.34,
     "18m_override_increase": 285.43,
@@ -3531,10 +3531,10 @@
     "25m_override_increase": 396.22
   },
   {
-    "#": "83-24 IVY ST (002-01-08)",
+    "#": "83 Ivy St, Condo 24 (002-01-08)",
     "$": 712000,
-    "owner1": "TRUSTEES OF BOSTON UNIVERSITY",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Trustees Of Boston University",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 7290.88,
     "18m_override_total": 7685.32,
     "18m_override_increase": 394.44,
@@ -3542,9 +3542,9 @@
     "25m_override_increase": 547.55
   },
   {
-    "#": "83-31 IVY ST (002-01-09)",
+    "#": "83 Ivy St, Condo 31 (002-01-09)",
     "$": 835800,
-    "owner1": "FLOYD TR",
+    "owner1": "Floyd Tr",
     "owner2": "",
     "current_taxes": 8558.59,
     "18m_override_total": 9021.61,
@@ -3553,10 +3553,10 @@
     "25m_override_increase": 642.75
   },
   {
-    "#": "83-32 IVY ST (002-01-10)",
+    "#": "83 Ivy St, Condo 32 (002-01-10)",
     "$": 782900,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 8016.9,
     "18m_override_total": 8450.61,
     "18m_override_increase": 433.71,
@@ -3564,9 +3564,9 @@
     "25m_override_increase": 602.07
   },
   {
-    "#": "83-33 IVY ST (002-01-11)",
+    "#": "83 Ivy St, Condo 33 (002-01-11)",
     "$": 862000,
-    "owner1": "CARROLL",
+    "owner1": "Carroll",
     "owner2": "",
     "current_taxes": 8826.88,
     "18m_override_total": 9304.41,
@@ -3575,9 +3575,9 @@
     "25m_override_increase": 662.9
   },
   {
-    "#": "83-34 IVY ST (002-01-12)",
+    "#": "83 Ivy St, Condo 34 (002-01-12)",
     "$": 712000,
-    "owner1": "TERRELL",
+    "owner1": "Terrell",
     "owner2": "",
     "current_taxes": 3655.95,
     "18m_override_total": 3853.74,
@@ -3586,9 +3586,9 @@
     "25m_override_increase": 274.56
   },
   {
-    "#": "83-41 IVY ST (002-01-13)",
+    "#": "83 Ivy St, Condo 41 (002-01-13)",
     "$": 858300,
-    "owner1": "WALKER LIFE ESTATE",
+    "owner1": "Walker Life Estate",
     "owner2": "",
     "current_taxes": 8788.99,
     "18m_override_total": 9264.47,
@@ -3597,9 +3597,9 @@
     "25m_override_increase": 660.05
   },
   {
-    "#": "83-42 IVY ST (002-01-14)",
+    "#": "83 Ivy St, Condo 42 (002-01-14)",
     "$": 770300,
-    "owner1": "CHOBANIAN JR",
+    "owner1": "Chobanian Jr",
     "owner2": "",
     "current_taxes": 4252.94,
     "18m_override_total": 4483.02,
@@ -3608,10 +3608,10 @@
     "25m_override_increase": 319.4
   },
   {
-    "#": "83-43 IVY ST (002-01-15)",
+    "#": "83 Ivy St, Condo 43 (002-01-15)",
     "$": 901300,
-    "owner1": "LIN",
-    "owner2": "LI",
+    "owner1": "Lin",
+    "owner2": "Li",
     "current_taxes": 9229.31,
     "18m_override_total": 9728.62,
     "18m_override_increase": 499.31,
@@ -3619,9 +3619,9 @@
     "25m_override_increase": 693.12
   },
   {
-    "#": "83-44 IVY ST (002-01-16)",
+    "#": "83 Ivy St, Condo 44 (002-01-16)",
     "$": 743500,
-    "owner1": "AFTAHI",
+    "owner1": "Aftahi",
     "owner2": "",
     "current_taxes": 7613.44,
     "18m_override_total": 8025.33,
@@ -3630,9 +3630,9 @@
     "25m_override_increase": 571.77
   },
   {
-    "#": "83-B-1 IVY ST (002-01-17)",
+    "#": "83 Ivy St, Condo B-1 (002-01-17)",
     "$": 590700,
-    "owner1": "SAN",
+    "owner1": "San",
     "owner2": "",
     "current_taxes": 6048.77,
     "18m_override_total": 6376.01,
@@ -3641,9 +3641,9 @@
     "25m_override_increase": 454.26
   },
   {
-    "#": "87 IVY ST (002-02-00)",
+    "#": "87 Ivy St (002-02-00)",
     "$": 2943400,
-    "owner1": "WEISEL TR",
+    "owner1": "Weisel Tr",
     "owner2": "",
     "current_taxes": 26505.48,
     "18m_override_total": 27939.43,
@@ -3652,9 +3652,9 @@
     "25m_override_increase": 1990.56
   },
   {
-    "#": "90 IVY ST (001-22-00)",
+    "#": "90 Ivy St (001-22-00)",
     "$": 3291200,
-    "owner1": "IVY BROOKLINE DEVELOPMENT LLC",
+    "owner1": "Ivy Brookline Development Llc",
     "owner2": "",
     "current_taxes": 33701.89,
     "18m_override_total": 35525.16,
@@ -3663,9 +3663,9 @@
     "25m_override_increase": 2531.01
   },
   {
-    "#": "93 IVY ST (002-03-00)",
+    "#": "93 Ivy St (002-03-00)",
     "$": 4420700,
-    "owner1": "MOYER",
+    "owner1": "Moyer",
     "owner2": "",
     "current_taxes": 45267.97,
     "18m_override_total": 47716.97,
@@ -3674,9 +3674,9 @@
     "25m_override_increase": 3399.62
   },
   {
-    "#": "96 IVY ST (001-21-00)",
+    "#": "96 Ivy St (001-21-00)",
     "$": 4834400,
-    "owner1": "HIRSCH TRS",
+    "owner1": "Hirsch Trs",
     "owner2": "",
     "current_taxes": 45869.32,
     "18m_override_total": 48350.85,
@@ -3685,10 +3685,10 @@
     "25m_override_increase": 3444.79
   },
   {
-    "#": "101 IVY ST (002-04-00)",
+    "#": "101 Ivy St (002-04-00)",
     "$": 4296000,
-    "owner1": "THORN",
-    "owner2": "QUASHA",
+    "owner1": "Thorn",
+    "owner2": "Quasha",
     "current_taxes": 40356.11,
     "18m_override_total": 42539.38,
     "18m_override_increase": 2183.27,
@@ -3696,9 +3696,9 @@
     "25m_override_increase": 3030.74
   },
   {
-    "#": "108 IVY ST (001-20-00)",
+    "#": "108 Ivy St (001-20-00)",
     "$": 5099800,
-    "owner1": "SOLLAMI",
+    "owner1": "Sollami",
     "owner2": "",
     "current_taxes": 52221.95,
     "18m_override_total": 55047.16,
@@ -3707,9 +3707,9 @@
     "25m_override_increase": 3921.87
   },
   {
-    "#": "111 IVY ST (002-05-00)",
+    "#": "111 Ivy St (002-05-00)",
     "$": 4414700,
-    "owner1": "MINSKY",
+    "owner1": "Minsky",
     "owner2": "",
     "current_taxes": 41571.59,
     "18m_override_total": 43820.61,
@@ -3718,10 +3718,10 @@
     "25m_override_increase": 3122.03
   },
   {
-    "#": "135 IVY ST (003-01-00)",
+    "#": "135 Ivy St (003-01-00)",
     "$": 9825600,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 100614.14,
     "18m_override_total": 106057.36,
     "18m_override_increase": 5443.22,
@@ -3729,9 +3729,9 @@
     "25m_override_increase": 7556.12
   },
   {
-    "#": "156 IVY ST (009-02-00)",
+    "#": "156 Ivy St (009-02-00)",
     "$": 7745600,
-    "owner1": "MCLOUGHLIN",
+    "owner1": "Mcloughlin",
     "owner2": "",
     "current_taxes": 75680.01,
     "18m_override_total": 79774.3,
@@ -3740,9 +3740,9 @@
     "25m_override_increase": 5683.57
   },
   {
-    "#": "157 IVY ST (008-03-01)",
+    "#": "157 Ivy St (008-03-01)",
     "$": 3234500,
-    "owner1": "LANG TR",
+    "owner1": "Lang Tr",
     "owner2": "",
     "current_taxes": 29486.35,
     "18m_override_total": 31081.56,
@@ -3751,9 +3751,9 @@
     "25m_override_increase": 2214.42
   },
   {
-    "#": "165 IVY ST (008-04-00)",
+    "#": "165 Ivy St (008-04-00)",
     "$": 3031900,
-    "owner1": "DANE",
+    "owner1": "Dane",
     "owner2": "",
     "current_taxes": 31046.66,
     "18m_override_total": 32726.28,
@@ -3762,9 +3762,9 @@
     "25m_override_increase": 2331.6
   },
   {
-    "#": "170 IVY ST (009-01-00)",
+    "#": "170 Ivy St (009-01-00)",
     "$": 6000500,
-    "owner1": "ROH TR",
+    "owner1": "Roh Tr",
     "owner2": "",
     "current_taxes": 57810.19,
     "18m_override_total": 60937.72,
@@ -3773,9 +3773,9 @@
     "25m_override_increase": 4341.55
   },
   {
-    "#": "178 IVY ST (012-04-01)",
+    "#": "178 Ivy St (012-04-01)",
     "$": 4200500,
-    "owner1": "DODSON",
+    "owner1": "Dodson",
     "owner2": "",
     "current_taxes": 43013.12,
     "18m_override_total": 45340.13,
@@ -3784,10 +3784,10 @@
     "25m_override_increase": 3230.29
   },
   {
-    "#": "180 IVY ST (012-04-00)",
+    "#": "180 Ivy St (012-04-00)",
     "$": 5536500,
-    "owner1": "GORDON",
-    "owner2": "C/O AMCEL CENTER",
+    "owner1": "Gordon",
+    "owner2": "C/O Amcel Center",
     "current_taxes": 56693.76,
     "18m_override_total": 59760.89,
     "18m_override_increase": 3067.13,
@@ -3795,9 +3795,9 @@
     "25m_override_increase": 4257.7
   },
   {
-    "#": "190 IVY ST (012-02-01)",
+    "#": "190 Ivy St (012-02-01)",
     "$": 7115500,
-    "owner1": "CALHOUN TR",
+    "owner1": "Calhoun Tr",
     "owner2": "",
     "current_taxes": 72862.72,
     "18m_override_total": 76804.59,
@@ -3806,9 +3806,9 @@
     "25m_override_increase": 5471.99
   },
   {
-    "#": "200 IVY ST (012-02-00)",
+    "#": "200 Ivy St (012-02-00)",
     "$": 9263800,
-    "owner1": "MASS ASSOC FOR THE BLIND",
+    "owner1": "Mass Assoc For The Blind",
     "owner2": "",
     "current_taxes": 0.0,
     "18m_override_total": 0.0,
@@ -3817,10 +3817,10 @@
     "25m_override_increase": 0.0
   },
   {
-    "#": " IVY ST (001-19-02)",
+    "#": " Ivy St (001-19-02)",
     "$": 22900,
-    "owner1": "SOLLAMI",
-    "owner2": "TEMPEL ET AL",
+    "owner1": "Sollami",
+    "owner2": "Tempel Et Al",
     "current_taxes": 234.5,
     "18m_override_total": 247.19,
     "18m_override_increase": 12.69,
@@ -3828,10 +3828,10 @@
     "25m_override_increase": 17.61
   },
   {
-    "#": " IVY ST (001-19-04)",
+    "#": " Ivy St (001-19-04)",
     "$": 146500,
-    "owner1": "TEMPEL",
-    "owner2": "WILSON",
+    "owner1": "Tempel",
+    "owner2": "Wilson",
     "current_taxes": 1500.16,
     "18m_override_total": 1581.32,
     "18m_override_increase": 81.16,
@@ -3839,9 +3839,9 @@
     "25m_override_increase": 112.66
   },
   {
-    "#": " IVY ST (001-31-02)",
+    "#": " Ivy St (001-31-02)",
     "$": 77100,
-    "owner1": "SOLLAMI",
+    "owner1": "Sollami",
     "owner2": "",
     "current_taxes": 789.5,
     "18m_override_total": 832.21,
@@ -3850,10 +3850,10 @@
     "25m_override_increase": 59.29
   },
   {
-    "#": "10 LENOX ST (004-02-00)",
+    "#": "10 Lenox St (004-02-00)",
     "$": 10847000,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL  ACCOUNTING 4TH FL",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General  Accounting 4Th Fl",
     "current_taxes": 0.0,
     "18m_override_total": 0.0,
     "18m_override_increase": 0.0,
@@ -3861,10 +3861,10 @@
     "25m_override_increase": 0.0
   },
   {
-    "#": "25 LENOX ST (006A-03-00)",
+    "#": "25 Lenox St (006A-03-00)",
     "$": 4799800,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 49149.95,
     "18m_override_total": 51808.96,
     "18m_override_increase": 2659.01,
@@ -3872,10 +3872,10 @@
     "25m_override_increase": 3691.16
   },
   {
-    "#": "39 LENOX ST (006A-04-00)",
+    "#": "39 Lenox St (006A-04-00)",
     "$": 2479600,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 25391.1,
     "18m_override_total": 26764.76,
     "18m_override_increase": 1373.66,
@@ -3883,10 +3883,10 @@
     "25m_override_increase": 1906.87
   },
   {
-    "#": "170 LENOX ST (006A-02-00)",
+    "#": "170 Lenox St (006A-02-00)",
     "$": 1861800,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 19064.83,
     "18m_override_total": 20096.24,
     "18m_override_increase": 1031.41,
@@ -3894,9 +3894,9 @@
     "25m_override_increase": 1431.77
   },
   {
-    "#": "1 MASON ST (014-04-00)",
+    "#": "1 Mason St (014-04-00)",
     "$": 6973800,
-    "owner1": "GAJDECKI",
+    "owner1": "Gajdecki",
     "owner2": "",
     "current_taxes": 67776.78,
     "18m_override_total": 71443.5,
@@ -3905,10 +3905,10 @@
     "25m_override_increase": 5090.04
   },
   {
-    "#": "8 MASON ST (013-01-00)",
+    "#": "8 Mason St (013-01-00)",
     "$": 5157100,
-    "owner1": "TOWN OF BROOKLINE",
-    "owner2": "C/O MASON SQUARE",
+    "owner1": "Town Of Brookline",
+    "owner2": "C/O Mason Square",
     "current_taxes": 0.0,
     "18m_override_total": 0.0,
     "18m_override_increase": 0.0,
@@ -3916,10 +3916,10 @@
     "25m_override_increase": 0.0
   },
   {
-    "#": "11 MASON ST (014-05-00)",
+    "#": "11 Mason St (014-05-00)",
     "$": 5194200,
-    "owner1": "HAWTHORNE",
-    "owner2": "BALDWIN",
+    "owner1": "Hawthorne",
+    "owner2": "Baldwin",
     "current_taxes": 49553.67,
     "18m_override_total": 52234.52,
     "18m_override_increase": 2680.85,
@@ -3927,9 +3927,9 @@
     "25m_override_increase": 3721.48
   },
   {
-    "#": "21 MASON ST (014-06-00)",
+    "#": "21 Mason St (014-06-00)",
     "$": 6816700,
-    "owner1": "SAPERSTONE",
+    "owner1": "Saperstone",
     "owner2": "",
     "current_taxes": 69803.01,
     "18m_override_total": 73579.35,
@@ -3938,10 +3938,10 @@
     "25m_override_increase": 5242.21
   },
   {
-    "#": "138 MOUNTFORT ST (005-03-00)",
+    "#": "138 Mountfort St (005-03-00)",
     "$": 3245100,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 0.0,
     "18m_override_total": 0.0,
     "18m_override_increase": 0.0,
@@ -3949,10 +3949,10 @@
     "25m_override_increase": 0.0
   },
   {
-    "#": "150 MOUNTFORT ST (005-02-00)",
+    "#": "150 Mountfort St (005-02-00)",
     "$": 2382100,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 24392.7,
     "18m_override_total": 25712.35,
     "18m_override_increase": 1319.65,
@@ -3960,10 +3960,10 @@
     "25m_override_increase": 1831.89
   },
   {
-    "#": "11 POWELL ST (011-05-00)",
+    "#": "11 Powell St (011-05-00)",
     "$": 3209400,
-    "owner1": "LIVINGSTON",
-    "owner2": "RABB",
+    "owner1": "Livingston",
+    "owner2": "Rabb",
     "current_taxes": 29229.32,
     "18m_override_total": 30810.63,
     "18m_override_increase": 1581.31,
@@ -3971,10 +3971,10 @@
     "25m_override_increase": 2195.12
   },
   {
-    "#": "19 POWELL ST (011-06-00)",
+    "#": "19 Powell St (011-06-00)",
     "$": 4483300,
-    "owner1": "WOLRAICH",
-    "owner2": "WEINRIB",
+    "owner1": "Wolraich",
+    "owner2": "Weinrib",
     "current_taxes": 42274.06,
     "18m_override_total": 44561.09,
     "18m_override_increase": 2287.03,
@@ -3982,10 +3982,10 @@
     "25m_override_increase": 3174.78
   },
   {
-    "#": "29 POWELL ST (011-07-00)",
+    "#": "29 Powell St (011-07-00)",
     "$": 4199600,
-    "owner1": "D ARBELOFF",
-    "owner2": "LAVIN",
+    "owner1": "D Arbeloff",
+    "owner2": "Lavin",
     "current_taxes": 43003.9,
     "18m_override_total": 45330.41,
     "18m_override_increase": 2326.51,
@@ -3993,9 +3993,9 @@
     "25m_override_increase": 3229.59
   },
   {
-    "#": "33 POWELL ST (011-08-00)",
+    "#": "33 Powell St (011-08-00)",
     "$": 3463400,
-    "owner1": "KANAREK TRS",
+    "owner1": "Kanarek Trs",
     "owner2": "",
     "current_taxes": 31830.28,
     "18m_override_total": 33552.3,
@@ -4004,9 +4004,9 @@
     "25m_override_increase": 2390.45
   },
   {
-    "#": "41 POWELL ST (011-09-00)",
+    "#": "41 Powell St (011-09-00)",
     "$": 3337000,
-    "owner1": "NOYES",
+    "owner1": "Noyes",
     "owner2": "",
     "current_taxes": 30535.95,
     "18m_override_total": 32187.94,
@@ -4015,9 +4015,9 @@
     "25m_override_increase": 2293.25
   },
   {
-    "#": "45 POWELL ST (011-10-00)",
+    "#": "45 Powell St (011-10-00)",
     "$": 5189200,
-    "owner1": "GALVIN TR",
+    "owner1": "Galvin Tr",
     "owner2": "",
     "current_taxes": 49502.47,
     "18m_override_total": 52180.55,
@@ -4026,9 +4026,9 @@
     "25m_override_increase": 3717.64
   },
   {
-    "#": "53 POWELL ST (011-11-00)",
+    "#": "53 Powell St (011-11-00)",
     "$": 4435200,
-    "owner1": "PARAFESTAS TR",
+    "owner1": "Parafestas Tr",
     "owner2": "",
     "current_taxes": 45416.45,
     "18m_override_total": 47873.48,
@@ -4037,9 +4037,9 @@
     "25m_override_increase": 3410.78
   },
   {
-    "#": "63 POWELL ST (011-12-00)",
+    "#": "63 Powell St (011-12-00)",
     "$": 3713700,
-    "owner1": "FEINSTEIN",
+    "owner1": "Feinstein",
     "owner2": "",
     "current_taxes": 34393.35,
     "18m_override_total": 36254.03,
@@ -4048,9 +4048,9 @@
     "25m_override_increase": 2582.94
   },
   {
-    "#": "65 POWELL ST (011-13-00)",
+    "#": "65 Powell St (011-13-00)",
     "$": 1709000,
-    "owner1": "DHANDA TRS",
+    "owner1": "Dhanda Trs",
     "owner2": "",
     "current_taxes": 17500.16,
     "18m_override_total": 18446.92,
@@ -4059,9 +4059,9 @@
     "25m_override_increase": 1314.26
   },
   {
-    "#": "67 POWELL ST (011-14-00)",
+    "#": "67 Powell St (011-14-00)",
     "$": 3145800,
-    "owner1": "DHANDA TRS",
+    "owner1": "Dhanda Trs",
     "owner2": "",
     "current_taxes": 32212.99,
     "18m_override_total": 33955.71,
@@ -4070,9 +4070,9 @@
     "25m_override_increase": 2419.2
   },
   {
-    "#": "81 POWELL ST (011-15-00)",
+    "#": "81 Powell St (011-15-00)",
     "$": 1584100,
-    "owner1": "DHANDA TRS",
+    "owner1": "Dhanda Trs",
     "owner2": "",
     "current_taxes": 16221.18,
     "18m_override_total": 17098.75,
@@ -4081,9 +4081,9 @@
     "25m_override_increase": 1218.21
   },
   {
-    "#": "9 PRESCOTT ST (008-01-00)",
+    "#": "9 Prescott St (008-01-00)",
     "$": 8965000,
-    "owner1": "NEW ENGLAND HEBREW ACADEMY",
+    "owner1": "New England Hebrew Academy",
     "owner2": "",
     "current_taxes": 0.0,
     "18m_override_total": 0.0,
@@ -4092,9 +4092,9 @@
     "25m_override_increase": 0.0
   },
   {
-    "#": "16 PRESCOTT ST (004-01-00)",
+    "#": "16 Prescott St (004-01-00)",
     "$": 8846600,
-    "owner1": "DE ICAZA TRS",
+    "owner1": "De Icaza Trs",
     "owner2": "",
     "current_taxes": 90589.18,
     "18m_override_total": 95490.05,
@@ -4103,9 +4103,9 @@
     "25m_override_increase": 6803.25
   },
   {
-    "#": "23 PRESCOTT ST (008-02-05)",
+    "#": "23 Prescott St (008-02-05)",
     "$": 12315900,
-    "owner1": "COLASACCO, TR",
+    "owner1": "Colasacco, Tr",
     "owner2": "",
     "current_taxes": 126114.82,
     "18m_override_total": 132937.63,
@@ -4114,9 +4114,9 @@
     "25m_override_increase": 9471.22
   },
   {
-    "#": "30 PRESCOTT ST (003-03-00)",
+    "#": "30 Prescott St (003-03-00)",
     "$": 5698600,
-    "owner1": "GLASHOW TRS",
+    "owner1": "Glashow Trs",
     "owner2": "",
     "current_taxes": 54718.73,
     "18m_override_total": 57679.01,
@@ -4125,9 +4125,9 @@
     "25m_override_increase": 4109.38
   },
   {
-    "#": "35 PRESCOTT ST (008-03-00)",
+    "#": "35 Prescott St (008-03-00)",
     "$": 3675500,
-    "owner1": "WILLIAMS",
+    "owner1": "Williams",
     "owner2": "",
     "current_taxes": 34002.19,
     "18m_override_total": 35841.71,
@@ -4136,9 +4136,9 @@
     "25m_override_increase": 2553.56
   },
   {
-    "#": "40 PRESCOTT ST (003-02-00)",
+    "#": "40 Prescott St (003-02-00)",
     "$": 5944000,
-    "owner1": "BURNS",
+    "owner1": "Burns",
     "owner2": "",
     "current_taxes": 57231.63,
     "18m_override_total": 60327.86,
@@ -4147,10 +4147,10 @@
     "25m_override_increase": 4298.1
   },
   {
-    "#": "15 ST MARYS CT (001-26-00)",
+    "#": "15 St Marys Ct (001-26-00)",
     "$": 3194700,
-    "owner1": "15 ST MARY`S CT LLC",
-    "owner2": "C/O GLANZ PROPERTIES INC",
+    "owner1": "15 St Mary`S Ct Llc",
+    "owner2": "C/O Glanz Properties Inc",
     "current_taxes": 32713.73,
     "18m_override_total": 34483.54,
     "18m_override_increase": 1769.81,
@@ -4158,9 +4158,9 @@
     "25m_override_increase": 2456.8
   },
   {
-    "#": "19 ST MARYS CT (001-27-00)",
+    "#": "19 St Marys Ct (001-27-00)",
     "$": 2461000,
-    "owner1": "ARENDT",
+    "owner1": "Arendt",
     "owner2": "",
     "current_taxes": 21565.71,
     "18m_override_total": 22732.41,
@@ -4169,9 +4169,9 @@
     "25m_override_increase": 1619.58
   },
   {
-    "#": "23 ST MARYS CT (001-28-00)",
+    "#": "23 St Marys Ct (001-28-00)",
     "$": 1956200,
-    "owner1": "POLITMAN, TRS",
+    "owner1": "Politman, Trs",
     "owner2": "",
     "current_taxes": 16396.55,
     "18m_override_total": 17283.6,
@@ -4180,9 +4180,9 @@
     "25m_override_increase": 1231.38
   },
   {
-    "#": "25 ST MARYS CT (001-29-00)",
+    "#": "25 St Marys Ct (001-29-00)",
     "$": 1867200,
-    "owner1": "25 ST MARYS COURT LLC",
+    "owner1": "25 St Marys Court Llc",
     "owner2": "",
     "current_taxes": 19120.13,
     "18m_override_total": 20154.53,
@@ -4191,9 +4191,9 @@
     "25m_override_increase": 1435.92
   },
   {
-    "#": "27 ST MARYS CT (001-30-00)",
+    "#": "27 St Marys Ct (001-30-00)",
     "$": 2309600,
-    "owner1": "TRACY",
+    "owner1": "Tracy",
     "owner2": "",
     "current_taxes": 23650.3,
     "18m_override_total": 24929.78,
@@ -4202,9 +4202,9 @@
     "25m_override_increase": 1776.14
   },
   {
-    "#": "29 ST MARYS CT (001-31-00)",
+    "#": "29 St Marys Ct (001-31-00)",
     "$": 1869000,
-    "owner1": "ADIREKSARN",
+    "owner1": "Adireksarn",
     "owner2": "",
     "current_taxes": 19138.56,
     "18m_override_total": 20173.96,
@@ -4213,9 +4213,9 @@
     "25m_override_increase": 1437.31
   },
   {
-    "#": "29-A ST MARYS ST (001-31-01)",
+    "#": "29 St Marys St, Unit A (001-31-01)",
     "$": 50000,
-    "owner1": "ADIREKSARN",
+    "owner1": "Adireksarn",
     "owner2": "",
     "current_taxes": 512.0,
     "18m_override_total": 539.7,
@@ -4224,10 +4224,10 @@
     "25m_override_increase": 38.45
   },
   {
-    "#": "37 ST MARYS ST (005-04-00)",
+    "#": "37 St Marys St (005-04-00)",
     "$": 13122100,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FLR",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General Accounting 4Th Flr",
     "current_taxes": 134370.3,
     "18m_override_total": 141639.73,
     "18m_override_increase": 7269.43,
@@ -4235,9 +4235,9 @@
     "25m_override_increase": 10091.21
   },
   {
-    "#": "49 ST MARYS ST (005-05-00)",
+    "#": "49 St Marys St (005-05-00)",
     "$": 3391400,
-    "owner1": "CHIN TRS",
+    "owner1": "Chin Trs",
     "owner2": "",
     "current_taxes": 34727.94,
     "18m_override_total": 36606.72,
@@ -4246,9 +4246,9 @@
     "25m_override_increase": 2608.07
   },
   {
-    "#": "65 ST MARYS ST (002-17-00)",
+    "#": "65 St Marys St (002-17-00)",
     "$": 4078800,
-    "owner1": "YEE TRS",
+    "owner1": "Yee Trs",
     "owner2": "",
     "current_taxes": 41766.91,
     "18m_override_total": 44026.5,
@@ -4257,9 +4257,9 @@
     "25m_override_increase": 3136.69
   },
   {
-    "#": "71-1 & P1 ST MARYS ST (002-18-03)",
+    "#": "71 St Marys St, Condo 1 & P1 (002-18-03)",
     "$": 1346900,
-    "owner1": "GREGORY",
+    "owner1": "Gregory",
     "owner2": "",
     "current_taxes": 10157.32,
     "18m_override_total": 10706.83,
@@ -4268,9 +4268,9 @@
     "25m_override_increase": 762.81
   },
   {
-    "#": "71-2 & P2 ST MARYS ST (002-18-01)",
+    "#": "71 St Marys St, Condo 2 & P2 (002-18-01)",
     "$": 1424400,
-    "owner1": "ZUCKER TR",
+    "owner1": "Zucker Tr",
     "owner2": "",
     "current_taxes": 10950.92,
     "18m_override_total": 11543.36,
@@ -4279,9 +4279,9 @@
     "25m_override_increase": 822.41
   },
   {
-    "#": "71-3 & P-3 ST MARYS ST (002-18-02)",
+    "#": "71 St Marys St, Condo 3 & P-3 (002-18-02)",
     "$": 1424500,
-    "owner1": "GONCZAROWSKI",
+    "owner1": "Gonczarowski",
     "owner2": "",
     "current_taxes": 10951.95,
     "18m_override_total": 11544.45,
@@ -4290,9 +4290,9 @@
     "25m_override_increase": 822.49
   },
   {
-    "#": "338 ST PAUL ST (020-01-00)",
+    "#": "338 St Paul St (020-01-00)",
     "$": 26769800,
-    "owner1": "BROOKLINE HOUSING AUTHORITY",
+    "owner1": "Brookline Housing Authority",
     "owner2": "",
     "current_taxes": 0.0,
     "18m_override_total": 0.0,
@@ -4301,9 +4301,9 @@
     "25m_override_increase": 0.0
   },
   {
-    "#": "3 WORTHINGTON RD (015-05-00)",
+    "#": "3 Worthington Rd (015-05-00)",
     "$": 5139400,
-    "owner1": "DELONG, TR",
+    "owner1": "Delong, Tr",
     "owner2": "",
     "current_taxes": 48992.52,
     "18m_override_total": 51643.02,
@@ -4312,9 +4312,9 @@
     "25m_override_increase": 3679.34
   },
   {
-    "#": "4 WORTHINGTON RD (014-03-00)",
+    "#": "4 Worthington Rd (014-03-00)",
     "$": 5288500,
-    "owner1": "SITKOFF",
+    "owner1": "Sitkoff",
     "owner2": "",
     "current_taxes": 50519.31,
     "18m_override_total": 53252.4,
@@ -4323,9 +4323,9 @@
     "25m_override_increase": 3794.0
   },
   {
-    "#": "11 WORTHINGTON RD (015-06-00)",
+    "#": "11 Worthington Rd (015-06-00)",
     "$": 4001100,
-    "owner1": "NOGI",
+    "owner1": "Nogi",
     "owner2": "",
     "current_taxes": 37336.33,
     "18m_override_total": 39356.23,
@@ -4334,9 +4334,9 @@
     "25m_override_increase": 2803.96
   },
   {
-    "#": "12 WORTHINGTON RD (014-02-00)",
+    "#": "12 Worthington Rd (014-02-00)",
     "$": 5297800,
-    "owner1": "PARAFESTAS TR",
+    "owner1": "Parafestas Tr",
     "owner2": "",
     "current_taxes": 54249.47,
     "18m_override_total": 57184.37,
@@ -4345,9 +4345,9 @@
     "25m_override_increase": 4074.14
   },
   {
-    "#": "22 WORTHINGTON RD (014-01-00)",
+    "#": "22 Worthington Rd (014-01-00)",
     "$": 7793500,
-    "owner1": "FORRESTER",
+    "owner1": "Forrester",
     "owner2": "",
     "current_taxes": 76170.51,
     "18m_override_total": 80291.33,
@@ -4356,9 +4356,9 @@
     "25m_override_increase": 5720.41
   },
   {
-    "#": "39 WORTHINGTON RD (016-04-04)",
+    "#": "39 Worthington Rd (016-04-04)",
     "$": 6536100,
-    "owner1": "GORDON",
+    "owner1": "Gordon",
     "owner2": "",
     "current_taxes": 66929.66,
     "18m_override_total": 70550.55,
@@ -4367,10 +4367,10 @@
     "25m_override_increase": 5026.42
   },
   {
-    "#": "49 WORTHINGTON RD (016-05-00)",
+    "#": "49 Worthington Rd (016-05-00)",
     "$": 5941500,
-    "owner1": "VAN HOOK TR",
-    "owner2": "WOOLF TR",
+    "owner1": "Van Hook Tr",
+    "owner2": "Woolf Tr",
     "current_taxes": 57206.03,
     "18m_override_total": 60300.88,
     "18m_override_increase": 3094.85,
@@ -4378,10 +4378,10 @@
     "25m_override_increase": 4296.17
   },
   {
-    "#": "50 WORTHINGTON RD (012-06-00)",
+    "#": "50 Worthington Rd (012-06-00)",
     "$": 12908000,
-    "owner1": "BOSTON UNIVERSITY TRS",
-    "owner2": "C/O GENERAL ACCOUNTING 4TH FL",
+    "owner1": "Boston University Trs",
+    "owner2": "C/O General Accounting 4Th Fl",
     "current_taxes": 132177.92,
     "18m_override_total": 139328.75,
     "18m_override_increase": 7150.83,
@@ -4389,9 +4389,9 @@
     "25m_override_increase": 9926.56
   },
   {
-    "#": "53 WORTHINGTON RD (016-01-02)",
+    "#": "53 Worthington Rd (016-01-02)",
     "$": 3769700,
-    "owner1": "DAGOSTINO",
+    "owner1": "Dagostino",
     "owner2": "",
     "current_taxes": 38601.73,
     "18m_override_total": 40690.08,
