@@ -2,7 +2,7 @@
  * @fileoverview Custom React hook for Massachusetts Proposition 2½ override tax calculator.
  *
  * This hook implements the business logic for calculating the impact of a Proposition 2½
- * override on property tax bills in Stoneham, MA. It handles property search,
+ * override on property tax bills in Brookline, MA. It handles property search,
  * user input state management, and real-time tax impact calculations.
  *
  * ## Massachusetts Proposition 2½ Overview
@@ -13,36 +13,9 @@
  *
  * ## Tax Rate Calculation Methodology
  *
- * The tax rate impact is calculated using the following formula:
- *
- * ```
- * New Tax Rate = Current Tax Rate + (Override Amount × Rate Impact Per Dollar)
- * ```
- *
- * Where:
- * - **Current Tax Rate**: The current tax rate per $1,000 of assessed value (dollars)
- * - **Override Amount**: The proposed override amount (dollars)
- * - **Rate Impact Per Dollar**: The residential tax rate increase per $1 of override,
- *   derived from MA DOR calculations (≈0.000150685 for Stoneham FY2025)
- *
- * ### Tax Bill Calculation
- *
- * Individual property tax bills are calculated as:
- *
- * ```
- * Annual Tax Bill = (Assessed Property Value / 1000) × Tax Rate
- * ```
- *
- * The impact calculations break down the annual increase into:
- * - **Annual Impact**: Full year increase
- * - **Quarterly Impact**: Annual / 4 (typical billing frequency)
- * - **Monthly Impact**: Annual / 12
- * - **Daily Impact**: Annual / 365
- *
  * ## Data Sources
  *
- * - Tax rates and ratios from MA Department of Revenue Division of Local Services (FY2025)
- * - Property assessments from Stoneham Patriot Properties public records
+ * - Property assessments from Brookline Patriot Properties public records
  *
  * @module use-calculator
  */
@@ -53,56 +26,19 @@ import PROPERTIES from "./properties.json";
 
 /**
  * The default override amount to populate the "Override" field with.
- * Set to $5,000,000 as a representative example.
+ * Set to $10,000,000 as a representative example.
  */
 export const DEFAULT_OVERRIDE_AMOUNT = 10_000_000;
 
 /**
  * The default assessed property value to populate the "Assessed" field with.
- * Set to $765,770, which is close to the median assessed value in Stoneham.
+ * Set to $765,770, which is close to the median assessed value in Stoneham (the original source of the calculator).
  */
 export const DEFAULT_ASSESSED_VALUE = 765_770;
 
-/**
- * The current tax rate for Stoneham, MA (FY2025).
- * Rate per $1,000 of assessed value.
- */
 export const CURRENT_TAX_RATE = 10.24;
 
-/**
- * The tax rate impact calculation constants for Stoneham, MA (FY2025).
- *
- * The relationship between override amount and tax rate impact is linear,
- * derived from 8 data points provided by Massachusetts DOR Division of Local Services:
- *
- * | Override Amount | Tax Rate Impact (per $1,000) |
- * |-----------------|------------------------------|
- * | $1,000,000      | $0.15                        |
- * | $5,000,000      | $0.75                        |
- * | $7,500,000      | $1.13                        |
- * | $10,000,000     | $1.51                        |
- * | $14,600,000     | $2.20                        |
- * | $20,000,000     | $3.02                        |
- * | $25,000,000     | $3.77                        |
- * | $50,000,000     | $7.55                        |
- *
- * Using linear regression on these points yields:
- *
- * **y = 0.00000015103764965009x - 0.00288889605331910104**
- *
- * Where:
- * - y = tax rate impact (dollars per $1,000 of assessed value)
- * - x = override amount (dollars)
- * - R² = 0.9999991 (near-perfect linear fit)
- * - Max error: 0.003052 (less than 1/3 cent per $1,000)
- *
- * This can be rewritten as rate impact per dollar:
- *
- * **rate_impact_per_dollar = (0.00000015103764965009x - 0.00288889605331910104) / x**
- *
- * Simplifying:
- * **rate_impact_per_dollar = 0.00000015103764965009 - 0.00288889605331910104/x**
- */
+// TODO decide if these are necessary
 export const RATE_IMPACT_SLOPE = 0.00000015103764965009;
 export const RATE_IMPACT_INTERCEPT = -0.00288889605331910104;
 
@@ -174,6 +110,20 @@ export interface CalculatedValues {
   estimatedTaxImpactMonthly: string;
   /** Estimated daily tax increase (formatted as currency) */
   estimatedTaxImpactDaily: string;
+
+  //   NOTE: These are the custom values Brookline added
+  /** First owner's last name */
+  owner1: string;
+  /** Second owner's last name */
+  owner2: string;
+  /** Estimated annual tax total under the lowest override amount (formatted as currency) */
+  newTaxBillYearlyOverride1: string;
+  /** Estimated annual tax total under the next-highest override amount (formatted as currency) */
+  newTaxBillYearlyOverride2: string;
+  /** Estimated annual tax increase under the lowest override amount (formatted as currency) */
+  newTaxImpactYearlyOverride1: string;
+  /** Estimated annual tax increase under the next-highest override amount (formatted as currency) */
+  newTaxImpactYearlyOverride2: string;
 }
 
 /**
@@ -193,7 +143,7 @@ export interface UseCalculatorReturn {
   query: string;
   /** The current assessed property value (in dollars, not cents) */
   assessedValue: number | undefined;
-  /** The current override amount (in dollars) */
+  /** The current override amount (in dollars) TODO THIS MIGHT BECOME IMPORTANT */
   overrideValue: number | undefined;
   /** All calculated tax impact values, formatted for display */
   calculatedValues: CalculatedValues;
@@ -242,6 +192,7 @@ export const useCalculator = (): UseCalculatorReturn => {
   const [assessedValue, setAssessedValue] = useState<number | undefined>(
     DEFAULT_ASSESSED_VALUE,
   );
+  //  TODO THIS SEEMS LIKE IT WILL BECOME IMPORTANT
   const [overrideValue, setOverrideValue] = useState<number | undefined>(
     DEFAULT_OVERRIDE_AMOUNT,
   );
@@ -257,6 +208,17 @@ export const useCalculator = (): UseCalculatorReturn => {
     estimatedTaxImpactQuarterly: "",
     estimatedTaxImpactMonthly: "",
     estimatedTaxImpactDaily: "",
+    owner1: "",
+    /** Second owner's last name */
+    owner2: "",
+    /** Estimated annual tax total under the lowest override amount (formatted as currency) */
+    newTaxBillYearlyOverride1: "",
+    /** Estimated annual tax total under the next-highest override amount (formatted as currency) */
+    newTaxBillYearlyOverride2: "",
+    /** Estimated annual tax increase under the lowest override amount (formatted as currency) */
+    newTaxImpactYearlyOverride1: "",
+    /** Estimated annual tax increase under the next-highest override amount (formatted as currency) */
+    newTaxImpactYearlyOverride2: "",
   });
 
   /**
@@ -359,6 +321,14 @@ export const useCalculator = (): UseCalculatorReturn => {
       estimatedTaxImpactQuarterly: formatDollars(taxBillImpactQuarterly),
       estimatedTaxImpactMonthly: formatDollars(taxBillImpactMonthly),
       estimatedTaxImpactDaily: formatDollars(taxBillImpactDaily),
+      owner1: "",
+      owner2: "",
+      newTaxBillYearlyOverride1: formatDollars(newTaxBill),
+      //   TODO Fix this so that it's a separate variable for the second override
+      newTaxBillYearlyOverride2: formatDollars(newTaxBill),
+      newTaxImpactYearlyOverride1: formatDollars(taxBillImpactYearly),
+      //   TODO Fix this so that it's a separate variable for the second override
+      newTaxImpactYearlyOverride2: formatDollars(taxBillImpactYearly),
     });
   }, [assessedValue, overrideValue]);
 
