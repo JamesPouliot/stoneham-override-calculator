@@ -1037,8 +1037,10 @@ var stonehamOverrideCalculator = (() => {
     return activeElement2;
   };
   function $d4ee10de306f2510$export$e58f029f0fbfdb29(event) {
-    if ((0, $f4e2df6bd15f8569$export$98658e8c59125e6a)() && event.target.shadowRoot) {
-      if (event.composedPath) return event.composedPath()[0];
+    if ((0, $f4e2df6bd15f8569$export$98658e8c59125e6a)() && event.target instanceof Element && event.target.shadowRoot) {
+      var _event_composedPath_, _event_nativeEvent_composedPath_;
+      if ("composedPath" in event) return (_event_composedPath_ = event.composedPath()[0]) !== null && _event_composedPath_ !== void 0 ? _event_composedPath_ : null;
+      else if ("composedPath" in event.nativeEvent) return (_event_nativeEvent_composedPath_ = event.nativeEvent.composedPath()[0]) !== null && _event_nativeEvent_composedPath_ !== void 0 ? _event_nativeEvent_composedPath_ : null;
     }
     return event.target;
   }
@@ -1259,9 +1261,10 @@ var stonehamOverrideCalculator = (() => {
       };
     }, []);
     return (0, q2)((e8) => {
-      if (e8.target instanceof HTMLButtonElement || e8.target instanceof HTMLInputElement || e8.target instanceof HTMLTextAreaElement || e8.target instanceof HTMLSelectElement) {
+      let eventTarget = (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8);
+      if (eventTarget instanceof HTMLButtonElement || eventTarget instanceof HTMLInputElement || eventTarget instanceof HTMLTextAreaElement || eventTarget instanceof HTMLSelectElement) {
         stateRef.current.isFocused = true;
-        let target = e8.target;
+        let target = eventTarget;
         let onBlurHandler = (e9) => {
           stateRef.current.isFocused = false;
           if (target.disabled) {
@@ -1280,7 +1283,7 @@ var stonehamOverrideCalculator = (() => {
           if (stateRef.current.isFocused && target.disabled) {
             var _stateRef_current_observer;
             (_stateRef_current_observer = stateRef.current.observer) === null || _stateRef_current_observer === void 0 ? void 0 : _stateRef_current_observer.disconnect();
-            let relatedTargetEl = target === document.activeElement ? null : document.activeElement;
+            let relatedTargetEl = target === (0, $d4ee10de306f2510$export$cd4e5573fbe2b576)() ? null : (0, $d4ee10de306f2510$export$cd4e5573fbe2b576)();
             target.dispatchEvent(new FocusEvent("blur", {
               relatedTarget: relatedTargetEl
             }));
@@ -1345,7 +1348,7 @@ var stonehamOverrideCalculator = (() => {
     }
   }
   function $507fabe10e71c6fb$var$handleFocusEvent(e8) {
-    if (e8.target === window || e8.target === document || (0, $8a9cb279dc87e130$export$fda7da73ab5d4c48) || !e8.isTrusted) return;
+    if ((0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8) === window || (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8) === document || (0, $8a9cb279dc87e130$export$fda7da73ab5d4c48) || !e8.isTrusted) return;
     if (!$507fabe10e71c6fb$var$hasEventBeforeFocus && !$507fabe10e71c6fb$var$hasBlurredWindowRecently) {
       $507fabe10e71c6fb$var$currentModality = "virtual";
       $507fabe10e71c6fb$var$currentPointerType = "virtual";
@@ -1441,12 +1444,14 @@ var stonehamOverrideCalculator = (() => {
     "reset"
   ]);
   function $507fabe10e71c6fb$var$isKeyboardFocusEvent(isTextInput, modality, e8) {
-    let document1 = (0, $431fbd86ca7dc216$export$b204af158042fbac)(e8 === null || e8 === void 0 ? void 0 : e8.target);
-    const IHTMLInputElement = typeof window !== "undefined" ? (0, $431fbd86ca7dc216$export$f21a1ffae260145a)(e8 === null || e8 === void 0 ? void 0 : e8.target).HTMLInputElement : HTMLInputElement;
-    const IHTMLTextAreaElement = typeof window !== "undefined" ? (0, $431fbd86ca7dc216$export$f21a1ffae260145a)(e8 === null || e8 === void 0 ? void 0 : e8.target).HTMLTextAreaElement : HTMLTextAreaElement;
-    const IHTMLElement = typeof window !== "undefined" ? (0, $431fbd86ca7dc216$export$f21a1ffae260145a)(e8 === null || e8 === void 0 ? void 0 : e8.target).HTMLElement : HTMLElement;
-    const IKeyboardEvent = typeof window !== "undefined" ? (0, $431fbd86ca7dc216$export$f21a1ffae260145a)(e8 === null || e8 === void 0 ? void 0 : e8.target).KeyboardEvent : KeyboardEvent;
-    isTextInput = isTextInput || document1.activeElement instanceof IHTMLInputElement && !$507fabe10e71c6fb$var$nonTextInputTypes.has(document1.activeElement.type) || document1.activeElement instanceof IHTMLTextAreaElement || document1.activeElement instanceof IHTMLElement && document1.activeElement.isContentEditable;
+    let document1 = (0, $431fbd86ca7dc216$export$b204af158042fbac)(e8 ? (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8) : void 0);
+    let eventTarget = e8 ? (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8) : void 0;
+    const IHTMLInputElement = typeof window !== "undefined" ? (0, $431fbd86ca7dc216$export$f21a1ffae260145a)(eventTarget).HTMLInputElement : HTMLInputElement;
+    const IHTMLTextAreaElement = typeof window !== "undefined" ? (0, $431fbd86ca7dc216$export$f21a1ffae260145a)(eventTarget).HTMLTextAreaElement : HTMLTextAreaElement;
+    const IHTMLElement = typeof window !== "undefined" ? (0, $431fbd86ca7dc216$export$f21a1ffae260145a)(eventTarget).HTMLElement : HTMLElement;
+    const IKeyboardEvent = typeof window !== "undefined" ? (0, $431fbd86ca7dc216$export$f21a1ffae260145a)(eventTarget).KeyboardEvent : KeyboardEvent;
+    let activeElement2 = (0, $d4ee10de306f2510$export$cd4e5573fbe2b576)(document1);
+    isTextInput = isTextInput || activeElement2 instanceof IHTMLInputElement && !$507fabe10e71c6fb$var$nonTextInputTypes.has(activeElement2.type) || activeElement2 instanceof IHTMLTextAreaElement || activeElement2 instanceof IHTMLElement && activeElement2.isContentEditable;
     return !(isTextInput && modality === "keyboard" && e8 instanceof IKeyboardEvent && !$507fabe10e71c6fb$var$FOCUS_VISIBLE_INPUT_KEYS[e8.key]);
   }
   function $507fabe10e71c6fb$export$ec71b4b83ac08ec3(fn2, deps, opts) {
@@ -1469,7 +1474,7 @@ var stonehamOverrideCalculator = (() => {
   function $a1ea59d68270f0dd$export$f8168d8dd8fd66e6(props) {
     let { isDisabled, onFocus: onFocusProp, onBlur: onBlurProp, onFocusChange } = props;
     const onBlur = (0, q2)((e8) => {
-      if (e8.target === e8.currentTarget) {
+      if ((0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8) === e8.currentTarget) {
         if (onBlurProp) onBlurProp(e8);
         if (onFocusChange) onFocusChange(false);
         return true;
@@ -1480,9 +1485,10 @@ var stonehamOverrideCalculator = (() => {
     ]);
     const onSyntheticFocus = (0, $8a9cb279dc87e130$export$715c682d09d639cc)(onBlur);
     const onFocus = (0, q2)((e8) => {
-      const ownerDocument = (0, $431fbd86ca7dc216$export$b204af158042fbac)(e8.target);
+      let eventTarget = (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8);
+      const ownerDocument = (0, $431fbd86ca7dc216$export$b204af158042fbac)(eventTarget);
       const activeElement2 = ownerDocument ? (0, $d4ee10de306f2510$export$cd4e5573fbe2b576)(ownerDocument) : (0, $d4ee10de306f2510$export$cd4e5573fbe2b576)();
-      if (e8.target === e8.currentTarget && activeElement2 === (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8.nativeEvent)) {
+      if (eventTarget === e8.currentTarget && eventTarget === activeElement2) {
         if (onFocusProp) onFocusProp(e8);
         if (onFocusChange) onFocusChange(true);
         onSyntheticFocus(e8);
@@ -1509,7 +1515,7 @@ var stonehamOverrideCalculator = (() => {
     });
     let { addGlobalListener, removeAllGlobalListeners } = (0, $03deb23ff14920c4$export$4eaf04e54aa8eed6)();
     let onBlur = (0, q2)((e8) => {
-      if (!(0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, e8.target)) return;
+      if (!(0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8))) return;
       if (state.current.isFocusWithin && !(0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, e8.relatedTarget)) {
         state.current.isFocusWithin = false;
         removeAllGlobalListeners();
@@ -1524,19 +1530,21 @@ var stonehamOverrideCalculator = (() => {
     ]);
     let onSyntheticFocus = (0, $8a9cb279dc87e130$export$715c682d09d639cc)(onBlur);
     let onFocus = (0, q2)((e8) => {
-      if (!(0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, e8.target)) return;
-      const ownerDocument = (0, $431fbd86ca7dc216$export$b204af158042fbac)(e8.target);
+      if (!(0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8))) return;
+      let eventTarget = (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8);
+      const ownerDocument = (0, $431fbd86ca7dc216$export$b204af158042fbac)(eventTarget);
       const activeElement2 = (0, $d4ee10de306f2510$export$cd4e5573fbe2b576)(ownerDocument);
-      if (!state.current.isFocusWithin && activeElement2 === (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8.nativeEvent)) {
+      if (!state.current.isFocusWithin && activeElement2 === eventTarget) {
         if (onFocusWithin) onFocusWithin(e8);
         if (onFocusWithinChange) onFocusWithinChange(true);
         state.current.isFocusWithin = true;
         onSyntheticFocus(e8);
         let currentTarget = e8.currentTarget;
         addGlobalListener(ownerDocument, "focus", (e9) => {
-          if (state.current.isFocusWithin && !(0, $d4ee10de306f2510$export$4282f70798064fe0)(currentTarget, e9.target)) {
+          let eventTarget2 = (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e9);
+          if (state.current.isFocusWithin && !(0, $d4ee10de306f2510$export$4282f70798064fe0)(currentTarget, eventTarget2)) {
             let nativeEvent = new ownerDocument.defaultView.FocusEvent("blur", {
-              relatedTarget: e9.target
+              relatedTarget: eventTarget2
             });
             (0, $8a9cb279dc87e130$export$c2b7abe5d61ec696)(nativeEvent, currentTarget);
             let event = (0, $8a9cb279dc87e130$export$525bc4921d56d4a)(nativeEvent);
@@ -1609,12 +1617,12 @@ var stonehamOverrideCalculator = (() => {
     let { hoverProps, triggerHoverEnd } = (0, T2)(() => {
       let triggerHoverStart = (event, pointerType) => {
         state.pointerType = pointerType;
-        if (isDisabled || pointerType === "touch" || state.isHovered || !(0, $d4ee10de306f2510$export$4282f70798064fe0)(event.currentTarget, event.target)) return;
+        if (isDisabled || pointerType === "touch" || state.isHovered || !(0, $d4ee10de306f2510$export$4282f70798064fe0)(event.currentTarget, (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(event))) return;
         state.isHovered = true;
         let target = event.currentTarget;
         state.target = target;
-        addGlobalListener((0, $431fbd86ca7dc216$export$b204af158042fbac)(event.target), "pointerover", (e8) => {
-          if (state.isHovered && state.target && !(0, $d4ee10de306f2510$export$4282f70798064fe0)(state.target, e8.target)) triggerHoverEnd2(e8, e8.pointerType);
+        addGlobalListener((0, $431fbd86ca7dc216$export$b204af158042fbac)((0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(event)), "pointerover", (e8) => {
+          if (state.isHovered && state.target && !(0, $d4ee10de306f2510$export$4282f70798064fe0)(state.target, (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8))) triggerHoverEnd2(e8, e8.pointerType);
         }, {
           capture: true
         });
@@ -1648,7 +1656,7 @@ var stonehamOverrideCalculator = (() => {
           triggerHoverStart(e8, e8.pointerType);
         };
         hoverProps2.onPointerLeave = (e8) => {
-          if (!isDisabled && (0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, e8.target)) triggerHoverEnd2(e8, e8.pointerType);
+          if (!isDisabled && (0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8))) triggerHoverEnd2(e8, e8.pointerType);
         };
       } else if (false) {
         hoverProps2.onTouchStart = () => {
@@ -1659,7 +1667,7 @@ var stonehamOverrideCalculator = (() => {
           state.ignoreEmulatedMouseEvents = false;
         };
         hoverProps2.onMouseLeave = (e8) => {
-          if (!isDisabled && (0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, e8.target)) triggerHoverEnd2(e8, "mouse");
+          if (!isDisabled && (0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8))) triggerHoverEnd2(e8, "mouse");
         };
       }
       return {
@@ -2470,7 +2478,7 @@ var stonehamOverrideCalculator = (() => {
       this.scrollElement = null;
       this.targetWindow = null;
       this.isScrolling = false;
-      this.currentScrollToIndex = null;
+      this.scrollState = null;
       this.measurementsCache = [];
       this.itemSizeCache = /* @__PURE__ */ new Map();
       this.laneAssignments = /* @__PURE__ */ new Map();
@@ -2483,6 +2491,11 @@ var stonehamOverrideCalculator = (() => {
       this.scrollDirection = null;
       this.scrollAdjustments = 0;
       this.elementsCache = /* @__PURE__ */ new Map();
+      this.now = () => {
+        var _a2;
+        var _a, _b, _c;
+        return (_a2 = (_c = (_b = (_a = this.targetWindow) == null ? void 0 : _a.performance) == null ? void 0 : _b.now) == null ? void 0 : _c.call(_b)) != null ? _a2 : Date.now();
+      };
       this.observer = /* @__PURE__ */ (() => {
         let _ro = null;
         const get2 = () => {
@@ -2579,6 +2592,11 @@ var stonehamOverrideCalculator = (() => {
         this.unsubs.filter(Boolean).forEach((d6) => d6());
         this.unsubs = [];
         this.observer.disconnect();
+        if (this.rafId != null && this.targetWindow) {
+          this.targetWindow.cancelAnimationFrame(this.rafId);
+          this.rafId = null;
+        }
+        this.scrollState = null;
         this.scrollElement = null;
         this.targetWindow = null;
       };
@@ -2618,6 +2636,9 @@ var stonehamOverrideCalculator = (() => {
               this.scrollDirection = isScrolling ? this.getScrollOffset() < offset4 ? "forward" : "backward" : null;
               this.scrollOffset = offset4;
               this.isScrolling = isScrolling;
+              if (this.scrollState) {
+                this.scheduleScrollReconcile();
+              }
               this.maybeNotify();
             })
           );
@@ -2627,6 +2648,7 @@ var stonehamOverrideCalculator = (() => {
           });
         }
       };
+      this.rafId = null;
       this.getSize = () => {
         var _a;
         if (!this.options.enabled) {
@@ -2847,7 +2869,32 @@ var stonehamOverrideCalculator = (() => {
         }
         return parseInt(indexStr, 10);
       };
+      this.shouldMeasureDuringScroll = (index3) => {
+        var _a2;
+        var _a;
+        if (!this.scrollState || this.scrollState.behavior !== "smooth") {
+          return true;
+        }
+        const scrollIndex = (_a2 = this.scrollState.index) != null ? _a2 : (_a = this.getVirtualItemForOffset(this.scrollState.lastTargetOffset)) == null ? void 0 : _a.index;
+        if (scrollIndex !== void 0 && this.range) {
+          const bufferSize = Math.max(
+            this.options.overscan,
+            Math.ceil((this.range.endIndex - this.range.startIndex) / 2)
+          );
+          const minIndex = Math.max(0, scrollIndex - bufferSize);
+          const maxIndex = Math.min(
+            this.options.count - 1,
+            scrollIndex + bufferSize
+          );
+          return index3 >= minIndex && index3 <= maxIndex;
+        }
+        return true;
+      };
       this._measureElement = (node, entry) => {
+        if (!node.isConnected) {
+          this.observer.unobserve(node);
+          return;
+        }
         const index3 = this.indexFromElement(node);
         const item = this.measurementsCache[index3];
         if (!item) {
@@ -2862,20 +2909,21 @@ var stonehamOverrideCalculator = (() => {
           this.observer.observe(node);
           this.elementsCache.set(key, node);
         }
-        if (node.isConnected) {
+        if (this.shouldMeasureDuringScroll(index3)) {
           this.resizeItem(index3, this.options.measureElement(node, entry, this));
         }
       };
       this.resizeItem = (index3, size4) => {
+        var _a2;
         var _a;
         const item = this.measurementsCache[index3];
         if (!item) {
           return;
         }
-        const itemSize = (_a = this.itemSizeCache.get(item.key)) != null ? _a : item.size;
+        const itemSize = (_a2 = this.itemSizeCache.get(item.key)) != null ? _a2 : item.size;
         const delta = size4 - itemSize;
         if (delta !== 0) {
-          if (this.shouldAdjustScrollPositionOnItemSizeChange !== void 0 ? this.shouldAdjustScrollPositionOnItemSizeChange(item, delta, this) : item.start < this.getScrollOffset() + this.scrollAdjustments) {
+          if (((_a = this.scrollState) == null ? void 0 : _a.behavior) !== "smooth" && (this.shouldAdjustScrollPositionOnItemSizeChange !== void 0 ? this.shouldAdjustScrollPositionOnItemSizeChange(item, delta, this) : item.start < this.getScrollOffset() + this.scrollAdjustments)) {
             if (this.options.debug) {
               console.info("correction", delta);
             }
@@ -2957,12 +3005,10 @@ var stonehamOverrideCalculator = (() => {
       };
       this.getOffsetForIndex = (index3, align = "auto") => {
         index3 = Math.max(0, Math.min(index3, this.options.count - 1));
-        const item = this.measurementsCache[index3];
-        if (!item) {
-          return void 0;
-        }
         const size4 = this.getSize();
         const scrollOffset = this.getScrollOffset();
+        const item = this.measurementsCache[index3];
+        if (!item) return;
         if (align === "auto") {
           if (item.end >= scrollOffset + size4 - this.options.scrollPaddingEnd) {
             align = "end";
@@ -2981,85 +3027,55 @@ var stonehamOverrideCalculator = (() => {
           align
         ];
       };
-      this.isDynamicMode = () => this.elementsCache.size > 0;
-      this.scrollToOffset = (toOffset, { align = "start", behavior } = {}) => {
-        if (behavior === "smooth" && this.isDynamicMode()) {
-          console.warn(
-            "The `smooth` scroll behavior is not fully supported with dynamic size."
-          );
-        }
-        this._scrollToOffset(this.getOffsetForAlignment(toOffset, align), {
-          adjustments: void 0,
-          behavior
-        });
+      this.scrollToOffset = (toOffset, { align = "start", behavior = "auto" } = {}) => {
+        const offset4 = this.getOffsetForAlignment(toOffset, align);
+        const now = this.now();
+        this.scrollState = {
+          index: null,
+          align,
+          behavior,
+          startedAt: now,
+          lastTargetOffset: offset4,
+          stableFrames: 0
+        };
+        this._scrollToOffset(offset4, { adjustments: void 0, behavior });
+        this.scheduleScrollReconcile();
       };
-      this.scrollToIndex = (index3, { align: initialAlign = "auto", behavior } = {}) => {
-        if (behavior === "smooth" && this.isDynamicMode()) {
-          console.warn(
-            "The `smooth` scroll behavior is not fully supported with dynamic size."
-          );
-        }
+      this.scrollToIndex = (index3, {
+        align: initialAlign = "auto",
+        behavior = "auto"
+      } = {}) => {
         index3 = Math.max(0, Math.min(index3, this.options.count - 1));
-        this.currentScrollToIndex = index3;
-        let attempts = 0;
-        const maxAttempts = 10;
-        const tryScroll = (currentAlign) => {
-          if (!this.targetWindow) return;
-          const offsetInfo = this.getOffsetForIndex(index3, currentAlign);
-          if (!offsetInfo) {
-            console.warn("Failed to get offset for index:", index3);
-            return;
-          }
-          const [offset4, align] = offsetInfo;
-          this._scrollToOffset(offset4, { adjustments: void 0, behavior });
-          this.targetWindow.requestAnimationFrame(() => {
-            if (!this.targetWindow) return;
-            const verify = () => {
-              if (this.currentScrollToIndex !== index3) return;
-              const currentOffset = this.getScrollOffset();
-              const afterInfo = this.getOffsetForIndex(index3, align);
-              if (!afterInfo) {
-                console.warn("Failed to get offset for index:", index3);
-                return;
-              }
-              if (!approxEqual(afterInfo[0], currentOffset)) {
-                scheduleRetry(align);
-              }
-            };
-            if (this.isDynamicMode()) {
-              this.targetWindow.requestAnimationFrame(verify);
-            } else {
-              verify();
-            }
-          });
-        };
-        const scheduleRetry = (align) => {
-          if (!this.targetWindow) return;
-          if (this.currentScrollToIndex !== index3) return;
-          attempts++;
-          if (attempts < maxAttempts) {
-            if (this.options.debug) {
-              console.info("Schedule retry", attempts, maxAttempts);
-            }
-            this.targetWindow.requestAnimationFrame(() => tryScroll(align));
-          } else {
-            console.warn(
-              "Failed to scroll to index ".concat(index3, " after ").concat(maxAttempts, " attempts.")
-            );
-          }
-        };
-        tryScroll(initialAlign);
-      };
-      this.scrollBy = (delta, { behavior } = {}) => {
-        if (behavior === "smooth" && this.isDynamicMode()) {
-          console.warn(
-            "The `smooth` scroll behavior is not fully supported with dynamic size."
-          );
+        const offsetInfo = this.getOffsetForIndex(index3, initialAlign);
+        if (!offsetInfo) {
+          return;
         }
-        this._scrollToOffset(this.getScrollOffset() + delta, {
-          adjustments: void 0,
-          behavior
-        });
+        const [offset4, align] = offsetInfo;
+        const now = this.now();
+        this.scrollState = {
+          index: index3,
+          align,
+          behavior,
+          startedAt: now,
+          lastTargetOffset: offset4,
+          stableFrames: 0
+        };
+        this._scrollToOffset(offset4, { adjustments: void 0, behavior });
+        this.scheduleScrollReconcile();
+      };
+      this.scrollBy = (delta, { behavior = "auto" } = {}) => {
+        const offset4 = this.getScrollOffset() + delta;
+        const now = this.now();
+        this.scrollState = {
+          index: null,
+          align: "start",
+          behavior,
+          startedAt: now,
+          lastTargetOffset: offset4,
+          stableFrames: 0
+        };
+        this._scrollToOffset(offset4, { adjustments: void 0, behavior });
+        this.scheduleScrollReconcile();
       };
       this.getTotalSize = () => {
         var _a2;
@@ -3099,6 +3115,49 @@ var stonehamOverrideCalculator = (() => {
         this.notify(false);
       };
       this.setOptions(opts);
+    }
+    scheduleScrollReconcile() {
+      if (!this.targetWindow) {
+        this.scrollState = null;
+        return;
+      }
+      if (this.rafId != null) return;
+      this.rafId = this.targetWindow.requestAnimationFrame(() => {
+        this.rafId = null;
+        this.reconcileScroll();
+      });
+    }
+    reconcileScroll() {
+      if (!this.scrollState) return;
+      const el = this.scrollElement;
+      if (!el) return;
+      const MAX_RECONCILE_MS = 5e3;
+      if (this.now() - this.scrollState.startedAt > MAX_RECONCILE_MS) {
+        this.scrollState = null;
+        return;
+      }
+      const offsetInfo = this.scrollState.index != null ? this.getOffsetForIndex(this.scrollState.index, this.scrollState.align) : void 0;
+      const targetOffset = offsetInfo ? offsetInfo[0] : this.scrollState.lastTargetOffset;
+      const STABLE_FRAMES = 1;
+      const targetChanged = targetOffset !== this.scrollState.lastTargetOffset;
+      if (!targetChanged && approxEqual(targetOffset, this.getScrollOffset())) {
+        this.scrollState.stableFrames++;
+        if (this.scrollState.stableFrames >= STABLE_FRAMES) {
+          this.scrollState = null;
+          return;
+        }
+      } else {
+        this.scrollState.stableFrames = 0;
+        if (targetChanged) {
+          this.scrollState.lastTargetOffset = targetOffset;
+          this.scrollState.behavior = "auto";
+          this._scrollToOffset(targetOffset, {
+            adjustments: void 0,
+            behavior: "auto"
+          });
+        }
+      }
+      this.scheduleScrollReconcile();
     }
   };
   var findNearestBinarySearch = (low, high, getCurrentValue, value) => {
@@ -13524,8 +13583,9 @@ var stonehamOverrideCalculator = (() => {
 
   // src/use-calculator.ts
   var DEFAULT_OVERRIDE_AMOUNT = 1e7;
+  var TEST_VALUE = "jiminy cricket";
   var DEFAULT_ASSESSED_VALUE = 765770;
-  var CURRENT_TAX_RATE = 10.25;
+  var CURRENT_TAX_RATE = 10.24;
   var RATE_IMPACT_SLOPE = 15103764965009e-20;
   var RATE_IMPACT_INTERCEPT = -0.002888896053319101;
   var formatDollars = (val) => val.toLocaleString("en-US", {
@@ -13549,6 +13609,7 @@ var stonehamOverrideCalculator = (() => {
     const [overrideValue, setOverrideValue] = d2(
       DEFAULT_OVERRIDE_AMOUNT
     );
+    const [testOwner1, setTestOwner1] = d2(TEST_VALUE);
     const [calculatedValues, setCalculatedValues] = d2({
       currentTaxRate: "",
       newTaxRate: "",
@@ -13565,20 +13626,21 @@ var stonehamOverrideCalculator = (() => {
       /** Second owner's last name */
       owner2: "",
       /** Estimated annual tax total under the lowest override amount (formatted as currency) */
-      newTaxBillYearlyOverride1: "",
+      yearlyTotalOverride1: "",
       /** Estimated annual tax total under the next-highest override amount (formatted as currency) */
-      newTaxBillYearlyOverride2: "",
+      yearlyTotalOverride2: "",
       /** Estimated annual tax increase under the lowest override amount (formatted as currency) */
-      newTaxImpactYearlyOverride1: "",
+      yearlyImpactOverride1: "",
       /** Estimated annual tax increase under the next-highest override amount (formatted as currency) */
-      newTaxImpactYearlyOverride2: ""
+      yearlyImpactOverride2: ""
     });
     const fetchSuggestions = q2(async (searchQuery) => {
       setIsLoading(true);
       try {
         const data = fuse.search(searchQuery).slice(0, 10).map(({ item }) => ({
           address: item["#"],
-          value: item.$
+          value: item.$,
+          owner1: item.owner1
         }));
         setSuggestions(data);
       } catch (error2) {
@@ -13607,6 +13669,10 @@ var stonehamOverrideCalculator = (() => {
         ) / 100
       );
       const proposedNewTaxRate = CURRENT_TAX_RATE + rateImpact;
+      const yearlyTotalOverride1 = 1.1111;
+      const yearlyTotalOverride2 = 2.2222;
+      const yearlyImpactOverride1 = 3.3333;
+      const yearlyImpactOverride2 = 4.4444;
       const currentTaxBill = (assessedValue != null ? assessedValue : 0) / 1e3 * CURRENT_TAX_RATE;
       const newTaxBill = (assessedValue != null ? assessedValue : 0) / 1e3 * proposedNewTaxRate;
       const taxBillImpactYearly = newTaxBill - currentTaxBill;
@@ -13625,14 +13691,14 @@ var stonehamOverrideCalculator = (() => {
         estimatedTaxImpactQuarterly: formatDollars(taxBillImpactQuarterly),
         estimatedTaxImpactMonthly: formatDollars(taxBillImpactMonthly),
         estimatedTaxImpactDaily: formatDollars(taxBillImpactDaily),
-        owner1: "",
+        owner1: testOwner1,
         owner2: "",
-        newTaxBillYearlyOverride1: formatDollars(newTaxBill),
+        yearlyTotalOverride1: formatDollars(yearlyTotalOverride1),
         //   TODO Fix this so that it's a separate variable for the second override
-        newTaxBillYearlyOverride2: formatDollars(newTaxBill),
-        newTaxImpactYearlyOverride1: formatDollars(taxBillImpactYearly),
+        yearlyTotalOverride2: formatDollars(yearlyTotalOverride2),
+        yearlyImpactOverride1: formatDollars(yearlyImpactOverride1),
         //   TODO Fix this so that it's a separate variable for the second override
-        newTaxImpactYearlyOverride2: formatDollars(taxBillImpactYearly)
+        yearlyImpactOverride2: formatDollars(yearlyImpactOverride2)
       });
     }, [assessedValue, overrideValue]);
     const onPropertyChange = q2((property) => {
@@ -13640,6 +13706,7 @@ var stonehamOverrideCalculator = (() => {
       if (property) {
         setAssessedValue(property.value);
         setQuery(property.address);
+        setTestOwner1(property.owner1);
       }
     }, []);
     const onAddressInputChange = q2(
@@ -13851,6 +13918,22 @@ var stonehamOverrideCalculator = (() => {
             ] }),
             /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
               calculator.calculatedValues.newTaxBillQuarterly,
+              " per quarter"
+            ] }),
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
+              calculator.calculatedValues.owner1,
+              " per quarter"
+            ] }),
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
+              calculator.calculatedValues.yearlyTotalOverride2,
+              " per quarter"
+            ] }),
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
+              calculator.calculatedValues.yearlyImpactOverride1,
+              " per quarter"
+            ] }),
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
+              calculator.calculatedValues.yearlyImpactOverride2,
               " per quarter"
             ] })
           ] })

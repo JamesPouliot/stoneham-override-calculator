@@ -206,6 +206,18 @@ export const Calculator = () => {
             <dd className="calculator__detail calculator__detail--unit">
               {calculator.calculatedValues.newTaxBillQuarterly} per quarter
             </dd>
+            <dd className="calculator__detail calculator__detail--unit">
+              {calculator.calculatedValues.owner1} per quarter
+            </dd>
+            <dd className="calculator__detail calculator__detail--unit">
+              {calculator.calculatedValues.yearlyTotalOverride2} per quarter
+            </dd>
+            <dd className="calculator__detail calculator__detail--unit">
+              {calculator.calculatedValues.yearlyImpactOverride1} per quarter
+            </dd>
+            <dd className="calculator__detail calculator__detail--unit">
+              {calculator.calculatedValues.yearlyImpactOverride2} per quarter
+            </dd>
           </div>
         </dl>
       </section>

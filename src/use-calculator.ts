@@ -30,6 +30,8 @@ import PROPERTIES from "./properties.json";
  */
 export const DEFAULT_OVERRIDE_AMOUNT = 10_000_000;
 
+// BUG REMOVE THIS
+export const TEST_VALUE = "jiminy cricket";
 /**
  * The default assessed property value to populate the "Assessed" field with.
  * Set to $765,770, which is close to the median assessed value in Stoneham (the original source of the calculator).
@@ -79,6 +81,8 @@ export interface Address {
   address: string;
   /** The assessed property value in dollars (not cents) */
   value: number;
+  //   BUG THIS IS A TEST
+  owner1: string;
 }
 
 /**
@@ -117,13 +121,13 @@ export interface CalculatedValues {
   /** Second owner's last name */
   owner2: string;
   /** Estimated annual tax total under the lowest override amount (formatted as currency) */
-  newTaxBillYearlyOverride1: string;
+  yearlyTotalOverride1: string;
   /** Estimated annual tax total under the next-highest override amount (formatted as currency) */
-  newTaxBillYearlyOverride2: string;
+  yearlyTotalOverride2: string;
   /** Estimated annual tax increase under the lowest override amount (formatted as currency) */
-  newTaxImpactYearlyOverride1: string;
+  yearlyImpactOverride1: string;
   /** Estimated annual tax increase under the next-highest override amount (formatted as currency) */
-  newTaxImpactYearlyOverride2: string;
+  yearlyImpactOverride2: string;
 }
 
 /**
@@ -151,7 +155,7 @@ export interface UseCalculatorReturn {
   onPropertyChange: (property: Address | null) => void;
   /** Handler called when the address input text changes */
   onAddressInputChange: (event: Event) => void;
-  /** Handler called when the assessed value input changes */
+  /** Handler called when the assessed value input changes TODO I'll bet we need to change this*/
   onAssessedValueChange: (value: number | undefined) => void;
   /** Handler called when the override amount input changes */
   onOverrideValueChange: (value: number | undefined) => void;
@@ -196,6 +200,10 @@ export const useCalculator = (): UseCalculatorReturn => {
   const [overrideValue, setOverrideValue] = useState<number | undefined>(
     DEFAULT_OVERRIDE_AMOUNT,
   );
+
+  //   BUG REMOVE THIS
+  const [testOwner1, setTestOwner1] = useState<string | undefined>(TEST_VALUE);
+
   const [calculatedValues, setCalculatedValues] = useState<CalculatedValues>({
     currentTaxRate: "",
     newTaxRate: "",
@@ -212,13 +220,13 @@ export const useCalculator = (): UseCalculatorReturn => {
     /** Second owner's last name */
     owner2: "",
     /** Estimated annual tax total under the lowest override amount (formatted as currency) */
-    newTaxBillYearlyOverride1: "",
+    yearlyTotalOverride1: "",
     /** Estimated annual tax total under the next-highest override amount (formatted as currency) */
-    newTaxBillYearlyOverride2: "",
+    yearlyTotalOverride2: "",
     /** Estimated annual tax increase under the lowest override amount (formatted as currency) */
-    newTaxImpactYearlyOverride1: "",
+    yearlyImpactOverride1: "",
     /** Estimated annual tax increase under the next-highest override amount (formatted as currency) */
-    newTaxImpactYearlyOverride2: "",
+    yearlyImpactOverride2: "",
   });
 
   /**
@@ -238,6 +246,7 @@ export const useCalculator = (): UseCalculatorReturn => {
         .map(({ item }) => ({
           address: item["#"],
           value: item.$,
+          owner1: item.owner1,
         }));
       setSuggestions(data);
     } catch (error) {
@@ -297,6 +306,12 @@ export const useCalculator = (): UseCalculatorReturn => {
     // Formula: Current Rate + Rate Impact -- truncated to 2 decimal places
     const proposedNewTaxRate = CURRENT_TAX_RATE + rateImpact;
 
+    // TODO make this actually find the number
+    const yearlyTotalOverride1 = 1.1111;
+    const yearlyTotalOverride2 = 2.2222;
+    const yearlyImpactOverride1 = 3.3333;
+    const yearlyImpactOverride2 = 4.4444;
+
     // Step 3: Calculate current and proposed tax bills
     // Formula: (Assessed Value / 1000) × Tax Rate
     const currentTaxBill = ((assessedValue ?? 0) / 1_000) * CURRENT_TAX_RATE;
@@ -321,14 +336,14 @@ export const useCalculator = (): UseCalculatorReturn => {
       estimatedTaxImpactQuarterly: formatDollars(taxBillImpactQuarterly),
       estimatedTaxImpactMonthly: formatDollars(taxBillImpactMonthly),
       estimatedTaxImpactDaily: formatDollars(taxBillImpactDaily),
-      owner1: "",
+      owner1: testOwner1,
       owner2: "",
-      newTaxBillYearlyOverride1: formatDollars(newTaxBill),
+      yearlyTotalOverride1: formatDollars(yearlyTotalOverride1),
       //   TODO Fix this so that it's a separate variable for the second override
-      newTaxBillYearlyOverride2: formatDollars(newTaxBill),
-      newTaxImpactYearlyOverride1: formatDollars(taxBillImpactYearly),
+      yearlyTotalOverride2: formatDollars(yearlyTotalOverride2),
+      yearlyImpactOverride1: formatDollars(yearlyImpactOverride1),
       //   TODO Fix this so that it's a separate variable for the second override
-      newTaxImpactYearlyOverride2: formatDollars(taxBillImpactYearly),
+      yearlyImpactOverride2: formatDollars(yearlyImpactOverride2),
     });
   }, [assessedValue, overrideValue]);
 
@@ -345,6 +360,7 @@ export const useCalculator = (): UseCalculatorReturn => {
     if (property) {
       setAssessedValue(property.value);
       setQuery(property.address);
+      setTestOwner1(property.owner1);
     }
   }, []);
 
