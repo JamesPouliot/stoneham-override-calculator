@@ -72,14 +72,14 @@ var stonehamOverrideCalculator = (() => {
     n9 && n9.parentNode && n9.parentNode.removeChild(n9);
   }
   function _(l8, u17, t9) {
-    var i9, r11, o11, e8 = {};
-    for (o11 in u17) "key" == o11 ? i9 = u17[o11] : "ref" == o11 ? r11 = u17[o11] : e8[o11] = u17[o11];
-    if (arguments.length > 2 && (e8.children = arguments.length > 3 ? n.call(arguments, 2) : t9), "function" == typeof l8 && null != l8.defaultProps) for (o11 in l8.defaultProps) void 0 === e8[o11] && (e8[o11] = l8.defaultProps[o11]);
-    return m(l8, e8, i9, r11, null);
+    var i9, o11, r11, e8 = {};
+    for (r11 in u17) "key" == r11 ? i9 = u17[r11] : "ref" == r11 ? o11 = u17[r11] : e8[r11] = u17[r11];
+    if (arguments.length > 2 && (e8.children = arguments.length > 3 ? n.call(arguments, 2) : t9), "function" == typeof l8 && null != l8.defaultProps) for (r11 in l8.defaultProps) void 0 === e8[r11] && (e8[r11] = l8.defaultProps[r11]);
+    return m(l8, e8, i9, o11, null);
   }
-  function m(n9, t9, i9, r11, o11) {
-    var e8 = { type: n9, props: t9, key: i9, ref: r11, __k: null, __: null, __b: 0, __e: null, __c: null, constructor: void 0, __v: null == o11 ? ++u : o11, __i: -1, __u: 0 };
-    return null == o11 && null != l.vnode && l.vnode(e8), e8;
+  function m(n9, t9, i9, o11, r11) {
+    var e8 = { type: n9, props: t9, key: i9, ref: o11, __k: null, __: null, __b: 0, __e: null, __c: null, constructor: void 0, __v: null == r11 ? ++u : r11, __i: -1, __u: 0 };
+    return null == r11 && null != l.vnode && l.vnode(e8), e8;
   }
   function b() {
     return { current: null };
@@ -96,38 +96,37 @@ var stonehamOverrideCalculator = (() => {
     return "function" == typeof n9.type ? S(n9) : null;
   }
   function C(n9) {
-    if (n9.__P && n9.__d) {
-      var u17 = n9.__v, t9 = u17.__e, i9 = [], r11 = [], o11 = w({}, u17);
-      o11.__v = u17.__v + 1, l.vnode && l.vnode(o11), z(n9.__P, o11, u17, n9.__n, n9.__P.namespaceURI, 32 & u17.__u ? [t9] : null, i9, null == t9 ? S(u17) : t9, !!(32 & u17.__u), r11), o11.__v = u17.__v, o11.__.__k[o11.__i] = o11, V(i9, o11, r11), u17.__e = u17.__ = null, o11.__e != t9 && M(o11);
+    var l8, u17;
+    if (null != (n9 = n9.__) && null != n9.__c) {
+      for (n9.__e = n9.__c.base = null, l8 = 0; l8 < n9.__k.length; l8++) if (null != (u17 = n9.__k[l8]) && null != u17.__e) {
+        n9.__e = n9.__c.base = u17.__e;
+        break;
+      }
+      return C(n9);
     }
   }
   function M(n9) {
-    if (null != (n9 = n9.__) && null != n9.__c) return n9.__e = n9.__c.base = null, n9.__k.some(function(l8) {
-      if (null != l8 && null != l8.__e) return n9.__e = n9.__c.base = l8.__e;
-    }), M(n9);
+    (!n9.__d && (n9.__d = true) && i.push(n9) && !$.__r++ || o != l.debounceRendering) && ((o = l.debounceRendering) || r)($);
   }
-  function $(n9) {
-    (!n9.__d && (n9.__d = true) && i.push(n9) && !I.__r++ || r != l.debounceRendering) && ((r = l.debounceRendering) || o)(I);
+  function $() {
+    for (var n9, u17, t9, o11, r11, f14, c13, s12 = 1; i.length; ) i.length > s12 && i.sort(e), n9 = i.shift(), s12 = i.length, n9.__d && (t9 = void 0, o11 = void 0, r11 = (o11 = (u17 = n9).__v).__e, f14 = [], c13 = [], u17.__P && ((t9 = w({}, o11)).__v = o11.__v + 1, l.vnode && l.vnode(t9), O(u17.__P, t9, o11, u17.__n, u17.__P.namespaceURI, 32 & o11.__u ? [r11] : null, f14, null == r11 ? S(o11) : r11, !!(32 & o11.__u), c13), t9.__v = o11.__v, t9.__.__k[t9.__i] = t9, N(f14, t9, c13), o11.__e = o11.__ = null, t9.__e != r11 && C(t9)));
+    $.__r = 0;
   }
-  function I() {
-    for (var n9, l8 = 1; i.length; ) i.length > l8 && i.sort(e), n9 = i.shift(), l8 = i.length, C(n9);
-    I.__r = 0;
-  }
-  function P(n9, l8, u17, t9, i9, r11, o11, e8, f14, c13, s12) {
+  function I(n9, l8, u17, t9, i9, o11, r11, e8, f14, c13, s12) {
     var a15, h8, y8, d6, w8, g6, _7, m8 = t9 && t9.__k || v, b7 = l8.length;
-    for (f14 = A(u17, l8, m8, f14, b7), a15 = 0; a15 < b7; a15++) null != (y8 = u17.__k[a15]) && (h8 = -1 != y8.__i && m8[y8.__i] || p, y8.__i = a15, g6 = z(n9, y8, h8, i9, r11, o11, e8, f14, c13, s12), d6 = y8.__e, y8.ref && h8.ref != y8.ref && (h8.ref && D(h8.ref, null, y8), s12.push(y8.ref, y8.__c || d6, y8)), null == w8 && null != d6 && (w8 = d6), (_7 = !!(4 & y8.__u)) || h8.__k === y8.__k ? f14 = H(y8, f14, n9, _7) : "function" == typeof y8.type && void 0 !== g6 ? f14 = g6 : d6 && (f14 = d6.nextSibling), y8.__u &= -7);
+    for (f14 = P(u17, l8, m8, f14, b7), a15 = 0; a15 < b7; a15++) null != (y8 = u17.__k[a15]) && (h8 = -1 == y8.__i ? p : m8[y8.__i] || p, y8.__i = a15, g6 = O(n9, y8, h8, i9, o11, r11, e8, f14, c13, s12), d6 = y8.__e, y8.ref && h8.ref != y8.ref && (h8.ref && B(h8.ref, null, y8), s12.push(y8.ref, y8.__c || d6, y8)), null == w8 && null != d6 && (w8 = d6), (_7 = !!(4 & y8.__u)) || h8.__k === y8.__k ? f14 = A(y8, f14, n9, _7) : "function" == typeof y8.type && void 0 !== g6 ? f14 = g6 : d6 && (f14 = d6.nextSibling), y8.__u &= -7);
     return u17.__e = w8, f14;
   }
-  function A(n9, l8, u17, t9, i9) {
-    var r11, o11, e8, f14, c13, s12 = u17.length, a15 = s12, h8 = 0;
-    for (n9.__k = new Array(i9), r11 = 0; r11 < i9; r11++) null != (o11 = l8[r11]) && "boolean" != typeof o11 && "function" != typeof o11 ? ("string" == typeof o11 || "number" == typeof o11 || "bigint" == typeof o11 || o11.constructor == String ? o11 = n9.__k[r11] = m(null, o11, null, null, null) : d(o11) ? o11 = n9.__k[r11] = m(k, { children: o11 }, null, null, null) : void 0 === o11.constructor && o11.__b > 0 ? o11 = n9.__k[r11] = m(o11.type, o11.props, o11.key, o11.ref ? o11.ref : null, o11.__v) : n9.__k[r11] = o11, f14 = r11 + h8, o11.__ = n9, o11.__b = n9.__b + 1, e8 = null, -1 != (c13 = o11.__i = T(o11, u17, f14, a15)) && (a15--, (e8 = u17[c13]) && (e8.__u |= 2)), null == e8 || null == e8.__v ? (-1 == c13 && (i9 > s12 ? h8-- : i9 < s12 && h8++), "function" != typeof o11.type && (o11.__u |= 4)) : c13 != f14 && (c13 == f14 - 1 ? h8-- : c13 == f14 + 1 ? h8++ : (c13 > f14 ? h8-- : h8++, o11.__u |= 4))) : n9.__k[r11] = null;
-    if (a15) for (r11 = 0; r11 < s12; r11++) null != (e8 = u17[r11]) && 0 == (2 & e8.__u) && (e8.__e == t9 && (t9 = S(e8)), E(e8, e8));
+  function P(n9, l8, u17, t9, i9) {
+    var o11, r11, e8, f14, c13, s12 = u17.length, a15 = s12, h8 = 0;
+    for (n9.__k = new Array(i9), o11 = 0; o11 < i9; o11++) null != (r11 = l8[o11]) && "boolean" != typeof r11 && "function" != typeof r11 ? ("string" == typeof r11 || "number" == typeof r11 || "bigint" == typeof r11 || r11.constructor == String ? r11 = n9.__k[o11] = m(null, r11, null, null, null) : d(r11) ? r11 = n9.__k[o11] = m(k, { children: r11 }, null, null, null) : void 0 === r11.constructor && r11.__b > 0 ? r11 = n9.__k[o11] = m(r11.type, r11.props, r11.key, r11.ref ? r11.ref : null, r11.__v) : n9.__k[o11] = r11, f14 = o11 + h8, r11.__ = n9, r11.__b = n9.__b + 1, e8 = null, -1 != (c13 = r11.__i = L(r11, u17, f14, a15)) && (a15--, (e8 = u17[c13]) && (e8.__u |= 2)), null == e8 || null == e8.__v ? (-1 == c13 && (i9 > s12 ? h8-- : i9 < s12 && h8++), "function" != typeof r11.type && (r11.__u |= 4)) : c13 != f14 && (c13 == f14 - 1 ? h8-- : c13 == f14 + 1 ? h8++ : (c13 > f14 ? h8-- : h8++, r11.__u |= 4))) : n9.__k[o11] = null;
+    if (a15) for (o11 = 0; o11 < s12; o11++) null != (e8 = u17[o11]) && 0 == (2 & e8.__u) && (e8.__e == t9 && (t9 = S(e8)), D(e8, e8));
     return t9;
   }
-  function H(n9, l8, u17, t9) {
-    var i9, r11;
+  function A(n9, l8, u17, t9) {
+    var i9, o11;
     if ("function" == typeof n9.type) {
-      for (i9 = n9.__k, r11 = 0; i9 && r11 < i9.length; r11++) i9[r11] && (i9[r11].__ = n9, l8 = H(i9[r11], l8, u17, t9));
+      for (i9 = n9.__k, o11 = 0; i9 && o11 < i9.length; o11++) i9[o11] && (i9[o11].__ = n9, l8 = A(i9[o11], l8, u17, t9));
       return l8;
     }
     n9.__e != l8 && (t9 && (l8 && n9.type && !l8.parentNode && (l8 = S(n9)), u17.insertBefore(n9.__e, l8 || null)), l8 = n9.__e);
@@ -136,30 +135,30 @@ var stonehamOverrideCalculator = (() => {
     } while (null != l8 && 8 == l8.nodeType);
     return l8;
   }
-  function L(n9, l8) {
+  function H(n9, l8) {
     return l8 = l8 || [], null == n9 || "boolean" == typeof n9 || (d(n9) ? n9.some(function(n10) {
-      L(n10, l8);
+      H(n10, l8);
     }) : l8.push(n9)), l8;
   }
-  function T(n9, l8, u17, t9) {
-    var i9, r11, o11, e8 = n9.key, f14 = n9.type, c13 = l8[u17], s12 = null != c13 && 0 == (2 & c13.__u);
+  function L(n9, l8, u17, t9) {
+    var i9, o11, r11, e8 = n9.key, f14 = n9.type, c13 = l8[u17], s12 = null != c13 && 0 == (2 & c13.__u);
     if (null === c13 && null == e8 || s12 && e8 == c13.key && f14 == c13.type) return u17;
     if (t9 > (s12 ? 1 : 0)) {
-      for (i9 = u17 - 1, r11 = u17 + 1; i9 >= 0 || r11 < l8.length; ) if (null != (c13 = l8[o11 = i9 >= 0 ? i9-- : r11++]) && 0 == (2 & c13.__u) && e8 == c13.key && f14 == c13.type) return o11;
+      for (i9 = u17 - 1, o11 = u17 + 1; i9 >= 0 || o11 < l8.length; ) if (null != (c13 = l8[r11 = i9 >= 0 ? i9-- : o11++]) && 0 == (2 & c13.__u) && e8 == c13.key && f14 == c13.type) return r11;
     }
     return -1;
   }
-  function j(n9, l8, u17) {
+  function T(n9, l8, u17) {
     "-" == l8[0] ? n9.setProperty(l8, null == u17 ? "" : u17) : n9[l8] = null == u17 ? "" : "number" != typeof u17 || y.test(l8) ? u17 : u17 + "px";
   }
-  function F(n9, l8, u17, t9, i9) {
-    var r11, o11;
+  function j(n9, l8, u17, t9, i9) {
+    var o11, r11;
     n: if ("style" == l8) if ("string" == typeof u17) n9.style.cssText = u17;
     else {
-      if ("string" == typeof t9 && (n9.style.cssText = t9 = ""), t9) for (l8 in t9) u17 && l8 in u17 || j(n9.style, l8, "");
-      if (u17) for (l8 in u17) t9 && u17[l8] == t9[l8] || j(n9.style, l8, u17[l8]);
+      if ("string" == typeof t9 && (n9.style.cssText = t9 = ""), t9) for (l8 in t9) u17 && l8 in u17 || T(n9.style, l8, "");
+      if (u17) for (l8 in u17) t9 && u17[l8] == t9[l8] || T(n9.style, l8, u17[l8]);
     }
-    else if ("o" == l8[0] && "n" == l8[1]) r11 = l8 != (l8 = l8.replace(f, "$1")), o11 = l8.toLowerCase(), l8 = o11 in n9 || "onFocusOut" == l8 || "onFocusIn" == l8 ? o11.slice(2) : l8.slice(2), n9.l || (n9.l = {}), n9.l[l8 + r11] = u17, u17 ? t9 ? u17.u = t9.u : (u17.u = c, n9.addEventListener(l8, r11 ? a : s, r11)) : n9.removeEventListener(l8, r11 ? a : s, r11);
+    else if ("o" == l8[0] && "n" == l8[1]) o11 = l8 != (l8 = l8.replace(f, "$1")), r11 = l8.toLowerCase(), l8 = r11 in n9 || "onFocusOut" == l8 || "onFocusIn" == l8 ? r11.slice(2) : l8.slice(2), n9.l || (n9.l = {}), n9.l[l8 + o11] = u17, u17 ? t9 ? u17.u = t9.u : (u17.u = c, n9.addEventListener(l8, o11 ? a : s, o11)) : n9.removeEventListener(l8, o11 ? a : s, o11);
     else {
       if ("http://www.w3.org/2000/svg" == i9) l8 = l8.replace(/xlink(H|:h)/, "h").replace(/sName$/, "s");
       else if ("width" != l8 && "height" != l8 && "href" != l8 && "list" != l8 && "form" != l8 && "tabIndex" != l8 && "download" != l8 && "rowSpan" != l8 && "colSpan" != l8 && "role" != l8 && "popover" != l8 && l8 in n9) try {
@@ -170,7 +169,7 @@ var stonehamOverrideCalculator = (() => {
       "function" == typeof u17 || (null == u17 || false === u17 && "-" != l8[4] ? n9.removeAttribute(l8) : n9.setAttribute(l8, "popover" == l8 && 1 == u17 ? "" : u17));
     }
   }
-  function O(n9) {
+  function F(n9) {
     return function(u17) {
       if (this.l) {
         var t9 = this.l[u17.type + n9];
@@ -180,47 +179,50 @@ var stonehamOverrideCalculator = (() => {
       }
     };
   }
-  function z(n9, u17, t9, i9, r11, o11, e8, f14, c13, s12) {
-    var a15, h8, p10, y8, _7, m8, b7, S8, C10, M6, $5, I9, A7, H6, L6, T8 = u17.type;
+  function O(n9, u17, t9, i9, o11, r11, e8, f14, c13, s12) {
+    var a15, h8, p10, v6, y8, _7, m8, b7, S8, C10, M6, $5, P7, A7, H6, L6, T8, j10 = u17.type;
     if (void 0 !== u17.constructor) return null;
-    128 & t9.__u && (c13 = !!(32 & t9.__u), o11 = [f14 = u17.__e = t9.__e]), (a15 = l.__b) && a15(u17);
-    n: if ("function" == typeof T8) try {
-      if (S8 = u17.props, C10 = "prototype" in T8 && T8.prototype.render, M6 = (a15 = T8.contextType) && i9[a15.__c], $5 = a15 ? M6 ? M6.props.value : a15.__ : i9, t9.__c ? b7 = (h8 = u17.__c = t9.__c).__ = h8.__E : (C10 ? u17.__c = h8 = new T8(S8, $5) : (u17.__c = h8 = new x(S8, $5), h8.constructor = T8, h8.render = G), M6 && M6.sub(h8), h8.state || (h8.state = {}), h8.__n = i9, p10 = h8.__d = true, h8.__h = [], h8._sb = []), C10 && null == h8.__s && (h8.__s = h8.state), C10 && null != T8.getDerivedStateFromProps && (h8.__s == h8.state && (h8.__s = w({}, h8.__s)), w(h8.__s, T8.getDerivedStateFromProps(S8, h8.__s))), y8 = h8.props, _7 = h8.state, h8.__v = u17, p10) C10 && null == T8.getDerivedStateFromProps && null != h8.componentWillMount && h8.componentWillMount(), C10 && null != h8.componentDidMount && h8.__h.push(h8.componentDidMount);
+    128 & t9.__u && (c13 = !!(32 & t9.__u), r11 = [f14 = u17.__e = t9.__e]), (a15 = l.__b) && a15(u17);
+    n: if ("function" == typeof j10) try {
+      if (b7 = u17.props, S8 = "prototype" in j10 && j10.prototype.render, C10 = (a15 = j10.contextType) && i9[a15.__c], M6 = a15 ? C10 ? C10.props.value : a15.__ : i9, t9.__c ? m8 = (h8 = u17.__c = t9.__c).__ = h8.__E : (S8 ? u17.__c = h8 = new j10(b7, M6) : (u17.__c = h8 = new x(b7, M6), h8.constructor = j10, h8.render = E), C10 && C10.sub(h8), h8.state || (h8.state = {}), h8.__n = i9, p10 = h8.__d = true, h8.__h = [], h8._sb = []), S8 && null == h8.__s && (h8.__s = h8.state), S8 && null != j10.getDerivedStateFromProps && (h8.__s == h8.state && (h8.__s = w({}, h8.__s)), w(h8.__s, j10.getDerivedStateFromProps(b7, h8.__s))), v6 = h8.props, y8 = h8.state, h8.__v = u17, p10) S8 && null == j10.getDerivedStateFromProps && null != h8.componentWillMount && h8.componentWillMount(), S8 && null != h8.componentDidMount && h8.__h.push(h8.componentDidMount);
       else {
-        if (C10 && null == T8.getDerivedStateFromProps && S8 !== y8 && null != h8.componentWillReceiveProps && h8.componentWillReceiveProps(S8, $5), u17.__v == t9.__v || !h8.__e && null != h8.shouldComponentUpdate && false === h8.shouldComponentUpdate(S8, h8.__s, $5)) {
-          u17.__v != t9.__v && (h8.props = S8, h8.state = h8.__s, h8.__d = false), u17.__e = t9.__e, u17.__k = t9.__k, u17.__k.some(function(n10) {
+        if (S8 && null == j10.getDerivedStateFromProps && b7 !== v6 && null != h8.componentWillReceiveProps && h8.componentWillReceiveProps(b7, M6), u17.__v == t9.__v || !h8.__e && null != h8.shouldComponentUpdate && false === h8.shouldComponentUpdate(b7, h8.__s, M6)) {
+          for (u17.__v != t9.__v && (h8.props = b7, h8.state = h8.__s, h8.__d = false), u17.__e = t9.__e, u17.__k = t9.__k, u17.__k.some(function(n10) {
             n10 && (n10.__ = u17);
-          }), v.push.apply(h8.__h, h8._sb), h8._sb = [], h8.__h.length && e8.push(h8);
+          }), $5 = 0; $5 < h8._sb.length; $5++) h8.__h.push(h8._sb[$5]);
+          h8._sb = [], h8.__h.length && e8.push(h8);
           break n;
         }
-        null != h8.componentWillUpdate && h8.componentWillUpdate(S8, h8.__s, $5), C10 && null != h8.componentDidUpdate && h8.__h.push(function() {
-          h8.componentDidUpdate(y8, _7, m8);
+        null != h8.componentWillUpdate && h8.componentWillUpdate(b7, h8.__s, M6), S8 && null != h8.componentDidUpdate && h8.__h.push(function() {
+          h8.componentDidUpdate(v6, y8, _7);
         });
       }
-      if (h8.context = $5, h8.props = S8, h8.__P = n9, h8.__e = false, I9 = l.__r, A7 = 0, C10) h8.state = h8.__s, h8.__d = false, I9 && I9(u17), a15 = h8.render(h8.props, h8.state, h8.context), v.push.apply(h8.__h, h8._sb), h8._sb = [];
-      else do {
-        h8.__d = false, I9 && I9(u17), a15 = h8.render(h8.props, h8.state, h8.context), h8.state = h8.__s;
+      if (h8.context = M6, h8.props = b7, h8.__P = n9, h8.__e = false, P7 = l.__r, A7 = 0, S8) {
+        for (h8.state = h8.__s, h8.__d = false, P7 && P7(u17), a15 = h8.render(h8.props, h8.state, h8.context), H6 = 0; H6 < h8._sb.length; H6++) h8.__h.push(h8._sb[H6]);
+        h8._sb = [];
+      } else do {
+        h8.__d = false, P7 && P7(u17), a15 = h8.render(h8.props, h8.state, h8.context), h8.state = h8.__s;
       } while (h8.__d && ++A7 < 25);
-      h8.state = h8.__s, null != h8.getChildContext && (i9 = w(w({}, i9), h8.getChildContext())), C10 && !p10 && null != h8.getSnapshotBeforeUpdate && (m8 = h8.getSnapshotBeforeUpdate(y8, _7)), H6 = null != a15 && a15.type === k && null == a15.key ? q(a15.props.children) : a15, f14 = P(n9, d(H6) ? H6 : [H6], u17, t9, i9, r11, o11, e8, f14, c13, s12), h8.base = u17.__e, u17.__u &= -161, h8.__h.length && e8.push(h8), b7 && (h8.__E = h8.__ = null);
+      h8.state = h8.__s, null != h8.getChildContext && (i9 = w(w({}, i9), h8.getChildContext())), S8 && !p10 && null != h8.getSnapshotBeforeUpdate && (_7 = h8.getSnapshotBeforeUpdate(v6, y8)), L6 = a15, null != a15 && a15.type === k && null == a15.key && (L6 = V(a15.props.children)), f14 = I(n9, d(L6) ? L6 : [L6], u17, t9, i9, o11, r11, e8, f14, c13, s12), h8.base = u17.__e, u17.__u &= -161, h8.__h.length && e8.push(h8), m8 && (h8.__E = h8.__ = null);
     } catch (n10) {
-      if (u17.__v = null, c13 || null != o11) if (n10.then) {
+      if (u17.__v = null, c13 || null != r11) if (n10.then) {
         for (u17.__u |= c13 ? 160 : 128; f14 && 8 == f14.nodeType && f14.nextSibling; ) f14 = f14.nextSibling;
-        o11[o11.indexOf(f14)] = null, u17.__e = f14;
+        r11[r11.indexOf(f14)] = null, u17.__e = f14;
       } else {
-        for (L6 = o11.length; L6--; ) g(o11[L6]);
-        N(u17);
+        for (T8 = r11.length; T8--; ) g(r11[T8]);
+        z(u17);
       }
-      else u17.__e = t9.__e, u17.__k = t9.__k, n10.then || N(u17);
+      else u17.__e = t9.__e, u17.__k = t9.__k, n10.then || z(u17);
       l.__e(n10, u17, t9);
     }
-    else null == o11 && u17.__v == t9.__v ? (u17.__k = t9.__k, u17.__e = t9.__e) : f14 = u17.__e = B(t9.__e, u17, t9, i9, r11, o11, e8, c13, s12);
+    else null == r11 && u17.__v == t9.__v ? (u17.__k = t9.__k, u17.__e = t9.__e) : f14 = u17.__e = q(t9.__e, u17, t9, i9, o11, r11, e8, c13, s12);
     return (a15 = l.diffed) && a15(u17), 128 & u17.__u ? void 0 : f14;
   }
-  function N(n9) {
-    n9 && (n9.__c && (n9.__c.__e = true), n9.__k && n9.__k.some(N));
+  function z(n9) {
+    n9 && n9.__c && (n9.__c.__e = true), n9 && n9.__k && n9.__k.forEach(z);
   }
-  function V(n9, u17, t9) {
-    for (var i9 = 0; i9 < t9.length; i9++) D(t9[i9], t9[++i9], t9[++i9]);
+  function N(n9, u17, t9) {
+    for (var i9 = 0; i9 < t9.length; i9++) B(t9[i9], t9[++i9], t9[++i9]);
     l.__c && l.__c(u17, n9), n9.some(function(u18) {
       try {
         n9 = u18.__h, u18.__h = [], n9.some(function(n10) {
@@ -231,12 +233,12 @@ var stonehamOverrideCalculator = (() => {
       }
     });
   }
-  function q(n9) {
-    return "object" != typeof n9 || null == n9 || n9.__b > 0 ? n9 : d(n9) ? n9.map(q) : w({}, n9);
+  function V(n9) {
+    return "object" != typeof n9 || null == n9 || n9.__b && n9.__b > 0 ? n9 : d(n9) ? n9.map(V) : w({}, n9);
   }
-  function B(u17, t9, i9, r11, o11, e8, f14, c13, s12) {
+  function q(u17, t9, i9, o11, r11, e8, f14, c13, s12) {
     var a15, h8, v6, y8, w8, _7, m8, b7 = i9.props || p, k7 = t9.props, x6 = t9.type;
-    if ("svg" == x6 ? o11 = "http://www.w3.org/2000/svg" : "math" == x6 ? o11 = "http://www.w3.org/1998/Math/MathML" : o11 || (o11 = "http://www.w3.org/1999/xhtml"), null != e8) {
+    if ("svg" == x6 ? r11 = "http://www.w3.org/2000/svg" : "math" == x6 ? r11 = "http://www.w3.org/1998/Math/MathML" : r11 || (r11 = "http://www.w3.org/1999/xhtml"), null != e8) {
       for (a15 = 0; a15 < e8.length; a15++) if ((w8 = e8[a15]) && "setAttribute" in w8 == !!x6 && (x6 ? w8.localName == x6 : 3 == w8.nodeType)) {
         u17 = w8, e8[a15] = null;
         break;
@@ -244,20 +246,25 @@ var stonehamOverrideCalculator = (() => {
     }
     if (null == u17) {
       if (null == x6) return document.createTextNode(k7);
-      u17 = document.createElementNS(o11, x6, k7.is && k7), c13 && (l.__m && l.__m(t9, e8), c13 = false), e8 = null;
+      u17 = document.createElementNS(r11, x6, k7.is && k7), c13 && (l.__m && l.__m(t9, e8), c13 = false), e8 = null;
     }
     if (null == x6) b7 === k7 || c13 && u17.data == k7 || (u17.data = k7);
     else {
       if (e8 = e8 && n.call(u17.childNodes), !c13 && null != e8) for (b7 = {}, a15 = 0; a15 < u17.attributes.length; a15++) b7[(w8 = u17.attributes[a15]).name] = w8.value;
-      for (a15 in b7) w8 = b7[a15], "dangerouslySetInnerHTML" == a15 ? v6 = w8 : "children" == a15 || a15 in k7 || "value" == a15 && "defaultValue" in k7 || "checked" == a15 && "defaultChecked" in k7 || F(u17, a15, null, w8, o11);
-      for (a15 in k7) w8 = k7[a15], "children" == a15 ? y8 = w8 : "dangerouslySetInnerHTML" == a15 ? h8 = w8 : "value" == a15 ? _7 = w8 : "checked" == a15 ? m8 = w8 : c13 && "function" != typeof w8 || b7[a15] === w8 || F(u17, a15, w8, b7[a15], o11);
+      for (a15 in b7) if (w8 = b7[a15], "children" == a15) ;
+      else if ("dangerouslySetInnerHTML" == a15) v6 = w8;
+      else if (!(a15 in k7)) {
+        if ("value" == a15 && "defaultValue" in k7 || "checked" == a15 && "defaultChecked" in k7) continue;
+        j(u17, a15, null, w8, r11);
+      }
+      for (a15 in k7) w8 = k7[a15], "children" == a15 ? y8 = w8 : "dangerouslySetInnerHTML" == a15 ? h8 = w8 : "value" == a15 ? _7 = w8 : "checked" == a15 ? m8 = w8 : c13 && "function" != typeof w8 || b7[a15] === w8 || j(u17, a15, w8, b7[a15], r11);
       if (h8) c13 || v6 && (h8.__html == v6.__html || h8.__html == u17.innerHTML) || (u17.innerHTML = h8.__html), t9.__k = [];
-      else if (v6 && (u17.innerHTML = ""), P("template" == t9.type ? u17.content : u17, d(y8) ? y8 : [y8], t9, i9, r11, "foreignObject" == x6 ? "http://www.w3.org/1999/xhtml" : o11, e8, f14, e8 ? e8[0] : i9.__k && S(i9, 0), c13, s12), null != e8) for (a15 = e8.length; a15--; ) g(e8[a15]);
-      c13 || (a15 = "value", "progress" == x6 && null == _7 ? u17.removeAttribute("value") : null != _7 && (_7 !== u17[a15] || "progress" == x6 && !_7 || "option" == x6 && _7 != b7[a15]) && F(u17, a15, _7, b7[a15], o11), a15 = "checked", null != m8 && m8 != u17[a15] && F(u17, a15, m8, b7[a15], o11));
+      else if (v6 && (u17.innerHTML = ""), I("template" == t9.type ? u17.content : u17, d(y8) ? y8 : [y8], t9, i9, o11, "foreignObject" == x6 ? "http://www.w3.org/1999/xhtml" : r11, e8, f14, e8 ? e8[0] : i9.__k && S(i9, 0), c13, s12), null != e8) for (a15 = e8.length; a15--; ) g(e8[a15]);
+      c13 || (a15 = "value", "progress" == x6 && null == _7 ? u17.removeAttribute("value") : null != _7 && (_7 !== u17[a15] || "progress" == x6 && !_7 || "option" == x6 && _7 != b7[a15]) && j(u17, a15, _7, b7[a15], r11), a15 = "checked", null != m8 && m8 != u17[a15] && j(u17, a15, m8, b7[a15], r11));
     }
     return u17;
   }
-  function D(n9, u17, t9) {
+  function B(n9, u17, t9) {
     try {
       if ("function" == typeof n9) {
         var i9 = "function" == typeof n9.__u;
@@ -267,9 +274,9 @@ var stonehamOverrideCalculator = (() => {
       l.__e(n10, t9);
     }
   }
-  function E(n9, u17, t9) {
-    var i9, r11;
-    if (l.unmount && l.unmount(n9), (i9 = n9.ref) && (i9.current && i9.current != n9.__e || D(i9, null, u17)), null != (i9 = n9.__c)) {
+  function D(n9, u17, t9) {
+    var i9, o11;
+    if (l.unmount && l.unmount(n9), (i9 = n9.ref) && (i9.current && i9.current != n9.__e || B(i9, null, u17)), null != (i9 = n9.__c)) {
       if (i9.componentWillUnmount) try {
         i9.componentWillUnmount();
       } catch (n10) {
@@ -277,25 +284,25 @@ var stonehamOverrideCalculator = (() => {
       }
       i9.base = i9.__P = null;
     }
-    if (i9 = n9.__k) for (r11 = 0; r11 < i9.length; r11++) i9[r11] && E(i9[r11], u17, t9 || "function" != typeof n9.type);
+    if (i9 = n9.__k) for (o11 = 0; o11 < i9.length; o11++) i9[o11] && D(i9[o11], u17, t9 || "function" != typeof n9.type);
     t9 || g(n9.__e), n9.__c = n9.__ = n9.__e = void 0;
   }
-  function G(n9, l8, u17) {
+  function E(n9, l8, u17) {
     return this.constructor(n9, u17);
   }
-  function J(u17, t9, i9) {
-    var r11, o11, e8, f14;
-    t9 == document && (t9 = document.documentElement), l.__ && l.__(u17, t9), o11 = (r11 = "function" == typeof i9) ? null : i9 && i9.__k || t9.__k, e8 = [], f14 = [], z(t9, u17 = (!r11 && i9 || t9).__k = _(k, null, [u17]), o11 || p, p, t9.namespaceURI, !r11 && i9 ? [i9] : o11 ? null : t9.firstChild ? n.call(t9.childNodes) : null, e8, !r11 && i9 ? i9 : o11 ? o11.__e : t9.firstChild, r11, f14), V(e8, u17, f14);
+  function G(u17, t9, i9) {
+    var o11, r11, e8, f14;
+    t9 == document && (t9 = document.documentElement), l.__ && l.__(u17, t9), r11 = (o11 = "function" == typeof i9) ? null : i9 && i9.__k || t9.__k, e8 = [], f14 = [], O(t9, u17 = (!o11 && i9 || t9).__k = _(k, null, [u17]), r11 || p, p, t9.namespaceURI, !o11 && i9 ? [i9] : r11 ? null : t9.firstChild ? n.call(t9.childNodes) : null, e8, !o11 && i9 ? i9 : r11 ? r11.__e : t9.firstChild, o11, f14), N(e8, u17, f14);
   }
-  function K(n9, l8) {
-    J(n9, l8, K);
+  function J(n9, l8) {
+    G(n9, l8, J);
   }
-  function Q(l8, u17, t9) {
-    var i9, r11, o11, e8, f14 = w({}, l8.props);
-    for (o11 in l8.type && l8.type.defaultProps && (e8 = l8.type.defaultProps), u17) "key" == o11 ? i9 = u17[o11] : "ref" == o11 ? r11 = u17[o11] : f14[o11] = void 0 === u17[o11] && null != e8 ? e8[o11] : u17[o11];
-    return arguments.length > 2 && (f14.children = arguments.length > 3 ? n.call(arguments, 2) : t9), m(l8.type, f14, i9 || l8.key, r11 || l8.ref, null);
+  function K(l8, u17, t9) {
+    var i9, o11, r11, e8, f14 = w({}, l8.props);
+    for (r11 in l8.type && l8.type.defaultProps && (e8 = l8.type.defaultProps), u17) "key" == r11 ? i9 = u17[r11] : "ref" == r11 ? o11 = u17[r11] : f14[r11] = void 0 === u17[r11] && null != e8 ? e8[r11] : u17[r11];
+    return arguments.length > 2 && (f14.children = arguments.length > 3 ? n.call(arguments, 2) : t9), m(l8.type, f14, i9 || l8.key, o11 || l8.ref, null);
   }
-  function R(n9) {
+  function Q(n9) {
     function l8(n10) {
       var u17, t9;
       return this.getChildContext || (u17 = /* @__PURE__ */ new Set(), (t9 = {})[l8.__c] = this, this.getChildContext = function() {
@@ -304,7 +311,7 @@ var stonehamOverrideCalculator = (() => {
         u17 = null;
       }, this.shouldComponentUpdate = function(n11) {
         this.props.value != n11.value && u17.forEach(function(n12) {
-          n12.__e = true, $(n12);
+          n12.__e = true, M(n12);
         });
       }, this.sub = function(n11) {
         u17.add(n11);
@@ -318,7 +325,7 @@ var stonehamOverrideCalculator = (() => {
       return n10.children(l9);
     }).contextType = l8, l8;
   }
-  var n, l, u, t, i, r, o, e, f, c, s, a, h, p, v, y, d;
+  var n, l, u, t, i, o, r, e, f, c, s, a, h, p, v, y, d;
   var init_preact_module = __esm({
     "node_modules/preact/dist/preact.module.js"() {
       p = {};
@@ -326,8 +333,8 @@ var stonehamOverrideCalculator = (() => {
       y = /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i;
       d = Array.isArray;
       n = v.slice, l = { __e: function(n9, l8, u17, t9) {
-        for (var i9, r11, o11; l8 = l8.__; ) if ((i9 = l8.__c) && !i9.__) try {
-          if ((r11 = i9.constructor) && null != r11.getDerivedStateFromError && (i9.setState(r11.getDerivedStateFromError(n9)), o11 = i9.__d), null != i9.componentDidCatch && (i9.componentDidCatch(n9, t9 || {}), o11 = i9.__d), o11) return i9.__E = i9;
+        for (var i9, o11, r11; l8 = l8.__; ) if ((i9 = l8.__c) && !i9.__) try {
+          if ((o11 = i9.constructor) && null != o11.getDerivedStateFromError && (i9.setState(o11.getDerivedStateFromError(n9)), r11 = i9.__d), null != i9.componentDidCatch && (i9.componentDidCatch(n9, t9 || {}), r11 = i9.__d), r11) return i9.__E = i9;
         } catch (l9) {
           n9 = l9;
         }
@@ -336,12 +343,12 @@ var stonehamOverrideCalculator = (() => {
         return null != n9 && void 0 === n9.constructor;
       }, x.prototype.setState = function(n9, l8) {
         var u17;
-        u17 = null != this.__s && this.__s != this.state ? this.__s : this.__s = w({}, this.state), "function" == typeof n9 && (n9 = n9(w({}, u17), this.props)), n9 && w(u17, n9), null != n9 && this.__v && (l8 && this._sb.push(l8), $(this));
+        u17 = null != this.__s && this.__s != this.state ? this.__s : this.__s = w({}, this.state), "function" == typeof n9 && (n9 = n9(w({}, u17), this.props)), n9 && w(u17, n9), null != n9 && this.__v && (l8 && this._sb.push(l8), M(this));
       }, x.prototype.forceUpdate = function(n9) {
-        this.__v && (this.__e = true, n9 && this.__h.push(n9), $(this));
-      }, x.prototype.render = k, i = [], o = "function" == typeof Promise ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout, e = function(n9, l8) {
+        this.__v && (this.__e = true, n9 && this.__h.push(n9), M(this));
+      }, x.prototype.render = k, i = [], r = "function" == typeof Promise ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout, e = function(n9, l8) {
         return n9.__v.__b - l8.__v.__b;
-      }, I.__r = 0, f = /(PointerCapture)$|Capture$/i, c = 0, s = O(false), a = O(true), h = 0;
+      }, $.__r = 0, f = /(PointerCapture)$|Capture$/i, c = 0, s = F(false), a = F(true), h = 0;
     }
   });
 
@@ -363,13 +370,13 @@ var stonehamOverrideCalculator = (() => {
       var f14 = function(n10, t9, r11) {
         if (!o11.__c.__H) return true;
         var u18 = o11.__c.__H.__.filter(function(n11) {
-          return n11.__c;
+          return !!n11.__c;
         });
         if (u18.every(function(n11) {
           return !n11.__N;
         })) return !c13 || c13.call(this, n10, t9, r11);
         var i10 = o11.__c.props !== n10;
-        return u18.some(function(n11) {
+        return u18.forEach(function(n11) {
           if (n11.__N) {
             var t10 = n11.__[0];
             n11.__ = n11.__N, n11.__N = void 0, t10 !== n11.__[0] && (i10 = true);
@@ -448,13 +455,10 @@ var stonehamOverrideCalculator = (() => {
     return n9.__;
   }
   function j2() {
-    for (var n9; n9 = f2.shift(); ) {
-      var t9 = n9.__H;
-      if (n9.__P && t9) try {
-        t9.__h.some(z2), t9.__h.some(B2), t9.__h = [];
-      } catch (r11) {
-        t9.__h = [], c2.__e(r11, n9.__v);
-      }
+    for (var n9; n9 = f2.shift(); ) if (n9.__P && n9.__H) try {
+      n9.__H.__h.forEach(z2), n9.__H.__h.forEach(B2), n9.__H.__h = [];
+    } catch (t9) {
+      n9.__H.__h = [], c2.__e(t9, n9.__v);
     }
   }
   function w2(n9) {
@@ -499,19 +503,19 @@ var stonehamOverrideCalculator = (() => {
       }, c2.__r = function(n9) {
         a2 && a2(n9), t2 = 0;
         var i9 = (r2 = n9.__c).__H;
-        i9 && (u2 === r2 ? (i9.__h = [], r2.__h = [], i9.__.some(function(n10) {
+        i9 && (u2 === r2 ? (i9.__h = [], r2.__h = [], i9.__.forEach(function(n10) {
           n10.__N && (n10.__ = n10.__N), n10.u = n10.__N = void 0;
-        })) : (i9.__h.some(z2), i9.__h.some(B2), i9.__h = [], t2 = 0)), u2 = r2;
+        })) : (i9.__h.forEach(z2), i9.__h.forEach(B2), i9.__h = [], t2 = 0)), u2 = r2;
       }, c2.diffed = function(n9) {
         v2 && v2(n9);
         var t9 = n9.__c;
-        t9 && t9.__H && (t9.__H.__h.length && (1 !== f2.push(t9) && i2 === c2.requestAnimationFrame || ((i2 = c2.requestAnimationFrame) || w2)(j2)), t9.__H.__.some(function(n10) {
+        t9 && t9.__H && (t9.__H.__h.length && (1 !== f2.push(t9) && i2 === c2.requestAnimationFrame || ((i2 = c2.requestAnimationFrame) || w2)(j2)), t9.__H.__.forEach(function(n10) {
           n10.u && (n10.__H = n10.u), n10.u = void 0;
         })), u2 = r2 = null;
       }, c2.__c = function(n9, t9) {
         t9.some(function(n10) {
           try {
-            n10.__h.some(z2), n10.__h = n10.__h.filter(function(n11) {
+            n10.__h.forEach(z2), n10.__h = n10.__h.filter(function(n11) {
               return !n11.__ || B2(n11);
             });
           } catch (r11) {
@@ -523,7 +527,7 @@ var stonehamOverrideCalculator = (() => {
       }, c2.unmount = function(n9) {
         m2 && m2(n9);
         var t9, r11 = n9.__c;
-        r11 && r11.__H && (r11.__H.__.some(function(n10) {
+        r11 && r11.__H && (r11.__H.__.forEach(function(n10) {
           try {
             z2(n10);
           } catch (n11) {
@@ -547,7 +551,7 @@ var stonehamOverrideCalculator = (() => {
     SuspenseList: () => B3,
     __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: () => hn,
     cloneElement: () => _n,
-    createContext: () => R,
+    createContext: () => Q,
     createElement: () => _,
     createFactory: () => dn,
     createPortal: () => $2,
@@ -597,20 +601,21 @@ var stonehamOverrideCalculator = (() => {
   function C3(n9, t9) {
     var e8 = t9(), r11 = d2({ t: { __: e8, u: t9 } }), u17 = r11[0].t, o11 = r11[1];
     return _2(function() {
-      u17.__ = e8, u17.u = t9, R2(u17) && o11({ t: u17 });
+      u17.__ = e8, u17.u = t9, R(u17) && o11({ t: u17 });
     }, [n9, e8, t9]), y2(function() {
-      return R2(u17) && o11({ t: u17 }), n9(function() {
-        R2(u17) && o11({ t: u17 });
+      return R(u17) && o11({ t: u17 }), n9(function() {
+        R(u17) && o11({ t: u17 });
       });
     }, [n9]), e8;
   }
-  function R2(n9) {
+  function R(n9) {
+    var t9, e8, r11 = n9.u, u17 = n9.__;
     try {
-      return !((t9 = n9.__) === (e8 = n9.u()) && (0 !== t9 || 1 / t9 == 1 / e8) || t9 != t9 && e8 != e8);
+      var o11 = r11();
+      return !((t9 = u17) === (e8 = o11) && (0 !== t9 || 1 / t9 == 1 / e8) || t9 != t9 && e8 != e8);
     } catch (n10) {
       return true;
     }
-    var t9, e8;
   }
   function x3(n9) {
     n9();
@@ -685,7 +690,7 @@ var stonehamOverrideCalculator = (() => {
   function Y(n9) {
     var e8 = this, r11 = n9.h;
     if (e8.componentWillUnmount = function() {
-      J(null, e8.v), e8.v = null, e8.h = null;
+      G(null, e8.v), e8.v = null, e8.h = null;
     }, e8.h && e8.h !== r11 && e8.componentWillUnmount(), !e8.v) {
       for (var u17 = e8.__v; null !== u17 && !u17.__m && null !== u17.__; ) u17 = u17.__;
       e8.h = r11, e8.v = { nodeType: 1, parentNode: r11, childNodes: [], __k: { __m: u17.__m }, contains: function() {
@@ -696,17 +701,17 @@ var stonehamOverrideCalculator = (() => {
         this.childNodes.splice(this.childNodes.indexOf(n10) >>> 1, 1), e8.h.removeChild(n10);
       } };
     }
-    J(_(Z, { context: e8.context }, n9.__v), e8.v);
+    G(_(Z, { context: e8.context }, n9.__v), e8.v);
   }
   function $2(n9, e8) {
     var r11 = _(Y, { __v: n9, h: e8 });
     return r11.containerInfo = e8, r11;
   }
   function nn(n9, t9, e8) {
-    return null == t9.__k && (t9.textContent = ""), J(n9, t9), "function" == typeof e8 && e8(), n9 ? n9.__c : null;
+    return null == t9.__k && (t9.textContent = ""), G(n9, t9), "function" == typeof e8 && e8(), n9 ? n9.__c : null;
   }
   function tn(n9, t9, e8) {
-    return K(n9, t9), "function" == typeof e8 && e8(), n9 ? n9.__c : null;
+    return J(n9, t9), "function" == typeof e8 && e8(), n9 ? n9.__c : null;
   }
   function rn() {
   }
@@ -726,13 +731,13 @@ var stonehamOverrideCalculator = (() => {
     return mn(n9) && n9.type === k;
   }
   function yn(n9) {
-    return !!n9 && "string" == typeof n9.displayName && n9.displayName.startsWith("Memo(");
+    return !!n9 && !!n9.displayName && ("string" == typeof n9.displayName || n9.displayName instanceof String) && n9.displayName.startsWith("Memo(");
   }
   function _n(n9) {
-    return mn(n9) ? Q.apply(null, arguments) : n9;
+    return mn(n9) ? K.apply(null, arguments) : n9;
   }
   function bn(n9) {
-    return !!n9.__k && (J(null, n9), true);
+    return !!n9.__k && (G(null, n9), true);
   }
   function Sn(n9) {
     return n9 && (n9.base || 1 === n9.nodeType && n9) || null;
@@ -754,15 +759,15 @@ var stonehamOverrideCalculator = (() => {
       };
       A3 = "undefined" != typeof Symbol && Symbol.for && Symbol.for("react.forward_ref") || 3911;
       L2 = function(n9, t9) {
-        return null == n9 ? null : L(L(n9).map(t9));
+        return null == n9 ? null : H(H(n9).map(t9));
       };
       O2 = { map: L2, forEach: L2, count: function(n9) {
-        return n9 ? L(n9).length : 0;
+        return n9 ? H(n9).length : 0;
       }, only: function(n9) {
-        var t9 = L(n9);
+        var t9 = H(n9);
         if (1 !== t9.length) throw "Children.only";
         return t9[0];
-      }, toArray: L };
+      }, toArray: H };
       U = l.__e;
       l.__e = function(n9, t9, e8, r11) {
         if (n9.then) {
@@ -824,7 +829,7 @@ var stonehamOverrideCalculator = (() => {
         };
       }, B3.prototype.render = function(n9) {
         this.i = null, this.l = /* @__PURE__ */ new Map();
-        var t9 = L(n9.children);
+        var t9 = H(n9.children);
         n9.revealOrder && "b" === n9.revealOrder[0] && t9.reverse();
         for (var e8 = t9.length; e8--; ) this.l.set(t9[e8], this.i = [1, 0, this.i]);
         return n9.children;
@@ -867,11 +872,11 @@ var stonehamOverrideCalculator = (() => {
               "defaultValue" === i9 && "value" in t9 && null == t9.value ? i9 = "value" : "download" === i9 && true === l8 ? l8 = "" : "translate" === c13 && "no" === l8 ? l8 = false : "o" === c13[0] && "n" === c13[1] ? "ondoubleclick" === c13 ? i9 = "ondblclick" : "onchange" !== c13 || "input" !== e8 && "textarea" !== e8 || X(t9.type) ? "onfocus" === c13 ? i9 = "onfocusin" : "onblur" === c13 ? i9 = "onfocusout" : J2.test(i9) && (i9 = c13) : c13 = i9 = "oninput" : o11 && G2.test(i9) ? i9 = i9.replace(K2, "-$&").toLowerCase() : null === l8 && (l8 = void 0), "oninput" === c13 && u17[i9 = c13] && (i9 = "oninputCapture"), u17[i9] = l8;
             }
           }
-          "select" == e8 && u17.multiple && Array.isArray(u17.value) && (u17.value = L(t9.children).forEach(function(n11) {
+          "select" == e8 && u17.multiple && Array.isArray(u17.value) && (u17.value = H(t9.children).forEach(function(n11) {
             n11.props.selected = -1 != u17.value.indexOf(n11.props.value);
-          })), "select" == e8 && null != u17.defaultValue && (u17.value = L(t9.children).forEach(function(n11) {
+          })), "select" == e8 && null != u17.defaultValue && (u17.value = H(t9.children).forEach(function(n11) {
             n11.props.selected = u17.multiple ? -1 != u17.defaultValue.indexOf(n11.props.value) : u17.defaultValue == n11.props.value;
-          })), t9.class && !t9.className ? (u17.class = t9.class, Object.defineProperty(u17, "className", cn)) : t9.className && (u17.class = u17.className = t9.className), n10.props = u17;
+          })), t9.class && !t9.className ? (u17.class = t9.class, Object.defineProperty(u17, "className", cn)) : (t9.className && !t9.class || t9.class && t9.className) && (u17.class = u17.className = t9.className), n10.props = u17;
         })(n9), n9.$$typeof = q3, fn && fn(n9);
       };
       an = l.__r;
@@ -896,7 +901,7 @@ var stonehamOverrideCalculator = (() => {
       };
       Cn = k;
       Rn = mn;
-      xn = { useState: d2, useId: g2, useReducer: h2, useEffect: y2, useLayoutEffect: _2, useInsertionEffect: I2, useTransition: k3, useDeferredValue: w3, useSyncExternalStore: C3, startTransition: x3, useRef: A2, useImperativeHandle: F2, useMemo: T2, useCallback: q2, useContext: x2, useDebugValue: P2, version: "18.3.1", Children: O2, render: nn, hydrate: tn, unmountComponentAtNode: bn, createPortal: $2, createElement: _, createContext: R, createFactory: dn, cloneElement: _n, createRef: b, Fragment: k, isValidElement: mn, isElement: Rn, isFragment: pn, isMemo: yn, findDOMNode: Sn, Component: x, PureComponent: N2, memo: M2, forwardRef: D3, flushSync: En, unstable_batchedUpdates: gn, StrictMode: Cn, Suspense: P3, SuspenseList: B3, lazy: z3, __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: hn };
+      xn = { useState: d2, useId: g2, useReducer: h2, useEffect: y2, useLayoutEffect: _2, useInsertionEffect: I2, useTransition: k3, useDeferredValue: w3, useSyncExternalStore: C3, startTransition: x3, useRef: A2, useImperativeHandle: F2, useMemo: T2, useCallback: q2, useContext: x2, useDebugValue: P2, version: "18.3.1", Children: O2, render: nn, hydrate: tn, unmountComponentAtNode: bn, createPortal: $2, createElement: _, createContext: Q, createFactory: dn, cloneElement: _n, createRef: b, Fragment: k, isValidElement: mn, isElement: Rn, isFragment: pn, isMemo: yn, findDOMNode: Sn, Component: x, PureComponent: N2, memo: M2, forwardRef: D3, flushSync: En, unstable_batchedUpdates: gn, StrictMode: Cn, Suspense: P3, SuspenseList: B3, lazy: z3, __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: hn };
     }
   });
 
@@ -1037,10 +1042,8 @@ var stonehamOverrideCalculator = (() => {
     return activeElement2;
   };
   function $d4ee10de306f2510$export$e58f029f0fbfdb29(event) {
-    if ((0, $f4e2df6bd15f8569$export$98658e8c59125e6a)() && event.target instanceof Element && event.target.shadowRoot) {
-      var _event_composedPath_, _event_nativeEvent_composedPath_;
-      if ("composedPath" in event) return (_event_composedPath_ = event.composedPath()[0]) !== null && _event_composedPath_ !== void 0 ? _event_composedPath_ : null;
-      else if ("composedPath" in event.nativeEvent) return (_event_nativeEvent_composedPath_ = event.nativeEvent.composedPath()[0]) !== null && _event_nativeEvent_composedPath_ !== void 0 ? _event_nativeEvent_composedPath_ : null;
+    if ((0, $f4e2df6bd15f8569$export$98658e8c59125e6a)() && event.target.shadowRoot) {
+      if (event.composedPath) return event.composedPath()[0];
     }
     return event.target;
   }
@@ -1261,10 +1264,9 @@ var stonehamOverrideCalculator = (() => {
       };
     }, []);
     return (0, q2)((e8) => {
-      let eventTarget = (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8);
-      if (eventTarget instanceof HTMLButtonElement || eventTarget instanceof HTMLInputElement || eventTarget instanceof HTMLTextAreaElement || eventTarget instanceof HTMLSelectElement) {
+      if (e8.target instanceof HTMLButtonElement || e8.target instanceof HTMLInputElement || e8.target instanceof HTMLTextAreaElement || e8.target instanceof HTMLSelectElement) {
         stateRef.current.isFocused = true;
-        let target = eventTarget;
+        let target = e8.target;
         let onBlurHandler = (e9) => {
           stateRef.current.isFocused = false;
           if (target.disabled) {
@@ -1283,7 +1285,7 @@ var stonehamOverrideCalculator = (() => {
           if (stateRef.current.isFocused && target.disabled) {
             var _stateRef_current_observer;
             (_stateRef_current_observer = stateRef.current.observer) === null || _stateRef_current_observer === void 0 ? void 0 : _stateRef_current_observer.disconnect();
-            let relatedTargetEl = target === (0, $d4ee10de306f2510$export$cd4e5573fbe2b576)() ? null : (0, $d4ee10de306f2510$export$cd4e5573fbe2b576)();
+            let relatedTargetEl = target === document.activeElement ? null : document.activeElement;
             target.dispatchEvent(new FocusEvent("blur", {
               relatedTarget: relatedTargetEl
             }));
@@ -1348,7 +1350,7 @@ var stonehamOverrideCalculator = (() => {
     }
   }
   function $507fabe10e71c6fb$var$handleFocusEvent(e8) {
-    if ((0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8) === window || (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8) === document || (0, $8a9cb279dc87e130$export$fda7da73ab5d4c48) || !e8.isTrusted) return;
+    if (e8.target === window || e8.target === document || (0, $8a9cb279dc87e130$export$fda7da73ab5d4c48) || !e8.isTrusted) return;
     if (!$507fabe10e71c6fb$var$hasEventBeforeFocus && !$507fabe10e71c6fb$var$hasBlurredWindowRecently) {
       $507fabe10e71c6fb$var$currentModality = "virtual";
       $507fabe10e71c6fb$var$currentPointerType = "virtual";
@@ -1444,14 +1446,12 @@ var stonehamOverrideCalculator = (() => {
     "reset"
   ]);
   function $507fabe10e71c6fb$var$isKeyboardFocusEvent(isTextInput, modality, e8) {
-    let document1 = (0, $431fbd86ca7dc216$export$b204af158042fbac)(e8 ? (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8) : void 0);
-    let eventTarget = e8 ? (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8) : void 0;
-    const IHTMLInputElement = typeof window !== "undefined" ? (0, $431fbd86ca7dc216$export$f21a1ffae260145a)(eventTarget).HTMLInputElement : HTMLInputElement;
-    const IHTMLTextAreaElement = typeof window !== "undefined" ? (0, $431fbd86ca7dc216$export$f21a1ffae260145a)(eventTarget).HTMLTextAreaElement : HTMLTextAreaElement;
-    const IHTMLElement = typeof window !== "undefined" ? (0, $431fbd86ca7dc216$export$f21a1ffae260145a)(eventTarget).HTMLElement : HTMLElement;
-    const IKeyboardEvent = typeof window !== "undefined" ? (0, $431fbd86ca7dc216$export$f21a1ffae260145a)(eventTarget).KeyboardEvent : KeyboardEvent;
-    let activeElement2 = (0, $d4ee10de306f2510$export$cd4e5573fbe2b576)(document1);
-    isTextInput = isTextInput || activeElement2 instanceof IHTMLInputElement && !$507fabe10e71c6fb$var$nonTextInputTypes.has(activeElement2.type) || activeElement2 instanceof IHTMLTextAreaElement || activeElement2 instanceof IHTMLElement && activeElement2.isContentEditable;
+    let document1 = (0, $431fbd86ca7dc216$export$b204af158042fbac)(e8 === null || e8 === void 0 ? void 0 : e8.target);
+    const IHTMLInputElement = typeof window !== "undefined" ? (0, $431fbd86ca7dc216$export$f21a1ffae260145a)(e8 === null || e8 === void 0 ? void 0 : e8.target).HTMLInputElement : HTMLInputElement;
+    const IHTMLTextAreaElement = typeof window !== "undefined" ? (0, $431fbd86ca7dc216$export$f21a1ffae260145a)(e8 === null || e8 === void 0 ? void 0 : e8.target).HTMLTextAreaElement : HTMLTextAreaElement;
+    const IHTMLElement = typeof window !== "undefined" ? (0, $431fbd86ca7dc216$export$f21a1ffae260145a)(e8 === null || e8 === void 0 ? void 0 : e8.target).HTMLElement : HTMLElement;
+    const IKeyboardEvent = typeof window !== "undefined" ? (0, $431fbd86ca7dc216$export$f21a1ffae260145a)(e8 === null || e8 === void 0 ? void 0 : e8.target).KeyboardEvent : KeyboardEvent;
+    isTextInput = isTextInput || document1.activeElement instanceof IHTMLInputElement && !$507fabe10e71c6fb$var$nonTextInputTypes.has(document1.activeElement.type) || document1.activeElement instanceof IHTMLTextAreaElement || document1.activeElement instanceof IHTMLElement && document1.activeElement.isContentEditable;
     return !(isTextInput && modality === "keyboard" && e8 instanceof IKeyboardEvent && !$507fabe10e71c6fb$var$FOCUS_VISIBLE_INPUT_KEYS[e8.key]);
   }
   function $507fabe10e71c6fb$export$ec71b4b83ac08ec3(fn2, deps, opts) {
@@ -1474,7 +1474,7 @@ var stonehamOverrideCalculator = (() => {
   function $a1ea59d68270f0dd$export$f8168d8dd8fd66e6(props) {
     let { isDisabled, onFocus: onFocusProp, onBlur: onBlurProp, onFocusChange } = props;
     const onBlur = (0, q2)((e8) => {
-      if ((0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8) === e8.currentTarget) {
+      if (e8.target === e8.currentTarget) {
         if (onBlurProp) onBlurProp(e8);
         if (onFocusChange) onFocusChange(false);
         return true;
@@ -1485,10 +1485,9 @@ var stonehamOverrideCalculator = (() => {
     ]);
     const onSyntheticFocus = (0, $8a9cb279dc87e130$export$715c682d09d639cc)(onBlur);
     const onFocus = (0, q2)((e8) => {
-      let eventTarget = (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8);
-      const ownerDocument = (0, $431fbd86ca7dc216$export$b204af158042fbac)(eventTarget);
+      const ownerDocument = (0, $431fbd86ca7dc216$export$b204af158042fbac)(e8.target);
       const activeElement2 = ownerDocument ? (0, $d4ee10de306f2510$export$cd4e5573fbe2b576)(ownerDocument) : (0, $d4ee10de306f2510$export$cd4e5573fbe2b576)();
-      if (eventTarget === e8.currentTarget && eventTarget === activeElement2) {
+      if (e8.target === e8.currentTarget && activeElement2 === (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8.nativeEvent)) {
         if (onFocusProp) onFocusProp(e8);
         if (onFocusChange) onFocusChange(true);
         onSyntheticFocus(e8);
@@ -1515,7 +1514,7 @@ var stonehamOverrideCalculator = (() => {
     });
     let { addGlobalListener, removeAllGlobalListeners } = (0, $03deb23ff14920c4$export$4eaf04e54aa8eed6)();
     let onBlur = (0, q2)((e8) => {
-      if (!(0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8))) return;
+      if (!(0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, e8.target)) return;
       if (state.current.isFocusWithin && !(0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, e8.relatedTarget)) {
         state.current.isFocusWithin = false;
         removeAllGlobalListeners();
@@ -1530,21 +1529,19 @@ var stonehamOverrideCalculator = (() => {
     ]);
     let onSyntheticFocus = (0, $8a9cb279dc87e130$export$715c682d09d639cc)(onBlur);
     let onFocus = (0, q2)((e8) => {
-      if (!(0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8))) return;
-      let eventTarget = (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8);
-      const ownerDocument = (0, $431fbd86ca7dc216$export$b204af158042fbac)(eventTarget);
+      if (!(0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, e8.target)) return;
+      const ownerDocument = (0, $431fbd86ca7dc216$export$b204af158042fbac)(e8.target);
       const activeElement2 = (0, $d4ee10de306f2510$export$cd4e5573fbe2b576)(ownerDocument);
-      if (!state.current.isFocusWithin && activeElement2 === eventTarget) {
+      if (!state.current.isFocusWithin && activeElement2 === (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8.nativeEvent)) {
         if (onFocusWithin) onFocusWithin(e8);
         if (onFocusWithinChange) onFocusWithinChange(true);
         state.current.isFocusWithin = true;
         onSyntheticFocus(e8);
         let currentTarget = e8.currentTarget;
         addGlobalListener(ownerDocument, "focus", (e9) => {
-          let eventTarget2 = (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e9);
-          if (state.current.isFocusWithin && !(0, $d4ee10de306f2510$export$4282f70798064fe0)(currentTarget, eventTarget2)) {
+          if (state.current.isFocusWithin && !(0, $d4ee10de306f2510$export$4282f70798064fe0)(currentTarget, e9.target)) {
             let nativeEvent = new ownerDocument.defaultView.FocusEvent("blur", {
-              relatedTarget: eventTarget2
+              relatedTarget: e9.target
             });
             (0, $8a9cb279dc87e130$export$c2b7abe5d61ec696)(nativeEvent, currentTarget);
             let event = (0, $8a9cb279dc87e130$export$525bc4921d56d4a)(nativeEvent);
@@ -1617,12 +1614,12 @@ var stonehamOverrideCalculator = (() => {
     let { hoverProps, triggerHoverEnd } = (0, T2)(() => {
       let triggerHoverStart = (event, pointerType) => {
         state.pointerType = pointerType;
-        if (isDisabled || pointerType === "touch" || state.isHovered || !(0, $d4ee10de306f2510$export$4282f70798064fe0)(event.currentTarget, (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(event))) return;
+        if (isDisabled || pointerType === "touch" || state.isHovered || !(0, $d4ee10de306f2510$export$4282f70798064fe0)(event.currentTarget, event.target)) return;
         state.isHovered = true;
         let target = event.currentTarget;
         state.target = target;
-        addGlobalListener((0, $431fbd86ca7dc216$export$b204af158042fbac)((0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(event)), "pointerover", (e8) => {
-          if (state.isHovered && state.target && !(0, $d4ee10de306f2510$export$4282f70798064fe0)(state.target, (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8))) triggerHoverEnd2(e8, e8.pointerType);
+        addGlobalListener((0, $431fbd86ca7dc216$export$b204af158042fbac)(event.target), "pointerover", (e8) => {
+          if (state.isHovered && state.target && !(0, $d4ee10de306f2510$export$4282f70798064fe0)(state.target, e8.target)) triggerHoverEnd2(e8, e8.pointerType);
         }, {
           capture: true
         });
@@ -1656,7 +1653,7 @@ var stonehamOverrideCalculator = (() => {
           triggerHoverStart(e8, e8.pointerType);
         };
         hoverProps2.onPointerLeave = (e8) => {
-          if (!isDisabled && (0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8))) triggerHoverEnd2(e8, e8.pointerType);
+          if (!isDisabled && (0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, e8.target)) triggerHoverEnd2(e8, e8.pointerType);
         };
       } else if (false) {
         hoverProps2.onTouchStart = () => {
@@ -1667,7 +1664,7 @@ var stonehamOverrideCalculator = (() => {
           state.ignoreEmulatedMouseEvents = false;
         };
         hoverProps2.onMouseLeave = (e8) => {
-          if (!isDisabled && (0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, (0, $d4ee10de306f2510$export$e58f029f0fbfdb29)(e8))) triggerHoverEnd2(e8, "mouse");
+          if (!isDisabled && (0, $d4ee10de306f2510$export$4282f70798064fe0)(e8.currentTarget, e8.target)) triggerHoverEnd2(e8, "mouse");
         };
       }
       return {
@@ -1913,7 +1910,7 @@ var stonehamOverrideCalculator = (() => {
 
   // node_modules/@headlessui/react/dist/internal/disabled.js
   init_compat_module();
-  var e4 = R(void 0);
+  var e4 = Q(void 0);
   function a3() {
     return x2(e4);
   }
@@ -1977,8 +1974,8 @@ var stonehamOverrideCalculator = (() => {
     if (b3(t9) && (Object.keys(m3(o11)).length > 0 || Object.keys(m3(u17)).length > 0)) if (!mn(f14) || Array.isArray(f14) && f14.length > 1 || D4(f14)) {
       if (Object.keys(m3(o11)).length > 0) throw new Error(['Passing props on "Fragment"!', "", "The current component <".concat(a15, ' /> is rendering a "Fragment".'), "However we need to passthrough the following props:", Object.keys(m3(o11)).concat(Object.keys(m3(u17))).map((d6) => "  - ".concat(d6)).join("\n"), "", "You can apply a few solutions:", ['Add an `as="..."` prop, to ensure that we render an actual element instead of a "Fragment".', "Render a single element as the child so that we can forward the props onto that element."].map((d6) => "  - ".concat(d6)).join("\n")].join("\n"));
     } else {
-      let d6 = f14.props, p10 = d6 == null ? void 0 : d6.className, c13 = typeof p10 == "function" ? (...R3) => t4(p10(...R3), o11.className) : t4(p10, o11.className), T8 = c13 ? { className: c13 } : {}, g6 = P5(f14.props, m3(h3(o11, ["ref"])));
-      for (let R3 in u17) R3 in g6 && delete u17[R3];
+      let d6 = f14.props, p10 = d6 == null ? void 0 : d6.className, c13 = typeof p10 == "function" ? (...R2) => t4(p10(...R2), o11.className) : t4(p10, o11.className), T8 = c13 ? { className: c13 } : {}, g6 = P5(f14.props, m3(h3(o11, ["ref"])));
+      for (let R2 in u17) R2 in g6 && delete u17[R2];
       return _n(f14, Object.assign({}, g6, u17, y8, { ref: s12(H3(f14), y8.ref) }, T8));
     }
     return _(t9, Object.assign({}, h3(o11, ["ref"]), !b3(t9) && y8, !b3(t9) && u17), f14);
@@ -2103,7 +2100,7 @@ var stonehamOverrideCalculator = (() => {
   var f3 = Y2(l5);
 
   // node_modules/@headlessui/react/dist/internal/form-fields.js
-  var f4 = R(null);
+  var f4 = Q(null);
   function c4({ children: t9 }) {
     let e8 = x2(f4);
     if (!e8) return xn.createElement(xn.Fragment, null, t9);
@@ -2131,7 +2128,7 @@ var stonehamOverrideCalculator = (() => {
 
   // node_modules/@headlessui/react/dist/internal/id.js
   init_compat_module();
-  var e5 = R(void 0);
+  var e5 = Q(void 0);
   function u4() {
     return x2(e5);
   }
@@ -2209,7 +2206,7 @@ var stonehamOverrideCalculator = (() => {
   }
 
   // node_modules/@headlessui/react/dist/components/description/description.js
-  var a6 = R(null);
+  var a6 = Q(null);
   a6.displayName = "DescriptionContext";
   function f5() {
     let r11 = x2(a6);
@@ -2238,7 +2235,7 @@ var stonehamOverrideCalculator = (() => {
 
   // node_modules/@headlessui/react/dist/components/label/label.js
   init_compat_module();
-  var L4 = R(null);
+  var L4 = Q(null);
   L4.displayName = "LabelContext";
   function C7() {
     let n9 = x2(L4);
@@ -2478,7 +2475,7 @@ var stonehamOverrideCalculator = (() => {
       this.scrollElement = null;
       this.targetWindow = null;
       this.isScrolling = false;
-      this.scrollState = null;
+      this.currentScrollToIndex = null;
       this.measurementsCache = [];
       this.itemSizeCache = /* @__PURE__ */ new Map();
       this.laneAssignments = /* @__PURE__ */ new Map();
@@ -2491,11 +2488,6 @@ var stonehamOverrideCalculator = (() => {
       this.scrollDirection = null;
       this.scrollAdjustments = 0;
       this.elementsCache = /* @__PURE__ */ new Map();
-      this.now = () => {
-        var _a2;
-        var _a, _b, _c;
-        return (_a2 = (_c = (_b = (_a = this.targetWindow) == null ? void 0 : _a.performance) == null ? void 0 : _b.now) == null ? void 0 : _c.call(_b)) != null ? _a2 : Date.now();
-      };
       this.observer = /* @__PURE__ */ (() => {
         let _ro = null;
         const get2 = () => {
@@ -2592,11 +2584,6 @@ var stonehamOverrideCalculator = (() => {
         this.unsubs.filter(Boolean).forEach((d6) => d6());
         this.unsubs = [];
         this.observer.disconnect();
-        if (this.rafId != null && this.targetWindow) {
-          this.targetWindow.cancelAnimationFrame(this.rafId);
-          this.rafId = null;
-        }
-        this.scrollState = null;
         this.scrollElement = null;
         this.targetWindow = null;
       };
@@ -2636,9 +2623,6 @@ var stonehamOverrideCalculator = (() => {
               this.scrollDirection = isScrolling ? this.getScrollOffset() < offset4 ? "forward" : "backward" : null;
               this.scrollOffset = offset4;
               this.isScrolling = isScrolling;
-              if (this.scrollState) {
-                this.scheduleScrollReconcile();
-              }
               this.maybeNotify();
             })
           );
@@ -2648,7 +2632,6 @@ var stonehamOverrideCalculator = (() => {
           });
         }
       };
-      this.rafId = null;
       this.getSize = () => {
         var _a;
         if (!this.options.enabled) {
@@ -2869,32 +2852,7 @@ var stonehamOverrideCalculator = (() => {
         }
         return parseInt(indexStr, 10);
       };
-      this.shouldMeasureDuringScroll = (index3) => {
-        var _a2;
-        var _a;
-        if (!this.scrollState || this.scrollState.behavior !== "smooth") {
-          return true;
-        }
-        const scrollIndex = (_a2 = this.scrollState.index) != null ? _a2 : (_a = this.getVirtualItemForOffset(this.scrollState.lastTargetOffset)) == null ? void 0 : _a.index;
-        if (scrollIndex !== void 0 && this.range) {
-          const bufferSize = Math.max(
-            this.options.overscan,
-            Math.ceil((this.range.endIndex - this.range.startIndex) / 2)
-          );
-          const minIndex = Math.max(0, scrollIndex - bufferSize);
-          const maxIndex = Math.min(
-            this.options.count - 1,
-            scrollIndex + bufferSize
-          );
-          return index3 >= minIndex && index3 <= maxIndex;
-        }
-        return true;
-      };
       this._measureElement = (node, entry) => {
-        if (!node.isConnected) {
-          this.observer.unobserve(node);
-          return;
-        }
         const index3 = this.indexFromElement(node);
         const item = this.measurementsCache[index3];
         if (!item) {
@@ -2909,21 +2867,20 @@ var stonehamOverrideCalculator = (() => {
           this.observer.observe(node);
           this.elementsCache.set(key, node);
         }
-        if (this.shouldMeasureDuringScroll(index3)) {
+        if (node.isConnected) {
           this.resizeItem(index3, this.options.measureElement(node, entry, this));
         }
       };
       this.resizeItem = (index3, size4) => {
-        var _a2;
         var _a;
         const item = this.measurementsCache[index3];
         if (!item) {
           return;
         }
-        const itemSize = (_a2 = this.itemSizeCache.get(item.key)) != null ? _a2 : item.size;
+        const itemSize = (_a = this.itemSizeCache.get(item.key)) != null ? _a : item.size;
         const delta = size4 - itemSize;
         if (delta !== 0) {
-          if (((_a = this.scrollState) == null ? void 0 : _a.behavior) !== "smooth" && (this.shouldAdjustScrollPositionOnItemSizeChange !== void 0 ? this.shouldAdjustScrollPositionOnItemSizeChange(item, delta, this) : item.start < this.getScrollOffset() + this.scrollAdjustments)) {
+          if (this.shouldAdjustScrollPositionOnItemSizeChange !== void 0 ? this.shouldAdjustScrollPositionOnItemSizeChange(item, delta, this) : item.start < this.getScrollOffset() + this.scrollAdjustments) {
             if (this.options.debug) {
               console.info("correction", delta);
             }
@@ -3005,10 +2962,12 @@ var stonehamOverrideCalculator = (() => {
       };
       this.getOffsetForIndex = (index3, align = "auto") => {
         index3 = Math.max(0, Math.min(index3, this.options.count - 1));
+        const item = this.measurementsCache[index3];
+        if (!item) {
+          return void 0;
+        }
         const size4 = this.getSize();
         const scrollOffset = this.getScrollOffset();
-        const item = this.measurementsCache[index3];
-        if (!item) return;
         if (align === "auto") {
           if (item.end >= scrollOffset + size4 - this.options.scrollPaddingEnd) {
             align = "end";
@@ -3027,55 +2986,84 @@ var stonehamOverrideCalculator = (() => {
           align
         ];
       };
-      this.scrollToOffset = (toOffset, { align = "start", behavior = "auto" } = {}) => {
-        const offset4 = this.getOffsetForAlignment(toOffset, align);
-        const now = this.now();
-        this.scrollState = {
-          index: null,
-          align,
-          behavior,
-          startedAt: now,
-          lastTargetOffset: offset4,
-          stableFrames: 0
-        };
-        this._scrollToOffset(offset4, { adjustments: void 0, behavior });
-        this.scheduleScrollReconcile();
-      };
-      this.scrollToIndex = (index3, {
-        align: initialAlign = "auto",
-        behavior = "auto"
-      } = {}) => {
-        index3 = Math.max(0, Math.min(index3, this.options.count - 1));
-        const offsetInfo = this.getOffsetForIndex(index3, initialAlign);
-        if (!offsetInfo) {
-          return;
+      this.isDynamicMode = () => this.elementsCache.size > 0;
+      this.scrollToOffset = (toOffset, { align = "start", behavior } = {}) => {
+        if (behavior === "smooth" && this.isDynamicMode()) {
+          console.warn(
+            "The `smooth` scroll behavior is not fully supported with dynamic size."
+          );
         }
-        const [offset4, align] = offsetInfo;
-        const now = this.now();
-        this.scrollState = {
-          index: index3,
-          align,
-          behavior,
-          startedAt: now,
-          lastTargetOffset: offset4,
-          stableFrames: 0
-        };
-        this._scrollToOffset(offset4, { adjustments: void 0, behavior });
-        this.scheduleScrollReconcile();
+        this._scrollToOffset(this.getOffsetForAlignment(toOffset, align), {
+          adjustments: void 0,
+          behavior
+        });
       };
-      this.scrollBy = (delta, { behavior = "auto" } = {}) => {
-        const offset4 = this.getScrollOffset() + delta;
-        const now = this.now();
-        this.scrollState = {
-          index: null,
-          align: "start",
-          behavior,
-          startedAt: now,
-          lastTargetOffset: offset4,
-          stableFrames: 0
+      this.scrollToIndex = (index3, { align: initialAlign = "auto", behavior } = {}) => {
+        if (behavior === "smooth" && this.isDynamicMode()) {
+          console.warn(
+            "The `smooth` scroll behavior is not fully supported with dynamic size."
+          );
+        }
+        index3 = Math.max(0, Math.min(index3, this.options.count - 1));
+        this.currentScrollToIndex = index3;
+        let attempts = 0;
+        const maxAttempts = 10;
+        const tryScroll = (currentAlign) => {
+          if (!this.targetWindow) return;
+          const offsetInfo = this.getOffsetForIndex(index3, currentAlign);
+          if (!offsetInfo) {
+            console.warn("Failed to get offset for index:", index3);
+            return;
+          }
+          const [offset4, align] = offsetInfo;
+          this._scrollToOffset(offset4, { adjustments: void 0, behavior });
+          this.targetWindow.requestAnimationFrame(() => {
+            const verify = () => {
+              if (this.currentScrollToIndex !== index3) return;
+              const currentOffset = this.getScrollOffset();
+              const afterInfo = this.getOffsetForIndex(index3, align);
+              if (!afterInfo) {
+                console.warn("Failed to get offset for index:", index3);
+                return;
+              }
+              if (!approxEqual(afterInfo[0], currentOffset)) {
+                scheduleRetry(align);
+              }
+            };
+            if (this.isDynamicMode()) {
+              this.targetWindow.requestAnimationFrame(verify);
+            } else {
+              verify();
+            }
+          });
         };
-        this._scrollToOffset(offset4, { adjustments: void 0, behavior });
-        this.scheduleScrollReconcile();
+        const scheduleRetry = (align) => {
+          if (!this.targetWindow) return;
+          if (this.currentScrollToIndex !== index3) return;
+          attempts++;
+          if (attempts < maxAttempts) {
+            if (this.options.debug) {
+              console.info("Schedule retry", attempts, maxAttempts);
+            }
+            this.targetWindow.requestAnimationFrame(() => tryScroll(align));
+          } else {
+            console.warn(
+              "Failed to scroll to index ".concat(index3, " after ").concat(maxAttempts, " attempts.")
+            );
+          }
+        };
+        tryScroll(initialAlign);
+      };
+      this.scrollBy = (delta, { behavior } = {}) => {
+        if (behavior === "smooth" && this.isDynamicMode()) {
+          console.warn(
+            "The `smooth` scroll behavior is not fully supported with dynamic size."
+          );
+        }
+        this._scrollToOffset(this.getScrollOffset() + delta, {
+          adjustments: void 0,
+          behavior
+        });
       };
       this.getTotalSize = () => {
         var _a2;
@@ -3115,49 +3103,6 @@ var stonehamOverrideCalculator = (() => {
         this.notify(false);
       };
       this.setOptions(opts);
-    }
-    scheduleScrollReconcile() {
-      if (!this.targetWindow) {
-        this.scrollState = null;
-        return;
-      }
-      if (this.rafId != null) return;
-      this.rafId = this.targetWindow.requestAnimationFrame(() => {
-        this.rafId = null;
-        this.reconcileScroll();
-      });
-    }
-    reconcileScroll() {
-      if (!this.scrollState) return;
-      const el = this.scrollElement;
-      if (!el) return;
-      const MAX_RECONCILE_MS = 5e3;
-      if (this.now() - this.scrollState.startedAt > MAX_RECONCILE_MS) {
-        this.scrollState = null;
-        return;
-      }
-      const offsetInfo = this.scrollState.index != null ? this.getOffsetForIndex(this.scrollState.index, this.scrollState.align) : void 0;
-      const targetOffset = offsetInfo ? offsetInfo[0] : this.scrollState.lastTargetOffset;
-      const STABLE_FRAMES = 1;
-      const targetChanged = targetOffset !== this.scrollState.lastTargetOffset;
-      if (!targetChanged && approxEqual(targetOffset, this.getScrollOffset())) {
-        this.scrollState.stableFrames++;
-        if (this.scrollState.stableFrames >= STABLE_FRAMES) {
-          this.scrollState = null;
-          return;
-        }
-      } else {
-        this.scrollState.stableFrames = 0;
-        if (targetChanged) {
-          this.scrollState.lastTargetOffset = targetOffset;
-          this.scrollState.behavior = "auto";
-          this._scrollToOffset(targetOffset, {
-            adjustments: void 0,
-            behavior: "auto"
-          });
-        }
-      }
-      this.scheduleScrollReconcile();
     }
   };
   var findNearestBinarySearch = (low, high, getCurrentValue, value) => {
@@ -4009,6 +3954,7 @@ var stonehamOverrideCalculator = (() => {
     }
     return value instanceof ShadowRoot || value instanceof getWindow(value).ShadowRoot;
   }
+  var invalidOverflowDisplayValues = /* @__PURE__ */ new Set(["inline", "contents"]);
   function isOverflowElement(element) {
     const {
       overflow,
@@ -4016,31 +3962,29 @@ var stonehamOverrideCalculator = (() => {
       overflowY,
       display
     } = getComputedStyle2(element);
-    return /auto|scroll|overlay|hidden|clip/.test(overflow + overflowY + overflowX) && display !== "inline" && display !== "contents";
+    return /auto|scroll|overlay|hidden|clip/.test(overflow + overflowY + overflowX) && !invalidOverflowDisplayValues.has(display);
   }
+  var tableElements = /* @__PURE__ */ new Set(["table", "td", "th"]);
   function isTableElement(element) {
-    return /^(table|td|th)$/.test(getNodeName(element));
+    return tableElements.has(getNodeName(element));
   }
+  var topLayerSelectors = [":popover-open", ":modal"];
   function isTopLayer(element) {
-    try {
-      if (element.matches(":popover-open")) {
-        return true;
+    return topLayerSelectors.some((selector) => {
+      try {
+        return element.matches(selector);
+      } catch (_e) {
+        return false;
       }
-    } catch (_e) {
-    }
-    try {
-      return element.matches(":modal");
-    } catch (_e) {
-      return false;
-    }
+    });
   }
-  var willChangeRe = /transform|translate|scale|rotate|perspective|filter/;
-  var containRe = /paint|layout|strict|content/;
-  var isNotNone = (value) => !!value && value !== "none";
-  var isWebKitValue;
+  var transformProperties = ["transform", "translate", "scale", "rotate", "perspective"];
+  var willChangeValues = ["transform", "translate", "scale", "rotate", "perspective", "filter"];
+  var containValues = ["paint", "layout", "strict", "content"];
   function isContainingBlock(elementOrCss) {
+    const webkit = isWebKit();
     const css = isElement(elementOrCss) ? getComputedStyle2(elementOrCss) : elementOrCss;
-    return isNotNone(css.transform) || isNotNone(css.translate) || isNotNone(css.scale) || isNotNone(css.rotate) || isNotNone(css.perspective) || !isWebKit() && (isNotNone(css.backdropFilter) || isNotNone(css.filter)) || willChangeRe.test(css.willChange || "") || containRe.test(css.contain || "");
+    return transformProperties.some((value) => css[value] ? css[value] !== "none" : false) || (css.containerType ? css.containerType !== "normal" : false) || !webkit && (css.backdropFilter ? css.backdropFilter !== "none" : false) || !webkit && (css.filter ? css.filter !== "none" : false) || willChangeValues.some((value) => (css.willChange || "").includes(value)) || containValues.some((value) => (css.contain || "").includes(value));
   }
   function getContainingBlock(element) {
     let currentNode = getParentNode(element);
@@ -4055,13 +3999,12 @@ var stonehamOverrideCalculator = (() => {
     return null;
   }
   function isWebKit() {
-    if (isWebKitValue == null) {
-      isWebKitValue = typeof CSS !== "undefined" && CSS.supports && CSS.supports("-webkit-backdrop-filter", "none");
-    }
-    return isWebKitValue;
+    if (typeof CSS === "undefined" || !CSS.supports) return false;
+    return CSS.supports("-webkit-backdrop-filter", "none");
   }
+  var lastTraversableNodeNames = /* @__PURE__ */ new Set(["html", "body", "#document"]);
   function isLastTraversableNode(node) {
-    return /^(html|body|#document)$/.test(getNodeName(node));
+    return lastTraversableNodeNames.has(getNodeName(node));
   }
   function getComputedStyle2(element) {
     return getWindow(element).getComputedStyle(element);
@@ -4115,9 +4058,8 @@ var stonehamOverrideCalculator = (() => {
     if (isBody) {
       const frameElement = getFrameElement(win);
       return list.concat(win, win.visualViewport || [], isOverflowElement(scrollableAncestor) ? scrollableAncestor : [], frameElement && traverseIframes ? getOverflowAncestors(frameElement) : []);
-    } else {
-      return list.concat(scrollableAncestor, getOverflowAncestors(scrollableAncestor, [], traverseIframes));
     }
+    return list.concat(scrollableAncestor, getOverflowAncestors(scrollableAncestor, [], traverseIframes));
   }
   function getFrameElement(win) {
     return win.parent && Object.getPrototypeOf(win.parent) ? win.frameElement : null;
@@ -4153,6 +4095,10 @@ var stonehamOverrideCalculator = (() => {
     bottom: "top",
     top: "bottom"
   };
+  var oppositeAlignmentMap = {
+    start: "end",
+    end: "start"
+  };
   function clamp(start, value, end) {
     return max(start, min(value, end));
   }
@@ -4171,9 +4117,9 @@ var stonehamOverrideCalculator = (() => {
   function getAxisLength(axis) {
     return axis === "y" ? "height" : "width";
   }
+  var yAxisSides = /* @__PURE__ */ new Set(["top", "bottom"]);
   function getSideAxis(placement) {
-    const firstChar = placement[0];
-    return firstChar === "t" || firstChar === "b" ? "y" : "x";
+    return yAxisSides.has(getSide(placement)) ? "y" : "x";
   }
   function getAlignmentAxis(placement) {
     return getOppositeAxis(getSideAxis(placement));
@@ -4196,7 +4142,7 @@ var stonehamOverrideCalculator = (() => {
     return [getOppositeAlignmentPlacement(placement), oppositePlacement, getOppositeAlignmentPlacement(oppositePlacement)];
   }
   function getOppositeAlignmentPlacement(placement) {
-    return placement.includes("start") ? placement.replace("start", "end") : placement.replace("end", "start");
+    return placement.replace(/start|end/g, (alignment) => oppositeAlignmentMap[alignment]);
   }
   var lrPlacement = ["left", "right"];
   var rlPlacement = ["right", "left"];
@@ -4227,8 +4173,7 @@ var stonehamOverrideCalculator = (() => {
     return list;
   }
   function getOppositePlacement(placement) {
-    const side = getSide(placement);
-    return oppositeSideMap[side] + placement.slice(side.length);
+    return placement.replace(/left|right|bottom|top/g, (side) => oppositeSideMap[side]);
   }
   function expandPaddingObject(padding) {
     return __spreadValues({
@@ -4380,7 +4325,6 @@ var stonehamOverrideCalculator = (() => {
       right: (elementClientRect.right - clippingClientRect.right + paddingObject.right) / offsetScale.x
     };
   }
-  var MAX_RESET_COUNT = 50;
   var computePosition = async (reference, floating, config) => {
     const {
       placement = "bottom",
@@ -4388,9 +4332,7 @@ var stonehamOverrideCalculator = (() => {
       middleware = [],
       platform: platform2
     } = config;
-    const platformWithDetectOverflow = platform2.detectOverflow ? platform2 : __spreadProps(__spreadValues({}, platform2), {
-      detectOverflow
-    });
+    const validMiddleware = middleware.filter(Boolean);
     const rtl = await (platform2.isRTL == null ? void 0 : platform2.isRTL(floating));
     let rects = await platform2.getElementRects({
       reference,
@@ -4402,17 +4344,14 @@ var stonehamOverrideCalculator = (() => {
       y: y8
     } = computeCoordsFromPlacement(rects, placement, rtl);
     let statefulPlacement = placement;
+    let middlewareData = {};
     let resetCount = 0;
-    const middlewareData = {};
-    for (let i9 = 0; i9 < middleware.length; i9++) {
-      const currentMiddleware = middleware[i9];
-      if (!currentMiddleware) {
-        continue;
-      }
+    for (let i9 = 0; i9 < validMiddleware.length; i9++) {
+      var _platform$detectOverf;
       const {
         name,
         fn: fn2
-      } = currentMiddleware;
+      } = validMiddleware[i9];
       const {
         x: nextX,
         y: nextY,
@@ -4426,7 +4365,9 @@ var stonehamOverrideCalculator = (() => {
         strategy,
         middlewareData,
         rects,
-        platform: platformWithDetectOverflow,
+        platform: __spreadProps(__spreadValues({}, platform2), {
+          detectOverflow: (_platform$detectOverf = platform2.detectOverflow) != null ? _platform$detectOverf : detectOverflow
+        }),
         elements: {
           reference,
           floating
@@ -4434,8 +4375,10 @@ var stonehamOverrideCalculator = (() => {
       });
       x6 = nextX != null ? nextX : x6;
       y8 = nextY != null ? nextY : y8;
-      middlewareData[name] = __spreadValues(__spreadValues({}, middlewareData[name]), data);
-      if (reset && resetCount < MAX_RESET_COUNT) {
+      middlewareData = __spreadProps(__spreadValues({}, middlewareData), {
+        [name]: __spreadValues(__spreadValues({}, middlewareData[name]), data)
+      });
+      if (reset && resetCount <= 50) {
         resetCount++;
         if (typeof reset === "object") {
           if (reset.placement) {
@@ -4957,7 +4900,7 @@ var stonehamOverrideCalculator = (() => {
       if (getNodeName(offsetParent) !== "body" || isOverflowElement(documentElement)) {
         scroll = getNodeScroll(offsetParent);
       }
-      if (isOffsetParentAnElement) {
+      if (isHTMLElement(offsetParent)) {
         const offsetRect = getBoundingClientRect(offsetParent);
         scale = getScale(offsetParent);
         offsets.x = offsetRect.x + offsetParent.clientLeft;
@@ -5031,6 +4974,7 @@ var stonehamOverrideCalculator = (() => {
       y: y8
     };
   }
+  var absoluteOrFixed = /* @__PURE__ */ new Set(["absolute", "fixed"]);
   function getInnerBoundingClientRect(element, strategy) {
     const clientRect = getBoundingClientRect(element, true, strategy === "fixed");
     const top = clientRect.top + element.clientTop;
@@ -5088,7 +5032,7 @@ var stonehamOverrideCalculator = (() => {
       if (!currentNodeIsContaining && computedStyle.position === "fixed") {
         currentContainingBlockComputedStyle = null;
       }
-      const shouldDropCurrentNode = elementIsFixed ? !currentNodeIsContaining && !currentContainingBlockComputedStyle : !currentNodeIsContaining && computedStyle.position === "static" && !!currentContainingBlockComputedStyle && (currentContainingBlockComputedStyle.position === "absolute" || currentContainingBlockComputedStyle.position === "fixed") || isOverflowElement(currentNode) && !currentNodeIsContaining && hasFixedPositionAncestor(element, currentNode);
+      const shouldDropCurrentNode = elementIsFixed ? !currentNodeIsContaining && !currentContainingBlockComputedStyle : !currentNodeIsContaining && computedStyle.position === "static" && !!currentContainingBlockComputedStyle && absoluteOrFixed.has(currentContainingBlockComputedStyle.position) || isOverflowElement(currentNode) && !currentNodeIsContaining && hasFixedPositionAncestor(element, currentNode);
       if (shouldDropCurrentNode) {
         result = result.filter((ancestor) => ancestor !== currentNode);
       } else {
@@ -5108,23 +5052,20 @@ var stonehamOverrideCalculator = (() => {
     } = _ref;
     const elementClippingAncestors = boundary === "clippingAncestors" ? isTopLayer(element) ? [] : getClippingElementAncestors(element, this._c) : [].concat(boundary);
     const clippingAncestors = [...elementClippingAncestors, rootBoundary];
-    const firstRect = getClientRectFromClippingAncestor(element, clippingAncestors[0], strategy);
-    let top = firstRect.top;
-    let right = firstRect.right;
-    let bottom = firstRect.bottom;
-    let left = firstRect.left;
-    for (let i9 = 1; i9 < clippingAncestors.length; i9++) {
-      const rect = getClientRectFromClippingAncestor(element, clippingAncestors[i9], strategy);
-      top = max(rect.top, top);
-      right = min(rect.right, right);
-      bottom = min(rect.bottom, bottom);
-      left = max(rect.left, left);
-    }
+    const firstClippingAncestor = clippingAncestors[0];
+    const clippingRect = clippingAncestors.reduce((accRect, clippingAncestor) => {
+      const rect = getClientRectFromClippingAncestor(element, clippingAncestor, strategy);
+      accRect.top = max(rect.top, accRect.top);
+      accRect.right = min(rect.right, accRect.right);
+      accRect.bottom = min(rect.bottom, accRect.bottom);
+      accRect.left = max(rect.left, accRect.left);
+      return accRect;
+    }, getClientRectFromClippingAncestor(element, firstClippingAncestor, strategy));
     return {
-      width: right - left,
-      height: bottom - top,
-      x: left,
-      y: top
+      width: clippingRect.right - clippingRect.left,
+      height: clippingRect.bottom - clippingRect.top,
+      x: clippingRect.left,
+      y: clippingRect.top
     };
   }
   function getDimensions(element) {
@@ -5332,7 +5273,7 @@ var stonehamOverrideCalculator = (() => {
       animationFrame = false
     } = options;
     const referenceEl = unwrapElement(reference);
-    const ancestors = ancestorScroll || ancestorResize ? [...referenceEl ? getOverflowAncestors(referenceEl) : [], ...floating ? getOverflowAncestors(floating) : []] : [];
+    const ancestors = ancestorScroll || ancestorResize ? [...referenceEl ? getOverflowAncestors(referenceEl) : [], ...getOverflowAncestors(floating)] : [];
     ancestors.forEach((ancestor) => {
       ancestorScroll && ancestor.addEventListener("scroll", update, {
         passive: true
@@ -5345,7 +5286,7 @@ var stonehamOverrideCalculator = (() => {
     if (elementResize) {
       resizeObserver = new ResizeObserver((_ref) => {
         let [firstEntry] = _ref;
-        if (firstEntry && firstEntry.target === referenceEl && resizeObserver && floating) {
+        if (firstEntry && firstEntry.target === referenceEl && resizeObserver) {
           resizeObserver.unobserve(floating);
           cancelAnimationFrame(reobserveFrame);
           reobserveFrame = requestAnimationFrame(() => {
@@ -5358,9 +5299,7 @@ var stonehamOverrideCalculator = (() => {
       if (referenceEl && !animationFrame) {
         resizeObserver.observe(referenceEl);
       }
-      if (floating) {
-        resizeObserver.observe(floating);
-      }
+      resizeObserver.observe(floating);
     }
     let frameId;
     let prevRefRect = animationFrame ? getBoundingClientRect(reference) : null;
@@ -5627,38 +5566,18 @@ var stonehamOverrideCalculator = (() => {
       floatingStyles
     }), [data, update, refs, elements, floatingStyles]);
   }
-  var offset3 = (options, deps) => {
-    const result = offset2(options);
-    return {
-      name: result.name,
-      fn: result.fn,
-      options: [options, deps]
-    };
-  };
-  var shift3 = (options, deps) => {
-    const result = shift2(options);
-    return {
-      name: result.name,
-      fn: result.fn,
-      options: [options, deps]
-    };
-  };
-  var flip3 = (options, deps) => {
-    const result = flip2(options);
-    return {
-      name: result.name,
-      fn: result.fn,
-      options: [options, deps]
-    };
-  };
-  var size3 = (options, deps) => {
-    const result = size2(options);
-    return {
-      name: result.name,
-      fn: result.fn,
-      options: [options, deps]
-    };
-  };
+  var offset3 = (options, deps) => __spreadProps(__spreadValues({}, offset2(options)), {
+    options: [options, deps]
+  });
+  var shift3 = (options, deps) => __spreadProps(__spreadValues({}, shift2(options)), {
+    options: [options, deps]
+  });
+  var flip3 = (options, deps) => __spreadProps(__spreadValues({}, flip2(options)), {
+    options: [options, deps]
+  });
+  var size3 = (options, deps) => __spreadProps(__spreadValues({}, size2(options)), {
+    options: [options, deps]
+  });
 
   // node_modules/@floating-ui/react/dist/floating-ui.react.mjs
   var SafeReact = __spreadValues({}, compat_module_exports);
@@ -5753,8 +5672,8 @@ var stonehamOverrideCalculator = (() => {
       }
     };
   }
-  var FloatingNodeContext = /* @__PURE__ */ R(null);
-  var FloatingTreeContext = /* @__PURE__ */ R(null);
+  var FloatingNodeContext = /* @__PURE__ */ Q(null);
+  var FloatingTreeContext = /* @__PURE__ */ Q(null);
   var useFloatingParentNodeId = () => {
     var _React$useContext;
     return ((_React$useContext = x2(FloatingNodeContext)) == null ? void 0 : _React$useContext.id) || null;
@@ -6134,11 +6053,11 @@ var stonehamOverrideCalculator = (() => {
   // node_modules/@headlessui/react/dist/internal/floating.js
   init_compat_module();
   init_compat_module();
-  var y6 = R({ styles: void 0, setReference: () => {
+  var y6 = Q({ styles: void 0, setReference: () => {
   }, setFloating: () => {
   }, getReferenceProps: () => ({}), getFloatingProps: () => ({}), slot: {} });
   y6.displayName = "FloatingContext";
-  var $4 = R(null);
+  var $4 = Q(null);
   $4.displayName = "PlacementContext";
   function ye(e8) {
     return T2(() => e8 ? typeof e8 == "string" ? { to: e8 } : e8 : null, [e8]);
@@ -6283,7 +6202,7 @@ var stonehamOverrideCalculator = (() => {
 
   // node_modules/@headlessui/react/dist/internal/open-closed.js
   init_compat_module();
-  var n7 = R(null);
+  var n7 = Q(null);
   n7.displayName = "OpenClosedContext";
   var i8 = ((e8) => (e8[e8.Open = 1] = "Open", e8[e8.Closed = 2] = "Closed", e8[e8.Closing = 4] = "Closing", e8[e8.Opening = 8] = "Opening", e8))(i8 || {});
   function u13() {
@@ -6367,7 +6286,7 @@ var stonehamOverrideCalculator = (() => {
 
   // node_modules/@headlessui/react/dist/internal/portal-force-root.js
   init_compat_module();
-  var e7 = R(false);
+  var e7 = Q(false);
   function a13() {
     return x2(e7);
   }
@@ -6407,12 +6326,12 @@ var stonehamOverrideCalculator = (() => {
     return r11 ? xn.createElement(j8, __spreadProps(__spreadValues({}, t9), { ownerDocument: p10, ref: l8 })) : n9({ ourProps: { ref: l8 }, theirProps: t9, slot: {}, defaultTag: _5, name: "Portal" });
   }
   var I7 = k;
-  var c11 = R(null);
+  var c11 = Q(null);
   function D7(e8, o11) {
     let _a = e8, { target: l8 } = _a, r11 = __objRest(_a, ["target"]), t9 = { ref: y3(o11) }, n9 = K3();
     return xn.createElement(c11.Provider, { value: l8 }, n9({ ourProps: t9, theirProps: r11, defaultTag: I7, name: "Popover.Group" }));
   }
-  var m7 = R(null);
+  var m7 = Q(null);
   var J4 = Y2(S7);
   var X2 = Y2(D7);
   var te = Object.assign(J4, { Group: X2 });
@@ -6600,7 +6519,7 @@ var stonehamOverrideCalculator = (() => {
 
   // node_modules/@headlessui/react/dist/components/combobox/combobox-machine-glue.js
   init_compat_module();
-  var u15 = R(null);
+  var u15 = Q(null);
   function p9(n9) {
     let o11 = x2(u15);
     if (o11 === null) {
@@ -6615,7 +6534,7 @@ var stonehamOverrideCalculator = (() => {
   }
 
   // node_modules/@headlessui/react/dist/components/combobox/combobox.js
-  var de = R(null);
+  var de = Q(null);
   de.displayName = "ComboboxDataContext";
   function te2(T8) {
     let O5 = x2(de);
@@ -6625,14 +6544,14 @@ var stonehamOverrideCalculator = (() => {
     }
     return O5;
   }
-  var Le = R(null);
+  var Le = Q(null);
   function Eo(T8) {
-    let O5 = p9("VirtualProvider"), e8 = te2("VirtualProvider"), { options: o11 } = e8.virtual, E7 = S3(O5, (a15) => a15.optionsElement), [R3, y8] = T2(() => {
+    let O5 = p9("VirtualProvider"), e8 = te2("VirtualProvider"), { options: o11 } = e8.virtual, E7 = S3(O5, (a15) => a15.optionsElement), [R2, y8] = T2(() => {
       let a15 = E7;
       if (!a15) return [0, 0];
       let u17 = window.getComputedStyle(a15);
       return [parseFloat(u17.paddingBlockStart || u17.paddingTop), parseFloat(u17.paddingBlockEnd || u17.paddingBottom)];
-    }, [E7]), b7 = useVirtualizer({ enabled: o11.length !== 0, scrollPaddingStart: R3, scrollPaddingEnd: y8, count: o11.length, estimateSize() {
+    }, [E7]), b7 = useVirtualizer({ enabled: o11.length !== 0, scrollPaddingStart: R2, scrollPaddingEnd: y8, count: o11.length, estimateSize() {
       return 40;
     }, getScrollElement() {
       return O5.state.optionsElement;
@@ -6650,7 +6569,7 @@ var stonehamOverrideCalculator = (() => {
   }
   var ho = k;
   function Ao(T8, O5) {
-    let e8 = g2(), o11 = a3(), _a = T8, { value: E7, defaultValue: R3, onChange: y8, form: b7, name: h8, by: p10, invalid: f14 = false, disabled: n9 = o11 || false, onClose: m8, __demoMode: a15 = false, multiple: u17 = false, immediate: A7 = false, virtual: d6 = null, nullable: X3 } = _a, G5 = __objRest(_a, ["value", "defaultValue", "onChange", "form", "name", "by", "invalid", "disabled", "onClose", "__demoMode", "multiple", "immediate", "virtual", "nullable"]), C10 = l4(R3), [x6 = u17 ? [] : void 0, v6] = b4(E7, y8, C10), c13 = b6({ id: e8, virtual: d6, __demoMode: a15 }), z4 = A2({ static: false, hold: false }), D9 = u7(p10), K4 = o5((i9) => d6 ? p10 === null ? d6.options.indexOf(i9) : d6.options.findIndex((M6) => D9(M6, i9)) : c13.state.options.findIndex((M6) => D9(M6.dataRef.current.value, i9))), W3 = q2((i9) => u3(l8.mode, { [k6.Multi]: () => x6.some((M6) => D9(M6, i9)), [k6.Single]: () => D9(x6, i9) }), [x6]), S8 = S3(c13, (i9) => i9.virtual), j10 = o5(() => m8 == null ? void 0 : m8()), l8 = T2(() => ({ __demoMode: a15, immediate: A7, optionsPropsRef: z4, value: x6, defaultValue: C10, disabled: n9, invalid: f14, mode: u17 ? k6.Multi : k6.Single, virtual: d6 ? S8 : null, onChange: v6, isSelected: W3, calculateIndex: K4, compare: D9, onClose: j10 }), [a15, A7, z4, x6, C10, n9, f14, u17, d6, S8, v6, W3, K4, D9, j10]);
+    let e8 = g2(), o11 = a3(), _a = T8, { value: E7, defaultValue: R2, onChange: y8, form: b7, name: h8, by: p10, invalid: f14 = false, disabled: n9 = o11 || false, onClose: m8, __demoMode: a15 = false, multiple: u17 = false, immediate: A7 = false, virtual: d6 = null, nullable: X3 } = _a, G5 = __objRest(_a, ["value", "defaultValue", "onChange", "form", "name", "by", "invalid", "disabled", "onClose", "__demoMode", "multiple", "immediate", "virtual", "nullable"]), C10 = l4(R2), [x6 = u17 ? [] : void 0, v6] = b4(E7, y8, C10), c13 = b6({ id: e8, virtual: d6, __demoMode: a15 }), z4 = A2({ static: false, hold: false }), D9 = u7(p10), K4 = o5((i9) => d6 ? p10 === null ? d6.options.indexOf(i9) : d6.options.findIndex((M6) => D9(M6, i9)) : c13.state.options.findIndex((M6) => D9(M6.dataRef.current.value, i9))), W3 = q2((i9) => u3(l8.mode, { [k6.Multi]: () => x6.some((M6) => D9(M6, i9)), [k6.Single]: () => D9(x6, i9) }), [x6]), S8 = S3(c13, (i9) => i9.virtual), j10 = o5(() => m8 == null ? void 0 : m8()), l8 = T2(() => ({ __demoMode: a15, immediate: A7, optionsPropsRef: z4, value: x6, defaultValue: C10, disabled: n9, invalid: f14, mode: u17 ? k6.Multi : k6.Single, virtual: d6 ? S8 : null, onChange: v6, isSelected: W3, calculateIndex: K4, compare: D9, onClose: j10 }), [a15, A7, z4, x6, C10, n9, f14, u17, d6, S8, v6, W3, K4, D9, j10]);
     n2(() => {
       var i9;
       d6 && c13.send({ type: D8.UpdateVirtualConfiguration, options: d6.options, disabled: (i9 = d6.disabled) != null ? i9 : null });
@@ -6667,7 +6586,7 @@ var stonehamOverrideCalculator = (() => {
   var Io = "input";
   function Ro(T8, O5) {
     var ee, q5;
-    let e8 = p9("Combobox.Input"), o11 = te2("Combobox.Input"), E7 = g2(), R3 = u4(), _a = T8, { id: y8 = R3 || "headlessui-combobox-input-".concat(E7), onChange: b7, displayValue: h8, disabled: p10 = o11.disabled || false, autoFocus: f14 = false, type: n9 = "text" } = _a, m8 = __objRest(_a, ["id", "onChange", "displayValue", "disabled", "autoFocus", "type"]), a15 = A2(null), u17 = y3(a15, O5, Fe(), e8.actions.setInputElement), [A7, d6] = S3(e8, (t9) => [t9.comboboxState, t9.isTyping]), X3 = p3(), G5 = o5(() => {
+    let e8 = p9("Combobox.Input"), o11 = te2("Combobox.Input"), E7 = g2(), R2 = u4(), _a = T8, { id: y8 = R2 || "headlessui-combobox-input-".concat(E7), onChange: b7, displayValue: h8, disabled: p10 = o11.disabled || false, autoFocus: f14 = false, type: n9 = "text" } = _a, m8 = __objRest(_a, ["id", "onChange", "displayValue", "disabled", "autoFocus", "type"]), a15 = A2(null), u17 = y3(a15, O5, Fe(), e8.actions.setInputElement), [A7, d6] = S3(e8, (t9) => [t9.comboboxState, t9.isTyping]), X3 = p3(), G5 = o5(() => {
       e8.actions.onChange(null), e8.state.optionsElement && (e8.state.optionsElement.scrollTop = 0), e8.actions.goToOption({ focus: c9.Nothing });
     }), C10 = T2(() => {
       var t9;
@@ -6746,7 +6665,7 @@ var stonehamOverrideCalculator = (() => {
   }
   var _o = "button";
   function Fo(T8, O5) {
-    let e8 = p9("Combobox.Button"), o11 = te2("Combobox.Button"), [E7, R3] = d2(null), y8 = y3(O5, R3, e8.actions.setButtonElement), b7 = g2(), _a = T8, { id: h8 = "headlessui-combobox-button-".concat(b7), disabled: p10 = o11.disabled || false, autoFocus: f14 = false } = _a, n9 = __objRest(_a, ["id", "disabled", "autoFocus"]), [m8, a15, u17] = S3(e8, (l8) => [l8.comboboxState, l8.inputElement, l8.optionsElement]), A7 = v4(a15), d6 = m8 === P6.Open;
+    let e8 = p9("Combobox.Button"), o11 = te2("Combobox.Button"), [E7, R2] = d2(null), y8 = y3(O5, R2, e8.actions.setButtonElement), b7 = g2(), _a = T8, { id: h8 = "headlessui-combobox-button-".concat(b7), disabled: p10 = o11.disabled || false, autoFocus: f14 = false } = _a, n9 = __objRest(_a, ["id", "disabled", "autoFocus"]), [m8, a15, u17] = S3(e8, (l8) => [l8.comboboxState, l8.inputElement, l8.optionsElement]), A7 = v4(a15), d6 = m8 === P6.Open;
     L5(d6, { trigger: E7, action: q2((l8) => {
       if (E7 != null && E7.contains(l8.target)) return S5.Ignore;
       if (a15 != null && a15.contains(l8.target)) return S5.Ignore;
@@ -6781,7 +6700,7 @@ var stonehamOverrideCalculator = (() => {
   var So = A4.RenderStrategy | A4.Static;
   function Mo(T8, O5) {
     var M6, Ce, ve;
-    let e8 = g2(), _a = T8, { id: o11 = "headlessui-combobox-options-".concat(e8), hold: E7 = false, anchor: R3, portal: y8 = false, modal: b7 = true, transition: h8 = false } = _a, p10 = __objRest(_a, ["id", "hold", "anchor", "portal", "modal", "transition"]), f14 = p9("Combobox.Options"), n9 = te2("Combobox.Options"), m8 = ye(R3);
+    let e8 = g2(), _a = T8, { id: o11 = "headlessui-combobox-options-".concat(e8), hold: E7 = false, anchor: R2, portal: y8 = false, modal: b7 = true, transition: h8 = false } = _a, p10 = __objRest(_a, ["id", "hold", "anchor", "portal", "modal", "transition"]), f14 = p9("Combobox.Options"), n9 = te2("Combobox.Options"), m8 = ye(R2);
     m8 && (y8 = true);
     let [a15, u17] = Re(m8), [A7, d6] = d2(null), X3 = Te(), G5 = y3(O5, m8 ? a15 : null, f14.actions.setOptionsElement, d6), [C10, x6, v6, c13, z4] = S3(f14, (_7) => [_7.comboboxState, _7.inputElement, _7.buttonElement, _7.optionsElement, _7.activationTrigger]), D9 = u10(x6 || v6), K4 = u10(c13), W3 = u13(), [S8, j10] = N4(h8, A7, W3 !== null ? (W3 & i8.Open) === i8.Open : C10 === P6.Open);
     p7(S8, x6, f14.actions.closeCombobox);
@@ -6816,11 +6735,11 @@ var stonehamOverrideCalculator = (() => {
   var Lo = "div";
   function Vo(T8, O5) {
     var l8, k7, Y3;
-    let e8 = te2("Combobox.Option"), o11 = p9("Combobox.Option"), E7 = g2(), _a = T8, { id: R3 = "headlessui-combobox-option-".concat(E7), value: y8, disabled: b7 = (Y3 = (k7 = (l8 = e8.virtual) == null ? void 0 : l8.disabled) == null ? void 0 : k7.call(l8, y8)) != null ? Y3 : false, order: h8 = null } = _a, p10 = __objRest(_a, ["id", "value", "disabled", "order"]), [f14] = S3(o11, (s12) => [s12.inputElement]), n9 = v4(f14), m8 = S3(o11, q2((s12) => o11.selectors.isActive(s12, y8, R3), [y8, R3])), a15 = e8.isSelected(y8), u17 = A2(null), A7 = s4({ disabled: b7, value: y8, domRef: u17, order: h8 }), d6 = x2(Le), X3 = y3(O5, u17, d6 ? d6.measureElement : null), G5 = o5(() => {
+    let e8 = te2("Combobox.Option"), o11 = p9("Combobox.Option"), E7 = g2(), _a = T8, { id: R2 = "headlessui-combobox-option-".concat(E7), value: y8, disabled: b7 = (Y3 = (k7 = (l8 = e8.virtual) == null ? void 0 : l8.disabled) == null ? void 0 : k7.call(l8, y8)) != null ? Y3 : false, order: h8 = null } = _a, p10 = __objRest(_a, ["id", "value", "disabled", "order"]), [f14] = S3(o11, (s12) => [s12.inputElement]), n9 = v4(f14), m8 = S3(o11, q2((s12) => o11.selectors.isActive(s12, y8, R2), [y8, R2])), a15 = e8.isSelected(y8), u17 = A2(null), A7 = s4({ disabled: b7, value: y8, domRef: u17, order: h8 }), d6 = x2(Le), X3 = y3(O5, u17, d6 ? d6.measureElement : null), G5 = o5(() => {
       o11.actions.setIsTyping(false), o11.actions.onChange(y8);
     });
-    n2(() => o11.actions.registerOption(R3, A7), [A7, R3]);
-    let C10 = S3(o11, q2((s12) => o11.selectors.shouldScrollIntoView(s12, y8, R3), [y8, R3]));
+    n2(() => o11.actions.registerOption(R2, A7), [A7, R2]);
+    let C10 = S3(o11, q2((s12) => o11.selectors.shouldScrollIntoView(s12, y8, R2), [y8, R2]));
     n2(() => {
       if (C10) return o4().requestAnimationFrame(() => {
         var s12, U4;
@@ -6839,7 +6758,7 @@ var stonehamOverrideCalculator = (() => {
       o11.actions.goToOption({ focus: c9.Specific, idx: U4 }, _6.Pointer);
     }), K4 = o5((s12) => {
       c13.wasMoved(s12) && (b7 || m8 && (e8.optionsPropsRef.current.hold || o11.state.activationTrigger === _6.Pointer && o11.actions.goToOption({ focus: c9.Nothing })));
-    }), W3 = n3({ active: m8, focus: m8, selected: a15, disabled: b7 }), S8 = { id: R3, ref: X3, role: "option", tabIndex: b7 === true ? void 0 : -1, "aria-disabled": b7 === true ? true : void 0, "aria-selected": a15, disabled: void 0, onMouseDown: x6, onFocus: v6, onPointerEnter: z4, onMouseEnter: z4, onPointerMove: D9, onMouseMove: D9, onPointerLeave: K4, onMouseLeave: K4 };
+    }), W3 = n3({ active: m8, focus: m8, selected: a15, disabled: b7 }), S8 = { id: R2, ref: X3, role: "option", tabIndex: b7 === true ? void 0 : -1, "aria-disabled": b7 === true ? true : void 0, "aria-selected": a15, disabled: void 0, onMouseDown: x6, onFocus: v6, onPointerEnter: z4, onMouseEnter: z4, onPointerMove: D9, onMouseMove: D9, onPointerLeave: K4, onMouseLeave: K4 };
     return K3()({ ourProps: S8, theirProps: p10, slot: W3, defaultTag: Lo, name: "Combobox.Option" });
   }
   var wo = Y2(Ao);
@@ -13583,7 +13502,6 @@ var stonehamOverrideCalculator = (() => {
 
   // src/use-calculator.ts
   var DEFAULT_OVERRIDE_AMOUNT = 1e7;
-  var TEST_VALUE = "jiminy cricket";
   var DEFAULT_ASSESSED_VALUE = 765770;
   var CURRENT_TAX_RATE = 10.24;
   var RATE_IMPACT_SLOPE = 15103764965009e-20;
@@ -13609,7 +13527,13 @@ var stonehamOverrideCalculator = (() => {
     const [overrideValue, setOverrideValue] = d2(
       DEFAULT_OVERRIDE_AMOUNT
     );
-    const [testOwner1, setTestOwner1] = d2(TEST_VALUE);
+    const [owner1, setOwner1] = d2("");
+    const [owner2, setOwner2] = d2("");
+    const [currentTaxes, setCurrentTaxes] = d2(0);
+    const [yearlyTotalOverride1, setYearlyTotalOverride1] = d2(0);
+    const [yearlyTotalOverride2, setYearlyTotalOverride2] = d2(0);
+    const [yearlyImpactOverride1, setYearlyImpactOverride1] = d2(0);
+    const [yearlyImpactOverride2, setYearlyImpactOverride2] = d2(0);
     const [calculatedValues, setCalculatedValues] = d2({
       currentTaxRate: "",
       newTaxRate: "",
@@ -13625,6 +13549,8 @@ var stonehamOverrideCalculator = (() => {
       owner1: "",
       /** Second owner's last name */
       owner2: "",
+      /** Taxes owner is currently paying, without override */
+      currentTaxes: "",
       /** Estimated annual tax total under the lowest override amount (formatted as currency) */
       yearlyTotalOverride1: "",
       /** Estimated annual tax total under the next-highest override amount (formatted as currency) */
@@ -13640,7 +13566,13 @@ var stonehamOverrideCalculator = (() => {
         const data = fuse.search(searchQuery).slice(0, 10).map(({ item }) => ({
           address: item["#"],
           value: item.$,
-          owner1: item.owner1
+          owner1: item.owner1,
+          owner2: item.owner2,
+          currentTaxes: item.current_taxes,
+          yearlyTotalOverride1: item["18m_override_total"],
+          yearlyTotalOverride2: item["18m_override_increase"],
+          yearlyImpactOverride1: item["25m_override_total"],
+          yearlyImpactOverride2: item["18m_override_increase"]
         }));
         setSuggestions(data);
       } catch (error2) {
@@ -13669,10 +13601,6 @@ var stonehamOverrideCalculator = (() => {
         ) / 100
       );
       const proposedNewTaxRate = CURRENT_TAX_RATE + rateImpact;
-      const yearlyTotalOverride1 = 1.1111;
-      const yearlyTotalOverride2 = 2.2222;
-      const yearlyImpactOverride1 = 3.3333;
-      const yearlyImpactOverride2 = 4.4444;
       const currentTaxBill = (assessedValue != null ? assessedValue : 0) / 1e3 * CURRENT_TAX_RATE;
       const newTaxBill = (assessedValue != null ? assessedValue : 0) / 1e3 * proposedNewTaxRate;
       const taxBillImpactYearly = newTaxBill - currentTaxBill;
@@ -13691,13 +13619,12 @@ var stonehamOverrideCalculator = (() => {
         estimatedTaxImpactQuarterly: formatDollars(taxBillImpactQuarterly),
         estimatedTaxImpactMonthly: formatDollars(taxBillImpactMonthly),
         estimatedTaxImpactDaily: formatDollars(taxBillImpactDaily),
-        owner1: testOwner1,
-        owner2: "",
+        owner1,
+        owner2,
+        currentTaxes: formatDollars(currentTaxes),
         yearlyTotalOverride1: formatDollars(yearlyTotalOverride1),
-        //   TODO Fix this so that it's a separate variable for the second override
         yearlyTotalOverride2: formatDollars(yearlyTotalOverride2),
         yearlyImpactOverride1: formatDollars(yearlyImpactOverride1),
-        //   TODO Fix this so that it's a separate variable for the second override
         yearlyImpactOverride2: formatDollars(yearlyImpactOverride2)
       });
     }, [assessedValue, overrideValue]);
@@ -13706,7 +13633,13 @@ var stonehamOverrideCalculator = (() => {
       if (property) {
         setAssessedValue(property.value);
         setQuery(property.address);
-        setTestOwner1(property.owner1);
+        setOwner1(property.owner1);
+        setOwner2(property.owner2);
+        setCurrentTaxes(property.currentTaxes);
+        setYearlyTotalOverride1(property.yearlyTotalOverride1);
+        setYearlyTotalOverride2(property.yearlyTotalOverride2);
+        setYearlyImpactOverride1(property.yearlyImpactOverride1);
+        setYearlyImpactOverride2(property.yearlyImpactOverride2);
       }
     }, []);
     const onAddressInputChange = q2(
@@ -13922,19 +13855,31 @@ var stonehamOverrideCalculator = (() => {
             ] }),
             /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
               calculator.calculatedValues.owner1,
-              " per quarter"
+              " owner 1"
+            ] }),
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
+              calculator.calculatedValues.owner2,
+              " owner 2"
+            ] }),
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
+              calculator.calculatedValues.currentTaxes,
+              " current taxes"
+            ] }),
+            /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
+              calculator.calculatedValues.yearlyTotalOverride1,
+              " total override 1"
             ] }),
             /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
               calculator.calculatedValues.yearlyTotalOverride2,
-              " per quarter"
+              " total override 2"
             ] }),
             /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
               calculator.calculatedValues.yearlyImpactOverride1,
-              " per quarter"
+              " impact override 1"
             ] }),
             /* @__PURE__ */ u16("dd", { className: "calculator__detail calculator__detail--unit", children: [
               calculator.calculatedValues.yearlyImpactOverride2,
-              " per quarter"
+              " impact override 2"
             ] })
           ] })
         ] })
@@ -13983,7 +13928,7 @@ var stonehamOverrideCalculator = (() => {
 
   // src/index.tsx
   var renderCalculator = (targetElementId) => {
-    J(/* @__PURE__ */ u16(Calculator, {}), document.getElementById(targetElementId));
+    G(/* @__PURE__ */ u16(Calculator, {}), document.getElementById(targetElementId));
   };
   window.stonehamOverrideCalculator = {
     renderCalculator

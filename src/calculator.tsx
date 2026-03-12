@@ -207,16 +207,29 @@ export const Calculator = () => {
               {calculator.calculatedValues.newTaxBillQuarterly} per quarter
             </dd>
             <dd className="calculator__detail calculator__detail--unit">
-              {calculator.calculatedValues.owner1} per quarter
+              {calculator.calculatedValues.owner1} owner 1
             </dd>
             <dd className="calculator__detail calculator__detail--unit">
-              {calculator.calculatedValues.yearlyTotalOverride2} per quarter
+              {calculator.calculatedValues.owner2} owner 2
             </dd>
             <dd className="calculator__detail calculator__detail--unit">
-              {calculator.calculatedValues.yearlyImpactOverride1} per quarter
+              {calculator.calculatedValues.currentTaxes} current taxes
             </dd>
             <dd className="calculator__detail calculator__detail--unit">
-              {calculator.calculatedValues.yearlyImpactOverride2} per quarter
+              {calculator.calculatedValues.yearlyTotalOverride1} total override
+              1
+            </dd>
+            <dd className="calculator__detail calculator__detail--unit">
+              {calculator.calculatedValues.yearlyTotalOverride2} total override
+              2
+            </dd>
+            <dd className="calculator__detail calculator__detail--unit">
+              {calculator.calculatedValues.yearlyImpactOverride1} impact
+              override 1
+            </dd>
+            <dd className="calculator__detail calculator__detail--unit">
+              {calculator.calculatedValues.yearlyImpactOverride2} impact
+              override 2
             </dd>
           </div>
         </dl>
