@@ -34,6 +34,30 @@
     margin-bottom: 2rem;
   }
 
+  .calculator__inputs {
+    display: grid;
+    gap: 1rem;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    dl {
+      margin: 0 auto;
+      padding-left: 10%;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.25rem 0.5rem;
+
+      dt {
+        font-weight: bold;
+        text-align: right;
+      }
+      dd {
+        text-align: left;
+      }
+    }
+  }
+
   .calculator__fieldset {
     border: none;
     padding: 0;
@@ -114,7 +138,7 @@
     margin: 0;
   }
 
-  .calculator__results--tax-impact .calculator__data-list {
+  .calculator__results--current-tax-bill .calculator__data-list {
     grid-template-columns: 1fr;
 
     .calculator__data-item {
@@ -125,8 +149,8 @@
     }
   }
 
-  .calculator__results--tax-rate,
-  .calculator__results--tax-bill {
+  .calculator__results--tax-impact,
+  .calculator__results--future-tax-bill {
     .calculator__data-list {
       grid-template-columns: 1fr 1fr;
     }
@@ -181,8 +205,12 @@
   }
 
   @media (max-width: 640px) {
+    .calculator__inputs {
+      grid-template-columns: 1fr;
+    }
     .calculator__results--tax-rate,
-    .calculator__results--tax-bill,
+    .calculator__results--current-tax-bill,
+    .calculator__results--future-tax-bill,
     .calculator__results--tax-impact {
       .calculator__data-list {
         grid-template-columns: 1fr;

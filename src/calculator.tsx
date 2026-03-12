@@ -26,210 +26,138 @@ export const Calculator = () => {
   return (
     <article id="override-calculator" className="calculator">
       <h1>Brookline Override Calculator</h1>
+      <h2 className="calculator__heading">Enter your Info</h2>
       <section className="calculator__inputs">
-        <h2 className="calculator__heading">Enter your Info</h2>
-        <form className="calculator__form">
-          <fieldset className="calculator__fieldset">
-            <div className="calculator__field">
-              <label htmlFor="overrideValue" className="calculator__label">
-                Hypothetical Override Amount
-              </label>
-              <div className="calculator__input-wrapper">
-                <span className="calculator__currency-symbol">$</span>
-                <NumericFormat
-                  id="overrideValue"
-                  className="calculator__input calculator__input--numeric"
-                  name="New override amount"
-                  type="text"
-                  value={calculator.overrideValue}
-                  onValueChange={(e) =>
-                    calculator.onOverrideValueChange(e.floatValue)
-                  }
-                  placeholder={formatDollars(DEFAULT_OVERRIDE_AMOUNT)}
-                  thousandSeparator={true}
-                  allowNegative={false}
-                  decimalScale={0}
-                  max={14_600_000}
-                  maxLength={10}
-                />
+        <div>
+          <form className="calculator__form">
+            <fieldset className="calculator__fieldset">
+              <div className="calculator__field">
+                <label htmlFor="propertyAddress" className="calculator__label">
+                  Property Address
+                </label>
+                <Combobox
+                  value={calculator.selectedProperty}
+                  onChange={calculator.onPropertyChange}
+                >
+                  <div className="calculator__combobox">
+                    <ComboboxInput
+                      id="propertyAddress"
+                      className="calculator__input calculator__input--combobox"
+                      placeholder="123 Main St"
+                      displayValue={calculator.getDisplayValue}
+                      onChange={calculator.onAddressInputChange}
+                    />
+                    <ComboboxOptions className="calculator__combobox-options">
+                      {calculator.isLoading ? (
+                        <div className="calculator__combobox-message">
+                          Loading...
+                        </div>
+                      ) : calculator.suggestions.length === 0 &&
+                        calculator.query.length > 2 ? (
+                        <div className="calculator__combobox-message">
+                          <strong>No properties found</strong>
+                        </div>
+                      ) : (
+                        calculator.suggestions.map((suggestion, index) => (
+                          <ComboboxOption
+                            key={index}
+                            value={suggestion}
+                            className="calculator__combobox-option"
+                          >
+                            <div className="calculator__combobox-option-address">
+                              {suggestion.address}
+                            </div>
+                            <div className="calculator__combobox-option-value">
+                              Assessed Value: {formatDollars(suggestion.value)}
+                            </div>
+                          </ComboboxOption>
+                        ))
+                      )}
+                    </ComboboxOptions>
+                  </div>
+                </Combobox>
               </div>
-            </div>
-
-            <div className="calculator__field">
-              <label htmlFor="propertyAddress" className="calculator__label">
-                Property Address
-              </label>
-              <Combobox
-                value={calculator.selectedProperty}
-                onChange={calculator.onPropertyChange}
-              >
-                <div className="calculator__combobox">
-                  <ComboboxInput
-                    id="propertyAddress"
-                    className="calculator__input calculator__input--combobox"
-                    placeholder="123 Main St"
-                    displayValue={calculator.getDisplayValue}
-                    onChange={calculator.onAddressInputChange}
-                  />
-                  <ComboboxOptions className="calculator__combobox-options">
-                    {calculator.isLoading ? (
-                      <div className="calculator__combobox-message">
-                        Loading...
-                      </div>
-                    ) : calculator.suggestions.length === 0 &&
-                      calculator.query.length > 2 ? (
-                      <div className="calculator__combobox-message">
-                        <strong>No properties found</strong>
-                      </div>
-                    ) : (
-                      calculator.suggestions.map((suggestion, index) => (
-                        <ComboboxOption
-                          key={index}
-                          value={suggestion}
-                          className="calculator__combobox-option"
-                        >
-                          <div className="calculator__combobox-option-address">
-                            {suggestion.address}
-                          </div>
-                          <div className="calculator__combobox-option-value">
-                            Assessed Value: {formatDollars(suggestion.value)}
-                          </div>
-                        </ComboboxOption>
-                      ))
-                    )}
-                  </ComboboxOptions>
-                </div>
-              </Combobox>
-            </div>
-
-            <div className="calculator__field">
-              <label htmlFor="yourValue" className="calculator__label">
-                Your Assessed Property Value
-              </label>
-              <div className="calculator__input-wrapper">
-                <span className="calculator__currency-symbol">$</span>
-                <NumericFormat
-                  id="yourValue"
-                  className="calculator__input calculator__input--numeric"
-                  name="Your assessment value"
-                  type="text"
-                  value={calculator.assessedValue}
-                  onValueChange={(e) =>
-                    calculator.onAssessedValueChange(e.floatValue)
-                  }
-                  placeholder={formatDollars(DEFAULT_ASSESSED_VALUE)}
-                  thousandSeparator={true}
-                  allowNegative={false}
-                  decimalScale={0}
-                  max={100_000_000}
-                  maxLength={11}
-                />
-              </div>
-            </div>
-          </fieldset>
-        </form>
-      </section>
-
-      <section className="calculator__results calculator__results--tax-rate">
-        <h2 className="calculator__heading">Estimated Tax Rate Increase</h2>
-        <dl className="calculator__data-list">
-          <div className="calculator__data-item">
-            <dt className="calculator__term">Current Tax Rate</dt>
-            <dd className="calculator__detail calculator__detail--value">
-              {calculator.calculatedValues.currentTaxRate}{" "}
-              <span class="calculator__detail calculator__detail--subscript">
-                per $1,000
-              </span>
-            </dd>
-          </div>
-
-          <div className="calculator__data-item">
-            <dt className="calculator__term">
-              Proposed Tax Rate &#40;{" "}
-              {calculator.calculatedValues.newTaxRateImpact} increase &#41;
-            </dt>
-            <dd className="calculator__detail calculator__detail--value">
-              {calculator.calculatedValues.newTaxRate}{" "}
-              <span class="calculator__detail calculator__detail--subscript">
-                per $1,000
-              </span>
-            </dd>
-          </div>
-        </dl>
+            </fieldset>
+          </form>
+        </div>
+        <div className="calculator__static-info">
+          <dl>
+            <dt>Assessed Value:</dt>
+            <dd>{formatDollars(calculator.assessedValue)}</dd>
+            <dt>Owner 1:</dt>
+            <dd>{calculator.calculatedValues.owner1}</dd>
+            <dt>Owner 2:</dt>
+            <dd>{calculator.calculatedValues.owner2}</dd>
+          </dl>
+        </div>
       </section>
 
       <section className="calculator__results calculator__results--tax-impact">
+        <h2 className="calculator__heading">Estimated Tax Increase</h2>
         <dl className="calculator__data-list">
           <div className="calculator__data-item">
-            <dt className="calculator__term">Your Increase in Dollars</dt>
+            <dt className="calculator__term">
+              Tax increase under $18m Override
+            </dt>
             <dd className="calculator__detail calculator__detail--value">
-              {calculator.calculatedValues.estimatedTaxImpactYearly}{" "}
+              {calculator.calculatedValues.yearlyImpactOverride1}{" "}
               <span class="calculator__detail calculator__detail--subscript">
                 per year
               </span>
             </dd>
-            <dd className="calculator__detail calculator__detail--unit">
-              {calculator.calculatedValues.estimatedTaxImpactQuarterly} per
-              quarter
-            </dd>
-            <dd className="calculator__detail calculator__detail--unit">
-              {calculator.calculatedValues.estimatedTaxImpactMonthly} per month
+          </div>
+          <div className="calculator__data-item">
+            <dt className="calculator__term">
+              Tax increase under $25m Override
+            </dt>
+            <dd className="calculator__detail calculator__detail--value">
+              {calculator.calculatedValues.yearlyImpactOverride2}{" "}
+              <span class="calculator__detail calculator__detail--subscript">
+                per year
+              </span>
             </dd>
           </div>
         </dl>
       </section>
 
-      <section className="calculator__results calculator__results--tax-bill">
+      <section className="calculator__results calculator__results--current-tax-bill">
         <h2 className="calculator__heading">Your Total Estimated Tax Bill</h2>
         <dl className="calculator__data-list">
           <div className="calculator__data-item">
             <dt className="calculator__term">Current Bill</dt>
             <dd className="calculator__detail calculator__detail--value">
-              {calculator.calculatedValues.currentTaxBillYearly}{" "}
+              {calculator.calculatedValues.currentTaxes}{" "}
               <span class="calculator__detail calculator__detail--subscript">
                 per year
               </span>
-            </dd>
-            <dd className="calculator__detail calculator__detail--unit">
-              {calculator.calculatedValues.currentTaxBillQuarterly} per quarter
             </dd>
           </div>
-
+        </dl>
+      </section>
+      <section className="calculator__results calculator__results--future-tax-bill">
+        <dl className="calculator__data-list">
           <div className="calculator__data-item">
-            <dt className="calculator__term">Proposed Bill</dt>
+            <dt className="calculator__term">
+              {" "}
+              Total taxes under $18m Override
+            </dt>
             <dd className="calculator__detail calculator__detail--value">
-              {calculator.calculatedValues.newTaxBillYearly}{" "}
+              {calculator.calculatedValues.yearlyTotalOverride1}{" "}
               <span class="calculator__detail calculator__detail--subscript">
                 per year
               </span>
             </dd>
-            <dd className="calculator__detail calculator__detail--unit">
-              {calculator.calculatedValues.newTaxBillQuarterly} per quarter
-            </dd>
-            <dd className="calculator__detail calculator__detail--unit">
-              {calculator.calculatedValues.owner1} owner 1
-            </dd>
-            <dd className="calculator__detail calculator__detail--unit">
-              {calculator.calculatedValues.owner2} owner 2
-            </dd>
-            <dd className="calculator__detail calculator__detail--unit">
-              {calculator.calculatedValues.currentTaxes} current taxes
-            </dd>
-            <dd className="calculator__detail calculator__detail--unit">
-              {calculator.calculatedValues.yearlyTotalOverride1} total override
-              1
-            </dd>
-            <dd className="calculator__detail calculator__detail--unit">
-              {calculator.calculatedValues.yearlyTotalOverride2} total override
-              2
-            </dd>
-            <dd className="calculator__detail calculator__detail--unit">
-              {calculator.calculatedValues.yearlyImpactOverride1} impact
-              override 1
-            </dd>
-            <dd className="calculator__detail calculator__detail--unit">
-              {calculator.calculatedValues.yearlyImpactOverride2} impact
-              override 2
+          </div>
+          <div className="calculator__data-item">
+            <dt className="calculator__term">
+              {" "}
+              Total taxes under $25m Override
+            </dt>
+            <dd className="calculator__detail calculator__detail--value">
+              {calculator.calculatedValues.yearlyTotalOverride2}{" "}
+              <span class="calculator__detail calculator__detail--subscript">
+                per year
+              </span>
             </dd>
           </div>
         </dl>

@@ -34,7 +34,7 @@ export const DEFAULT_OVERRIDE_AMOUNT = 10_000_000;
  * The default assessed property value to populate the "Assessed" field with.
  * Set to $765,770, which is close to the median assessed value in Stoneham (the original source of the calculator).
  */
-export const DEFAULT_ASSESSED_VALUE = 765_770;
+export const DEFAULT_ASSESSED_VALUE = 0;
 
 export const CURRENT_TAX_RATE = 10.24;
 
@@ -213,8 +213,8 @@ export const useCalculator = (): UseCalculatorReturn => {
     DEFAULT_OVERRIDE_AMOUNT,
   );
 
-  const [owner1, setOwner1] = useState<string | undefined>("");
-  const [owner2, setOwner2] = useState<string | undefined>("");
+  const [owner1, setOwner1] = useState<string | undefined>("(no data)");
+  const [owner2, setOwner2] = useState<string | undefined>("(no data)");
   const [currentTaxes, setCurrentTaxes] = useState<number | undefined>(0);
   const [yearlyTotalOverride1, setYearlyTotalOverride1] = useState<
     number | undefined
@@ -277,8 +277,8 @@ export const useCalculator = (): UseCalculatorReturn => {
           owner2: item.owner2,
           currentTaxes: item.current_taxes,
           yearlyTotalOverride1: item["18m_override_total"],
-          yearlyTotalOverride2: item["18m_override_increase"],
-          yearlyImpactOverride1: item["25m_override_total"],
+          yearlyTotalOverride2: item["25m_override_total"],
+          yearlyImpactOverride1: item["18m_override_increase"],
           yearlyImpactOverride2: item["25m_override_increase"],
         }));
       setSuggestions(data);
@@ -339,12 +339,6 @@ export const useCalculator = (): UseCalculatorReturn => {
     // Formula: Current Rate + Rate Impact -- truncated to 2 decimal places
     const proposedNewTaxRate = CURRENT_TAX_RATE + rateImpact;
 
-    // // BUG delete these
-    // const yearlyTotalOverride1 = 1.1111;
-    // const yearlyTotalOverride2 = 2.2222;
-    // const yearlyImpactOverride1 = 3.3333;
-    // const yearlyImpactOverride2 = 4.4444;
-
     // Step 3: Calculate current and proposed tax bills
     // Formula: (Assessed Value / 1000) × Tax Rate
     const currentTaxBill = ((assessedValue ?? 0) / 1_000) * CURRENT_TAX_RATE;
@@ -392,8 +386,8 @@ export const useCalculator = (): UseCalculatorReturn => {
     if (property) {
       setAssessedValue(property.value);
       setQuery(property.address);
-      setOwner1(property.owner1);
-      setOwner2(property.owner2);
+      setOwner1(property.owner1 || "(no data)");
+      setOwner2(property.owner2 || "(no data)");
       setCurrentTaxes(property.currentTaxes);
       setYearlyTotalOverride1(property.yearlyTotalOverride1);
       setYearlyTotalOverride2(property.yearlyTotalOverride2);
