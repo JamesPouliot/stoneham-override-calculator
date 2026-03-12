@@ -1,8 +1,13 @@
 import math, json, pandas
 
-excel_file = "SAMPLE.xlsx"
+excel_file = "FY2026_Property_Assessments_for_Website_Override.xlsx"
 
-properties = pandas.read_excel(excel_file)
+try:
+    properties = pandas.read_excel(excel_file, engine="openpyxl")
+except Exception as e:
+    print(f"Error reading Excel file: {e}")
+    print("\nTrying with 'kaledo' engine as fallback...")
+    properties = pandas.read_excel(excel_file, engine="calamine")
 
 
 def drop_unused_columns(properties):

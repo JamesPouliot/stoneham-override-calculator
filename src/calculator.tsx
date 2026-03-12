@@ -121,10 +121,10 @@ export const Calculator = () => {
       </section>
 
       <section className="calculator__results calculator__results--current-tax-bill">
-        <h2 className="calculator__heading">Your Total Estimated Tax Bill</h2>
+        <h2 className="calculator__heading">Total Tax Bill</h2>
         <dl className="calculator__data-list">
           <div className="calculator__data-item">
-            <dt className="calculator__term">Current Bill</dt>
+            <dt className="calculator__term">Current</dt>
             <dd className="calculator__detail calculator__detail--value">
               {calculator.calculatedValues.currentTaxes}{" "}
               <span class="calculator__detail calculator__detail--subscript">
@@ -137,10 +137,7 @@ export const Calculator = () => {
       <section className="calculator__results calculator__results--future-tax-bill">
         <dl className="calculator__data-list">
           <div className="calculator__data-item">
-            <dt className="calculator__term">
-              {" "}
-              Total taxes under $18m Override
-            </dt>
+            <dt className="calculator__term"> Total with $18m Override</dt>
             <dd className="calculator__detail calculator__detail--value">
               {calculator.calculatedValues.yearlyTotalOverride1}{" "}
               <span class="calculator__detail calculator__detail--subscript">
@@ -149,10 +146,7 @@ export const Calculator = () => {
             </dd>
           </div>
           <div className="calculator__data-item">
-            <dt className="calculator__term">
-              {" "}
-              Total taxes under $25m Override
-            </dt>
+            <dt className="calculator__term"> Total with $25m Override</dt>
             <dd className="calculator__detail calculator__detail--value">
               {calculator.calculatedValues.yearlyTotalOverride2}{" "}
               <span class="calculator__detail calculator__detail--subscript">
@@ -186,9 +180,7 @@ export const Calculator = () => {
           </a>
           . For demonstration purposes only. Actual tax impact may vary based on
           final override amount, assessed property values, and other adjustments
-          to the tax levy. This calculator is not approved nor endorsed by the
-          Massachusetts Department of Revenue, Patriot Properties, nor any other
-          official entity. Source code available via{" "}
+          to the tax levy. Source code available via{" "}
           <a
             href="https://github.com/RoboCafaz/stoneham-override-calculator"
             className="calculator__link"
