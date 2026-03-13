@@ -59,7 +59,7 @@ def assemble_address(street_number, alternate_number, condo_number, street_name)
     if alternate_number != "":
         combined_number += f", Unit {alternate_number}"
     if condo_number != "":
-        combined_number += f", Condo {condo_number}"
+        combined_number += f", Unit {condo_number}"
 
     address = f"{street_number} {street_name}{combined_number}"
     return address
@@ -95,6 +95,8 @@ for property in properties:
     converted_property = {
         "#": f"{address} ({property.get('Parcel ID', '')})",
         "$": property.get("FY2026VALUE", 0),
+        "address": address,
+        "parcel_id": property.get("Parcel ID", "(no data)"),
         "owner1": property.get("Owner1Last Name", "(no data)").title(),
         "owner2": property.get("Owner2Last Name", "(no data)").title(),
         "current_taxes": property.get("FY26 TAXES ", "(no data)"),

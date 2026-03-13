@@ -95,8 +95,6 @@ for property in properties:
     converted_property = {
         "#": f"{address} ({property.get('Parcel ID', '')})",
         "$": property.get("FY2026VALUE", 0),
-        "address": address,
-        "parcel_id": property.get("Parcel ID", "(no data)"),
         "owner1": property.get("Owner1Last Name", "(no data)").title(),
         "owner2": property.get("Owner2Last Name", "(no data)").title(),
         "current_taxes": property.get("FY26 TAXES ", "(no data)"),

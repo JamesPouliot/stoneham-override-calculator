@@ -7,12 +7,7 @@ import {
   ComboboxOptions,
 } from "@headlessui/react";
 import { NumericFormat } from "react-number-format";
-import {
-  DEFAULT_ASSESSED_VALUE,
-  DEFAULT_OVERRIDE_AMOUNT,
-  formatDollars,
-  useCalculator,
-} from "./use-calculator";
+import { formatDollars, useCalculator } from "./use-calculator";
 
 /**
  * Calculator component for the Brookline Override Calculator.
@@ -43,7 +38,7 @@ export const Calculator = () => {
                     <ComboboxInput
                       id="propertyAddress"
                       className="calculator__input calculator__input--combobox"
-                      placeholder='"123 Main St" or "001-23-04"'
+                      placeholder='"123 Main St Condo 4" or "001-23-04"'
                       displayValue={calculator.getDisplayValue}
                       onChange={calculator.onAddressInputChange}
                     />
@@ -96,7 +91,7 @@ export const Calculator = () => {
         <h2 className="calculator__heading">Total Tax Bill</h2>
         <dl className="calculator__data-list">
           <div className="calculator__data-item">
-            <dt className="calculator__term">Current</dt>
+            <dt className="calculator__term">Current Total</dt>
             <dd className="calculator__detail calculator__detail--value">
               {calculator.calculatedValues.currentTaxes}{" "}
               <span class="calculator__detail calculator__detail--subscript">

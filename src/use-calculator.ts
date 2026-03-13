@@ -28,19 +28,8 @@ import PROPERTIES from "./properties.json";
  * The default override amount to populate the "Override" field with.
  * Set to $10,000,000 as a representative example.
  */
+// TODO This should probably be deleted.
 export const DEFAULT_OVERRIDE_AMOUNT = 10_000_000;
-
-/**
- * The default assessed property value to populate the "Assessed" field with.
- * Set to $765,770, which is close to the median assessed value in Stoneham (the original source of the calculator).
- */
-export const DEFAULT_ASSESSED_VALUE = 0;
-
-export const CURRENT_TAX_RATE = 10.24;
-
-// TODO decide if these are necessary
-export const RATE_IMPACT_SLOPE = 0.00000015103764965009;
-export const RATE_IMPACT_INTERCEPT = -0.00288889605331910104;
 
 /**
  * Format a number as a dollar amount.
@@ -104,30 +93,7 @@ export interface Address {
  * The hook recalculates these values whenever the assessed value or override amount changes.
  */
 export interface CalculatedValues {
-  /** Current tax rate per $1,000 of assessed value (formatted as currency) */
-  currentTaxRate: string;
-  /** Proposed tax rate per $1,000 of assessed value after override (formatted as currency) */
-  newTaxRate: string;
-  /** Increase in tax rate per $1,000 of assessed value (formatted as currency) */
-  newTaxRateImpact: string;
-  /** Current annual tax bill before override (formatted as currency) */
-  currentTaxBillYearly: string;
-  /** Proposed annual tax bill after override (formatted as currency) */
-  newTaxBillYearly: string;
-  /** Current quarterly tax bill before override (formatted as currency) */
-  currentTaxBillQuarterly: string;
-  /** Proposed quarterly tax bill after override (formatted as currency) */
-  newTaxBillQuarterly: string;
-  /** Estimated annual tax increase (formatted as currency) */
-  estimatedTaxImpactYearly: string;
-  /** Estimated quarterly tax increase (formatted as currency) */
-  estimatedTaxImpactQuarterly: string;
-  /** Estimated monthly tax increase (formatted as currency) */
-  estimatedTaxImpactMonthly: string;
-  /** Estimated daily tax increase (formatted as currency) */
-  estimatedTaxImpactDaily: string;
-
-  //   NOTE: These are the custom values Brookline added
+  // These are the custom values Brookline added
   /** First owner's last name */
   owner1: string;
   /** Second owner's last name */
@@ -161,18 +127,14 @@ export interface UseCalculatorReturn {
   query: string;
   /** The current assessed property value (in dollars, not cents) */
   assessedValue: number | undefined;
-  /** The current override amount (in dollars) TODO THIS MIGHT BECOME IMPORTANT */
-  overrideValue: number | undefined;
   /** All calculated tax impact values, formatted for display */
   calculatedValues: CalculatedValues;
   /** Handler called when a property is selected from the address dropdown */
   onPropertyChange: (property: Address | null) => void;
   /** Handler called when the address input text changes */
   onAddressInputChange: (event: Event) => void;
-  /** Handler called when the assessed value input changes TODO I'll bet we need to change this*/
+  /** Handler called when the assessed value input changes */
   onAssessedValueChange: (value: number | undefined) => void;
-  /** Handler called when the override amount input changes */
-  onOverrideValueChange: (value: number | undefined) => void;
   /** Function to compute the display value for the address combobox */
   getDisplayValue: (property: Address | null) => string;
 }
@@ -207,13 +169,7 @@ export const useCalculator = (): UseCalculatorReturn => {
     null,
   );
   const [query, setQuery] = useState("");
-  const [assessedValue, setAssessedValue] = useState<number | undefined>(
-    DEFAULT_ASSESSED_VALUE,
-  );
-  //  TODO MAYBE DELETE THIS??
-  const [overrideValue, setOverrideValue] = useState<number | undefined>(
-    DEFAULT_OVERRIDE_AMOUNT,
-  );
+  const [assessedValue, setAssessedValue] = useState<number | undefined>(0);
 
   const [owner1, setOwner1] = useState<string | undefined>("(no data)");
   const [owner2, setOwner2] = useState<string | undefined>("(no data)");
@@ -232,17 +188,6 @@ export const useCalculator = (): UseCalculatorReturn => {
   >(0);
 
   const [calculatedValues, setCalculatedValues] = useState<CalculatedValues>({
-    currentTaxRate: "",
-    newTaxRate: "",
-    newTaxRateImpact: "",
-    currentTaxBillYearly: "",
-    newTaxBillYearly: "",
-    currentTaxBillQuarterly: "",
-    newTaxBillQuarterly: "",
-    estimatedTaxImpactYearly: "",
-    estimatedTaxImpactQuarterly: "",
-    estimatedTaxImpactMonthly: "",
-    estimatedTaxImpactDaily: "",
     owner1: "",
     /** Second owner's last name */
     owner2: "",
@@ -327,44 +272,8 @@ export const useCalculator = (): UseCalculatorReturn => {
    * 5. Format all values as currency strings for display
    */
   useEffect(() => {
-    const currentOverride = overrideValue ?? 0;
-
-    // Step 1: Calculate the tax rate impact using the linear equation
-    // y = mx + b where y = tax rate impact (per $1,000), x = override amount
-    const rateImpact = Math.abs(
-      Math.ceil(
-        100 * (RATE_IMPACT_SLOPE * currentOverride + RATE_IMPACT_INTERCEPT),
-      ) / 100,
-    );
-
-    // Step 2: Calculate the proposed new tax rate (per $1,000 of assessed value)
-    // Formula: Current Rate + Rate Impact -- truncated to 2 decimal places
-    const proposedNewTaxRate = CURRENT_TAX_RATE + rateImpact;
-
-    // Step 3: Calculate current and proposed tax bills
-    // Formula: (Assessed Value / 1000) × Tax Rate
-    const currentTaxBill = ((assessedValue ?? 0) / 1_000) * CURRENT_TAX_RATE;
-    const newTaxBill = ((assessedValue ?? 0) / 1_000) * proposedNewTaxRate;
-
-    // Step 4: Calculate the tax bill impact for various time periods
-    const taxBillImpactYearly = newTaxBill - currentTaxBill;
-    const taxBillImpactQuarterly = taxBillImpactYearly / 4;
-    const taxBillImpactMonthly = taxBillImpactYearly / 12;
-    const taxBillImpactDaily = taxBillImpactYearly / 365; //unused for Brookline.
-
     // Step 5: Format all values as currency strings and update state
     setCalculatedValues({
-      currentTaxRate: formatDollars(CURRENT_TAX_RATE),
-      newTaxRate: formatDollars(proposedNewTaxRate),
-      newTaxRateImpact: formatDollars(rateImpact),
-      currentTaxBillYearly: formatDollars(currentTaxBill),
-      newTaxBillYearly: formatDollars(newTaxBill),
-      currentTaxBillQuarterly: formatDollars(currentTaxBill / 4),
-      newTaxBillQuarterly: formatDollars(newTaxBill / 4),
-      estimatedTaxImpactYearly: formatDollars(taxBillImpactYearly),
-      estimatedTaxImpactQuarterly: formatDollars(taxBillImpactQuarterly),
-      estimatedTaxImpactMonthly: formatDollars(taxBillImpactMonthly),
-      estimatedTaxImpactDaily: formatDollars(taxBillImpactDaily),
       owner1: owner1,
       owner2: owner2,
       currentTaxes: formatDollars(currentTaxes),
@@ -373,7 +282,7 @@ export const useCalculator = (): UseCalculatorReturn => {
       yearlyImpactOverride1: formatDollars(yearlyImpactOverride1),
       yearlyImpactOverride2: formatDollars(yearlyImpactOverride2),
     });
-  }, [assessedValue, overrideValue]);
+  }, [assessedValue]);
 
   /**
    * Handler for when a property is selected from the address dropdown.
@@ -424,13 +333,6 @@ export const useCalculator = (): UseCalculatorReturn => {
   }, []);
 
   /**
-   * Handler for when the override amount input changes.
-   *
-   * @param value - The new override amount (in dollars), or undefined if cleared
-   */
-  const onOverrideValueChange = useCallback((value: number | undefined) => {
-    setOverrideValue(value);
-  }, []);
 
   /**
    * Computes the display value for the address combobox.
@@ -452,12 +354,10 @@ export const useCalculator = (): UseCalculatorReturn => {
     selectedProperty,
     query,
     assessedValue,
-    overrideValue,
     calculatedValues,
     onPropertyChange,
     onAddressInputChange,
     onAssessedValueChange,
-    onOverrideValueChange,
     getDisplayValue,
   };
 };
