@@ -2,6 +2,8 @@ import math, json, pandas
 
 excel_file = "FY2026_Property_Assessments_for_Website_Override.xlsx"
 
+print("opening excel file")
+
 try:
     properties = pandas.read_excel(excel_file, engine="openpyxl")
 except Exception as e:
@@ -11,6 +13,8 @@ except Exception as e:
 
 
 def drop_unused_columns(properties):
+    print("dropping unused columns")
+
     properties = properties.drop(
         columns=[
             "Property ID",
@@ -65,6 +69,7 @@ def assemble_address(street_number, alternate_number, condo_number, street_name)
 properties = drop_unused_columns(properties)
 
 # sort the properties by street name first, then then by street number
+print("sorting properties")
 properties = properties.sort_values(
     by=["Street Name", "Street Number", "Alternate Street Number", "Condo Unit"]
 )
@@ -72,6 +77,7 @@ properties = properties.sort_values(
 properties = properties.fillna("")
 
 # transform into python dictionary
+print("converting to python dictionary")
 properties = properties.to_dict("records")
 
 converted_properties = []
@@ -86,7 +92,6 @@ for property in properties:
     )
     address = address.title()
 
-    print(address)
     converted_property = {
         "#": f"{address} ({property.get('Parcel ID', '')})",
         "$": property.get("FY2026VALUE", 0),
@@ -102,4 +107,7 @@ for property in properties:
 
 # write the results to a new JSON file
 with open("properties.json", "w", encoding="utf-8") as new_file:
+    print("creating JSON file")
     json.dump(converted_properties, new_file)
+
+print("DONE")

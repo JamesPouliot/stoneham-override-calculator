@@ -43,7 +43,7 @@ export const Calculator = () => {
                     <ComboboxInput
                       id="propertyAddress"
                       className="calculator__input calculator__input--combobox"
-                      placeholder="123 Main St"
+                      placeholder='"123 Main St" or "001-23-04"'
                       displayValue={calculator.getDisplayValue}
                       onChange={calculator.onAddressInputChange}
                     />

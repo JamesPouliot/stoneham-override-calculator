@@ -64,9 +64,8 @@ export const formatDollars = (val: number) =>
  * The threshold value of 0.2 means the search is fairly strict - only close matches
  * will be returned. A value of 0.0 requires perfect matches, while 1.0 matches everything.
  */
-
 const fuse = new Fuse(PROPERTIES, {
-  keys: ["address", "parcel_id"],
+  keys: ["#"],
   ignoreLocation: true,
   threshold: 0.2,
 });
