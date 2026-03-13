@@ -1,4 +1,22 @@
-# BROOKLINE STAFF: Summary of how to edit this calculator
+# BROOKLINE STAFF: How to update property values
+
+Store the property values in an Excel (.xlsx) file and copy that file into the root folder of this project. If you're not sure what the file should look like, look at "EXAMPLE_PROPERTY_VALUES.xlsx".
+
+We will now use the script "format_xlsx_for_calculator.py" to convert that Excel (.xlsx) file to a .json format that the calculator can use. Before running the script, open the script in any text editor and update the fields near the top to reflect the names your Excel (.xlsx) file. **It is important that the column names be exactly correct.**
+NOTE: This script requires Python, as well as the Python modules "pandas" and "openpxyl". You may need to install these before this script works. Ask the internet, it's not super hard.
+
+Now run the script. It should create a new file called "properties.json". Move that file into the "src" folder.
+
+If you're using Visual Studio Code, run the following command in the Bash Terminal:
+yarn build
+
+Otherwise, you will need to open any other Bash terminal and run these two commands, replacing the filepath below with the correct one on your device:
+cd "C:\Users\jpouliot\Documents\Override-Calculator"
+yarn build
+
+This overwrites the files in the 'dist' folder. Copy all of those new files from the 'dist' folder into the appropriate place in the Apps server, deleting the older versions on the Apps server.
+
+# BROOKLINE STAFF: Walkthrough on how to change how this calculator works
 
 If you're editing it for the first time on this device, open the folder in Visual Studio Code.
 In the Bash terminal, enter the following commands:
@@ -24,7 +42,7 @@ Edit the calculator's core logic by editing "use-calculator.ts"
 ---
 
 After you're done editing these files, here's how to update the online calculator:
-Enter the following command into the Visual Studio Code Bash Terminal:
+In Visual Studio Code, click any file in the "src" folder, then enter the following command into the Visual Studio Code Bash Terminal:
 yarn build
 
 This overwrites the files in the 'dist' folder. Copy all of those new files from the 'dist' folder into the appropriate place in the Apps server, deleting the older versions on the Apps server.

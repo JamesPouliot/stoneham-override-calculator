@@ -1,46 +1,24 @@
 import math, json, pandas
 
+# !!! UPDATING THIS FILE? EDIT THESE FIELDS AND NOTHING ELSE !!!
 excel_file = "FY2026_Property_Assessments_for_Website_Override.xlsx"
+XLSX_column_name_for_current_assessed_value = "FY2026VALUE"
+XLSX_column_name_for_current_tax_bill = "FY26 TAXES "
+XLSX_column_name_for_total_taxes_under_1st_override_amount = "Taxes @ 18M Override"
+XLSX_column_name_for_tax_increase_under_1st_override_amount = "Tax Delta @ 18M Override"
+XLSX_column_name_for_total_taxes_under_2nd_override_amount = "Taxes @ 25M Override"
+XLSX_column_name_for_tax_increase_under_2nd_override_amount = "Tax Delta @ 25M Override"
 
-print("opening excel file")
+# !!! DON'T TOUCH ANYTHING BELOW THIS !!!
 
 try:
+    print("opening excel file, PLEASE WAIT")
+    # Try to use Pandas with openpyxl to read the excel file. If that doesn't work, try again with the "calamine" engine
     properties = pandas.read_excel(excel_file, engine="openpyxl")
 except Exception as e:
     print(f"Error reading Excel file: {e}")
-    print("\nTrying with 'kaledo' engine as fallback...")
+    print("\nTrying with 'calamine' engine as fallback...")
     properties = pandas.read_excel(excel_file, engine="calamine")
-
-
-def drop_unused_columns(properties):
-    print("dropping unused columns")
-
-    properties = properties.drop(
-        columns=[
-            "Property ID",
-            "Composite Land Use Code",
-            "Neighborhood",
-            "Num_units",
-            "User Account",
-            "Billing Address",
-            "City",
-            "State",
-            "Country",
-            "Zip Code",
-            "Total Area",
-            "Year Built",
-            "Total Finished Area",
-            "Commercial Units",
-            "Residential Units",
-            "ZONING",
-            "Legal Reference",
-            "Sale Date",
-            "Sale Price",
-            "Owner Occupied",
-            "Condo Percent Owner",
-        ]
-    )
-    return properties
 
 
 def fix_numbers(number):
@@ -64,9 +42,6 @@ def assemble_address(street_number, alternate_number, condo_number, street_name)
     address = f"{street_number} {street_name}{combined_number}"
     return address
 
-
-# remove all columns from the xlsx that we're not going to use.
-properties = drop_unused_columns(properties)
 
 # sort the properties by street name first, then then by street number
 print("sorting properties")
@@ -92,18 +67,38 @@ for property in properties:
     )
     address = address.title()
 
+    # assemble the final property dictionary as it will appear in the JSON file
     converted_property = {
         "#": f"{address} ({property.get('Parcel ID', '')})",
-        "$": property.get("FY2026VALUE", 0),
+        "$": property.get(XLSX_column_name_for_current_assessed_value, 0),
         "address": address,
         "parcel_id": property.get("Parcel ID", "(no data)"),
-        "owner1": property.get("Owner1Last Name", "(no data)").title(),
-        "owner2": property.get("Owner2Last Name", "(no data)").title(),
-        "current_taxes": property.get("FY26 TAXES ", "(no data)"),
-        "18m_override_total": round(property.get("Taxes @ 18M Override", 0), 2),
-        "18m_override_increase": round(property.get("Tax Delta @ 18M Override", 0), 2),
-        "25m_override_total": round(property.get("Taxes @ 25M Override", 0), 2),
-        "25m_override_increase": round(property.get("Tax Delta @ 25M Override", 0), 2),
+        "owner1": property.get("Owner1Last Name", "(no data)"),
+        "owner2": property.get("Owner2Last Name", "(no data)"),
+        "current_taxes": property.get(
+            XLSX_column_name_for_current_tax_bill, "(no data)"
+        ),
+        # these dollar values were calculated with fractions of a penny; round them down to 2 places for the nearest penny.
+        "18m_override_total": round(
+            property.get(XLSX_column_name_for_total_taxes_under_1st_override_amount, 0),
+            2,
+        ),
+        "18m_override_increase": round(
+            property.get(
+                XLSX_column_name_for_tax_increase_under_1st_override_amount, 0
+            ),
+            2,
+        ),
+        "25m_override_total": round(
+            property.get(XLSX_column_name_for_total_taxes_under_2nd_override_amount, 0),
+            2,
+        ),
+        "25m_override_increase": round(
+            property.get(
+                XLSX_column_name_for_tax_increase_under_2nd_override_amount, 0
+            ),
+            2,
+        ),
     }
     converted_properties.append(converted_property)
 
