@@ -33,7 +33,7 @@ export const Calculator = () => {
             <fieldset className="calculator__fieldset">
               <div className="calculator__field">
                 <label htmlFor="propertyAddress" className="calculator__label">
-                  Property Address
+                  Address or Parcel ID
                 </label>
                 <Combobox
                   value={calculator.selectedProperty}

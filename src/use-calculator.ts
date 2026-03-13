@@ -66,6 +66,7 @@ export const formatDollars = (val: number) =>
  */
 const fuse = new Fuse(PROPERTIES, {
   keys: ["#"],
+  ignoreLocation: true,
   threshold: 0.2,
 });
 
