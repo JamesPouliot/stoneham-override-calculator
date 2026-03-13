@@ -92,34 +92,6 @@ export const Calculator = () => {
         </div>
       </section>
 
-      <section className="calculator__results calculator__results--tax-impact">
-        <h2 className="calculator__heading">Estimated Tax Increase</h2>
-        <dl className="calculator__data-list">
-          <div className="calculator__data-item">
-            <dt className="calculator__term">
-              Tax increase under $18m Override
-            </dt>
-            <dd className="calculator__detail calculator__detail--value">
-              {calculator.calculatedValues.yearlyImpactOverride1}{" "}
-              <span class="calculator__detail calculator__detail--subscript">
-                per year
-              </span>
-            </dd>
-          </div>
-          <div className="calculator__data-item">
-            <dt className="calculator__term">
-              Tax increase under $25m Override
-            </dt>
-            <dd className="calculator__detail calculator__detail--value">
-              {calculator.calculatedValues.yearlyImpactOverride2}{" "}
-              <span class="calculator__detail calculator__detail--subscript">
-                per year
-              </span>
-            </dd>
-          </div>
-        </dl>
-      </section>
-
       <section className="calculator__results calculator__results--current-tax-bill">
         <h2 className="calculator__heading">Total Tax Bill</h2>
         <dl className="calculator__data-list">
@@ -144,6 +116,9 @@ export const Calculator = () => {
                 per year
               </span>
             </dd>
+            <dd className="calculator__detail .calculator__detail--unit">
+              ({calculator.calculatedValues.yearlyImpactOverride1} increase)
+            </dd>
           </div>
           <div className="calculator__data-item">
             <dt className="calculator__term"> Total with $25m Override</dt>
@@ -152,6 +127,9 @@ export const Calculator = () => {
               <span class="calculator__detail calculator__detail--subscript">
                 per year
               </span>
+            </dd>
+            <dd className="calculator__detail .calculator__detail--unit">
+              ({calculator.calculatedValues.yearlyImpactOverride2} increase)
             </dd>
           </div>
         </dl>
